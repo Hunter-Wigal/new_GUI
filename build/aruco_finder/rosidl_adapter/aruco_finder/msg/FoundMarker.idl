@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from aruco_finder/msg/FoundMarker.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module aruco_finder {
+  module msg {
+    struct FoundMarker {
+      geometry_msgs::msg::Point marker_enu;
+
+      uint8 aruco_id;
+    };
+  };
+};

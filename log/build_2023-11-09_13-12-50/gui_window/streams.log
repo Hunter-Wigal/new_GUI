@@ -1,0 +1,24 @@
+[1.251s] Invoking command in '/home/urc/new-GUI/src/gui_window': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/marker_interfacing:/home/urc/new-GUI/install/aruco_finder:/home/urc/new-GUI/install/rover_gui_lib:/home/urc/new-GUI/install/urc_gui_lib LD_LIBRARY_PATH=/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/marker_interfacing/lib:/home/urc/new-GUI/install/aruco_finder/lib:/home/urc/new-GUI/install/rover_gui_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed
+[1.685s] running egg_info
+[1.686s] writing ../../build/gui_window/gui_window.egg-info/PKG-INFO
+[1.687s] writing dependency_links to ../../build/gui_window/gui_window.egg-info/dependency_links.txt
+[1.688s] writing entry points to ../../build/gui_window/gui_window.egg-info/entry_points.txt
+[1.689s] writing requirements to ../../build/gui_window/gui_window.egg-info/requires.txt
+[1.690s] writing top-level names to ../../build/gui_window/gui_window.egg-info/top_level.txt
+[1.691s] reading manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[1.693s] writing manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[1.694s] running build
+[1.695s] running build_py
+[1.696s] copying gui_window/main.py -> /home/urc/new-GUI/build/gui_window/build/lib/gui_window
+[1.699s] running install
+[1.700s] running install_lib
+[1.704s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/main.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window
+[1.706s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/main.py to main.cpython-310.pyc
+[1.707s] running install_data
+[1.707s] running install_egg_info
+[1.709s] removing '/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info' (and everything under it)
+[1.710s] Copying ../../build/gui_window/gui_window.egg-info to /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info
+[1.711s] running install_scripts
+[1.739s] Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window
+[1.742s] writing list of installed files to '/home/urc/new-GUI/build/gui_window/install.log'
+[1.781s] Invoked command in '/home/urc/new-GUI/src/gui_window' returned '0': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/marker_interfacing:/home/urc/new-GUI/install/aruco_finder:/home/urc/new-GUI/install/rover_gui_lib:/home/urc/new-GUI/install/urc_gui_lib LD_LIBRARY_PATH=/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/marker_interfacing/lib:/home/urc/new-GUI/install/aruco_finder/lib:/home/urc/new-GUI/install/rover_gui_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed

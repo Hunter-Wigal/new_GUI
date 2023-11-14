@@ -1,0 +1,22 @@
+[  1%] Built target theora_webcams__cpp
+[  1%] Built target ament_cmake_python_copy_theora_webcams
+[ 12%] Built target theora_webcams__rosidl_generator_c
+[ 24%] Built target theora_webcams__rosidl_typesupport_cpp
+[ 35%] Built target theora_webcams__rosidl_typesupport_fastrtps_cpp
+[ 47%] Built target theora_webcams__rosidl_typesupport_introspection_cpp
+[ 58%] Built target theora_webcams__rosidl_typesupport_fastrtps_c
+[ 70%] Built target theora_webcams__rosidl_typesupport_introspection_c
+[ 82%] Built target theora_webcams__rosidl_typesupport_c
+[ 82%] Built target theora_webcams
+[ 83%] Built target theora_webcams__py
+[ 93%] Built target theora_webcams__rosidl_generator_py
+[ 95%] Built target theora_webcams__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target theora_webcams__rosidl_typesupport_introspection_c__pyext
+[100%] Built target theora_webcams__rosidl_typesupport_c__pyext
+running egg_info
+writing theora_webcams.egg-info/PKG-INFO
+writing dependency_links to theora_webcams.egg-info/dependency_links.txt
+writing top-level names to theora_webcams.egg-info/top_level.txt
+reading manifest file 'theora_webcams.egg-info/SOURCES.txt'
+writing manifest file 'theora_webcams.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_theora_webcams_egg

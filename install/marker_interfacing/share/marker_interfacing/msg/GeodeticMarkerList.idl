@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from marker_interfacing/msg/GeodeticMarkerList.msg
+// generated code does not contain a copyright notice
+
+#include "marker_interfacing/msg/GeodeticMarker.idl"
+
+module marker_interfacing {
+  module msg {
+    struct GeodeticMarkerList {
+      sequence<marker_interfacing::msg::GeodeticMarker> markers;
+
+      uint8 count;
+    };
+  };
+};

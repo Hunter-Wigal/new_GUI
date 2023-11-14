@@ -1,0 +1,20 @@
+[0.376s] Invoking command in '/home/urc/new-GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/ocean_optics_spectrometer-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/ocean_optics_spectrometer
+[0.636s] -- The C compiler identification is GNU 11.4.0
+[0.788s] -- The CXX compiler identification is GNU 11.4.0
+[0.804s] -- Detecting C compiler ABI info
+[0.973s] -- Detecting C compiler ABI info - done
+[1.001s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.003s] -- Detecting C compile features
+[1.004s] -- Detecting C compile features - done
+[1.016s] -- Detecting CXX compiler ABI info
+[1.221s] -- Detecting CXX compiler ABI info - done
+[1.261s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.261s] -- Detecting CXX compile features
+[1.262s] -- Detecting CXX compile features - done
+[1.263s] [31mCMake Error at CMakeLists.txt:5 (add_service_files):
+[1.263s]   Unknown CMake command "add_service_files".
+[1.263s] 
+[1.271s] [0m
+[1.272s] -- Configuring incomplete, errors occurred!
+[1.272s] See also "/home/urc/new-GUI/build/ocean_optics_spectrometer/CMakeFiles/CMakeOutput.log".
+[1.292s] Invoked command in '/home/urc/new-GUI/build/ocean_optics_spectrometer' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/ocean_optics_spectrometer-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/ocean_optics_spectrometer

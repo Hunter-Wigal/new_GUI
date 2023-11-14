@@ -1,0 +1,195 @@
+[0.132s] Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/hockey_stick_arm -- -j4 -l4
+[0.241s] [  2%] Built target hockey_stick_arm__cpp
+[0.393s] [  2%] Built target ament_cmake_python_copy_hockey_stick_arm
+[0.427s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_fastrtps_cpp[0m
+[0.471s] [ 12%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_cpp
+[0.515s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_introspection_cpp[0m
+[0.568s] [ 23%] Built target hockey_stick_arm__rosidl_typesupport_introspection_cpp
+[1.249s] running egg_info
+[1.250s] writing hockey_stick_arm.egg-info/PKG-INFO
+[1.251s] writing dependency_links to hockey_stick_arm.egg-info/dependency_links.txt
+[1.251s] writing top-level names to hockey_stick_arm.egg-info/top_level.txt
+[1.255s] reading manifest file 'hockey_stick_arm.egg-info/SOURCES.txt'
+[1.257s] writing manifest file 'hockey_stick_arm.egg-info/SOURCES.txt'
+[1.323s] [ 23%] Built target ament_cmake_python_build_hockey_stick_arm_egg
+[1.344s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_cpp[0m
+[1.382s] [ 33%] Built target hockey_stick_arm__rosidl_typesupport_cpp
+[1.418s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_generator_c[0m
+[1.471s] [ 43%] Built target hockey_stick_arm__rosidl_generator_c
+[1.502s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_fastrtps_c[0m
+[1.555s] [ 53%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_c
+[1.575s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_c[0m
+[1.607s] [ 64%] Built target hockey_stick_arm__rosidl_typesupport_c
+[1.631s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_introspection_c[0m
+[1.675s] [ 74%] Built target hockey_stick_arm__rosidl_typesupport_introspection_c
+[1.765s] [ 74%] Built target hockey_stick_arm
+[1.821s] [ 76%] Built target hockey_stick_arm__py
+[1.843s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_generator_py[0m
+[1.908s] [ 84%] Built target hockey_stick_arm__rosidl_generator_py
+[1.950s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.015s] [ 89%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_c__pyext
+[2.043s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_c__pyext[0m
+[2.066s] [ 94%] Built target hockey_stick_arm__rosidl_typesupport_c__pyext
+[2.086s] [35m[1mConsolidate compiler generated dependencies of target hockey_stick_arm__rosidl_typesupport_introspection_c__pyext[0m
+[2.120s] [100%] Built target hockey_stick_arm__rosidl_typesupport_introspection_c__pyext
+[2.155s] Invoked command in '/home/urc/new-GUI/build/hockey_stick_arm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/hockey_stick_arm -- -j4 -l4
+[2.515s] Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/hockey_stick_arm
+[2.534s] -- Install configuration: ""
+[2.534s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/ament_index/resource_index/rosidl_interfaces/hockey_stick_arm
+[2.534s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg/rosidl_generator_c__visibility_control.h
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/calibrate.h
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__type_support.h
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__struct.h
+[2.535s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__functions.c
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__type_support.h
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__functions.c
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__functions.h
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__struct.h
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__functions.h
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/set_float.h
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/library_path.sh
+[2.536s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/library_path.dsv
+[2.537s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_generator_c.so
+[2.537s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_generator_c.so" to ""
+[2.538s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.538s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg
+[2.538s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.538s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.538s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.538s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__rosidl_typesupport_fastrtps_c.h
+[2.538s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__rosidl_typesupport_fastrtps_c.h
+[2.539s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_fastrtps_c.so
+[2.539s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_fastrtps_c.so" to ""
+[2.539s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.540s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg
+[2.540s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.540s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.540s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.540s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__type_support.c
+[2.540s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__rosidl_typesupport_introspection_c.h
+[2.541s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__type_support.c
+[2.541s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__rosidl_typesupport_introspection_c.h
+[2.541s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_introspection_c.so
+[2.541s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_introspection_c.so" to ""
+[2.541s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_c.so
+[2.541s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_c.so" to ""
+[2.550s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.550s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.550s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/set_float.hpp
+[2.550s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/calibrate.hpp
+[2.551s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.551s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__traits.hpp
+[2.552s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__struct.hpp
+[2.553s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__builder.hpp
+[2.553s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__builder.hpp
+[2.554s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__traits.hpp
+[2.554s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__struct.hpp
+[2.554s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.554s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg
+[2.554s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.554s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.556s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.556s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__rosidl_typesupport_fastrtps_cpp.hpp
+[2.556s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__rosidl_typesupport_fastrtps_cpp.hpp
+[2.556s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/dds_fastrtps
+[2.557s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_fastrtps_cpp.so
+[2.558s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.559s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm
+[2.559s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv
+[2.560s] -- Up-to-date: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail
+[2.560s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/calibrate__type_support.cpp
+[2.562s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/include/hockey_stick_arm/hockey_stick_arm/srv/detail/set_float__type_support.cpp
+[2.562s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_introspection_cpp.so
+[2.563s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_introspection_cpp.so" to ""
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_cpp.so
+[2.564s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_typesupport_cpp.so" to ""
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/pythonpath.sh
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/pythonpath.dsv
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm-0.0.0-py3.10.egg-info
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm-0.0.0-py3.10.egg-info/PKG-INFO
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm-0.0.0-py3.10.egg-info/top_level.txt
+[2.564s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.565s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm
+[2.565s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/__init__.py
+[2.565s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_c.c
+[2.565s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.567s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/libhockey_stick_arm__rosidl_generator_py.so
+[2.568s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_introspection_c.c
+[2.568s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv
+[2.568s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/__init__.py
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_set_float_s.c
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_set_float.py
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_calibrate.py
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_calibrate_s.c
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.569s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.641s] Listing '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm'...
+[2.641s] Compiling '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/__init__.py'...
+[2.642s] Listing '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv'...
+[2.642s] Compiling '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/__init__.py'...
+[2.646s] Compiling '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_calibrate.py'...
+[2.646s] Compiling '/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/srv/_set_float.py'...
+[2.654s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.655s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.656s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.656s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.656s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.656s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/local/lib/python3.10/dist-packages/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.656s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_generator_py.so
+[2.657s] -- Set runtime path of "/home/urc/new-GUI/install/hockey_stick_arm/lib/libhockey_stick_arm__rosidl_generator_py.so" to ""
+[2.657s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/Calibrate.idl
+[2.658s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/SetFloat.idl
+[2.658s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/Calibrate.srv
+[2.659s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/Calibrate_Request.msg
+[2.660s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/Calibrate_Response.msg
+[2.663s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/SetFloat.srv
+[2.665s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/SetFloat_Request.msg
+[2.667s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/srv/SetFloat_Response.msg
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/ament_index/resource_index/package_run_dependencies/hockey_stick_arm
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/ament_index/resource_index/parent_prefix_path/hockey_stick_arm
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/ament_prefix_path.sh
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/ament_prefix_path.dsv
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/path.sh
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/environment/path.dsv
+[2.668s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/local_setup.bash
+[2.669s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/local_setup.sh
+[2.669s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/local_setup.zsh
+[2.669s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/local_setup.dsv
+[2.670s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/package.dsv
+[2.670s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/ament_index/resource_index/packages/hockey_stick_arm
+[2.671s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_generator_cExport.cmake
+[2.671s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_generator_cExport-noconfig.cmake
+[2.673s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_typesupport_fastrtps_cExport.cmake
+[2.673s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.674s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_introspection_cExport.cmake
+[2.674s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.676s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_cExport.cmake
+[2.677s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_cExport-noconfig.cmake
+[2.678s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_generator_cppExport.cmake
+[2.679s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.679s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.685s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_introspection_cppExport.cmake
+[2.686s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.686s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_cppExport.cmake
+[2.686s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_arm__rosidl_typesupport_cppExport-noconfig.cmake
+[2.686s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_generator_pyExport.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/export_hockey_stick_arm__rosidl_generator_pyExport-noconfig.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/rosidl_cmake-extras.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/ament_cmake_export_libraries-extras.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/ament_cmake_export_targets-extras.cmake
+[2.687s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.688s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.688s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_armConfig.cmake
+[2.688s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/cmake/hockey_stick_armConfig-version.cmake
+[2.688s] -- Installing: /home/urc/new-GUI/install/hockey_stick_arm/share/hockey_stick_arm/package.xml
+[2.692s] Invoked command in '/home/urc/new-GUI/build/hockey_stick_arm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/hockey_stick_arm

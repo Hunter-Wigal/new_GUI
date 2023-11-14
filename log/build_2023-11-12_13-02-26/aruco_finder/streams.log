@@ -1,0 +1,161 @@
+[0.374s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[0.512s] [  2%] Built target aruco_finder__cpp
+[0.536s] [ 12%] Built target aruco_finder__rosidl_generator_c
+[0.700s] [ 23%] Built target aruco_finder__rosidl_typesupport_fastrtps_cpp
+[0.719s] [ 23%] Built target ament_cmake_python_copy_aruco_finder
+[0.943s] [ 33%] Built target aruco_finder__rosidl_typesupport_introspection_cpp
+[0.997s] [ 43%] Built target aruco_finder__rosidl_typesupport_fastrtps_c
+[1.011s] [ 53%] Built target aruco_finder__rosidl_typesupport_cpp
+[1.231s] [ 64%] Built target aruco_finder__rosidl_typesupport_c
+[1.232s] [ 74%] Built target aruco_finder__rosidl_typesupport_introspection_c
+[1.443s] [ 74%] Built target aruco_finder
+[1.670s] [ 76%] Built target aruco_finder__py
+[1.764s] [ 84%] Built target aruco_finder__rosidl_generator_py
+[1.909s] [ 89%] Built target aruco_finder__rosidl_typesupport_fastrtps_c__pyext
+[2.025s] [ 94%] Built target aruco_finder__rosidl_typesupport_c__pyext
+[2.157s] [100%] Built target aruco_finder__rosidl_typesupport_introspection_c__pyext
+[2.584s] running egg_info
+[2.584s] writing aruco_finder.egg-info/PKG-INFO
+[2.585s] writing dependency_links to aruco_finder.egg-info/dependency_links.txt
+[2.585s] writing top-level names to aruco_finder.egg-info/top_level.txt
+[2.597s] reading manifest file 'aruco_finder.egg-info/SOURCES.txt'
+[2.598s] writing manifest file 'aruco_finder.egg-info/SOURCES.txt'
+[2.723s] [100%] Built target ament_cmake_python_build_aruco_finder_egg
+[2.800s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[3.052s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/aruco_finder
+[3.077s] -- Install configuration: ""
+[3.077s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/rosidl_interfaces/aruco_finder
+[3.077s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.078s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.078s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.h
+[3.078s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.h
+[3.078s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_generator_c__visibility_control.h
+[3.079s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.079s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.c
+[3.079s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.h
+[3.079s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.h
+[3.080s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.h
+[3.080s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.h
+[3.080s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.h
+[3.080s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.h
+[3.080s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.c
+[3.081s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.sh
+[3.081s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.dsv
+[3.081s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_c.so
+[3.082s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.082s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.082s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.083s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.083s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_c.h
+[3.083s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_c.h
+[3.083s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_c.so
+[3.084s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.084s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.084s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.084s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.085s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_c.h
+[3.085s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.c
+[3.085s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.c
+[3.085s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_c.h
+[3.085s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_c.so
+[3.086s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_c.so
+[3.086s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.087s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.087s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.hpp
+[3.087s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.hpp
+[3.087s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.088s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__builder.hpp
+[3.088s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.hpp
+[3.088s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__traits.hpp
+[3.088s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__builder.hpp
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.hpp
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__traits.hpp
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.104s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_cpp.hpp
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_cpp.hpp
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/dds_fastrtps
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_cpp.so
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.cpp
+[3.105s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_cpp.hpp
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.cpp
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_cpp.hpp
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_cpp.so
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_cpp.so
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.sh
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.dsv
+[3.106s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info
+[3.106s] -- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/PKG-INFO
+[3.106s] -- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.106s] -- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/top_level.txt
+[3.107s] -- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list.py
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/__init__.py
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list_s.c
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker.py
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_s.c
+[3.107s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/libaruco_finder__rosidl_generator_py.so
+[3.108s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/__init__.py
+[3.108s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.108s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.108s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.108s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_c.c
+[3.111s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.119s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_introspection_c.c
+[3.244s] Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder'...
+[3.247s] Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg'...
+[3.277s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.277s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.277s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.277s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_py.so
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.idl
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.idl
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.msg
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.msg
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/package_run_dependencies/aruco_finder
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/parent_prefix_path/aruco_finder
+[3.278s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.sh
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.dsv
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.sh
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.dsv
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.bash
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.sh
+[3.279s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.zsh
+[3.281s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.dsv
+[3.293s] -- Installing: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.dsv
+[3.294s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/packages/aruco_finder
+[3.294s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport.cmake
+[3.294s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport-noconfig.cmake
+[3.300s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport.cmake
+[3.300s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.300s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport-noconfig.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cppExport.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.301s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport-noconfig.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport-noconfig.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake-extras.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.302s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_libraries-extras.cmake
+[3.303s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_targets-extras.cmake
+[3.303s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.303s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.303s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig.cmake
+[3.303s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig-version.cmake
+[3.305s] -- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.xml
+[3.320s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/aruco_finder

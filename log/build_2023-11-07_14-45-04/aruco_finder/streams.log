@@ -1,0 +1,58 @@
+[0.343s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[0.890s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.890s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.890s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.890s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.890s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.891s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.891s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.891s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.891s] [33mCMake Warning at CMakeLists.txt:237 (find_package):
+[0.891s]   By not providing "Findroscpp.cmake" in CMAKE_MODULE_PATH this project has
+[0.891s]   asked CMake to find a package configuration file provided by "roscpp", but
+[0.892s]   CMake did not find one.
+[0.892s] 
+[0.892s]   Could not find a package configuration file provided by "roscpp" with any
+[0.892s]   of the following names:
+[0.892s] 
+[0.892s]     roscppConfig.cmake
+[0.893s]     roscpp-config.cmake
+[0.893s] 
+[0.893s]   Add the installation prefix of "roscpp" to CMAKE_PREFIX_PATH or set
+[0.893s]   "roscpp_DIR" to a directory containing one of the above files.  If "roscpp"
+[0.893s]   provides a separate development package or SDK, be sure it has been
+[0.893s]   installed.
+[0.893s] 
+[0.893s] [0m
+[0.961s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.461s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.950s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.577s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.616s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.667s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.667s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.667s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.824s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.825s] -- Added test 'lint_cmake' to check CMake code style
+[2.825s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.836s] -- Added test 'xmllint' to check XML markup files
+[2.841s] -- Configuring done
+[2.942s] -- Generating done
+[2.942s] -- Build files have been written to: /home/urc/new-GUI/build/aruco_finder
+[2.962s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '0': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[2.965s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[3.039s] [35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_generator_c[0m
+[3.056s] [ 10%] Built target aruco_finder__rosidl_generator_c
+[3.068s] [ 12%] Built target aruco_finder__cpp
+[3.080s] [35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_typesupport_introspection_c[0m
+[3.084s] [35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_typesupport_fastrtps_c[0m
+[3.085s] failed to create symbolic link '/home/urc/new-GUI/build/aruco_finder/ament_cmake_python/aruco_finder/aruco_finder' because existing path cannot be removed: Is a directory
+[3.092s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_aruco_finder.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_aruco_finder] Error 1
+[3.094s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_aruco_finder.dir/all] Error 2
+[3.094s] gmake[1]: *** Waiting for unfinished jobs....
+[3.103s] [35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_typesupport_c[0m
+[3.119s] [ 23%] Built target aruco_finder__rosidl_typesupport_introspection_c
+[3.135s] [ 33%] Built target aruco_finder__rosidl_typesupport_fastrtps_c
+[3.145s] [ 43%] Built target aruco_finder__rosidl_typesupport_c
+[3.145s] gmake: *** [Makefile:146: all] Error 2
+[3.148s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '2': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4

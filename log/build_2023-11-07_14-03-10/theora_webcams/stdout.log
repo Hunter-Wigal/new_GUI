@@ -1,0 +1,7 @@
+[  2%] [32mBuilding CXX object CMakeFiles/camera_publisher.dir/src/camera_publisher_v4l2.cpp.o[0m
+[  2%] Built target theora_webcams__cpp
+[ 13%] Built target theora_webcams__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_c[0m
+[ 13%] Built target ament_cmake_python_copy_theora_webcams
+[ 24%] Built target theora_webcams__rosidl_typesupport_cpp
+[ 36%] Built target theora_webcams__rosidl_typesupport_fastrtps_c

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from marker_interfacing/srv/ReorderMarker.srv
+// generated code does not contain a copyright notice
+
+
+module marker_interfacing {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request - ID of marker to move, and ID of marker to move in front of")
+    struct ReorderMarker_Request {
+      uint8 marker_id;
+
+      uint8 new_following_marker_id;
+    };
+    @verbatim (language="comment", text=
+      "Response - T/F")
+    struct ReorderMarker_Response {
+      boolean success;
+    };
+  };
+};

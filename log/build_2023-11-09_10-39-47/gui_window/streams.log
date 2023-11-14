@@ -1,0 +1,132 @@
+[1.835s] Invoking command in '/home/urc/new-GUI/build/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/urc/new-GUI/build/gui_window/build
+[2.487s] running develop
+[2.939s] Removing /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui-window.egg-link (link to .)
+[3.024s] Invoked command in '/home/urc/new-GUI/build/gui_window' returned '0': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/urc/new-GUI/build/gui_window/build
+[3.028s] Invoking command in '/home/urc/new-GUI/src/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed
+[3.753s] running egg_info
+[3.754s] writing ../../build/gui_window/gui_window.egg-info/PKG-INFO
+[3.754s] writing dependency_links to ../../build/gui_window/gui_window.egg-info/dependency_links.txt
+[3.755s] writing entry points to ../../build/gui_window/gui_window.egg-info/entry_points.txt
+[3.755s] writing requirements to ../../build/gui_window/gui_window.egg-info/requires.txt
+[3.755s] writing top-level names to ../../build/gui_window/gui_window.egg-info/top_level.txt
+[3.760s] reading manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[3.765s] writing manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[3.765s] running build
+[3.765s] running build_py
+[3.767s] copying gui_window/urc_gui_common/__init__.py -> /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common
+[3.771s] copying gui_window/urc_gui_common/tabs/settings.py -> /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs
+[3.772s] copying gui_window/urc_gui_common/tabs/tools.py -> /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs
+[3.777s] running install
+[3.777s] running install_lib
+[3.779s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window
+[3.780s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common
+[3.780s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.780s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/helpers/internet.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.782s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/helpers/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.783s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/helpers/file_helper.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.784s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/helpers/route_optimization.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.785s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/helpers/validator.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers
+[3.785s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/status_bar.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common
+[3.785s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common
+[3.786s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.786s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/timer.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.786s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/current_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.787s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/map_viewer.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.787s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.787s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/checklist.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.788s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/super_camera_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.788s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.788s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/tools_tab.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.789s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/optimization_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.789s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/current_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.790s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.790s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/ros_console_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.790s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/science_tab.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.793s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/timer_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.794s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/antenna_control_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.794s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/set_time_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.794s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/autonomy_edit_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.795s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/checklist_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.795s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/ui_python/graph.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python
+[3.796s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/antenna_control.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.796s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/slider_compass.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.798s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/widgets/lines.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets
+[3.798s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/app.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common
+[3.799s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/camera_link.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common
+[3.800s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs
+[3.801s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs/single_camera.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs
+[3.801s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs
+[3.802s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs/settings.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs
+[3.802s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/tabs/tools.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs
+[3.802s] creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.802s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/tools_tab.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.803s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/optimization_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.803s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/current_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.804s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.804s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/ros_console_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.804s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/science_tab.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.805s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/timer_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.805s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/antenna_control_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.806s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/set_time_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.806s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/autonomy_edit_dialog.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.807s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/checklist_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.807s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/urc_gui_common/ui_python/graph.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python
+[3.808s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/current_display_widget.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window
+[3.809s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/__init__.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window
+[3.810s] copying /home/urc/new-GUI/build/gui_window/build/lib/gui_window/main.py -> /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window
+[3.821s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers/internet.py to internet.cpython-310.pyc
+[3.821s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers/__init__.py to __init__.cpython-310.pyc
+[3.822s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers/file_helper.py to file_helper.cpython-310.pyc
+[3.822s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers/route_optimization.py to route_optimization.cpython-310.pyc
+[3.824s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/helpers/validator.py to validator.cpython-310.pyc
+[3.825s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/status_bar.py to status_bar.cpython-310.pyc
+[3.827s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/__init__.py to __init__.cpython-310.pyc
+[3.827s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/timer.py to timer.cpython-310.pyc
+[3.841s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/current_widget.py to current_widget.cpython-310.pyc
+[3.841s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/map_viewer.py to map_viewer.cpython-310.pyc
+[3.845s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/__init__.py to __init__.cpython-310.pyc
+[3.845s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/checklist.py to checklist.cpython-310.pyc
+[3.847s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/super_camera_widget.py to super_camera_widget.cpython-310.pyc
+[3.849s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/tools_tab.py to tools_tab.cpython-310.pyc
+[3.850s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/optimization_dialog.py to optimization_dialog.cpython-310.pyc
+[3.851s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/current_widget.py to current_widget.cpython-310.pyc
+[3.851s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/__init__.py to __init__.cpython-310.pyc
+[3.851s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/ros_console_widget.py to ros_console_widget.cpython-310.pyc
+[3.853s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/science_tab.py to science_tab.cpython-310.pyc
+[3.854s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/timer_widget.py to timer_widget.cpython-310.pyc
+[3.855s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/antenna_control_widget.py to antenna_control_widget.cpython-310.pyc
+[3.855s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/set_time_dialog.py to set_time_dialog.cpython-310.pyc
+[3.856s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/autonomy_edit_dialog.py to autonomy_edit_dialog.cpython-310.pyc
+[3.858s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/checklist_widget.py to checklist_widget.cpython-310.pyc
+[3.859s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/ui_python/graph.py to graph.cpython-310.pyc
+[3.860s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/antenna_control.py to antenna_control.cpython-310.pyc
+[3.862s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/slider_compass.py to slider_compass.cpython-310.pyc
+[3.863s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/lines.py to lines.cpython-310.pyc
+[3.864s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/app.py to app.cpython-310.pyc
+[3.865s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/camera_link.py to camera_link.cpython-310.pyc
+[3.870s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs/single_camera.py to single_camera.cpython-310.pyc
+[3.871s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs/__init__.py to __init__.cpython-310.pyc
+[3.871s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs/settings.py to settings.cpython-310.pyc
+[3.877s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/tabs/tools.py to tools.cpython-310.pyc
+[3.878s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/tools_tab.py to tools_tab.cpython-310.pyc
+[3.879s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/optimization_dialog.py to optimization_dialog.cpython-310.pyc
+[3.882s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/current_widget.py to current_widget.cpython-310.pyc
+[3.883s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/__init__.py to __init__.cpython-310.pyc
+[3.883s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/ros_console_widget.py to ros_console_widget.cpython-310.pyc
+[3.883s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/science_tab.py to science_tab.cpython-310.pyc
+[3.884s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/timer_widget.py to timer_widget.cpython-310.pyc
+[3.886s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/antenna_control_widget.py to antenna_control_widget.cpython-310.pyc
+[3.887s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/set_time_dialog.py to set_time_dialog.cpython-310.pyc
+[3.888s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/autonomy_edit_dialog.py to autonomy_edit_dialog.cpython-310.pyc
+[3.890s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/checklist_widget.py to checklist_widget.cpython-310.pyc
+[3.890s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/ui_python/graph.py to graph.cpython-310.pyc
+[3.891s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/current_display_widget.py to current_display_widget.cpython-310.pyc
+[3.893s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/__init__.py to __init__.cpython-310.pyc
+[3.893s] byte-compiling /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window/main.py to main.cpython-310.pyc
+[3.894s] running install_data
+[3.897s] running install_egg_info
+[3.899s] Copying ../../build/gui_window/gui_window.egg-info to /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info
+[3.901s] running install_scripts
+[3.940s] Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window
+[3.944s] writing list of installed files to '/home/urc/new-GUI/build/gui_window/install.log'
+[4.002s] Invoked command in '/home/urc/new-GUI/src/gui_window' returned '0': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed

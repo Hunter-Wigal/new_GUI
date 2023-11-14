@@ -1,0 +1,553 @@
+[0.000000] (-) TimerEvent: {}
+[0.001076] (aruco_finder) JobQueued: {'identifier': 'aruco_finder', 'dependencies': OrderedDict()}
+[0.001652] (gui_window) JobQueued: {'identifier': 'gui_window', 'dependencies': OrderedDict()}
+[0.001704] (theora_webcams) JobQueued: {'identifier': 'theora_webcams', 'dependencies': OrderedDict()}
+[0.001737] (aruco_finder) JobStarted: {'identifier': 'aruco_finder'}
+[0.100250] (-) TimerEvent: {}
+[0.104329] (gui_window) JobStarted: {'identifier': 'gui_window'}
+[0.200884] (-) TimerEvent: {}
+[0.232496] (theora_webcams) JobStarted: {'identifier': 'theora_webcams'}
+[0.301205] (-) TimerEvent: {}
+[0.313575] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'cmake'}
+[0.316015] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'build'}
+[0.318213] (aruco_finder) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/aruco_finder', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/aruco_finder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/aruco_finder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.401562] (-) TimerEvent: {}
+[0.502339] (-) TimerEvent: {}
+[0.603218] (-) TimerEvent: {}
+[0.706246] (-) TimerEvent: {}
+[0.806891] (-) TimerEvent: {}
+[0.892900] (aruco_finder) StdoutLine: {'line': b'[  2%] Built target aruco_finder__cpp\n'}
+[0.893270] (aruco_finder) StdoutLine: {'line': b'[ 12%] Built target aruco_finder__rosidl_generator_c\n'}
+[0.893466] (aruco_finder) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_aruco_finder\n'}
+[0.893638] (aruco_finder) StdoutLine: {'line': b'[ 23%] Built target aruco_finder__rosidl_typesupport_fastrtps_c\n'}
+[0.893732] (aruco_finder) StdoutLine: {'line': b'[ 33%] Built target aruco_finder__rosidl_typesupport_fastrtps_cpp\n'}
+[0.893818] (aruco_finder) StdoutLine: {'line': b'[ 43%] Built target aruco_finder__rosidl_typesupport_introspection_c\n'}
+[0.893890] (aruco_finder) StdoutLine: {'line': b'[ 53%] Built target aruco_finder__rosidl_typesupport_c\n'}
+[0.893955] (aruco_finder) StdoutLine: {'line': b'[ 64%] Built target aruco_finder__rosidl_typesupport_introspection_cpp\n'}
+[0.894011] (aruco_finder) StdoutLine: {'line': b'[ 74%] Built target aruco_finder__rosidl_typesupport_cpp\n'}
+[0.894066] (aruco_finder) StdoutLine: {'line': b'[ 74%] Built target aruco_finder\n'}
+[0.894121] (aruco_finder) StdoutLine: {'line': b'[ 76%] Built target aruco_finder__py\n'}
+[0.894176] (aruco_finder) StdoutLine: {'line': b'[ 84%] Built target aruco_finder__rosidl_generator_py\n'}
+[0.894230] (aruco_finder) StdoutLine: {'line': b'[ 89%] Built target aruco_finder__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.894285] (aruco_finder) StdoutLine: {'line': b'[ 94%] Built target aruco_finder__rosidl_typesupport_introspection_c__pyext\n'}
+[0.894342] (aruco_finder) StdoutLine: {'line': b'[100%] Built target aruco_finder__rosidl_typesupport_c__pyext\n'}
+[0.904792] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'cmake'}
+[0.909445] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'build'}
+[0.910063] (-) TimerEvent: {}
+[0.910332] (theora_webcams) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/theora_webcams', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/theora_webcams', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/theora_webcams'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.945941] (aruco_finder) StdoutLine: {'line': b'running egg_info\n'}
+[0.946729] (aruco_finder) StdoutLine: {'line': b'writing aruco_finder.egg-info/PKG-INFO\n'}
+[0.947044] (aruco_finder) StdoutLine: {'line': b'writing dependency_links to aruco_finder.egg-info/dependency_links.txt\n'}
+[0.948858] (aruco_finder) StdoutLine: {'line': b'writing top-level names to aruco_finder.egg-info/top_level.txt\n'}
+[0.951042] (aruco_finder) StdoutLine: {'line': b"reading manifest file 'aruco_finder.egg-info/SOURCES.txt'\n"}
+[0.953598] (aruco_finder) StdoutLine: {'line': b"writing manifest file 'aruco_finder.egg-info/SOURCES.txt'\n"}
+[0.989595] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_generator_c\x1b[0m\n'}
+[1.005841] (theora_webcams) StdoutLine: {'line': b'[  1%] Built target theora_webcams__cpp\n'}
+[1.010309] (-) TimerEvent: {}
+[1.015621] (aruco_finder) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_aruco_finder_egg\n'}
+[1.028104] (theora_webcams) StdoutLine: {'line': b'[ 12%] Built target theora_webcams__rosidl_generator_c\n'}
+[1.033700] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.049076] (aruco_finder) CommandEnded: {'returncode': 0}
+[1.052685] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.055623] (theora_webcams) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_theora_webcams\n'}
+[1.082386] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.087895] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.098000] (theora_webcams) StdoutLine: {'line': b'[ 24%] Built target theora_webcams__rosidl_typesupport_cpp\n'}
+[1.110561] (-) TimerEvent: {}
+[1.114014] (theora_webcams) StdoutLine: {'line': b'[ 35%] Built target theora_webcams__rosidl_typesupport_fastrtps_cpp\n'}
+[1.128953] (theora_webcams) StdoutLine: {'line': b'[ 47%] Built target theora_webcams__rosidl_typesupport_introspection_cpp\n'}
+[1.132039] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.138647] (theora_webcams) StdoutLine: {'line': b'[ 58%] Built target theora_webcams__rosidl_typesupport_fastrtps_c\n'}
+[1.154828] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_c\x1b[0m\n'}
+[1.174594] (theora_webcams) StdoutLine: {'line': b'[ 70%] Built target theora_webcams__rosidl_typesupport_introspection_c\n'}
+[1.185795] (theora_webcams) StdoutLine: {'line': b'[ 82%] Built target theora_webcams__rosidl_typesupport_c\n'}
+[1.210744] (-) TimerEvent: {}
+[1.227265] (theora_webcams) StdoutLine: {'line': b'[ 82%] Built target theora_webcams\n'}
+[1.265973] (theora_webcams) StdoutLine: {'line': b'[ 83%] Built target theora_webcams__py\n'}
+[1.283943] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_generator_py\x1b[0m\n'}
+[1.311333] (-) TimerEvent: {}
+[1.317391] (theora_webcams) StdoutLine: {'line': b'[ 93%] Built target theora_webcams__rosidl_generator_py\n'}
+[1.338816] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.361820] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.376170] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.379172] (theora_webcams) StdoutLine: {'line': b'[ 95%] Built target theora_webcams__rosidl_typesupport_introspection_c__pyext\n'}
+[1.390374] (theora_webcams) StdoutLine: {'line': b'[ 97%] Built target theora_webcams__rosidl_typesupport_c__pyext\n'}
+[1.405039] (theora_webcams) StdoutLine: {'line': b'[100%] Built target theora_webcams__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.411417] (-) TimerEvent: {}
+[1.433031] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'install'}
+[1.444044] (aruco_finder) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/urc/new-GUI/build/aruco_finder'], 'cwd': '/home/urc/new-GUI/build/aruco_finder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/aruco_finder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.453897] (aruco_finder) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.456499] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/rosidl_interfaces/aruco_finder\n'}
+[1.456645] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.456747] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.456844] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.h\n'}
+[1.456939] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.h\n'}
+[1.457033] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.457193] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.462373] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.c\n'}
+[1.462763] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.h\n'}
+[1.462934] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.h\n'}
+[1.463090] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.h\n'}
+[1.463243] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.h\n'}
+[1.463452] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.h\n'}
+[1.463621] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.h\n'}
+[1.463771] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.c\n'}
+[1.467823] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.sh\n'}
+[1.468162] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.dsv\n'}
+[1.476696] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_c.so\n'}
+[1.476924] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.477063] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.477204] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.477345] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.477482] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_c.h\n'}
+[1.477620] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_c.h\n'}
+[1.477758] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_c.so\n'}
+[1.477921] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.478061] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.478202] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.478338] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.478474] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_c.h\n'}
+[1.478619] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.c\n'}
+[1.478754] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.c\n'}
+[1.478889] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_c.h\n'}
+[1.479027] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_c.so\n'}
+[1.494213] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_c.so\n'}
+[1.495284] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.496239] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.501216] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.hpp\n'}
+[1.501930] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.hpp\n'}
+[1.502572] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.503453] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__builder.hpp\n'}
+[1.503899] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.hpp\n'}
+[1.504248] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__traits.hpp\n'}
+[1.504549] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__builder.hpp\n'}
+[1.504802] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.hpp\n'}
+[1.505022] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__traits.hpp\n'}
+[1.505346] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.505630] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.506015] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.506237] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.506506] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.506714] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.506897] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/dds_fastrtps\n'}
+[1.508732] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.509129] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.509304] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.509795] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.509976] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.cpp\n'}
+[1.510128] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.510284] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.cpp\n'}
+[1.510557] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.512026] (-) TimerEvent: {}
+[1.513596] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_cpp.so\n'}
+[1.515533] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_cpp.so\n'}
+[1.516033] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.sh\n'}
+[1.516328] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.dsv\n'}
+[1.517406] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info\n'}
+[1.517832] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.518175] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.518507] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.518825] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.519282] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder\n'}
+[1.519814] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg\n'}
+[1.520258] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list.py\n'}
+[1.520424] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/__init__.py\n'}
+[1.520570] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list_s.c\n'}
+[1.520715] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker.py\n'}
+[1.520859] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_s.c\n'}
+[1.521015] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/libaruco_finder__rosidl_generator_py.so\n'}
+[1.521243] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/__init__.py\n'}
+[1.521432] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.521617] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.521810] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.522015] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_c.c\n'}
+[1.522216] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.522402] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.567576] (aruco_finder) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder'...\n"}
+[1.567923] (aruco_finder) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg'...\n"}
+[1.575498] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.576737] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.577790] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.578935] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_py.so\n'}
+[1.579684] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.idl\n'}
+[1.579976] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.idl\n'}
+[1.580282] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.msg\n'}
+[1.580562] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.msg\n'}
+[1.581170] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/package_run_dependencies/aruco_finder\n'}
+[1.582323] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/parent_prefix_path/aruco_finder\n'}
+[1.582612] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.sh\n'}
+[1.582812] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.dsv\n'}
+[1.583005] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.sh\n'}
+[1.583186] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.dsv\n'}
+[1.583366] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.bash\n'}
+[1.583638] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.sh\n'}
+[1.583872] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.zsh\n'}
+[1.584131] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.dsv\n'}
+[1.584427] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.dsv\n'}
+[1.585190] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/packages/aruco_finder\n'}
+[1.585727] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport.cmake\n'}
+[1.585945] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.586340] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.586535] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.586770] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.586967] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.587201] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport.cmake\n'}
+[1.587383] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.587634] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cppExport.cmake\n'}
+[1.587889] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.588292] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.588600] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.588840] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.589143] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport.cmake\n'}
+[1.589421] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.589734] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport.cmake\n'}
+[1.590009] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.590340] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake-extras.cmake\n'}
+[1.590585] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.590819] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.591123] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.591476] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.591721] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.592003] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.592262] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig.cmake\n'}
+[1.592454] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig-version.cmake\n'}
+[1.592679] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.xml\n'}
+[1.600516] (aruco_finder) CommandEnded: {'returncode': 0}
+[1.612529] (-) TimerEvent: {}
+[1.634404] (theora_webcams) StdoutLine: {'line': b'running egg_info\n'}
+[1.635126] (theora_webcams) StdoutLine: {'line': b'writing theora_webcams.egg-info/PKG-INFO\n'}
+[1.635507] (theora_webcams) StdoutLine: {'line': b'writing dependency_links to theora_webcams.egg-info/dependency_links.txt\n'}
+[1.635721] (theora_webcams) StdoutLine: {'line': b'writing top-level names to theora_webcams.egg-info/top_level.txt\n'}
+[1.639865] (theora_webcams) StdoutLine: {'line': b"reading manifest file 'theora_webcams.egg-info/SOURCES.txt'\n"}
+[1.640227] (theora_webcams) StdoutLine: {'line': b"writing manifest file 'theora_webcams.egg-info/SOURCES.txt'\n"}
+[1.676333] (theora_webcams) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_theora_webcams_egg\n'}
+[1.716802] (-) TimerEvent: {}
+[1.723104] (gui_window) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/gui_window', 'build', '--build-base', '/home/urc/new-GUI/build/gui_window/build', 'install', '--record', '/home/urc/new-GUI/build/gui_window/install.log', '--single-version-externally-managed'], 'cwd': '/home/urc/new-GUI/src/gui_window', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'urc', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/urc', 'OLDPWD': '/home/urc', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1670', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'urc', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'urc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AYD1D2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.215', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/urc/new-GUI/build/gui_window', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.728253] (theora_webcams) CommandEnded: {'returncode': 0}
+[1.817423] (-) TimerEvent: {}
+[1.917725] (-) TimerEvent: {}
+[1.958086] (aruco_finder) JobEnded: {'identifier': 'aruco_finder', 'rc': 0}
+[2.000910] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'install'}
+[2.001458] (theora_webcams) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/urc/new-GUI/build/theora_webcams'], 'cwd': '/home/urc/new-GUI/build/theora_webcams', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/theora_webcams'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.015115] (theora_webcams) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.016423] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/ament_index/resource_index/rosidl_interfaces/theora_webcams\n'}
+[2.016677] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.016894] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.017133] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/video_format.h\n'}
+[2.017302] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/video_format_list.h\n'}
+[2.017453] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/status.h\n'}
+[2.017625] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.017826] (-) TimerEvent: {}
+[2.018136] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.018423] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__functions.h\n'}
+[2.018673] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__type_support.h\n'}
+[2.018958] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__type_support.h\n'}
+[2.019113] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__functions.h\n'}
+[2.019248] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__functions.c\n'}
+[2.019839] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__struct.h\n'}
+[2.020060] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__functions.c\n'}
+[2.020458] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__type_support.h\n'}
+[2.020630] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__type_support.h\n'}
+[2.020980] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__functions.h\n'}
+[2.021150] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__struct.h\n'}
+[2.021466] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__struct.h\n'}
+[2.021710] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__functions.h\n'}
+[2.021895] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__functions.h\n'}
+[2.022140] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__functions.c\n'}
+[2.022251] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__functions.c\n'}
+[2.022346] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__struct.h\n'}
+[2.022566] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__functions.c\n'}
+[2.022675] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__type_support.h\n'}
+[2.022877] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__struct.h\n'}
+[2.022985] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/resolution.h\n'}
+[2.023182] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/framerate.h\n'}
+[2.023292] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.023596] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/get_resolutions.h\n'}
+[2.023708] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/get_exposure_bounds.h\n'}
+[2.023802] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/change_video.h\n'}
+[2.023995] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.024202] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__functions.h\n'}
+[2.024367] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__type_support.h\n'}
+[2.024591] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__functions.c\n'}
+[2.024726] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__struct.h\n'}
+[2.024905] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__functions.c\n'}
+[2.025111] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__functions.c\n'}
+[2.025217] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__type_support.h\n'}
+[2.025432] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__struct.h\n'}
+[2.025543] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__struct.h\n'}
+[2.025772] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__functions.h\n'}
+[2.025880] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__type_support.h\n'}
+[2.025986] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__struct.h\n'}
+[2.026171] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__functions.c\n'}
+[2.026278] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__functions.h\n'}
+[2.027621] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__functions.h\n'}
+[2.027768] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__type_support.h\n'}
+[2.027871] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/set_exposure.h\n'}
+[2.027968] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/library_path.sh\n'}
+[2.028063] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/library_path.dsv\n'}
+[2.028157] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_generator_c.so\n'}
+[2.028250] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.028380] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.028477] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.028570] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.028662] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__rosidl_typesupport_fastrtps_c.h\n'}
+[2.028754] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__rosidl_typesupport_fastrtps_c.h\n'}
+[2.028846] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030193] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030333] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030436] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.030533] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.030627] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030731] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030826] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030918] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__rosidl_typesupport_fastrtps_c.h\n'}
+[2.031011] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_fastrtps_c.so\n'}
+[2.031103] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.031203] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.031300] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.031436] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.034037] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__rosidl_typesupport_introspection_c.h\n'}
+[2.034226] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__rosidl_typesupport_introspection_c.h\n'}
+[2.034333] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__type_support.c\n'}
+[2.034452] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__rosidl_typesupport_introspection_c.h\n'}
+[2.034550] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__type_support.c\n'}
+[2.034645] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__rosidl_typesupport_introspection_c.h\n'}
+[2.034741] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__type_support.c\n'}
+[2.034889] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__rosidl_typesupport_introspection_c.h\n'}
+[2.035018] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__type_support.c\n'}
+[2.035142] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__type_support.c\n'}
+[2.035267] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.035474] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.035679] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__rosidl_typesupport_introspection_c.h\n'}
+[2.035815] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__rosidl_typesupport_introspection_c.h\n'}
+[2.035936] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__type_support.c\n'}
+[2.036054] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__rosidl_typesupport_introspection_c.h\n'}
+[2.036174] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__rosidl_typesupport_introspection_c.h\n'}
+[2.036292] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__type_support.c\n'}
+[2.036410] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__type_support.c\n'}
+[2.036578] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__type_support.c\n'}
+[2.039493] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_introspection_c.so\n'}
+[2.039793] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_c.so\n'}
+[2.039917] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.040036] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.040145] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/video_format.hpp\n'}
+[2.040252] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/video_format_list.hpp\n'}
+[2.040880] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/resolution.hpp\n'}
+[2.040993] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/status.hpp\n'}
+[2.041128] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.041244] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__struct.hpp\n'}
+[2.041360] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__struct.hpp\n'}
+[2.041474] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__traits.hpp\n'}
+[2.041587] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__builder.hpp\n'}
+[2.041697] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__traits.hpp\n'}
+[2.041825] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__struct.hpp\n'}
+[2.041939] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__struct.hpp\n'}
+[2.042047] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__builder.hpp\n'}
+[2.042155] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__struct.hpp\n'}
+[2.042263] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__builder.hpp\n'}
+[2.042421] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__builder.hpp\n'}
+[2.042502] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__builder.hpp\n'}
+[2.042571] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__traits.hpp\n'}
+[2.042859] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__traits.hpp\n'}
+[2.042932] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__traits.hpp\n'}
+[2.043004] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/framerate.hpp\n'}
+[2.043278] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.043347] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/get_resolutions.hpp\n'}
+[2.043466] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/set_exposure.hpp\n'}
+[2.043572] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.043665] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__struct.hpp\n'}
+[2.043757] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__traits.hpp\n'}
+[2.043922] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__builder.hpp\n'}
+[2.044026] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__struct.hpp\n'}
+[2.044128] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__builder.hpp\n'}
+[2.044221] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__builder.hpp\n'}
+[2.044314] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__traits.hpp\n'}
+[2.044406] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__builder.hpp\n'}
+[2.044498] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__traits.hpp\n'}
+[2.044590] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__traits.hpp\n'}
+[2.044681] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__struct.hpp\n'}
+[2.044774] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__struct.hpp\n'}
+[2.044865] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/change_video.hpp\n'}
+[2.045065] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/get_exposure_bounds.hpp\n'}
+[2.045230] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.045363] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.045579] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.045677] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.045786] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.045880] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.045993] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046088] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046182] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046274] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/dds_fastrtps\n'}
+[2.046366] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.046458] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.046550] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046642] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046734] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046826] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.046953] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/dds_fastrtps\n'}
+[2.047087] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.047209] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams\n'}
+[2.047320] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg\n'}
+[2.047482] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail\n'}
+[2.047620] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.047714] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.047808] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.047909] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.048001] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.048094] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/resolution__type_support.cpp\n'}
+[2.048187] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format__type_support.cpp\n'}
+[2.048278] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/status__type_support.cpp\n'}
+[2.048370] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/framerate__type_support.cpp\n'}
+[2.048462] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/msg/detail/video_format_list__type_support.cpp\n'}
+[2.048554] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv\n'}
+[2.048645] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail\n'}
+[2.048961] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.049107] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.049237] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__type_support.cpp\n'}
+[2.049434] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_resolutions__type_support.cpp\n'}
+[2.049540] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/get_exposure_bounds__type_support.cpp\n'}
+[2.049633] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.049725] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/change_video__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.049816] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/include/theora_webcams/theora_webcams/srv/detail/set_exposure__type_support.cpp\n'}
+[2.049907] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_introspection_cpp.so\n'}
+[2.049998] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_typesupport_cpp.so\n'}
+[2.050089] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/pythonpath.sh\n'}
+[2.050180] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/pythonpath.dsv\n'}
+[2.050281] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams-0.0.0-py3.10.egg-info\n'}
+[2.050378] (theora_webcams) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.050470] (theora_webcams) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.050562] (theora_webcams) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.050653] (theora_webcams) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.050744] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams\n'}
+[2.050835] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/_theora_webcams_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.050927] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg\n'}
+[2.051018] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_resolution.py\n'}
+[2.051109] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_resolution_s.c\n'}
+[2.051201] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_status.py\n'}
+[2.051291] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_video_format_s.c\n'}
+[2.051382] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/__init__.py\n'}
+[2.051527] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_video_format_list.py\n'}
+[2.051620] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_video_format.py\n'}
+[2.051713] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_framerate_s.c\n'}
+[2.051827] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_status_s.c\n'}
+[2.051921] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_video_format_list_s.c\n'}
+[2.052014] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg/_framerate.py\n'}
+[2.052106] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.052215] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/__init__.py\n'}
+[2.052307] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/_theora_webcams_s.ep.rosidl_typesupport_c.c\n'}
+[2.052406] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/libtheora_webcams__rosidl_generator_py.so\n'}
+[2.052498] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.052593] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv\n'}
+[2.052686] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_get_exposure_bounds.py\n'}
+[2.052778] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_get_exposure_bounds_s.c\n'}
+[2.052870] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_change_video_s.c\n'}
+[2.052962] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_set_exposure.py\n'}
+[2.053054] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_get_resolutions.py\n'}
+[2.053151] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_change_video.py\n'}
+[2.053244] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_get_resolutions_s.c\n'}
+[2.053337] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/__init__.py\n'}
+[2.053429] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv/_set_exposure_s.c\n'}
+[2.053520] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/_theora_webcams_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.053613] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.092013] (theora_webcams) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams'...\n"}
+[2.092352] (theora_webcams) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/msg'...\n"}
+[2.092567] (theora_webcams) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/srv'...\n"}
+[2.099955] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.100359] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.100762] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages/theora_webcams/theora_webcams_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.101169] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/lib/libtheora_webcams__rosidl_generator_py.so\n'}
+[2.101388] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Framerate.idl\n'}
+[2.101515] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Resolution.idl\n'}
+[2.101596] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Status.idl\n'}
+[2.101798] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/VideoFormat.idl\n'}
+[2.101996] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/VideoFormatList.idl\n'}
+[2.102181] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/ChangeVideo.idl\n'}
+[2.102784] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetExposureBounds.idl\n'}
+[2.103452] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetResolutions.idl\n'}
+[2.103634] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/SetExposure.idl\n'}
+[2.103868] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Framerate.msg\n'}
+[2.104087] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Resolution.msg\n'}
+[2.104210] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/Status.msg\n'}
+[2.104397] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/VideoFormat.msg\n'}
+[2.104530] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/msg/VideoFormatList.msg\n'}
+[2.104612] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/ChangeVideo.srv\n'}
+[2.104878] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/ChangeVideo_Request.msg\n'}
+[2.105096] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/ChangeVideo_Response.msg\n'}
+[2.105295] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetExposureBounds.srv\n'}
+[2.105403] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetExposureBounds_Request.msg\n'}
+[2.105524] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetExposureBounds_Response.msg\n'}
+[2.105642] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetResolutions.srv\n'}
+[2.105756] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetResolutions_Request.msg\n'}
+[2.105876] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/GetResolutions_Response.msg\n'}
+[2.106076] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/SetExposure.srv\n'}
+[2.106199] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/SetExposure_Request.msg\n'}
+[2.106341] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/srv/SetExposure_Response.msg\n'}
+[2.106473] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/ament_index/resource_index/package_run_dependencies/theora_webcams\n'}
+[2.106587] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/ament_index/resource_index/parent_prefix_path/theora_webcams\n'}
+[2.106688] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/ament_prefix_path.sh\n'}
+[2.106829] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/ament_prefix_path.dsv\n'}
+[2.106959] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/path.sh\n'}
+[2.107368] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/environment/path.dsv\n'}
+[2.107639] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/local_setup.bash\n'}
+[2.107753] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/local_setup.sh\n'}
+[2.107838] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/local_setup.zsh\n'}
+[2.107950] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/local_setup.dsv\n'}
+[2.108036] (theora_webcams) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/package.dsv\n'}
+[2.108137] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/ament_index/resource_index/packages/theora_webcams\n'}
+[2.108303] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_generator_cExport.cmake\n'}
+[2.108385] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.108445] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.108565] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.108675] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.108782] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.109495] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_cExport.cmake\n'}
+[2.109693] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.110077] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_generator_cppExport.cmake\n'}
+[2.110741] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.110972] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.111474] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.127910] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.128080] (-) TimerEvent: {}
+[2.128202] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_cppExport.cmake\n'}
+[2.128310] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcams__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.128408] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_generator_pyExport.cmake\n'}
+[2.128502] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/export_theora_webcams__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.128594] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/rosidl_cmake-extras.cmake\n'}
+[2.128686] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.128777] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.128904] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.129000] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.129091] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.129182] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.129272] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcamsConfig.cmake\n'}
+[2.129362] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake/theora_webcamsConfig-version.cmake\n'}
+[2.129452] (theora_webcams) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/theora_webcams/share/theora_webcams/package.xml\n'}
+[2.129544] (theora_webcams) CommandEnded: {'returncode': 0}
+[2.198028] (gui_window) StdoutLine: {'line': b'running egg_info\n'}
+[2.198851] (gui_window) StdoutLine: {'line': b'writing ../../build/gui_window/gui_window.egg-info/PKG-INFO\n'}
+[2.198992] (gui_window) StdoutLine: {'line': b'writing dependency_links to ../../build/gui_window/gui_window.egg-info/dependency_links.txt\n'}
+[2.199080] (gui_window) StdoutLine: {'line': b'writing entry points to ../../build/gui_window/gui_window.egg-info/entry_points.txt\n'}
+[2.199162] (gui_window) StdoutLine: {'line': b'writing requirements to ../../build/gui_window/gui_window.egg-info/requires.txt\n'}
+[2.199238] (gui_window) StdoutLine: {'line': b'writing top-level names to ../../build/gui_window/gui_window.egg-info/top_level.txt\n'}
+[2.203344] (gui_window) StdoutLine: {'line': b"reading manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'\n"}
+[2.208903] (gui_window) StdoutLine: {'line': b"writing manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'\n"}
+[2.209084] (gui_window) StdoutLine: {'line': b'running build\n'}
+[2.209290] (gui_window) StdoutLine: {'line': b'running build_py\n'}
+[2.214831] (gui_window) StdoutLine: {'line': b'running install\n'}
+[2.215063] (gui_window) StdoutLine: {'line': b'running install_lib\n'}
+[2.219641] (gui_window) StdoutLine: {'line': b'running install_data\n'}
+[2.220249] (gui_window) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.222306] (gui_window) StdoutLine: {'line': b"removing '/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.222749] (gui_window) StdoutLine: {'line': b'Copying ../../build/gui_window/gui_window.egg-info to /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info\n'}
+[2.224271] (gui_window) StdoutLine: {'line': b'running install_scripts\n'}
+[2.228226] (-) TimerEvent: {}
+[2.253987] (gui_window) StdoutLine: {'line': b'Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window\n'}
+[2.256485] (gui_window) StdoutLine: {'line': b"writing list of installed files to '/home/urc/new-GUI/build/gui_window/install.log'\n"}
+[2.293481] (gui_window) CommandEnded: {'returncode': 0}
+[2.329020] (-) TimerEvent: {}
+[2.373487] (gui_window) JobEnded: {'identifier': 'gui_window', 'rc': 0}
+[2.429643] (-) TimerEvent: {}
+[2.529895] (-) TimerEvent: {}
+[2.618748] (theora_webcams) JobEnded: {'identifier': 'theora_webcams', 'rc': 0}
+[2.620049] (-) EventReactorShutdown: {}

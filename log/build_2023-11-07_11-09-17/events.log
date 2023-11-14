@@ -1,0 +1,339 @@
+[0.000000] (-) TimerEvent: {}
+[0.000950] (geographic_msgs) JobQueued: {'identifier': 'geographic_msgs', 'dependencies': OrderedDict()}
+[0.001065] (gui_window) JobQueued: {'identifier': 'gui_window', 'dependencies': OrderedDict()}
+[0.001131] (geodesy) JobQueued: {'identifier': 'geodesy', 'dependencies': OrderedDict([('geographic_msgs', '/home/urc/new-GUI/install/geographic_msgs')])}
+[0.001186] (geographic_info) JobQueued: {'identifier': 'geographic_info', 'dependencies': OrderedDict([('geographic_msgs', '/home/urc/new-GUI/install/geographic_msgs'), ('geodesy', '/home/urc/new-GUI/install/geodesy')])}
+[0.001233] (geographic_msgs) JobStarted: {'identifier': 'geographic_msgs'}
+[0.091289] (gui_window) JobStarted: {'identifier': 'gui_window'}
+[0.099162] (-) TimerEvent: {}
+[0.200555] (-) TimerEvent: {}
+[0.205427] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'cmake'}
+[0.207001] (geographic_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_msgs'], 'cwd': '/home/urc/new-GUI/build/geographic_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1491'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ACY7D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geographic_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.226641] (geographic_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300754] (-) TimerEvent: {}
+[0.402162] (-) TimerEvent: {}
+[0.438519] (geographic_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.445588] (geographic_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.504001] (-) TimerEvent: {}
+[0.531619] (geographic_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.533983] (geographic_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.538738] (geographic_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.598155] (geographic_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.610458] (-) TimerEvent: {}
+[0.648500] (geographic_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.711508] (-) TimerEvent: {}
+[0.813571] (-) TimerEvent: {}
+[0.916785] (-) TimerEvent: {}
+[1.017972] (-) TimerEvent: {}
+[1.122143] (-) TimerEvent: {}
+[1.224773] (-) TimerEvent: {}
+[1.272044] (geographic_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.287928] (gui_window) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/urc/new-GUI/build/gui_window/build', '--no-deps', 'install_data'], 'cwd': '/home/urc/new-GUI/build/gui_window', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'urc', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/urc', 'OLDPWD': '/home/urc', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1491', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'urc', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'urc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ACY7D2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.165', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/urc/new-GUI/build/gui_window', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.324886] (-) TimerEvent: {}
+[1.425353] (-) TimerEvent: {}
+[1.525914] (-) TimerEvent: {}
+[1.626589] (-) TimerEvent: {}
+[1.696408] (geographic_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.727460] (-) TimerEvent: {}
+[1.744548] (gui_window) StdoutLine: {'line': b'running develop\n'}
+[1.827955] (-) TimerEvent: {}
+[1.928318] (-) TimerEvent: {}
+[2.028953] (gui_window) StdoutLine: {'line': b'running egg_info\n'}
+[2.033451] (-) TimerEvent: {}
+[2.033579] (gui_window) StdoutLine: {'line': b'writing gui_window.egg-info/PKG-INFO\n'}
+[2.034867] (gui_window) StdoutLine: {'line': b'writing dependency_links to gui_window.egg-info/dependency_links.txt\n'}
+[2.034978] (gui_window) StdoutLine: {'line': b'writing entry points to gui_window.egg-info/entry_points.txt\n'}
+[2.035076] (gui_window) StdoutLine: {'line': b'writing requirements to gui_window.egg-info/requires.txt\n'}
+[2.035172] (gui_window) StdoutLine: {'line': b'writing top-level names to gui_window.egg-info/top_level.txt\n'}
+[2.035293] (gui_window) StdoutLine: {'line': b"reading manifest file 'gui_window.egg-info/SOURCES.txt'\n"}
+[2.037360] (gui_window) StdoutLine: {'line': b"writing manifest file 'gui_window.egg-info/SOURCES.txt'\n"}
+[2.037518] (gui_window) StdoutLine: {'line': b'running build_ext\n'}
+[2.037684] (gui_window) StdoutLine: {'line': b'Creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui-window.egg-link (link to .)\n'}
+[2.038887] (gui_window) StdoutLine: {'line': b'Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window\n'}
+[2.039377] (gui_window) StdoutLine: {'line': b'\n'}
+[2.039508] (gui_window) StdoutLine: {'line': b'Installed /home/urc/new-GUI/build/gui_window\n'}
+[2.039737] (gui_window) StdoutLine: {'line': b'running install_data\n'}
+[2.080769] (gui_window) CommandEnded: {'returncode': 0}
+[2.133919] (-) TimerEvent: {}
+[2.193255] (gui_window) JobEnded: {'identifier': 'gui_window', 'rc': 0}
+[2.234350] (-) TimerEvent: {}
+[2.247352] (geographic_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.280286] (geographic_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.285028] (geographic_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.328524] (geographic_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.329643] (geographic_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.330488] (geographic_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.331301] (geographic_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.336505] (-) TimerEvent: {}
+[2.354795] (geographic_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.437390] (-) TimerEvent: {}
+[2.480487] (geographic_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.484776] (geographic_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.513761] (geographic_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.538101] (-) TimerEvent: {}
+[2.576377] (geographic_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.581088] (geographic_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/urc/new-GUI/build/geographic_msgs\n'}
+[2.592666] (geographic_msgs) CommandEnded: {'returncode': 0}
+[2.593319] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'build'}
+[2.594936] (geographic_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/geographic_msgs', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/geographic_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1491'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ACY7D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geographic_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.638925] (-) TimerEvent: {}
+[2.641901] (geographic_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.652935] (geographic_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.662994] (geographic_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_geographic_msgs\n'}
+[2.739130] (-) TimerEvent: {}
+[2.839586] (-) TimerEvent: {}
+[2.939995] (-) TimerEvent: {}
+[3.040541] (-) TimerEvent: {}
+[3.141139] (-) TimerEvent: {}
+[3.168556] (geographic_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.171079] (geographic_msgs) StdoutLine: {'line': b'creating geographic_msgs.egg-info\n'}
+[3.171268] (geographic_msgs) StdoutLine: {'line': b'writing geographic_msgs.egg-info/PKG-INFO\n'}
+[3.171372] (geographic_msgs) StdoutLine: {'line': b'writing dependency_links to geographic_msgs.egg-info/dependency_links.txt\n'}
+[3.171469] (geographic_msgs) StdoutLine: {'line': b'writing top-level names to geographic_msgs.egg-info/top_level.txt\n'}
+[3.171563] (geographic_msgs) StdoutLine: {'line': b"writing manifest file 'geographic_msgs.egg-info/SOURCES.txt'\n"}
+[3.175340] (geographic_msgs) StdoutLine: {'line': b"reading manifest file 'geographic_msgs.egg-info/SOURCES.txt'\n"}
+[3.177724] (geographic_msgs) StdoutLine: {'line': b"writing manifest file 'geographic_msgs.egg-info/SOURCES.txt'\n"}
+[3.215533] (geographic_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_geographic_msgs_egg\n'}
+[3.242085] (-) TimerEvent: {}
+[3.279635] (geographic_msgs) StdoutLine: {'line': b'[  6%] Built target geographic_msgs__cpp\n'}
+[3.296901] (geographic_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.297392] (geographic_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.299729] (geographic_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.342255] (-) TimerEvent: {}
+[3.412033] (geographic_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_generator_c.dir/rosidl_generator_c/geographic_msgs/msg/detail/geo_point__functions.c.o\x1b[0m\n'}
+[3.442534] (-) TimerEvent: {}
+[3.543029] (-) TimerEvent: {}
+[3.644137] (-) TimerEvent: {}
+[3.715702] (geographic_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libgeographic_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.744295] (-) TimerEvent: {}
+[3.806365] (geographic_msgs) StdoutLine: {'line': b'[ 22%] Built target geographic_msgs__rosidl_generator_c\n'}
+[3.823983] (geographic_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.844445] (-) TimerEvent: {}
+[3.910753] (geographic_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/geographic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/geographic_msgs/msg/geo_point__type_support.cpp.o\x1b[0m\n'}
+[3.944581] (-) TimerEvent: {}
+[3.969839] (geographic_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/geographic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/geographic_msgs/msg/detail/geo_point__type_support.cpp.o\x1b[0m\n'}
+[3.992563] (geographic_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/geographic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/geographic_msgs/msg/detail/dds_fastrtps/geo_point__type_support.cpp.o\x1b[0m\n'}
+[4.046263] (-) TimerEvent: {}
+[4.147243] (-) TimerEvent: {}
+[4.247679] (-) TimerEvent: {}
+[4.348638] (-) TimerEvent: {}
+[4.451217] (-) TimerEvent: {}
+[4.522695] (geographic_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libgeographic_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.532371] (geographic_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/geographic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/geographic_msgs/msg/detail/geo_point__type_support_c.cpp.o\x1b[0m\n'}
+[4.551725] (-) TimerEvent: {}
+[4.590394] (geographic_msgs) StdoutLine: {'line': b'[ 41%] Built target geographic_msgs__rosidl_typesupport_cpp\n'}
+[4.607772] (geographic_msgs) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.652078] (-) TimerEvent: {}
+[4.675584] (geographic_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libgeographic_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.746607] (geographic_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libgeographic_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.752237] (-) TimerEvent: {}
+[4.804289] (geographic_msgs) StdoutLine: {'line': b'[ 51%] Built target geographic_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.817621] (geographic_msgs) StdoutLine: {'line': b'[ 51%] Built target geographic_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.830075] (geographic_msgs) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.852518] (-) TimerEvent: {}
+[4.953074] (-) TimerEvent: {}
+[5.038755] (geographic_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libgeographic_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.053247] (-) TimerEvent: {}
+[5.155413] (-) TimerEvent: {}
+[5.162036] (geographic_msgs) StdoutLine: {'line': b'[ 58%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.211845] (geographic_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/geographic_msgs/msg/detail/geo_point__type_support.c.o\x1b[0m\n'}
+[5.256262] (-) TimerEvent: {}
+[5.289152] (geographic_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libgeographic_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.353327] (geographic_msgs) StdoutLine: {'line': b'[ 64%] Built target geographic_msgs__rosidl_typesupport_introspection_c\n'}
+[5.356522] (-) TimerEvent: {}
+[5.374954] (geographic_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/geographic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/geographic_msgs/msg/geo_point__type_support.cpp.o\x1b[0m\n'}
+[5.413424] (geographic_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libgeographic_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.459530] (-) TimerEvent: {}
+[5.479346] (geographic_msgs) StdoutLine: {'line': b'[ 70%] Built target geographic_msgs__rosidl_typesupport_c\n'}
+[5.502892] (geographic_msgs) StdoutLine: {'line': b'[ 70%] Built target geographic_msgs\n'}
+[5.532177] (geographic_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.560298] (-) TimerEvent: {}
+[5.661791] (-) TimerEvent: {}
+[5.764335] (-) TimerEvent: {}
+[5.865979] (-) TimerEvent: {}
+[5.966775] (-) TimerEvent: {}
+[6.067465] (-) TimerEvent: {}
+[6.170710] (-) TimerEvent: {}
+[6.271585] (-) TimerEvent: {}
+[6.289213] (geographic_msgs) StdoutLine: {'line': b'[ 74%] Built target geographic_msgs__py\n'}
+[6.317724] (geographic_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_generator_py.dir/rosidl_generator_py/geographic_msgs/msg/_geo_point_s.c.o\x1b[0m\n'}
+[6.372322] (-) TimerEvent: {}
+[6.473298] (-) TimerEvent: {}
+[6.490295] (geographic_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/geographic_msgs/libgeographic_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[6.545421] (geographic_msgs) StdoutLine: {'line': b'[ 80%] Built target geographic_msgs__rosidl_generator_py\n'}
+[6.570041] (geographic_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.571966] (geographic_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.573550] (-) TimerEvent: {}
+[6.573937] (geographic_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/geographic_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.675080] (-) TimerEvent: {}
+[6.712040] (geographic_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/geographic_msgs/geographic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.714200] (geographic_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/geographic_msgs/geographic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.720006] (geographic_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/geographic_msgs/geographic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.769894] (geographic_msgs) StdoutLine: {'line': b'[100%] Built target geographic_msgs__rosidl_typesupport_c__pyext\n'}
+[6.774516] (geographic_msgs) StdoutLine: {'line': b'[100%] Built target geographic_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[6.775498] (-) TimerEvent: {}
+[6.781694] (geographic_msgs) StdoutLine: {'line': b'[100%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.796849] (geographic_msgs) CommandEnded: {'returncode': 0}
+[6.869124] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'install'}
+[6.877617] (-) TimerEvent: {}
+[6.879736] (geographic_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/urc/new-GUI/build/geographic_msgs'], 'cwd': '/home/urc/new-GUI/build/geographic_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1491'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ACY7D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geographic_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.889284] (geographic_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.890295] (geographic_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.891205] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/ament_index/resource_index/rosidl_interfaces/geographic_msgs\n'}
+[6.901390] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__functions.h\n'}
+[6.910919] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__struct.h\n'}
+[6.920943] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__type_support.h\n'}
+[6.937955] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/geo_point.h\n'}
+[6.948812] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.963705] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/library_path.sh\n'}
+[6.973731] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/library_path.dsv\n'}
+[6.977793] (-) TimerEvent: {}
+[6.983706] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__rosidl_typesupport_fastrtps_c.h\n'}
+[6.993575] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.003200] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__rosidl_typesupport_introspection_c.h\n'}
+[7.013140] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.025386] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__builder.hpp\n'}
+[7.034639] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__struct.hpp\n'}
+[7.045027] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__traits.hpp\n'}
+[7.056283] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/geo_point.hpp\n'}
+[7.067430] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.077369] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.077926] (-) TimerEvent: {}
+[7.087756] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/include/geographic_msgs/geographic_msgs/msg/detail/geo_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.097886] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/pythonpath.sh\n'}
+[7.108078] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/pythonpath.dsv\n'}
+[7.121164] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs-0.5.6-py3.10.egg-info/PKG-INFO\n'}
+[7.130718] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs-0.5.6-py3.10.egg-info/SOURCES.txt\n'}
+[7.140744] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs-0.5.6-py3.10.egg-info/dependency_links.txt\n'}
+[7.149864] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs-0.5.6-py3.10.egg-info/top_level.txt\n'}
+[7.160022] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/__init__.py\n'}
+[7.170334] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[7.179813] (-) TimerEvent: {}
+[7.180165] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.189371] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/_geographic_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.199531] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.209579] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.220026] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.233000] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/libgeographic_msgs__rosidl_generator_py.so\n'}
+[7.243533] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg/__init__.py\n'}
+[7.255540] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg/_geo_point.py\n'}
+[7.266403] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg/_geo_point_s.c\n'}
+[7.278307] (geographic_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.279637] (geographic_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.279885] (-) TimerEvent: {}
+[7.281017] (geographic_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/geographic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.282323] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/msg/GeoPoint.idl\n'}
+[7.292850] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/msg/GeoPoint.msg\n'}
+[7.303263] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/ament_index/resource_index/package_run_dependencies/geographic_msgs\n'}
+[7.314082] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/ament_index/resource_index/parent_prefix_path/geographic_msgs\n'}
+[7.327788] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/ament_prefix_path.sh\n'}
+[7.340529] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/ament_prefix_path.dsv\n'}
+[7.351073] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/path.sh\n'}
+[7.361450] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/environment/path.dsv\n'}
+[7.374103] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/local_setup.bash\n'}
+[7.380517] (-) TimerEvent: {}
+[7.384590] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/local_setup.sh\n'}
+[7.393782] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/local_setup.zsh\n'}
+[7.403317] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/local_setup.dsv\n'}
+[7.415996] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.dsv\n'}
+[7.426298] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/ament_index/resource_index/packages/geographic_msgs\n'}
+[7.436224] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.446382] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.456093] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.467068] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.477668] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.480667] (-) TimerEvent: {}
+[7.487254] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.498273] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.508615] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgsConfig.cmake\n'}
+[7.517880] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgsConfig-version.cmake\n'}
+[7.530646] (geographic_msgs) StdoutLine: {'line': b'-- Symlinking: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.xml\n'}
+[7.540500] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_generator_c.so\n'}
+[7.541044] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_generator_c.so" to ""\n'}
+[7.541267] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.541730] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.541889] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.542359] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.542511] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_c.so\n'}
+[7.542928] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_c.so" to ""\n'}
+[7.543092] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.543554] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.543711] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.544223] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.544484] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_cpp.so\n'}
+[7.544923] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[7.581474] (-) TimerEvent: {}
+[7.589100] (geographic_msgs) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs'...\n"}
+[7.589290] (geographic_msgs) StdoutLine: {'line': b"Compiling '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/__init__.py'...\n"}
+[7.589464] (geographic_msgs) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg'...\n"}
+[7.589607] (geographic_msgs) StdoutLine: {'line': b"Compiling '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg/__init__.py'...\n"}
+[7.589675] (geographic_msgs) StdoutLine: {'line': b"Compiling '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages/geographic_msgs/msg/_geo_point.py'...\n"}
+[7.595262] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_generator_py.so\n'}
+[7.595813] (geographic_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/urc/new-GUI/install/geographic_msgs/lib/libgeographic_msgs__rosidl_generator_py.so" to ""\n'}
+[7.595967] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_generator_cExport.cmake\n'}
+[7.596720] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.597104] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.597545] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.597992] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.598456] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.598842] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_cExport.cmake\n'}
+[7.599376] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.599766] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_generator_cppExport.cmake\n'}
+[7.600243] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.600704] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.601074] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.601466] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.601839] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[7.602351] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/geographic_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.602739] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_generator_pyExport.cmake\n'}
+[7.603204] (geographic_msgs) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/cmake/export_geographic_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.608237] (geographic_msgs) CommandEnded: {'returncode': 0}
+[7.682677] (-) TimerEvent: {}
+[7.782986] (-) TimerEvent: {}
+[7.883684] (-) TimerEvent: {}
+[7.931413] (geographic_msgs) JobEnded: {'identifier': 'geographic_msgs', 'rc': 0}
+[7.932465] (geodesy) JobStarted: {'identifier': 'geodesy'}
+[7.984547] (-) TimerEvent: {}
+[8.031446] (geodesy) JobProgress: {'identifier': 'geodesy', 'progress': 'cmake'}
+[8.032567] (geodesy) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/new-GUI/src/geographic_info-master/geodesy', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geodesy'], 'cwd': '/home/urc/new-GUI/build/geodesy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/urc/new-GUI/install/geographic_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1491'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ACY7D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/urc/new-GUI/install/geographic_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geodesy'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/urc/new-GUI/install/geographic_msgs')]), 'shell': False}
+[8.084733] (-) TimerEvent: {}
+[8.126251] (geodesy) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[8.185939] (-) TimerEvent: {}
+[8.208288] (geodesy) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[8.224056] (geodesy) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.287093] (-) TimerEvent: {}
+[8.313783] (geodesy) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.335557] (geodesy) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.336966] (geodesy) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.338359] (geodesy) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.344991] (geodesy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.387283] (-) TimerEvent: {}
+[8.469411] (geodesy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.487483] (-) TimerEvent: {}
+[8.493497] (geodesy) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.496498] (geodesy) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.496684] (geodesy) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.511557] (geodesy) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[8.511814] (geodesy) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[8.511923] (geodesy) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[8.512019] (geodesy) StderrLine: {'line': b'  CMake did not find one.\n'}
+[8.512113] (geodesy) StderrLine: {'line': b'\n'}
+[8.512205] (geodesy) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[8.512297] (geodesy) StderrLine: {'line': b'  of the following names:\n'}
+[8.512393] (geodesy) StderrLine: {'line': b'\n'}
+[8.512490] (geodesy) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[8.512587] (geodesy) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[8.512684] (geodesy) StderrLine: {'line': b'\n'}
+[8.512780] (geodesy) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[8.512878] (geodesy) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[8.512975] (geodesy) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[8.513136] (geodesy) StderrLine: {'line': b'  installed.\n'}
+[8.514084] (geodesy) StderrLine: {'line': b'\n'}
+[8.514220] (geodesy) StderrLine: {'line': b'\x1b[0m\n'}
+[8.514377] (geodesy) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.514556] (geodesy) StdoutLine: {'line': b'See also "/home/urc/new-GUI/build/geodesy/CMakeFiles/CMakeOutput.log".\n'}
+[8.518135] (geodesy) CommandEnded: {'returncode': 1}
+[8.582368] (geodesy) JobEnded: {'identifier': 'geodesy', 'rc': 1}
+[8.588612] (-) TimerEvent: {}
+[8.594410] (geographic_info) JobSkipped: {'identifier': 'geographic_info'}
+[8.594504] (-) EventReactorShutdown: {}

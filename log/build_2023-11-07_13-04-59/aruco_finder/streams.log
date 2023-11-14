@@ -1,0 +1,53 @@
+[0.381s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[1.040s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.040s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.040s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.041s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.041s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.041s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.041s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[1.047s] [33mCMake Warning at CMakeLists.txt:237 (find_package):
+[1.047s]   By not providing "Findroscpp.cmake" in CMAKE_MODULE_PATH this project has
+[1.048s]   asked CMake to find a package configuration file provided by "roscpp", but
+[1.048s]   CMake did not find one.
+[1.048s] 
+[1.048s]   Could not find a package configuration file provided by "roscpp" with any
+[1.048s]   of the following names:
+[1.048s] 
+[1.048s]     roscppConfig.cmake
+[1.048s]     roscpp-config.cmake
+[1.048s] 
+[1.048s]   Add the installation prefix of "roscpp" to CMAKE_PREFIX_PATH or set
+[1.049s]   "roscpp_DIR" to a directory containing one of the above files.  If "roscpp"
+[1.049s]   provides a separate development package or SDK, be sure it has been
+[1.049s]   installed.
+[1.049s] 
+[1.049s] [0m
+[1.059s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.160s] [33mCMake Warning at CMakeLists.txt:240 (find_package):
+[1.160s]   By not providing "Findfiducial_msgs.cmake" in CMAKE_MODULE_PATH this
+[1.160s]   project has asked CMake to find a package configuration file provided by
+[1.160s]   "fiducial_msgs", but CMake did not find one.
+[1.160s] 
+[1.160s]   Could not find a package configuration file provided by "fiducial_msgs"
+[1.161s]   with any of the following names:
+[1.161s] 
+[1.161s]     fiducial_msgsConfig.cmake
+[1.161s]     fiducial_msgs-config.cmake
+[1.161s] 
+[1.161s]   Add the installation prefix of "fiducial_msgs" to CMAKE_PREFIX_PATH or set
+[1.161s]   "fiducial_msgs_DIR" to a directory containing one of the above files.  If
+[1.161s]   "fiducial_msgs" provides a separate development package or SDK, be sure it
+[1.161s]   has been installed.
+[1.162s] 
+[1.162s] [0m
+[1.460s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+[1.460s]   rosidl_generate_interfaces() the passed dependency 'fiducial_msgs' has not
+[1.460s]   been found before using find_package()
+[1.460s] Call Stack (most recent call first):
+[1.460s]   CMakeLists.txt:242 (rosidl_generate_interfaces)
+[1.460s] 
+[1.460s] [0m
+[1.465s] -- Configuring incomplete, errors occurred!
+[1.465s] See also "/home/urc/new-GUI/build/aruco_finder/CMakeFiles/CMakeOutput.log".
+[1.526s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder

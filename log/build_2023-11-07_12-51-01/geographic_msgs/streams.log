@@ -1,0 +1,23 @@
+[0.281s] Invoking command in '/home/urc/new-GUI/build/geographic_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/geographic_msgs -- -j4 -l4
+[0.871s] [  9%] Built target geographic_msgs__rosidl_generator_c
+[0.871s] [ 12%] Built target geographic_msgs__cpp
+[0.871s] [ 12%] Built target ament_cmake_python_symlink_geographic_msgs
+[0.871s] [ 22%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c
+[0.871s] [ 32%] Built target geographic_msgs__rosidl_typesupport_introspection_c
+[0.871s] [ 41%] Built target geographic_msgs__rosidl_typesupport_c
+[0.872s] [ 51%] Built target geographic_msgs__rosidl_typesupport_fastrtps_cpp
+[0.872s] [ 61%] Built target geographic_msgs__rosidl_typesupport_introspection_cpp
+[0.872s] [ 70%] Built target geographic_msgs__rosidl_typesupport_cpp
+[0.872s] [ 70%] Built target geographic_msgs
+[0.872s] [ 74%] Built target geographic_msgs__py
+[0.872s] [ 80%] Built target geographic_msgs__rosidl_generator_py
+[0.872s] [ 87%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.873s] [ 93%] Built target geographic_msgs__rosidl_typesupport_c__pyext
+[0.873s] [100%] Built target geographic_msgs__rosidl_typesupport_introspection_c__pyext
+[0.948s] running egg_info
+[0.950s] writing geographic_msgs.egg-info/PKG-INFO
+[0.951s] writing dependency_links to geographic_msgs.egg-info/dependency_links.txt
+[0.952s] writing top-level names to geographic_msgs.egg-info/top_level.txt
+[0.954s] reading manifest file 'geographic_msgs.egg-info/SOURCES.txt'
+[0.955s] writing manifest file 'geographic_msgs.egg-info/SOURCES.txt'
+[0.996s] [100%] Built target ament_cmake_python_build_geographic_msgs_egg

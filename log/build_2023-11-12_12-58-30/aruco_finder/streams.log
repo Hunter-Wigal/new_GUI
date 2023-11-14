@@ -1,0 +1,24 @@
+[0.345s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[0.592s] [  2%] Built target aruco_finder__cpp
+[0.627s] [ 12%] Built target aruco_finder__rosidl_generator_c
+[0.640s] [ 12%] Built target ament_cmake_python_copy_aruco_finder
+[0.788s] [ 23%] Built target aruco_finder__rosidl_typesupport_cpp
+[0.822s] [ 33%] Built target aruco_finder__rosidl_typesupport_fastrtps_cpp
+[0.840s] [ 43%] Built target aruco_finder__rosidl_typesupport_introspection_cpp
+[0.863s] [ 53%] Built target aruco_finder__rosidl_typesupport_fastrtps_c
+[0.991s] [ 64%] Built target aruco_finder__rosidl_typesupport_c
+[1.083s] [ 74%] Built target aruco_finder__rosidl_typesupport_introspection_c
+[1.199s] [ 74%] Built target aruco_finder
+[1.275s] [ 76%] Built target aruco_finder__py
+[1.437s] [ 84%] Built target aruco_finder__rosidl_generator_py
+[1.531s] [ 89%] Built target aruco_finder__rosidl_typesupport_c__pyext
+[1.591s] [ 94%] Built target aruco_finder__rosidl_typesupport_fastrtps_c__pyext
+[1.609s] [100%] Built target aruco_finder__rosidl_typesupport_introspection_c__pyext
+[2.194s] running egg_info
+[2.194s] writing aruco_finder.egg-info/PKG-INFO
+[2.194s] writing dependency_links to aruco_finder.egg-info/dependency_links.txt
+[2.194s] writing top-level names to aruco_finder.egg-info/top_level.txt
+[2.213s] reading manifest file 'aruco_finder.egg-info/SOURCES.txt'
+[2.223s] writing manifest file 'aruco_finder.egg-info/SOURCES.txt'
+[2.330s] [100%] Built target ament_cmake_python_build_aruco_finder_egg
+[2.362s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4

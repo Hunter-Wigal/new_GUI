@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from marker_interfacing/srv/PlanHomeMarker.srv
+// generated code does not contain a copyright notice
+
+
+module marker_interfacing {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request - Remove all Markers, and plan a no_marker Marker for the home position")
+    struct PlanHomeMarker_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Response - T/F")
+    struct PlanHomeMarker_Response {
+      boolean success;
+    };
+  };
+};

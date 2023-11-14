@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from science_servo_control/srv/SpinCentrifuge.srv
+// generated code does not contain a copyright notice
+
+
+module science_servo_control {
+  module srv {
+    @verbatim (language="comment", text=
+      "No request params; spins a set amount")
+    struct SpinCentrifuge_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "No response")
+    struct SpinCentrifuge_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

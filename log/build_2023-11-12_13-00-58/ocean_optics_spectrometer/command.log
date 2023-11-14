@@ -1,0 +1,1 @@
+Invoking command in '/home/urc/new-GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/ocean_optics_spectrometer-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/ocean_optics_spectrometer

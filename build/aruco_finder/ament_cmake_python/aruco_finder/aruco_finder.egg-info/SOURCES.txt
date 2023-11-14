@@ -1,0 +1,9 @@
+setup.py
+aruco_finder/__init__.py
+aruco_finder.egg-info/PKG-INFO
+aruco_finder.egg-info/SOURCES.txt
+aruco_finder.egg-info/dependency_links.txt
+aruco_finder.egg-info/top_level.txt
+aruco_finder/msg/__init__.py
+aruco_finder/msg/_found_marker.py
+aruco_finder/msg/_found_marker_list.py

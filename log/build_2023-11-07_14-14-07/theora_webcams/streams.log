@@ -1,0 +1,30 @@
+[0.117s] Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4
+[0.172s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.396s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.494s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.498s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.505s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.615s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.756s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.775s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.962s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.280s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.524s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.538s] -- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)
+[1.595s] -- Found camera_info_manager: 3.1.7 (/opt/ros/humble/share/camera_info_manager/cmake)
+[2.162s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.640s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.301s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.332s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.362s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.362s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.362s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.483s] [31mCMake Error at CMakeLists.txt:275 (ament_target_dependincies):
+[3.483s]   Unknown CMake command "ament_target_dependincies".
+[3.483s] 
+[3.483s] [0m
+[3.483s] -- Configuring incomplete, errors occurred!
+[3.483s] See also "/home/urc/new-GUI/build/theora_webcams/CMakeFiles/CMakeOutput.log".
+[3.498s] gmake: *** [Makefile:2516: cmake_check_build_system] Error 1
+[3.500s] Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '2': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4

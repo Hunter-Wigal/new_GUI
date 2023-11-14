@@ -1,0 +1,2 @@
+# Request - Remove Marker(s) with specified marker_id -- NOT the aruco_id
+uint8 marker_id

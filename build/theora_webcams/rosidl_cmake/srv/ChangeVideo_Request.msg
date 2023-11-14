@@ -1,0 +1,6 @@
+int32 width
+int32 height
+int32 fps_num
+int32 fps_den
+bool start
+bool force_restart

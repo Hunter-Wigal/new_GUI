@@ -1,0 +1,1 @@
+sensor_msgs;geometry_msgs;geographic_msgs;marker_interfacing;theora_webcams;aruco_finder;python3-pyqt5.qtwebengine;python3-pyproj;python3-matplotlib;image_transport;theora_image_transport;rosidl_default_runtime;ament_lint_auto;ament_lint_common

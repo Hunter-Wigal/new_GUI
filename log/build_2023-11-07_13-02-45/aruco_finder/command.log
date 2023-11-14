@@ -1,0 +1,2 @@
+Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder

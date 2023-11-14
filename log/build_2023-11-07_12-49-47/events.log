@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000434] (aruco_finder) JobQueued: {'identifier': 'aruco_finder', 'dependencies': OrderedDict()}
+[0.000600] (geographic_msgs) JobQueued: {'identifier': 'geographic_msgs', 'dependencies': OrderedDict()}
+[0.000658] (gui_window) JobQueued: {'identifier': 'gui_window', 'dependencies': OrderedDict()}
+[0.000706] (theora_webcams) JobQueued: {'identifier': 'theora_webcams', 'dependencies': OrderedDict()}
+[0.000753] (aruco_finder) JobStarted: {'identifier': 'aruco_finder'}
+[0.089343] (geographic_msgs) JobStarted: {'identifier': 'geographic_msgs'}
+[0.099273] (-) TimerEvent: {}
+[0.183409] (gui_window) JobStarted: {'identifier': 'gui_window'}
+[0.200952] (-) TimerEvent: {}
+[0.281720] (theora_webcams) JobStarted: {'identifier': 'theora_webcams'}
+[0.304100] (-) TimerEvent: {}
+[0.360098] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'cmake'}
+[0.360719] (aruco_finder) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/new-GUI/src/aruco_finder', '-DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder'], 'cwd': '/home/urc/new-GUI/build/aruco_finder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/aruco_finder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.368082] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'cmake'}
+[0.368271] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'build'}
+[0.368446] (geographic_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/geographic_msgs', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/geographic_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geographic_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.404350] (-) TimerEvent: {}
+[0.505297] (-) TimerEvent: {}
+[0.608778] (-) TimerEvent: {}
+[0.710233] (-) TimerEvent: {}
+[0.811049] (-) TimerEvent: {}
+[0.913186] (-) TimerEvent: {}
+[1.014642] (-) TimerEvent: {}
+[1.042616] (aruco_finder) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.043049] (aruco_finder) StdoutLine: {'line': b'See also "/home/urc/new-GUI/build/aruco_finder/CMakeFiles/CMakeOutput.log".\n'}
+[1.059228] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDetermine(Compiler.cmake\x1b[0m\n'}
+[1.062773] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.063656] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.063905] (aruco_finder) StderrLine: {'line': b'CMAKE_(_COMPILER_ENV_VAR\x1b[0m\n'}
+[1.064065] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.064210] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.064454] (aruco_finder) StderrLine: {'line': b'CMAKE_(_COMPILER\x1b[0m\n'}
+[1.064608] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMake(Compiler.cmake\x1b[0m\n'}
+[1.064756] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDeterminearuco_finderCompiler.cmake\x1b[0m\n'}
+[1.064898] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.065040] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.065181] (aruco_finder) StderrLine: {'line': b'CMAKE_aruco_finder_COMPILER_ENV_VAR\x1b[0m\n'}
+[1.065324] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.065475] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.065851] (aruco_finder) StderrLine: {'line': b'CMAKE_aruco_finder_COMPILER\x1b[0m\n'}
+[1.066013] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMakearuco_finderCompiler.cmake\x1b[0m\n'}
+[1.066167] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDetermine)Compiler.cmake\x1b[0m\n'}
+[1.066311] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.066462] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.066606] (aruco_finder) StderrLine: {'line': b'CMAKE_)_COMPILER_ENV_VAR\x1b[0m\n'}
+[1.066786] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[1.066927] (aruco_finder) StderrLine: {'line': b'Missing variable is:\n'}
+[1.067069] (aruco_finder) StderrLine: {'line': b'CMAKE_)_COMPILER\x1b[0m\n'}
+[1.067229] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMake)Compiler.cmake\x1b[0m\n'}
+[1.067370] (aruco_finder) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:212 (project):\n'}
+[1.067512] (aruco_finder) StderrLine: {'line': b'  No CMAKE_(_COMPILER could be found.\n'}
+[1.067655] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.067795] (aruco_finder) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[1.067977] (aruco_finder) StderrLine: {'line': b'  CMAKE_(_COMPILER to the full path to the compiler, or to the compiler name\n'}
+[1.068150] (aruco_finder) StderrLine: {'line': b'  if it is in the PATH.\n'}
+[1.068356] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.070461] (aruco_finder) StderrLine: {'line': b'\x1b[0m\n'}
+[1.070794] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMake(Information.cmake\x1b[0m\n'}
+[1.071001] (aruco_finder) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:212 (project):\n'}
+[1.071149] (aruco_finder) StderrLine: {'line': b'  No CMAKE_aruco_finder_COMPILER could be found.\n'}
+[1.071296] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.071449] (aruco_finder) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[1.071603] (aruco_finder) StderrLine: {'line': b'  CMAKE_aruco_finder_COMPILER to the full path to the compiler, or to the\n'}
+[1.071752] (aruco_finder) StderrLine: {'line': b'  compiler name if it is in the PATH.\n'}
+[1.071933] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.072332] (aruco_finder) StderrLine: {'line': b'\x1b[0m\n'}
+[1.076637] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakearuco_finderInformation.cmake\x1b[0m\n'}
+[1.076878] (aruco_finder) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:212 (project):\n'}
+[1.077058] (aruco_finder) StderrLine: {'line': b'  No CMAKE_)_COMPILER could be found.\n'}
+[1.077211] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.077360] (aruco_finder) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[1.077618] (aruco_finder) StderrLine: {'line': b'  CMAKE_)_COMPILER to the full path to the compiler, or to the compiler name\n'}
+[1.077807] (aruco_finder) StderrLine: {'line': b'  if it is in the PATH.\n'}
+[1.077961] (aruco_finder) StderrLine: {'line': b'\n'}
+[1.078108] (aruco_finder) StderrLine: {'line': b'\x1b[0m\n'}
+[1.078256] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMake)Information.cmake\x1b[0m\n'}
+[1.078402] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_(_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[1.078547] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_aruco_finder_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[1.078693] (aruco_finder) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_)_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[1.078842] (geographic_msgs) StdoutLine: {'line': b'[  3%] Built target geographic_msgs__cpp\n'}
+[1.106056] (geographic_msgs) StdoutLine: {'line': b'[ 12%] Built target geographic_msgs__rosidl_generator_c\n'}
+[1.106486] (geographic_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_geographic_msgs\n'}
+[1.106736] (geographic_msgs) StdoutLine: {'line': b'[ 22%] Built target geographic_msgs__rosidl_typesupport_cpp\n'}
+[1.106870] (geographic_msgs) StdoutLine: {'line': b'[ 32%] Built target geographic_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.106999] (geographic_msgs) StdoutLine: {'line': b'[ 41%] Built target geographic_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.107125] (geographic_msgs) StdoutLine: {'line': b'[ 51%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.107251] (geographic_msgs) StdoutLine: {'line': b'[ 61%] Built target geographic_msgs__rosidl_typesupport_introspection_c\n'}
+[1.107395] (geographic_msgs) StdoutLine: {'line': b'[ 70%] Built target geographic_msgs__rosidl_typesupport_c\n'}
+[1.107520] (geographic_msgs) StdoutLine: {'line': b'[ 70%] Built target geographic_msgs\n'}
+[1.107646] (geographic_msgs) StdoutLine: {'line': b'[ 74%] Built target geographic_msgs__py\n'}
+[1.107772] (geographic_msgs) StdoutLine: {'line': b'[ 80%] Built target geographic_msgs__rosidl_generator_py\n'}
+[1.107901] (geographic_msgs) StdoutLine: {'line': b'[ 87%] Built target geographic_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.108028] (geographic_msgs) StdoutLine: {'line': b'[ 93%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.108156] (geographic_msgs) StdoutLine: {'line': b'[100%] Built target geographic_msgs__rosidl_typesupport_c__pyext\n'}
+[1.108284] (geographic_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.109498] (geographic_msgs) StdoutLine: {'line': b'writing geographic_msgs.egg-info/PKG-INFO\n'}
+[1.109779] (geographic_msgs) StdoutLine: {'line': b'writing dependency_links to geographic_msgs.egg-info/dependency_links.txt\n'}
+[1.109936] (geographic_msgs) StdoutLine: {'line': b'writing top-level names to geographic_msgs.egg-info/top_level.txt\n'}
+[1.110081] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'cmake'}
+[1.110128] (geographic_msgs) StdoutLine: {'line': b"reading manifest file 'geographic_msgs.egg-info/SOURCES.txt'\n"}
+[1.110275] (theora_webcams) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/new-GUI/src/theora_webcams', '-DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/theora_webcams'], 'cwd': '/home/urc/new-GUI/build/theora_webcams', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/theora_webcams'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[1.111812] (geographic_msgs) StdoutLine: {'line': b"writing manifest file 'geographic_msgs.egg-info/SOURCES.txt'\n"}
+[1.121830] (aruco_finder) CommandEnded: {'returncode': 1}
+[1.122663] (-) TimerEvent: {}
+[1.140104] (theora_webcams) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.223339] (-) TimerEvent: {}
+[1.241374] (geographic_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_geographic_msgs_egg\n'}
+[1.323493] (-) TimerEvent: {}
+[1.366622] (aruco_finder) JobEnded: {'identifier': 'aruco_finder', 'rc': 1}
+[1.367510] (geographic_msgs) JobEnded: {'identifier': 'geographic_msgs', 'rc': 'SIGINT'}
+[1.423714] (-) TimerEvent: {}
+[1.522942] (theora_webcams) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.523969] (-) TimerEvent: {}
+[1.617673] (theora_webcams) StderrLine: {'line': b"Error parsing '/home/urc/new-GUI/src/theora_webcams/package.xml':\n"}
+[1.624303] (-) TimerEvent: {}
+[1.691560] (theora_webcams) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.691815] (theora_webcams) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[1.693098] (theora_webcams) StderrLine: {'line': b'    main()\n'}
+[1.693242] (theora_webcams) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[1.693345] (theora_webcams) StderrLine: {'line': b'    raise e\n'}
+[1.693442] (theora_webcams) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[1.695324] (theora_webcams) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[1.695531] (theora_webcams) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string\n'}
+[1.695687] (theora_webcams) StderrLine: {'line': b"    raise InvalidPackage('Error(s):%s' % (''.join(['\\n- %s' % e for e in errors])), filename)\n"}
+[1.695787] (theora_webcams) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/urc/new-GUI/src/theora_webcams/package.xml':\n"}
+[1.695882] (theora_webcams) StderrLine: {'line': b'Error(s):\n'}
+[1.695978] (theora_webcams) StderrLine: {'line': b'- The manifest of package "theora_webcams" (with format version 2) must not contain the following tags: member_of_group\n'}
+[1.725354] (-) TimerEvent: {}
+[1.726255] (theora_webcams) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[1.726540] (theora_webcams) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10\n'}
+[1.726734] (theora_webcams) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.726883] (theora_webcams) StderrLine: {'line': b'  /home/urc/new-GUI/src/theora_webcams/package.xml\n'}
+[1.727024] (theora_webcams) StderrLine: {'line': b'  /home/urc/new-GUI/build/theora_webcams/ament_cmake_core/package.cmake)\n'}
+[1.727167] (theora_webcams) StderrLine: {'line': b'  returned error code 1\n'}
+[1.727336] (theora_webcams) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.727536] (theora_webcams) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.727727] (theora_webcams) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[1.727942] (theora_webcams) StderrLine: {'line': b'  CMakeLists.txt:240 (ament_lint_auto_find_test_dependencies)\n'}
+[1.728083] (theora_webcams) StderrLine: {'line': b'\n'}
+[1.728227] (theora_webcams) StderrLine: {'line': b'\x1b[0m\n'}
+[1.728834] (theora_webcams) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.729051] (theora_webcams) StdoutLine: {'line': b'See also "/home/urc/new-GUI/build/theora_webcams/CMakeFiles/CMakeOutput.log".\n'}
+[1.734425] (theora_webcams) JobEnded: {'identifier': 'theora_webcams', 'rc': 'SIGINT'}
+[1.825650] (-) TimerEvent: {}
+[1.926840] (-) TimerEvent: {}
+[1.979650] (gui_window) JobEnded: {'identifier': 'gui_window', 'rc': 'SIGINT'}
+[1.991850] (-) EventReactorShutdown: {}

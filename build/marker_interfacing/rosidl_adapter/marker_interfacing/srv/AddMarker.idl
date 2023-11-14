@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from marker_interfacing/srv/AddMarker.srv
+// generated code does not contain a copyright notice
+
+
+module marker_interfacing {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request - Information of Marker to add")
+    struct AddMarker_Request {
+      double lat;
+
+      double lon;
+
+      double alt;
+
+      float waypoint_error;
+
+      string marker_type;
+
+      uint8 aruco_id;
+
+      uint8 aruco_id_2;
+    };
+    @verbatim (language="comment", text=
+      "Response - T/F")
+    struct AddMarker_Response {
+      boolean success;
+    };
+  };
+};

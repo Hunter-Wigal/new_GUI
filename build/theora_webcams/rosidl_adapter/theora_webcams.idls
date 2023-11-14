@@ -1,0 +1,9 @@
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:msg/Framerate.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:msg/Resolution.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:msg/Status.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:msg/VideoFormat.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:msg/VideoFormatList.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:srv/ChangeVideo.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:srv/GetExposureBounds.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:srv/GetResolutions.idl
+/home/urc/new-GUI/build/theora_webcams/rosidl_adapter/theora_webcams:srv/SetExposure.idl

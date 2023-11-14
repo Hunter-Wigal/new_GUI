@@ -1,0 +1,44 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[33mCMake Warning at CMakeLists.txt:30 (find_package):
+  By not providing "Finddynamixel_controller.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "dynamixel_controller", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "dynamixel_controller" with any of the following names:
+
+    dynamixel_controllerConfig.cmake
+    dynamixel_controller-config.cmake
+
+  Add the installation prefix of "dynamixel_controller" to CMAKE_PREFIX_PATH
+  or set "dynamixel_controller_DIR" to a directory containing one of the
+  above files.  If "dynamixel_controller" provides a separate development
+  package or SDK, be sure it has been installed.
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+  rosidl_generate_interfaces() the passed dependency 'geometry_msgs' has not
+  been found before using find_package()
+Call Stack (most recent call first):
+  CMakeLists.txt:33 (rosidl_generate_interfaces)
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/urc/new-GUI/build/science_servo_control/CMakeFiles/CMakeOutput.log".

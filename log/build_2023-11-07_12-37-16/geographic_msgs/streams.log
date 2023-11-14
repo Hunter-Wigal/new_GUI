@@ -1,0 +1,34 @@
+[0.269s] Invoking command in '/home/urc/new-GUI/build/geographic_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/geographic_msgs -- -j4 -l4
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_generator_c[0m
+[0.893s] [  3%] Built target geographic_msgs__cpp
+[0.893s] [ 12%] Built target geographic_msgs__rosidl_generator_c
+[0.893s] [ 12%] Built target ament_cmake_python_symlink_geographic_msgs
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.894s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_cpp[0m
+[0.894s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.894s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.894s] [ 22%] Built target geographic_msgs__rosidl_typesupport_fastrtps_cpp
+[0.894s] [ 32%] Built target geographic_msgs__rosidl_typesupport_cpp
+[0.894s] [ 41%] Built target geographic_msgs__rosidl_typesupport_introspection_cpp
+[0.894s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_introspection_c[0m
+[0.894s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_c[0m
+[0.895s] [ 51%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c
+[0.895s] [ 61%] Built target geographic_msgs__rosidl_typesupport_c
+[0.895s] [ 70%] Built target geographic_msgs__rosidl_typesupport_introspection_c
+[0.895s] [ 70%] Built target geographic_msgs
+[0.895s] [ 74%] Built target geographic_msgs__py
+[0.895s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_generator_py[0m
+[0.900s] [ 80%] Built target geographic_msgs__rosidl_generator_py
+[0.900s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.900s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.900s] [ 87%] Built target geographic_msgs__rosidl_typesupport_introspection_c__pyext
+[0.900s] [35m[1mConsolidate compiler generated dependencies of target geographic_msgs__rosidl_typesupport_c__pyext[0m
+[0.901s] [ 93%] Built target geographic_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.901s] [100%] Built target geographic_msgs__rosidl_typesupport_c__pyext
+[0.914s] running egg_info
+[0.915s] writing geographic_msgs.egg-info/PKG-INFO
+[0.915s] writing dependency_links to geographic_msgs.egg-info/dependency_links.txt
+[0.915s] writing top-level names to geographic_msgs.egg-info/top_level.txt
+[0.920s] reading manifest file 'geographic_msgs.egg-info/SOURCES.txt'
+[0.922s] writing manifest file 'geographic_msgs.egg-info/SOURCES.txt'
+[1.021s] [100%] Built target ament_cmake_python_build_geographic_msgs_egg

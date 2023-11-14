@@ -1,0 +1,33 @@
+[0.133s] Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': /usr/bin/cmake /home/urc/new-GUI/src/hockey_stick_arm-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/hockey_stick_arm
+[0.611s] -- The C compiler identification is GNU 11.4.0
+[1.143s] -- The CXX compiler identification is GNU 11.4.0
+[1.232s] -- Detecting C compiler ABI info
+[1.604s] -- Detecting C compiler ABI info - done
+[1.626s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.634s] -- Detecting C compile features
+[1.647s] -- Detecting C compile features - done
+[1.670s] -- Detecting CXX compiler ABI info
+[2.046s] -- Detecting CXX compiler ABI info - done
+[2.085s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.087s] -- Detecting CXX compile features
+[2.098s] -- Detecting CXX compile features - done
+[2.149s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[2.149s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.149s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.149s]   CMake did not find one.
+[2.149s] 
+[2.149s]   Could not find a package configuration file provided by "catkin" with any
+[2.149s]   of the following names:
+[2.149s] 
+[2.149s]     catkinConfig.cmake
+[2.150s]     catkin-config.cmake
+[2.150s] 
+[2.150s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.150s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.150s]   provides a separate development package or SDK, be sure it has been
+[2.150s]   installed.
+[2.150s] 
+[2.150s] [0m
+[2.151s] -- Configuring incomplete, errors occurred!
+[2.151s] See also "/home/urc/new-GUI/build/hockey_stick_arm/CMakeFiles/CMakeOutput.log".
+[2.155s] Invoked command in '/home/urc/new-GUI/build/hockey_stick_arm' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/hockey_stick_arm-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/hockey_stick_arm

@@ -1,0 +1,337 @@
+[0.000000] (-) TimerEvent: {}
+[0.001311] (aruco_finder) JobQueued: {'identifier': 'aruco_finder', 'dependencies': OrderedDict()}
+[0.001359] (gui_window) JobQueued: {'identifier': 'gui_window', 'dependencies': OrderedDict()}
+[0.001396] (theora_webcams) JobQueued: {'identifier': 'theora_webcams', 'dependencies': OrderedDict()}
+[0.001425] (aruco_finder) JobStarted: {'identifier': 'aruco_finder'}
+[0.101158] (-) TimerEvent: {}
+[0.120613] (gui_window) JobStarted: {'identifier': 'gui_window'}
+[0.204062] (-) TimerEvent: {}
+[0.267851] (theora_webcams) JobStarted: {'identifier': 'theora_webcams'}
+[0.305039] (-) TimerEvent: {}
+[0.376948] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'cmake'}
+[0.378431] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'build'}
+[0.379753] (aruco_finder) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/aruco_finder', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/aruco_finder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/geographic_msgs/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/urc/new-GUI/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/aruco_finder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder')]), 'shell': False}
+[0.405198] (-) TimerEvent: {}
+[0.505643] (-) TimerEvent: {}
+[0.606443] (-) TimerEvent: {}
+[0.706958] (-) TimerEvent: {}
+[0.807957] (-) TimerEvent: {}
+[0.909282] (-) TimerEvent: {}
+[1.009844] (-) TimerEvent: {}
+[1.110236] (-) TimerEvent: {}
+[1.173838] (aruco_finder) StdoutLine: {'line': b'[  2%] Built target aruco_finder__cpp\n'}
+[1.174198] (aruco_finder) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_aruco_finder\n'}
+[1.174327] (aruco_finder) StdoutLine: {'line': b'[ 12%] Built target aruco_finder__rosidl_generator_c\n'}
+[1.174431] (aruco_finder) StdoutLine: {'line': b'[ 30%] Built target aruco_finder__rosidl_typesupport_fastrtps_cpp\n'}
+[1.174531] (aruco_finder) StdoutLine: {'line': b'[ 33%] Built target aruco_finder__rosidl_typesupport_introspection_cpp\n'}
+[1.174644] (aruco_finder) StdoutLine: {'line': b'[ 43%] Built target aruco_finder__rosidl_typesupport_cpp\n'}
+[1.174742] (aruco_finder) StdoutLine: {'line': b'[ 53%] Built target aruco_finder__rosidl_typesupport_fastrtps_c\n'}
+[1.174839] (aruco_finder) StdoutLine: {'line': b'[ 64%] Built target aruco_finder__rosidl_typesupport_c\n'}
+[1.174935] (aruco_finder) StdoutLine: {'line': b'[ 74%] Built target aruco_finder__rosidl_typesupport_introspection_c\n'}
+[1.175080] (aruco_finder) StdoutLine: {'line': b'[ 74%] Built target aruco_finder\n'}
+[1.175213] (aruco_finder) StdoutLine: {'line': b'[ 76%] Built target aruco_finder__py\n'}
+[1.175339] (aruco_finder) StdoutLine: {'line': b'[ 84%] Built target aruco_finder__rosidl_generator_py\n'}
+[1.175467] (aruco_finder) StdoutLine: {'line': b'[ 89%] Built target aruco_finder__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.175595] (aruco_finder) StdoutLine: {'line': b'[ 94%] Built target aruco_finder__rosidl_typesupport_c__pyext\n'}
+[1.175719] (aruco_finder) StdoutLine: {'line': b'[100%] Built target aruco_finder__rosidl_typesupport_introspection_c__pyext\n'}
+[1.185763] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'cmake'}
+[1.189037] (theora_webcams) JobProgress: {'identifier': 'theora_webcams', 'progress': 'build'}
+[1.190092] (theora_webcams) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/urc/new-GUI/build/theora_webcams', '--', '-j4', '-l4'], 'cwd': '/home/urc/new-GUI/build/theora_webcams', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/geographic_msgs/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/urc/new-GUI/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/theora_webcams'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder')]), 'shell': False}
+[1.210401] (-) TimerEvent: {}
+[1.255347] (aruco_finder) StdoutLine: {'line': b'running egg_info\n'}
+[1.256590] (aruco_finder) StdoutLine: {'line': b'writing aruco_finder.egg-info/PKG-INFO\n'}
+[1.257706] (aruco_finder) StdoutLine: {'line': b'writing dependency_links to aruco_finder.egg-info/dependency_links.txt\n'}
+[1.258804] (aruco_finder) StdoutLine: {'line': b'writing top-level names to aruco_finder.egg-info/top_level.txt\n'}
+[1.263261] (aruco_finder) StdoutLine: {'line': b"reading manifest file 'aruco_finder.egg-info/SOURCES.txt'\n"}
+[1.264395] (aruco_finder) StdoutLine: {'line': b"writing manifest file 'aruco_finder.egg-info/SOURCES.txt'\n"}
+[1.300742] (aruco_finder) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_aruco_finder_egg\n'}
+[1.309663] (theora_webcams) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.316537] (-) TimerEvent: {}
+[1.319039] (aruco_finder) CommandEnded: {'returncode': 0}
+[1.416557] (-) TimerEvent: {}
+[1.430190] (aruco_finder) JobProgress: {'identifier': 'aruco_finder', 'progress': 'install'}
+[1.440717] (aruco_finder) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/urc/new-GUI/build/aruco_finder'], 'cwd': '/home/urc/new-GUI/build/aruco_finder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/geographic_msgs/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/urc/new-GUI/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AYD1D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.215'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/aruco_finder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder')]), 'shell': False}
+[1.453041] (aruco_finder) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.456706] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/rosidl_interfaces/aruco_finder\n'}
+[1.460780] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.463635] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.468973] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.h\n'}
+[1.470454] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.h\n'}
+[1.471408] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.473633] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.475240] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.c\n'}
+[1.475361] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__functions.h\n'}
+[1.475523] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.h\n'}
+[1.475627] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.h\n'}
+[1.475723] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.h\n'}
+[1.475947] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.h\n'}
+[1.476097] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.h\n'}
+[1.476251] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__functions.c\n'}
+[1.476361] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.sh\n'}
+[1.476517] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/library_path.dsv\n'}
+[1.476618] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_c.so\n'}
+[1.476760] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.476872] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.476967] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.477061] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.477154] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_c.h\n'}
+[1.477248] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_c.h\n'}
+[1.477342] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_c.so\n'}
+[1.477453] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.477615] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.477712] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.477867] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.477966] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_c.h\n'}
+[1.478060] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.c\n'}
+[1.478154] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.c\n'}
+[1.478247] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_c.h\n'}
+[1.478341] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_c.so\n'}
+[1.478436] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_c.so\n'}
+[1.478529] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.478632] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.478726] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker.hpp\n'}
+[1.478820] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/found_marker_list.hpp\n'}
+[1.478914] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.479008] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__builder.hpp\n'}
+[1.479101] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__struct.hpp\n'}
+[1.479194] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__traits.hpp\n'}
+[1.479287] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__builder.hpp\n'}
+[1.479381] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__struct.hpp\n'}
+[1.479474] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__traits.hpp\n'}
+[1.479573] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.479667] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.479783] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.479909] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.480004] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.480127] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.480226] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/dds_fastrtps\n'}
+[1.480319] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.480412] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder\n'}
+[1.480506] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg\n'}
+[1.480602] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail\n'}
+[1.492957] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__type_support.cpp\n'}
+[1.493067] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.493164] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__type_support.cpp\n'}
+[1.493281] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/include/aruco_finder/aruco_finder/msg/detail/found_marker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.493376] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_introspection_cpp.so\n'}
+[1.493469] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_typesupport_cpp.so\n'}
+[1.493563] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.sh\n'}
+[1.493656] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/pythonpath.dsv\n'}
+[1.493749] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info\n'}
+[1.493843] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.493936] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.494029] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.494122] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.494215] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder\n'}
+[1.494308] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg\n'}
+[1.494435] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list.py\n'}
+[1.494535] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/__init__.py\n'}
+[1.494629] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_list_s.c\n'}
+[1.494722] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker.py\n'}
+[1.494815] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg/_found_marker_s.c\n'}
+[1.494908] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/libaruco_finder__rosidl_generator_py.so\n'}
+[1.495008] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/__init__.py\n'}
+[1.495102] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.495197] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.495291] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.495385] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_c.c\n'}
+[1.495487] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.495580] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/_aruco_finder_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.519964] (-) TimerEvent: {}
+[1.557987] (aruco_finder) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder'...\n"}
+[1.558190] (aruco_finder) StdoutLine: {'line': b"Listing '/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/msg'...\n"}
+[1.570981] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.572898] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.574431] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages/aruco_finder/aruco_finder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.575605] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/lib/libaruco_finder__rosidl_generator_py.so\n'}
+[1.577091] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.idl\n'}
+[1.577350] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.idl\n'}
+[1.577594] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarker.msg\n'}
+[1.577745] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/msg/FoundMarkerList.msg\n'}
+[1.577868] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/package_run_dependencies/aruco_finder\n'}
+[1.578051] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/parent_prefix_path/aruco_finder\n'}
+[1.578159] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.sh\n'}
+[1.578261] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/ament_prefix_path.dsv\n'}
+[1.578410] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.sh\n'}
+[1.578551] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/environment/path.dsv\n'}
+[1.578684] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.bash\n'}
+[1.578874] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.sh\n'}
+[1.579030] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.zsh\n'}
+[1.579192] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/local_setup.dsv\n'}
+[1.579349] (aruco_finder) StdoutLine: {'line': b'-- Installing: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.dsv\n'}
+[1.579551] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/ament_index/resource_index/packages/aruco_finder\n'}
+[1.603423] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport.cmake\n'}
+[1.603695] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.603815] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.603917] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.604013] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.604108] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.604253] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport.cmake\n'}
+[1.604357] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.604452] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_cppExport.cmake\n'}
+[1.604547] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.604717] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.604817] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.604911] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.605006] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport.cmake\n'}
+[1.605100] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finder__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.605231] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport.cmake\n'}
+[1.605332] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/export_aruco_finder__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.605442] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake-extras.cmake\n'}
+[1.605536] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.605631] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.605726] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.605885] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.605996] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.606092] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.606217] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig.cmake\n'}
+[1.606373] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake/aruco_finderConfig-version.cmake\n'}
+[1.606471] (aruco_finder) StdoutLine: {'line': b'-- Up-to-date: /home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.xml\n'}
+[1.606612] (aruco_finder) CommandEnded: {'returncode': 0}
+[1.607087] (theora_webcams) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.620657] (-) TimerEvent: {}
+[1.713792] (theora_webcams) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.719118] (theora_webcams) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.721130] (-) TimerEvent: {}
+[1.724624] (theora_webcams) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.798560] (theora_webcams) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.822230] (-) TimerEvent: {}
+[1.876165] (gui_window) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/gui_window', 'build', '--build-base', '/home/urc/new-GUI/build/gui_window/build', 'install', '--record', '/home/urc/new-GUI/build/gui_window/install.log', '--single-version-externally-managed'], 'cwd': '/home/urc/new-GUI/src/gui_window', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'urc', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/geographic_msgs/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/urc', 'OLDPWD': '/home/urc', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1670', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/urc/new-GUI/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'urc', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'urc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/URC:@/tmp/.ICE-unix/1638,unix/URC:/tmp/.ICE-unix/1638', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/71ef8c51_7d7b_4b60_9372_0ac5bf064545', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AYD1D2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.215', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/urc/new-GUI/build/gui_window', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/home/urc/new-GUI/install/theora_webcams/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:/home/urc/new-GUI/install/aruco_finder/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder'}, 'shell': False}
+[1.900270] (theora_webcams) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:244 (find_package):\n'}
+[1.900599] (theora_webcams) StderrLine: {'line': b'  By not providing "Findroscpp.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.900825] (theora_webcams) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "roscpp", but\n'}
+[1.900935] (theora_webcams) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.901029] (theora_webcams) StderrLine: {'line': b'\n'}
+[1.901126] (theora_webcams) StderrLine: {'line': b'  Could not find a package configuration file provided by "roscpp" with any\n'}
+[1.901218] (theora_webcams) StderrLine: {'line': b'  of the following names:\n'}
+[1.901382] (theora_webcams) StderrLine: {'line': b'\n'}
+[1.901534] (theora_webcams) StderrLine: {'line': b'    roscppConfig.cmake\n'}
+[1.901732] (theora_webcams) StderrLine: {'line': b'    roscpp-config.cmake\n'}
+[1.901988] (theora_webcams) StderrLine: {'line': b'\n'}
+[1.902142] (theora_webcams) StderrLine: {'line': b'  Add the installation prefix of "roscpp" to CMAKE_PREFIX_PATH or set\n'}
+[1.902288] (theora_webcams) StderrLine: {'line': b'  "roscpp_DIR" to a directory containing one of the above files.  If "roscpp"\n'}
+[1.902412] (theora_webcams) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.902574] (theora_webcams) StderrLine: {'line': b'  installed.\n'}
+[1.902785] (theora_webcams) StderrLine: {'line': b'\n'}
+[1.902934] (theora_webcams) StderrLine: {'line': b'\x1b[0m\n'}
+[1.903665] (theora_webcams) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.922383] (-) TimerEvent: {}
+[2.023022] (-) TimerEvent: {}
+[2.111406] (aruco_finder) JobEnded: {'identifier': 'aruco_finder', 'rc': 0}
+[2.125750] (-) TimerEvent: {}
+[2.226222] (-) TimerEvent: {}
+[2.326619] (-) TimerEvent: {}
+[2.349543] (gui_window) StdoutLine: {'line': b'running egg_info\n'}
+[2.351026] (gui_window) StdoutLine: {'line': b'writing ../../build/gui_window/gui_window.egg-info/PKG-INFO\n'}
+[2.352421] (gui_window) StdoutLine: {'line': b'writing dependency_links to ../../build/gui_window/gui_window.egg-info/dependency_links.txt\n'}
+[2.353147] (gui_window) StdoutLine: {'line': b'writing entry points to ../../build/gui_window/gui_window.egg-info/entry_points.txt\n'}
+[2.353441] (gui_window) StdoutLine: {'line': b'writing requirements to ../../build/gui_window/gui_window.egg-info/requires.txt\n'}
+[2.354187] (gui_window) StdoutLine: {'line': b'writing top-level names to ../../build/gui_window/gui_window.egg-info/top_level.txt\n'}
+[2.360357] (gui_window) StdoutLine: {'line': b"reading manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'\n"}
+[2.364269] (gui_window) StdoutLine: {'line': b"writing manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'\n"}
+[2.364769] (gui_window) StdoutLine: {'line': b'running build\n'}
+[2.364917] (gui_window) StdoutLine: {'line': b'running build_py\n'}
+[2.373405] (gui_window) StdoutLine: {'line': b'running install\n'}
+[2.373996] (gui_window) StdoutLine: {'line': b'running install_lib\n'}
+[2.385642] (gui_window) StdoutLine: {'line': b'running install_data\n'}
+[2.386473] (gui_window) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.388758] (gui_window) StdoutLine: {'line': b"removing '/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.389192] (gui_window) StdoutLine: {'line': b'Copying ../../build/gui_window/gui_window.egg-info to /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info\n'}
+[2.390326] (gui_window) StdoutLine: {'line': b'running install_scripts\n'}
+[2.416117] (theora_webcams) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[2.416797] (gui_window) StdoutLine: {'line': b'Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window\n'}
+[2.419585] (gui_window) StdoutLine: {'line': b"writing list of installed files to '/home/urc/new-GUI/build/gui_window/install.log'\n"}
+[2.426770] (-) TimerEvent: {}
+[2.446388] (theora_webcams) StdoutLine: {'line': b'-- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[2.449716] (gui_window) CommandEnded: {'returncode': 0}
+[2.526956] (-) TimerEvent: {}
+[2.528055] (gui_window) JobEnded: {'identifier': 'gui_window', 'rc': 0}
+[2.569805] (theora_webcams) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.572949] (theora_webcams) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.628174] (-) TimerEvent: {}
+[2.729270] (-) TimerEvent: {}
+[2.753630] (theora_webcams) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.830409] (-) TimerEvent: {}
+[2.931396] (-) TimerEvent: {}
+[3.032545] (-) TimerEvent: {}
+[3.108685] (theora_webcams) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.7 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[3.133570] (-) TimerEvent: {}
+[3.233842] (-) TimerEvent: {}
+[3.334398] (-) TimerEvent: {}
+[3.434805] (-) TimerEvent: {}
+[3.535402] (-) TimerEvent: {}
+[3.637110] (-) TimerEvent: {}
+[3.740500] (-) TimerEvent: {}
+[3.759975] (theora_webcams) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.841072] (-) TimerEvent: {}
+[3.941646] (-) TimerEvent: {}
+[4.048154] (-) TimerEvent: {}
+[4.148699] (-) TimerEvent: {}
+[4.250337] (-) TimerEvent: {}
+[4.253031] (theora_webcams) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.353997] (-) TimerEvent: {}
+[4.465365] (-) TimerEvent: {}
+[4.568655] (-) TimerEvent: {}
+[4.668952] (-) TimerEvent: {}
+[4.769652] (-) TimerEvent: {}
+[4.870832] (-) TimerEvent: {}
+[4.918903] (theora_webcams) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.951388] (theora_webcams) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.970969] (-) TimerEvent: {}
+[4.982186] (theora_webcams) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.982394] (theora_webcams) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.982511] (theora_webcams) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.075064] (-) TimerEvent: {}
+[5.105839] (theora_webcams) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.107071] (theora_webcams) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.107907] (theora_webcams) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.109299] (theora_webcams) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.115520] (theora_webcams) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.116735] (theora_webcams) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.117685] (theora_webcams) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.128249] (theora_webcams) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.175505] (-) TimerEvent: {}
+[5.244941] (theora_webcams) StdoutLine: {'line': b'-- Generating done\n'}
+[5.251484] (theora_webcams) StdoutLine: {'line': b'-- Build files have been written to: /home/urc/new-GUI/build/theora_webcams\n'}
+[5.276600] (-) TimerEvent: {}
+[5.332616] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_generator_c\x1b[0m\n'}
+[5.333738] (theora_webcams) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/camera_publisher.dir/src/camera_publisher_v4l2.cpp.o\x1b[0m\n'}
+[5.346833] (theora_webcams) StdoutLine: {'line': b'[  2%] Built target theora_webcams__cpp\n'}
+[5.363614] (theora_webcams) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_theora_webcams\n'}
+[5.365115] (theora_webcams) StdoutLine: {'line': b'[ 13%] Built target theora_webcams__rosidl_generator_c\n'}
+[5.371791] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.376793] (-) TimerEvent: {}
+[5.396042] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.402113] (theora_webcams) StdoutLine: {'line': b'[ 24%] Built target theora_webcams__rosidl_typesupport_cpp\n'}
+[5.407546] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.443096] (theora_webcams) StdoutLine: {'line': b'[ 36%] Built target theora_webcams__rosidl_typesupport_fastrtps_cpp\n'}
+[5.446088] (theora_webcams) StderrLine: {'line': b'\x1b[01m\x1b[K/home/urc/new-GUI/src/theora_webcams/src/camera_publisher_v4l2.cpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klibv4l2.h: No such file or directory\n'}
+[5.446267] (theora_webcams) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<libv4l2.h>\x1b[m\x1b[K\n'}
+[5.446383] (theora_webcams) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.446548] (theora_webcams) StderrLine: {'line': b'compilation terminated.\n'}
+[5.451190] (theora_webcams) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/camera_publisher.dir/build.make:76: CMakeFiles/camera_publisher.dir/src/camera_publisher_v4l2.cpp.o] Error 1\n'}
+[5.451536] (theora_webcams) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:592: CMakeFiles/camera_publisher.dir/all] Error 2\n'}
+[5.451646] (theora_webcams) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.476769] (theora_webcams) StdoutLine: {'line': b'[ 47%] Built target theora_webcams__rosidl_typesupport_introspection_cpp\n'}
+[5.476968] (-) TimerEvent: {}
+[5.488387] (theora_webcams) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.522409] (theora_webcams) StdoutLine: {'line': b'[ 58%] Built target theora_webcams__rosidl_typesupport_fastrtps_c\n'}
+[5.577253] (-) TimerEvent: {}
+[5.677753] (-) TimerEvent: {}
+[5.778371] (-) TimerEvent: {}
+[5.865211] (theora_webcams) StdoutLine: {'line': b'running egg_info\n'}
+[5.866230] (theora_webcams) StdoutLine: {'line': b'writing theora_webcams.egg-info/PKG-INFO\n'}
+[5.866595] (theora_webcams) StdoutLine: {'line': b'writing dependency_links to theora_webcams.egg-info/dependency_links.txt\n'}
+[5.866819] (theora_webcams) StdoutLine: {'line': b'writing top-level names to theora_webcams.egg-info/top_level.txt\n'}
+[5.871265] (theora_webcams) StdoutLine: {'line': b"reading manifest file 'theora_webcams.egg-info/SOURCES.txt'\n"}
+[5.874123] (theora_webcams) StdoutLine: {'line': b"writing manifest file 'theora_webcams.egg-info/SOURCES.txt'\n"}
+[5.881132] (-) TimerEvent: {}
+[5.908990] (theora_webcams) StdoutLine: {'line': b'[ 58%] Built target ament_cmake_python_build_theora_webcams_egg\n'}
+[5.910428] (theora_webcams) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.912641] (theora_webcams) CommandEnded: {'returncode': 2}
+[5.981407] (-) TimerEvent: {}
+[6.081844] (-) TimerEvent: {}
+[6.183006] (-) TimerEvent: {}
+[6.284753] (-) TimerEvent: {}
+[6.301150] (theora_webcams) JobEnded: {'identifier': 'theora_webcams', 'rc': 2}
+[6.478578] (-) EventReactorShutdown: {}

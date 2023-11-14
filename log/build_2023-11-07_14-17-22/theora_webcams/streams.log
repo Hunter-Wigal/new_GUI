@@ -1,0 +1,34 @@
+[0.152s] Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4
+[0.298s] [  1%] [32mBuilding CXX object CMakeFiles/camera_publisher.dir/src/camera_publisher_v4l2.cpp.o[0m
+[0.317s] [  2%] Built target theora_webcams__cpp
+[0.330s] [ 13%] Built target theora_webcams__rosidl_generator_c
+[0.359s] [ 13%] Built target ament_cmake_python_copy_theora_webcams
+[0.399s] [ 24%] Built target theora_webcams__rosidl_typesupport_cpp
+[0.409s] [ 36%] Built target theora_webcams__rosidl_typesupport_fastrtps_cpp
+[0.459s] [ 47%] Built target theora_webcams__rosidl_typesupport_introspection_cpp
+[0.492s] [ 58%] Built target theora_webcams__rosidl_typesupport_fastrtps_c
+[0.540s] [ 70%] Built target theora_webcams__rosidl_typesupport_introspection_c
+[0.584s] [ 81%] Built target theora_webcams__rosidl_typesupport_c
+[0.672s] [ 81%] Built target theora_webcams
+[0.751s] [ 82%] Built target theora_webcams__py
+[0.870s] [ 92%] Built target theora_webcams__rosidl_generator_py
+[0.951s] [ 94%] Built target theora_webcams__rosidl_typesupport_fastrtps_c__pyext
+[0.972s] [35m[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_typesupport_c__pyext[0m
+[0.997s] [ 96%] Built target theora_webcams__rosidl_typesupport_introspection_c__pyext
+[1.005s] [ 98%] Built target theora_webcams__rosidl_typesupport_c__pyext
+[1.171s] running egg_info
+[1.172s] writing theora_webcams.egg-info/PKG-INFO
+[1.175s] writing dependency_links to theora_webcams.egg-info/dependency_links.txt
+[1.175s] writing top-level names to theora_webcams.egg-info/top_level.txt
+[1.180s] reading manifest file 'theora_webcams.egg-info/SOURCES.txt'
+[1.182s] writing manifest file 'theora_webcams.egg-info/SOURCES.txt'
+[1.188s] [01m[K/home/urc/new-GUI/src/theora_webcams/src/camera_publisher_v4l2.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.hpp: No such file or directory
+[1.188s]    15 | #include [01;31m[K"image_transport/image_transport.hpp"[m[K
+[1.188s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.189s] compilation terminated.
+[1.195s] gmake[2]: *** [CMakeFiles/camera_publisher.dir/build.make:76: CMakeFiles/camera_publisher.dir/src/camera_publisher_v4l2.cpp.o] Error 1
+[1.195s] gmake[1]: *** [CMakeFiles/Makefile2:592: CMakeFiles/camera_publisher.dir/all] Error 2
+[1.195s] gmake[1]: *** Waiting for unfinished jobs....
+[1.228s] [ 98%] Built target ament_cmake_python_build_theora_webcams_egg
+[1.232s] gmake: *** [Makefile:146: all] Error 2
+[1.235s] Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '2': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4

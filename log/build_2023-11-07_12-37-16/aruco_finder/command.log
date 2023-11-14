@@ -1,0 +1,2 @@
+Invoking command in '/home/urc/new-GUI/build/aruco_finder': /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder

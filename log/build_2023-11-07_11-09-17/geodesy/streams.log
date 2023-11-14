@@ -1,0 +1,33 @@
+[0.101s] Invoking command in '/home/urc/new-GUI/build/geodesy': AMENT_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs LD_LIBRARY_PATH=/home/urc/new-GUI/install/geographic_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geodesy -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geodesy
+[0.194s] -- The C compiler identification is GNU 11.4.0
+[0.276s] -- The CXX compiler identification is GNU 11.4.0
+[0.292s] -- Detecting C compiler ABI info
+[0.381s] -- Detecting C compiler ABI info - done
+[0.404s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.405s] -- Detecting C compile features
+[0.406s] -- Detecting C compile features - done
+[0.413s] -- Detecting CXX compiler ABI info
+[0.537s] -- Detecting CXX compiler ABI info - done
+[0.561s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.564s] -- Detecting CXX compile features
+[0.564s] -- Detecting CXX compile features - done
+[0.579s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.579s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.580s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.580s]   CMake did not find one.
+[0.580s] 
+[0.580s]   Could not find a package configuration file provided by "catkin" with any
+[0.580s]   of the following names:
+[0.580s] 
+[0.580s]     catkinConfig.cmake
+[0.580s]     catkin-config.cmake
+[0.580s] 
+[0.580s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.580s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.581s]   provides a separate development package or SDK, be sure it has been
+[0.581s]   installed.
+[0.582s] 
+[0.582s] [0m
+[0.582s] -- Configuring incomplete, errors occurred!
+[0.582s] See also "/home/urc/new-GUI/build/geodesy/CMakeFiles/CMakeOutput.log".
+[0.586s] Invoked command in '/home/urc/new-GUI/build/geodesy' returned '1': AMENT_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs LD_LIBRARY_PATH=/home/urc/new-GUI/install/geographic_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geodesy -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geodesy

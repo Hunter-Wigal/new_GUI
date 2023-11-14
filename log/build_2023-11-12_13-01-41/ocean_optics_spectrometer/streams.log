@@ -1,0 +1,56 @@
+[0.719s] Invoking command in '/home/urc/new-GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/ocean_optics_spectrometer -- -j4 -l4
+[0.987s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.074s] [  3%] Built target ocean_optics_spectrometer__cpp
+[2.233s] [  3%] Built target ament_cmake_python_copy_ocean_optics_spectrometer
+[2.278s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.562s] [  9%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ocean_optics_spectrometer/srv/detail/dds_fastrtps/capture_spectrometer__type_support.cpp.o[0m
+[5.326s] [ 12%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.641s] [ 12%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp
+[5.688s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.516s] [ 19%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.cpp.o[0m
+[7.304s] [ 22%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.so[0m
+[7.454s] [ 22%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_cpp
+[8.058s] running egg_info
+[8.059s] creating ocean_optics_spectrometer.egg-info
+[8.060s] writing ocean_optics_spectrometer.egg-info/PKG-INFO
+[8.061s] writing dependency_links to ocean_optics_spectrometer.egg-info/dependency_links.txt
+[8.061s] writing top-level names to ocean_optics_spectrometer.egg-info/top_level.txt
+[8.062s] writing manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[8.067s] reading manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[8.069s] writing manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[8.153s] [ 22%] Built target ament_cmake_python_build_ocean_optics_spectrometer_egg
+[8.167s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.712s] [ 29%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ocean_optics_spectrometer/srv/capture_spectrometer__type_support.cpp.o[0m
+[9.201s] [ 32%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_cpp.so[0m
+[9.276s] [ 32%] Built target ocean_optics_spectrometer__rosidl_typesupport_cpp
+[9.293s] [ 35%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.045s] [ 38%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_generator_c.dir/rosidl_generator_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__functions.c.o[0m
+[10.149s] [ 41%] [32m[1mLinking C shared library libocean_optics_spectrometer__rosidl_generator_c.so[0m
+[10.216s] [ 41%] Built target ocean_optics_spectrometer__rosidl_generator_c
+[10.230s] [ 45%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.852s] [ 48%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support_c.cpp.o[0m
+[11.387s] [ 51%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.so[0m
+[11.512s] [ 51%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c
+[11.530s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.010s] [ 58%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_c.dir/rosidl_typesupport_c/ocean_optics_spectrometer/srv/capture_spectrometer__type_support.cpp.o[0m
+[12.056s] [ 61%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_c.so[0m
+[12.125s] [ 61%] Built target ocean_optics_spectrometer__rosidl_typesupport_c
+[12.146s] [ 64%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.708s] [ 67%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.c.o[0m
+[12.779s] [ 70%] [32m[1mLinking C shared library libocean_optics_spectrometer__rosidl_typesupport_introspection_c.so[0m
+[12.834s] [ 70%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_c
+[12.858s] [ 70%] Built target ocean_optics_spectrometer
+[12.885s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.758s] [ 74%] Built target ocean_optics_spectrometer__py
+[13.791s] [ 77%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_generator_py.dir/rosidl_generator_py/ocean_optics_spectrometer/srv/_capture_spectrometer_s.c.o[0m
+[13.975s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/libocean_optics_spectrometer__rosidl_generator_py.so[0m
+[14.036s] [ 80%] Built target ocean_optics_spectrometer__rosidl_generator_py
+[14.063s] [ 83%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.236s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.317s] [ 87%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c__pyext
+[14.350s] [ 90%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_c.c.o[0m
+[14.531s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.608s] [ 93%] Built target ocean_optics_spectrometer__rosidl_typesupport_c__pyext
+[14.645s] [ 96%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.813s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.886s] [100%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_c__pyext

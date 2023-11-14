@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:232 (find_library):
+  Could not find V4L2_camera using the following names:
+
+[0m

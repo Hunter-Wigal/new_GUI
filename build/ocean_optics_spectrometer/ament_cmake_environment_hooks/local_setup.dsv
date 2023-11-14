@@ -1,0 +1,4 @@
+source;share/ocean_optics_spectrometer/environment/ament_prefix_path.sh
+source;share/ocean_optics_spectrometer/environment/library_path.sh
+source;share/ocean_optics_spectrometer/environment/path.sh
+source;share/ocean_optics_spectrometer/environment/pythonpath.sh

@@ -1,0 +1,639 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/urc/new-GUI/build/science_servo_control
+[  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  0%] Built target science_servo_control__cpp
+[  0%] Built target ament_cmake_python_copy_science_servo_control
+[  1%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  2%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/lower_linear_actuator__type_support.cpp.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/free_move_drum__type_support.cpp.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/mix_sample__type_support.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/move_cuvette__type_support.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/move_linear_actuator__type_support.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/move_pump__type_support.cpp.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/pre_mix_drum__type_support.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/pre_seal_drum__type_support.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/raise_linear_actuator__type_support.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/read_drum_position__type_support.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/reboot_drum__type_support.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/scoop_sample__type_support.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/seal_drum__type_support.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/spin_centrifuge__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/science_servo_control/srv/detail/dds_fastrtps/write_gpio__type_support.cpp.o[0m
+[ 12%] [32m[1mLinking CXX shared library libscience_servo_control__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 12%] Built target science_servo_control__rosidl_typesupport_fastrtps_cpp
+[ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/lower_linear_actuator__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/free_move_drum__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/mix_sample__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/move_cuvette__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/move_linear_actuator__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/move_pump__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/pre_mix_drum__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/pre_seal_drum__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/raise_linear_actuator__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/read_drum_position__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/reboot_drum__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/scoop_sample__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/seal_drum__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/spin_centrifuge__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/science_servo_control/srv/detail/write_gpio__type_support.cpp.o[0m
+[ 24%] [32m[1mLinking CXX shared library libscience_servo_control__rosidl_typesupport_introspection_cpp.so[0m
+[ 24%] Built target science_servo_control__rosidl_typesupport_introspection_cpp
+[ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+running egg_info
+creating science_servo_control.egg-info
+writing science_servo_control.egg-info/PKG-INFO
+writing dependency_links to science_servo_control.egg-info/dependency_links.txt
+writing top-level names to science_servo_control.egg-info/top_level.txt
+writing manifest file 'science_servo_control.egg-info/SOURCES.txt'
+reading manifest file 'science_servo_control.egg-info/SOURCES.txt'
+writing manifest file 'science_servo_control.egg-info/SOURCES.txt'
+[ 25%] Built target ament_cmake_python_build_science_servo_control_egg
+[ 26%] [34m[1mGenerating C code for ROS interfaces[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/lower_linear_actuator__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/free_move_drum__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/mix_sample__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/move_cuvette__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/move_linear_actuator__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/move_pump__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/pre_mix_drum__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/pre_seal_drum__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/raise_linear_actuator__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/read_drum_position__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/reboot_drum__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/scoop_sample__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/seal_drum__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/spin_centrifuge__type_support.cpp.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/lower_linear_actuator__functions.c.o[0m
+[ 37%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/free_move_drum__functions.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/mix_sample__functions.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/move_cuvette__functions.c.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/science_servo_control/srv/write_gpio__type_support.cpp.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/move_linear_actuator__functions.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/move_pump__functions.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/pre_mix_drum__functions.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/pre_seal_drum__functions.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/raise_linear_actuator__functions.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/read_drum_position__functions.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/reboot_drum__functions.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/scoop_sample__functions.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/seal_drum__functions.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/spin_centrifuge__functions.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_c.dir/rosidl_generator_c/science_servo_control/srv/detail/write_gpio__functions.c.o[0m
+[ 47%] [32m[1mLinking CXX shared library libscience_servo_control__rosidl_typesupport_cpp.so[0m
+[ 47%] Built target science_servo_control__rosidl_typesupport_cpp
+[ 48%] [32m[1mLinking C shared library libscience_servo_control__rosidl_generator_c.so[0m
+[ 48%] Built target science_servo_control__rosidl_generator_c
+[ 50%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 50%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 51%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/lower_linear_actuator__type_support.c.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/free_move_drum__type_support.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/mix_sample__type_support.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/lower_linear_actuator__type_support_c.cpp.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/move_cuvette__type_support.c.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/move_linear_actuator__type_support.c.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/move_pump__type_support.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/pre_mix_drum__type_support.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/pre_seal_drum__type_support.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/raise_linear_actuator__type_support.c.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/read_drum_position__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/reboot_drum__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/scoop_sample__type_support.c.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/free_move_drum__type_support_c.cpp.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/seal_drum__type_support.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/spin_centrifuge__type_support.c.o[0m
+[ 62%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/science_servo_control/srv/detail/write_gpio__type_support.c.o[0m
+[ 62%] [32m[1mLinking C shared library libscience_servo_control__rosidl_typesupport_introspection_c.so[0m
+[ 62%] Built target science_servo_control__rosidl_typesupport_introspection_c
+[ 63%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/move_cuvette__type_support_c.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/move_linear_actuator__type_support_c.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/move_pump__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/pre_mix_drum__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/pre_seal_drum__type_support_c.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/raise_linear_actuator__type_support_c.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/read_drum_position__type_support_c.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/mix_sample__type_support_c.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/reboot_drum__type_support_c.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/scoop_sample__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/seal_drum__type_support_c.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/spin_centrifuge__type_support_c.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/science_servo_control/srv/detail/write_gpio__type_support_c.cpp.o[0m
+[ 72%] [32m[1mLinking CXX shared library libscience_servo_control__rosidl_typesupport_fastrtps_c.so[0m
+[ 72%] Built target science_servo_control__rosidl_typesupport_fastrtps_c
+[ 73%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/lower_linear_actuator__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/free_move_drum__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/move_cuvette__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/move_linear_actuator__type_support.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/move_pump__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/pre_mix_drum__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/pre_seal_drum__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/raise_linear_actuator__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/read_drum_position__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/reboot_drum__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/scoop_sample__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/seal_drum__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/write_gpio__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/spin_centrifuge__type_support.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/science_servo_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/science_servo_control/srv/mix_sample__type_support.cpp.o[0m
+[ 84%] [32m[1mLinking CXX shared library libscience_servo_control__rosidl_typesupport_c.so[0m
+[ 84%] Built target science_servo_control__rosidl_typesupport_c
+[ 84%] Built target science_servo_control
+[ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 85%] Built target science_servo_control__py
+[ 85%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_lower_linear_actuator_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_move_cuvette_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_mix_sample_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_free_move_drum_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_move_linear_actuator_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_move_pump_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_pre_mix_drum_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_pre_seal_drum_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_raise_linear_actuator_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_read_drum_position_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_reboot_drum_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_scoop_sample_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_seal_drum_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_spin_centrifuge_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_generator_py.dir/rosidl_generator_py/science_servo_control/srv/_write_gpio_s.c.o[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/science_servo_control/libscience_servo_control__rosidl_generator_py.so[0m
+[ 96%] Built target science_servo_control__rosidl_generator_py
+[ 98%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/science_servo_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_c.c.o[0m
+[ 99%] [32m[1mLinking C shared library rosidl_generator_py/science_servo_control/science_servo_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/science_servo_control/science_servo_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/science_servo_control/science_servo_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target science_servo_control__rosidl_typesupport_c__pyext
+[100%] Built target science_servo_control__rosidl_typesupport_introspection_c__pyext
+[100%] Built target science_servo_control__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/ament_index/resource_index/rosidl_interfaces/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/raise_linear_actuator.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/spin_centrifuge.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/read_drum_position.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_cuvette.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/reboot_drum.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/seal_drum.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/lower_linear_actuator.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/pre_mix_drum.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_pump.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/mix_sample.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/scoop_sample.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/free_move_drum.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__struct.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__functions.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__type_support.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__functions.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_linear_actuator.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/pre_seal_drum.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/write_gpio.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/library_path.sh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/library_path.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_generator_c.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__type_support.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__rosidl_typesupport_introspection_c.h
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_c.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/free_move_drum.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_cuvette.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_pump.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/seal_drum.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/write_gpio.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/read_drum_position.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/scoop_sample.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/mix_sample.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/move_linear_actuator.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/reboot_drum.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/raise_linear_actuator.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/lower_linear_actuator.hpp
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__builder.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__traits.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__struct.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/pre_mix_drum.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/pre_seal_drum.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/spin_centrifuge.hpp
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/dds_fastrtps
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv
+-- Up-to-date: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_pump__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_seal_drum__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_linear_actuator__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/read_drum_position__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/move_cuvette__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/free_move_drum__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/spin_centrifuge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/scoop_sample__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/pre_mix_drum__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/reboot_drum__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/seal_drum__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/lower_linear_actuator__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/mix_sample__type_support.cpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/write_gpio__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/include/science_servo_control/science_servo_control/srv/detail/raise_linear_actuator__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/pythonpath.sh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/pythonpath.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control-0.0.0-py3.10.egg-info
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/libscience_servo_control__rosidl_generator_py.so
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/__init__.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_write_gpio.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_write_gpio_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_spin_centrifuge.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_mix_sample_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_pump.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_read_drum_position_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_raise_linear_actuator.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_scoop_sample_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/__init__.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_seal_drum.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_seal_drum.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_spin_centrifuge_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_seal_drum_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_linear_actuator.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_lower_linear_actuator.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_mix_sample.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_lower_linear_actuator_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_scoop_sample.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_free_move_drum.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_pump_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_cuvette.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_mix_drum_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_free_move_drum_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_cuvette_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_reboot_drum.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_mix_drum.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_reboot_drum_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_read_drum_position.py
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_seal_drum_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_raise_linear_actuator_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_linear_actuator_s.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/_science_servo_control_s.ep.rosidl_typesupport_c.c
+Listing '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/__init__.py'...
+Listing '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/__init__.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_free_move_drum.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_lower_linear_actuator.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_mix_sample.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_cuvette.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_linear_actuator.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_move_pump.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_mix_drum.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_pre_seal_drum.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_raise_linear_actuator.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_read_drum_position.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_reboot_drum.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_scoop_sample.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_seal_drum.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_spin_centrifuge.py'...
+Compiling '/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/srv/_write_gpio.py'...
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/local/lib/python3.10/dist-packages/science_servo_control/science_servo_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_generator_py.so
+-- Set runtime path of "/home/urc/new-GUI/install/science_servo_control/lib/libscience_servo_control__rosidl_generator_py.so" to ""
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/LowerLinearActuator.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/FreeMoveDrum.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MixSample.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveCuvette.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveLinearActuator.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MovePump.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreMixDrum.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreSealDrum.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RaiseLinearActuator.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ReadDrumPosition.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RebootDrum.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ScoopSample.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SealDrum.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SpinCentrifuge.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/WriteGPIO.idl
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/LowerLinearActuator.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/LowerLinearActuator_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/LowerLinearActuator_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/FreeMoveDrum.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/FreeMoveDrum_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/FreeMoveDrum_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MixSample.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MixSample_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MixSample_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveCuvette.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveCuvette_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveCuvette_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveLinearActuator.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveLinearActuator_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MoveLinearActuator_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MovePump.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MovePump_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/MovePump_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreMixDrum.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreMixDrum_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreMixDrum_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreSealDrum.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreSealDrum_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/PreSealDrum_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RaiseLinearActuator.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RaiseLinearActuator_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RaiseLinearActuator_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ReadDrumPosition.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ReadDrumPosition_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ReadDrumPosition_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RebootDrum.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RebootDrum_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/RebootDrum_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ScoopSample.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ScoopSample_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/ScoopSample_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SealDrum.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SealDrum_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SealDrum_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SpinCentrifuge.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SpinCentrifuge_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/SpinCentrifuge_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/WriteGPIO.srv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/WriteGPIO_Request.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/srv/WriteGPIO_Response.msg
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/ament_index/resource_index/package_run_dependencies/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/ament_index/resource_index/parent_prefix_path/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/ament_prefix_path.sh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/ament_prefix_path.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/path.sh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/environment/path.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/local_setup.bash
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/local_setup.sh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/local_setup.zsh
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/local_setup.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/package.dsv
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/ament_index/resource_index/packages/science_servo_control
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_generator_cExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_cExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_generator_cppExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_control__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_generator_pyExport.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/export_science_servo_control__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_controlConfig.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/cmake/science_servo_controlConfig-version.cmake
+-- Installing: /home/urc/new-GUI/install/science_servo_control/share/science_servo_control/package.xml

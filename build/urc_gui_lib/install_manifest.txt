@@ -1,0 +1,15 @@
+/home/urc/new-GUI/install/urc_gui_lib/share/ament_index/resource_index/package_run_dependencies/urc_gui_lib
+/home/urc/new-GUI/install/urc_gui_lib/share/ament_index/resource_index/parent_prefix_path/urc_gui_lib
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/environment/ament_prefix_path.sh
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/environment/ament_prefix_path.dsv
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/environment/path.sh
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/environment/path.dsv
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/local_setup.bash
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/local_setup.sh
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/local_setup.zsh
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/local_setup.dsv
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/package.dsv
+/home/urc/new-GUI/install/urc_gui_lib/share/ament_index/resource_index/packages/urc_gui_lib
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/cmake/urc_gui_libConfig.cmake
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/cmake/urc_gui_libConfig-version.cmake
+/home/urc/new-GUI/install/urc_gui_lib/share/urc_gui_lib/package.xml

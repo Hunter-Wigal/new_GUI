@@ -1,0 +1,32 @@
+[0.200s] Invoking command in '/home/urc/new-GUI/build/geographic_msgs': /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geographic_msgs -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_msgs
+[0.216s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.412s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.422s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.506s] Error parsing '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml':
+[0.572s] Traceback (most recent call last):
+[0.572s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.572s]     main()
+[0.572s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.573s]     raise e
+[0.573s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.573s]     package = parse_package_string(
+[0.573s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.574s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.574s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml':
+[0.574s] Error(s):
+[0.574s] - The manifest of package "geographic_msgs" (with format version 1) must not contain the following tags: member_of_group
+[0.598s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.598s]   execute_process(/usr/bin/python3.10
+[0.598s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.598s]   /home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml
+[0.598s]   /home/urc/new-GUI/build/geographic_msgs/ament_cmake_core/package.cmake)
+[0.598s]   returned error code 1
+[0.598s] Call Stack (most recent call first):
+[0.598s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.598s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.598s]   CMakeLists.txt:74 (ament_lint_auto_find_test_dependencies)
+[0.598s] 
+[0.598s] [0m
+[0.598s] -- Configuring incomplete, errors occurred!
+[0.599s] See also "/home/urc/new-GUI/build/geographic_msgs/CMakeFiles/CMakeOutput.log".
+[0.730s] Invoked command in '/home/urc/new-GUI/build/geographic_msgs' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geographic_msgs -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_msgs

@@ -1,0 +1,58 @@
+[0.367s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[1.042s] -- Configuring incomplete, errors occurred!
+[1.042s] See also "/home/urc/new-GUI/build/aruco_finder/CMakeFiles/CMakeOutput.log".
+[1.061s] [0mCMake Error: Could not find cmake module file: CMakeDetermine(Compiler.cmake[0m
+[1.062s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.063s] Missing variable is:
+[1.063s] CMAKE_(_COMPILER_ENV_VAR[0m
+[1.063s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.064s] Missing variable is:
+[1.064s] CMAKE_(_COMPILER[0m
+[1.064s] [0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMake(Compiler.cmake[0m
+[1.064s] [0mCMake Error: Could not find cmake module file: CMakeDeterminearuco_finderCompiler.cmake[0m
+[1.064s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.064s] Missing variable is:
+[1.065s] CMAKE_aruco_finder_COMPILER_ENV_VAR[0m
+[1.065s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.065s] Missing variable is:
+[1.065s] CMAKE_aruco_finder_COMPILER[0m
+[1.065s] [0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMakearuco_finderCompiler.cmake[0m
+[1.065s] [0mCMake Error: Could not find cmake module file: CMakeDetermine)Compiler.cmake[0m
+[1.066s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.066s] Missing variable is:
+[1.066s] CMAKE_)_COMPILER_ENV_VAR[0m
+[1.066s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[1.066s] Missing variable is:
+[1.066s] CMAKE_)_COMPILER[0m
+[1.067s] [0mCMake Error: Could not find cmake module file: /home/urc/new-GUI/build/aruco_finder/CMakeFiles/3.22.1/CMake)Compiler.cmake[0m
+[1.067s] [31mCMake Error at CMakeLists.txt:212 (project):
+[1.067s]   No CMAKE_(_COMPILER could be found.
+[1.067s] 
+[1.067s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[1.067s]   CMAKE_(_COMPILER to the full path to the compiler, or to the compiler name
+[1.068s]   if it is in the PATH.
+[1.069s] 
+[1.070s] [0m
+[1.070s] [0mCMake Error: Could not find cmake module file: CMake(Information.cmake[0m
+[1.070s] [31mCMake Error at CMakeLists.txt:212 (project):
+[1.070s]   No CMAKE_aruco_finder_COMPILER could be found.
+[1.071s] 
+[1.071s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[1.071s]   CMAKE_aruco_finder_COMPILER to the full path to the compiler, or to the
+[1.071s]   compiler name if it is in the PATH.
+[1.072s] 
+[1.076s] [0m
+[1.076s] [0mCMake Error: Could not find cmake module file: CMakearuco_finderInformation.cmake[0m
+[1.076s] [31mCMake Error at CMakeLists.txt:212 (project):
+[1.076s]   No CMAKE_)_COMPILER could be found.
+[1.077s] 
+[1.077s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[1.077s]   CMAKE_)_COMPILER to the full path to the compiler, or to the compiler name
+[1.077s]   if it is in the PATH.
+[1.077s] 
+[1.077s] [0m
+[1.078s] [0mCMake Error: Could not find cmake module file: CMake)Information.cmake[0m
+[1.078s] [0mCMake Error: CMAKE_(_COMPILER not set, after EnableLanguage[0m
+[1.078s] [0mCMake Error: CMAKE_aruco_finder_COMPILER not set, after EnableLanguage[0m
+[1.078s] [0mCMake Error: CMAKE_)_COMPILER not set, after EnableLanguage[0m
+[1.121s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder

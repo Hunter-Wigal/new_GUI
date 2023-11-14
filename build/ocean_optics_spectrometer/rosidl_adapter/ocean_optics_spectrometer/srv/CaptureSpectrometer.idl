@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ocean_optics_spectrometer/srv/CaptureSpectrometer.srv
+// generated code does not contain a copyright notice
+
+
+module ocean_optics_spectrometer {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct CaptureSpectrometer_Request {
+      int32 integration_time;
+    };
+    @verbatim (language="comment", text=
+      "Response - T/F")
+    struct CaptureSpectrometer_Response {
+      sequence<double> wavelengths;
+
+      sequence<double> intensities;
+    };
+  };
+};

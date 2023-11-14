@@ -1,0 +1,1 @@
+Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/hockey_stick_arm-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/hockey_stick_arm

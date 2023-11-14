@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from theora_webcams/srv/ChangeVideo.srv
+// generated code does not contain a copyright notice
+
+
+module theora_webcams {
+  module srv {
+    struct ChangeVideo_Request {
+      int32 width;
+
+      int32 height;
+
+      int32 fps_num;
+
+      int32 fps_den;
+
+      boolean start;
+
+      boolean force_restart;
+    };
+    struct ChangeVideo_Response {
+      boolean success;
+    };
+  };
+};

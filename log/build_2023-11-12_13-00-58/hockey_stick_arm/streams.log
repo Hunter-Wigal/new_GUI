@@ -1,0 +1,64 @@
+[0.169s] Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/hockey_stick_arm -- -j4 -l4
+[0.312s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.424s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.464s] [  5%] Built target ament_cmake_python_copy_hockey_stick_arm
+[2.063s] [  5%] Built target hockey_stick_arm__cpp
+[2.073s] [  7%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_generator_c.dir/rosidl_generator_c/hockey_stick_arm/srv/detail/calibrate__functions.c.o[0m
+[2.256s] [ 10%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_generator_c.dir/rosidl_generator_c/hockey_stick_arm/srv/detail/set_float__functions.c.o[0m
+[2.364s] [ 12%] [32m[1mLinking C shared library libhockey_stick_arm__rosidl_generator_c.so[0m
+[2.450s] [ 12%] Built target hockey_stick_arm__rosidl_generator_c
+[2.467s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.562s] [ 17%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hockey_stick_arm/srv/detail/dds_fastrtps/calibrate__type_support.cpp.o[0m
+[5.399s] [ 20%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hockey_stick_arm/srv/detail/dds_fastrtps/set_float__type_support.cpp.o[0m
+[6.534s] [ 23%] [32m[1mLinking CXX shared library libhockey_stick_arm__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.976s] [ 23%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_cpp
+[7.028s] [ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.969s] [ 28%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hockey_stick_arm/srv/detail/calibrate__type_support.cpp.o[0m
+[8.776s] [ 30%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hockey_stick_arm/srv/detail/set_float__type_support.cpp.o[0m
+[9.515s] [ 33%] [32m[1mLinking CXX shared library libhockey_stick_arm__rosidl_typesupport_introspection_cpp.so[0m
+[9.654s] [ 33%] Built target hockey_stick_arm__rosidl_typesupport_introspection_cpp
+[9.690s] [ 35%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.385s] [ 38%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hockey_stick_arm/srv/detail/calibrate__type_support_c.cpp.o[0m
+[10.962s] [ 41%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hockey_stick_arm/srv/detail/set_float__type_support_c.cpp.o[0m
+[11.512s] [ 43%] [32m[1mLinking CXX shared library libhockey_stick_arm__rosidl_typesupport_fastrtps_c.so[0m
+[11.735s] [ 43%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_c
+[11.762s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.588s] [ 48%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hockey_stick_arm/srv/detail/calibrate__type_support.c.o[0m
+[12.659s] [ 51%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hockey_stick_arm/srv/detail/set_float__type_support.c.o[0m
+[12.725s] [ 53%] [32m[1mLinking C shared library libhockey_stick_arm__rosidl_typesupport_introspection_c.so[0m
+[12.781s] [ 53%] Built target hockey_stick_arm__rosidl_typesupport_introspection_c
+[12.793s] [ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.491s] [ 58%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_c.dir/rosidl_typesupport_c/hockey_stick_arm/srv/calibrate__type_support.cpp.o[0m
+[13.584s] [ 61%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_c.dir/rosidl_typesupport_c/hockey_stick_arm/srv/set_float__type_support.cpp.o[0m
+[13.665s] [ 64%] [32m[1mLinking CXX shared library libhockey_stick_arm__rosidl_typesupport_c.so[0m
+[13.765s] [ 64%] Built target hockey_stick_arm__rosidl_typesupport_c
+[13.787s] [ 66%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[14.469s] [ 69%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hockey_stick_arm/srv/calibrate__type_support.cpp.o[0m
+[14.911s] [ 71%] [32mBuilding CXX object CMakeFiles/hockey_stick_arm__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hockey_stick_arm/srv/set_float__type_support.cpp.o[0m
+[15.284s] [ 74%] [32m[1mLinking CXX shared library libhockey_stick_arm__rosidl_typesupport_cpp.so[0m
+[15.376s] [ 74%] Built target hockey_stick_arm__rosidl_typesupport_cpp
+[15.837s] running egg_info
+[15.839s] creating hockey_stick_arm.egg-info
+[15.840s] writing hockey_stick_arm.egg-info/PKG-INFO
+[15.841s] writing dependency_links to hockey_stick_arm.egg-info/dependency_links.txt
+[15.841s] writing top-level names to hockey_stick_arm.egg-info/top_level.txt
+[15.841s] writing manifest file 'hockey_stick_arm.egg-info/SOURCES.txt'
+[15.844s] reading manifest file 'hockey_stick_arm.egg-info/SOURCES.txt'
+[15.844s] writing manifest file 'hockey_stick_arm.egg-info/SOURCES.txt'
+[15.877s] [ 74%] Built target ament_cmake_python_build_hockey_stick_arm_egg
+[15.907s] [ 74%] Built target hockey_stick_arm
+[15.935s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[17.085s] [ 76%] Built target hockey_stick_arm__py
+[17.115s] [ 79%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_generator_py.dir/rosidl_generator_py/hockey_stick_arm/srv/_calibrate_s.c.o[0m
+[17.345s] [ 82%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_generator_py.dir/rosidl_generator_py/hockey_stick_arm/srv/_set_float_s.c.o[0m
+[17.505s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/hockey_stick_arm/libhockey_stick_arm__rosidl_generator_py.so[0m
+[17.564s] [ 84%] Built target hockey_stick_arm__rosidl_generator_py
+[17.596s] [ 87%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.779s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.858s] [ 89%] Built target hockey_stick_arm__rosidl_typesupport_fastrtps_c__pyext
+[17.884s] [ 92%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_c.c.o[0m
+[18.083s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.153s] [ 94%] Built target hockey_stick_arm__rosidl_typesupport_c__pyext
+[18.188s] [ 97%] [32mBuilding C object CMakeFiles/hockey_stick_arm__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hockey_stick_arm/_hockey_stick_arm_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[18.380s] [100%] [32m[1mLinking C shared library rosidl_generator_py/hockey_stick_arm/hockey_stick_arm_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.450s] [100%] Built target hockey_stick_arm__rosidl_typesupport_introspection_c__pyext

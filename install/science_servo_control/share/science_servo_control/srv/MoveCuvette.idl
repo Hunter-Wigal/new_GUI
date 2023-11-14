@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from science_servo_control/srv/MoveCuvette.srv
+// generated code does not contain a copyright notice
+
+
+module science_servo_control {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct MoveCuvette_Request {
+      int32 cuvette_num;
+    };
+    @verbatim (language="comment", text=
+      "No Response ")
+    struct MoveCuvette_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

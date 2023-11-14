@@ -1,0 +1,9 @@
+[0.117s] Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4
+[0.197s] failed to create symbolic link '/home/urc/new-GUI/build/theora_webcams/ament_cmake_python/theora_webcams/theora_webcams' because existing path cannot be removed: Is a directory
+[0.199s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_theora_webcams.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_theora_webcams] Error 1
+[0.199s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_theora_webcams.dir/all] Error 2
+[0.199s] gmake[1]: *** Waiting for unfinished jobs....
+[0.201s] [  1%] Built target theora_webcams__cpp
+[0.209s] [ 12%] Built target theora_webcams__rosidl_generator_c
+[0.210s] gmake: *** [Makefile:146: all] Error 2
+[0.212s] Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '2': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4

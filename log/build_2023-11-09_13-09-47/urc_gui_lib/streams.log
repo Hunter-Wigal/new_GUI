@@ -1,0 +1,27 @@
+[0.333s] Invoking command in '/home/urc/new-GUI/build/urc_gui_lib': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/marker_interfacing:/home/urc/new-GUI/install/aruco_finder LD_LIBRARY_PATH=/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/marker_interfacing/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/urc/new-GUI/src/urc_gui_lib -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/urc_gui_lib
+[0.369s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.793s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.966s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.970s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.976s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.068s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.142s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[1.316s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.319s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.549s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.895s] -- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[1.896s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.168s] -- Found geographic_msgs: 1.0.5 (/opt/ros/humble/share/geographic_msgs/cmake)
+[2.441s] -- Found marker_interfacing: 0.0.0 (/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/cmake)
+[2.833s] -- Found theora_webcams: 0.0.0 (/home/urc/new-GUI/install/theora_webcams/share/theora_webcams/cmake)
+[3.321s] -- Found aruco_finder: 0.0.0 (/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/cmake)
+[3.546s] -- Found theora_image_transport: 2.5.0 (/opt/ros/humble/share/theora_image_transport/cmake)
+[3.776s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[3.777s]   rosidl_generate_interfaces() called without any interface files
+[3.777s] Call Stack (most recent call first):
+[3.777s]   CMakeLists.txt:256 (rosidl_generate_interfaces)
+[3.777s] 
+[3.777s] [0m
+[3.777s] -- Configuring incomplete, errors occurred!
+[3.777s] See also "/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/CMakeOutput.log".
+[3.787s] Invoked command in '/home/urc/new-GUI/build/urc_gui_lib' returned '1': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/marker_interfacing:/home/urc/new-GUI/install/aruco_finder LD_LIBRARY_PATH=/home/urc/new-GUI/install/theora_webcams/lib:/home/urc/new-GUI/install/marker_interfacing/lib:/home/urc/new-GUI/install/aruco_finder/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/urc/new-GUI/src/urc_gui_lib -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/urc_gui_lib

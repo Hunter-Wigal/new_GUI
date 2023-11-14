@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.000808] (geographic_msgs) JobQueued: {'identifier': 'geographic_msgs', 'dependencies': OrderedDict()}
+[0.000894] (gui_window) JobQueued: {'identifier': 'gui_window', 'dependencies': OrderedDict()}
+[0.000936] (geodesy) JobQueued: {'identifier': 'geodesy', 'dependencies': OrderedDict([('geographic_msgs', '/home/urc/new-GUI/install/geographic_msgs')])}
+[0.000980] (geographic_info) JobQueued: {'identifier': 'geographic_info', 'dependencies': OrderedDict([('geographic_msgs', '/home/urc/new-GUI/install/geographic_msgs'), ('geodesy', '/home/urc/new-GUI/install/geodesy')])}
+[0.001018] (geographic_msgs) JobStarted: {'identifier': 'geographic_msgs'}
+[0.090037] (gui_window) JobStarted: {'identifier': 'gui_window'}
+[0.103603] (-) TimerEvent: {}
+[0.202870] (geographic_msgs) JobProgress: {'identifier': 'geographic_msgs', 'progress': 'cmake'}
+[0.203735] (geographic_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs', '-DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_msgs'], 'cwd': '/home/urc/new-GUI/build/geographic_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'urc'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/urc'), ('OLDPWD', '/home/urc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1491'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'urc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/urc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/URC:@/tmp/.ICE-unix/1463,unix/URC:/tmp/.ICE-unix/1463'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b061faf_edad_4539_b447_5e59a8d501e9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ACY7D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/urc/new-GUI/build/geographic_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.209493] (-) TimerEvent: {}
+[0.226245] (geographic_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.311409] (-) TimerEvent: {}
+[0.411752] (-) TimerEvent: {}
+[0.420639] (geographic_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.489769] (geographic_msgs) StderrLine: {'line': b"Error parsing '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml':\n"}
+[0.511839] (-) TimerEvent: {}
+[0.550742] (geographic_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.551256] (geographic_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[0.551410] (geographic_msgs) StderrLine: {'line': b'    main()\n'}
+[0.551585] (geographic_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[0.551685] (geographic_msgs) StderrLine: {'line': b'    raise e\n'}
+[0.551779] (geographic_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[0.551896] (geographic_msgs) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[0.552007] (geographic_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string\n'}
+[0.552276] (geographic_msgs) StderrLine: {'line': b"    raise InvalidPackage('Error(s):%s' % (''.join(['\\n- %s' % e for e in errors])), filename)\n"}
+[0.552392] (geographic_msgs) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml':\n"}
+[0.552491] (geographic_msgs) StderrLine: {'line': b'Error(s):\n'}
+[0.552658] (geographic_msgs) StderrLine: {'line': b'- The manifest of package "geographic_msgs" (with format version 1) must not contain the following tags: member_of_group, exec_depend\n'}
+[0.552757] (geographic_msgs) StderrLine: {'line': b'- Either update to a newer format or replace <exec_depend> tags with <run_depend> tags.\n'}
+[0.570329] (geographic_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[0.570537] (geographic_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10\n'}
+[0.570641] (geographic_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.570737] (geographic_msgs) StderrLine: {'line': b'  /home/urc/new-GUI/src/geographic_info-master/geographic_msgs/package.xml\n'}
+[0.570832] (geographic_msgs) StderrLine: {'line': b'  /home/urc/new-GUI/build/geographic_msgs/ament_cmake_core/package.cmake)\n'}
+[0.570925] (geographic_msgs) StderrLine: {'line': b'  returned error code 1\n'}
+[0.571018] (geographic_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.571110] (geographic_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.571202] (geographic_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[0.571306] (geographic_msgs) StderrLine: {'line': b'  CMakeLists.txt:74 (ament_lint_auto_find_test_dependencies)\n'}
+[0.571398] (geographic_msgs) StderrLine: {'line': b'\n'}
+[0.571489] (geographic_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.571762] (geographic_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.571881] (geographic_msgs) StdoutLine: {'line': b'See also "/home/urc/new-GUI/build/geographic_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.612557] (-) TimerEvent: {}
+[0.713016] (-) TimerEvent: {}
+[0.715557] (geographic_msgs) CommandEnded: {'returncode': 1}
+[0.717790] (geographic_msgs) JobEnded: {'identifier': 'geographic_msgs', 'rc': 1}
+[0.718850] (gui_window) JobEnded: {'identifier': 'gui_window', 'rc': 'SIGINT'}
+[0.730214] (geodesy) JobSkipped: {'identifier': 'geodesy'}
+[0.730290] (geographic_info) JobSkipped: {'identifier': 'geographic_info'}
+[0.730315] (-) EventReactorShutdown: {}

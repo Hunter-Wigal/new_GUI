@@ -1,0 +1,32 @@
+[0.139s] Invoking command in '/home/urc/new-GUI/build/marker_interfacing': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
+[0.163s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.375s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.464s] Error parsing '/home/urc/new-GUI/src/marker_interfacing/package.xml':
+[0.534s] Traceback (most recent call last):
+[0.534s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.534s]     main()
+[0.534s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.535s]     raise e
+[0.535s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.535s]     package = parse_package_string(
+[0.535s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.536s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.536s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/urc/new-GUI/src/marker_interfacing/package.xml':
+[0.536s] Error(s):
+[0.536s] - The generic dependency on 'std_msgs' is redundant with: exec_depend
+[0.536s] - The generic dependency on 'rclcpp' is redundant with: exec_depend
+[0.556s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.556s]   execute_process(/usr/bin/python3.10
+[0.556s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.556s]   /home/urc/new-GUI/src/marker_interfacing/package.xml
+[0.556s]   /home/urc/new-GUI/build/marker_interfacing/ament_cmake_core/package.cmake)
+[0.556s]   returned error code 1
+[0.557s] Call Stack (most recent call first):
+[0.557s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.557s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.557s]   CMakeLists.txt:248 (ament_lint_auto_find_test_dependencies)
+[0.557s] 
+[0.557s] [0m
+[0.557s] -- Configuring incomplete, errors occurred!
+[0.557s] See also "/home/urc/new-GUI/build/marker_interfacing/CMakeFiles/CMakeOutput.log".
+[0.560s] Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing

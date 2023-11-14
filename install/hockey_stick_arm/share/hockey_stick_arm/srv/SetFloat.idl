@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from hockey_stick_arm/srv/SetFloat.srv
+// generated code does not contain a copyright notice
+
+
+module hockey_stick_arm {
+  module srv {
+    struct SetFloat_Request {
+      float value;
+    };
+    struct SetFloat_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

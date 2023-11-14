@@ -1,0 +1,209 @@
+[1.652s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.652s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb9bbdb59f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb9bc1b2ce0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb9bc1b2ce0>>)
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.722s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/urc/new-GUI'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ignore', 'ignore_ament_install']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore_ament_install'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_pkg']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_pkg'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_meta']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_meta'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ros']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ros'
+[1.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aruco_finder' with type 'ros.ament_cmake' and name 'aruco_finder'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ignore', 'ignore_ament_install']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore_ament_install'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_pkg']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_pkg'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_meta']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_meta'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ros']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ros'
+[1.766s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_window' with type 'ros.ament_python' and name 'gui_window'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ignore', 'ignore_ament_install']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore_ament_install'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_pkg']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_pkg'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_meta']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_meta'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ros']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ros'
+[1.769s] DEBUG:colcon.colcon_core.package_identification:Package 'src/theora_webcams' with type 'ros.ament_cmake' and name 'theora_webcams'
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.914s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.914s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.962s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/urc/new-GUI/install
+[1.988s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/humble
+[2.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_args' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_target' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_clean_cache' from command line to 'False'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_clean_first' from command line to 'False'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_force_configure' from command line to 'False'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'ament_cmake_args' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'catkin_cmake_args' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.156s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_finder' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/aruco_finder', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/aruco_finder', 'merge_install': False, 'path': '/home/urc/new-GUI/src/aruco_finder', 'symlink_install': True, 'test_result_base': None}
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_args' from command line to 'None'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_target' from command line to 'None'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_clean_cache' from command line to 'False'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_clean_first' from command line to 'False'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_force_configure' from command line to 'False'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'ament_cmake_args' from command line to 'None'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'catkin_cmake_args' from command line to 'None'
+[2.180s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.180s] DEBUG:colcon.colcon_core.verb:Building package 'gui_window' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/gui_window', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/gui_window', 'merge_install': False, 'path': '/home/urc/new-GUI/src/gui_window', 'symlink_install': True, 'test_result_base': None}
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_target' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_clean_cache' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_clean_first' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'cmake_force_configure' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'ament_cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'catkin_cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'theora_webcams' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.207s] DEBUG:colcon.colcon_core.verb:Building package 'theora_webcams' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/theora_webcams', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/theora_webcams', 'merge_install': False, 'path': '/home/urc/new-GUI/src/theora_webcams', 'symlink_install': True, 'test_result_base': None}
+[2.231s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.260s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.261s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/urc/new-GUI/src/aruco_finder' with build type 'ament_cmake'
+[2.261s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/urc/new-GUI/src/aruco_finder'
+[2.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.287s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.287s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.368s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/urc/new-GUI/src/gui_window' with build type 'ament_python'
+[2.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_window', 'ament_prefix_path')
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.ps1'
+[2.396s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.dsv'
+[2.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.sh'
+[2.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.498s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/urc/new-GUI/src/theora_webcams' with build type 'ament_cmake'
+[2.498s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/urc/new-GUI/src/theora_webcams'
+[2.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[3.051s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/urc/new-GUI/src/gui_window'
+[3.074s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.074s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake /home/urc/new-GUI/src/theora_webcams -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/theora_webcams
+[3.760s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/urc/new-GUI/install/gui_window/share/ament_index/resource_index/packages/gui_window
+[3.761s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/urc/new-GUI/install/gui_window/share/gui_window/package.xml
+[3.761s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/urc/new-GUI/install/gui_window/lib/gui_window/gui
+[3.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/urc/new-GUI/build/gui_window/build --no-deps install_data
+[4.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_window', 'pythonpath_develop')
+[4.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/gui_window' returned '0': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/urc/new-GUI/build/gui_window/build --no-deps install_data
+[4.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/build/gui_window/share/gui_window/hook/pythonpath_develop.ps1'
+[4.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/build/gui_window/share/gui_window/hook/pythonpath_develop.dsv'
+[4.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/build/gui_window/share/gui_window/hook/pythonpath_develop.sh'
+[4.615s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window' for CMake module files
+[4.616s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window' for CMake config files
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window/lib'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window/bin'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window/lib/pkgconfig/gui_window.pc'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages'
+[4.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_window', 'pythonpath')
+[4.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/pythonpath.ps1'
+[4.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/pythonpath.dsv'
+[4.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/pythonpath.sh'
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/gui_window/bin'
+[4.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gui_window)
+[4.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/gui_window/share/gui_window/package.ps1'
+[4.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/gui_window/share/gui_window/package.dsv'
+[4.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/gui_window/share/gui_window/package.sh'
+[4.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/gui_window/share/gui_window/package.bash'
+[4.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/gui_window/share/gui_window/package.zsh'
+[4.672s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/gui_window/share/colcon-core/packages/gui_window)
+[5.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '0': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[5.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[5.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '2': CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/theora_webcams:/home/urc/new-GUI/install/gui_window:/opt/ros/humble:/home/urc/new-GUI/install/geographic_msgs:/home/urc/new-GUI/install/aruco_finder /usr/bin/cmake --build /home/urc/new-GUI/build/aruco_finder -- -j4 -l4
+[5.576s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_finder)
+[5.612s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder' for CMake module files
+[5.613s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder' for CMake config files
+[5.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_finder', 'cmake_prefix_path')
+[5.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/cmake_prefix_path.ps1'
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/cmake_prefix_path.dsv'
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/cmake_prefix_path.sh'
+[5.652s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder/lib'
+[5.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_finder', 'ld_library_path_lib')
+[5.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/ld_library_path_lib.ps1'
+[5.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/ld_library_path_lib.dsv'
+[5.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/hook/ld_library_path_lib.sh'
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder/bin'
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder/lib/pkgconfig/aruco_finder.pc'
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder/lib/python3.10/site-packages'
+[5.680s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/aruco_finder/bin'
+[5.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.ps1'
+[5.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.dsv'
+[5.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.sh'
+[5.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.bash'
+[5.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/aruco_finder/share/aruco_finder/package.zsh'
+[5.713s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/aruco_finder/share/colcon-core/packages/aruco_finder)
+[7.257s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.258s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.258s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.258s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.296s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.296s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.297s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.315s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.362s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.ps1'
+[7.363s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_ps1.py'
+[7.370s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.ps1'
+[7.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.sh'
+[7.404s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_sh.py'
+[7.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.sh'
+[7.433s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.bash'
+[7.434s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.bash'
+[7.462s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.zsh'
+[7.462s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.zsh'

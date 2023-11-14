@@ -1,0 +1,17 @@
+[1.275s] Invoking command in '/home/urc/new-GUI/build/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/urc/new-GUI/build/gui_window/build --no-deps install_data
+[1.690s] running develop
+[1.955s] running egg_info
+[1.957s] writing gui_window.egg-info/PKG-INFO
+[1.958s] writing dependency_links to gui_window.egg-info/dependency_links.txt
+[1.958s] writing entry points to gui_window.egg-info/entry_points.txt
+[1.958s] writing requirements to gui_window.egg-info/requires.txt
+[1.958s] writing top-level names to gui_window.egg-info/top_level.txt
+[1.960s] reading manifest file 'gui_window.egg-info/SOURCES.txt'
+[1.961s] writing manifest file 'gui_window.egg-info/SOURCES.txt'
+[1.963s] running build_ext
+[1.963s] Creating /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui-window.egg-link (link to .)
+[1.964s] Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window
+[1.965s] 
+[1.965s] Installed /home/urc/new-GUI/build/gui_window
+[1.965s] running install_data
+[1.999s] Invoked command in '/home/urc/new-GUI/build/gui_window' returned '0': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/urc/new-GUI/build/gui_window/build --no-deps install_data

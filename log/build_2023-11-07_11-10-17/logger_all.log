@@ -1,0 +1,232 @@
+[1.699s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.699s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5cb9420be0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5cb98bb550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5cb98bb550>>)
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.789s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.789s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/urc/new-GUI'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['ignore', 'ignore_ament_install']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'ignore'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'ignore_ament_install'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['colcon_pkg']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'colcon_pkg'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['colcon_meta']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'colcon_meta'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['ros']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'ros'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['cmake', 'python']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'cmake'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'python'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extensions ['python_setup_py']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master) by extension 'python_setup_py'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extensions ['ignore', 'ignore_ament_install']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extension 'ignore'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extension 'ignore_ament_install'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extensions ['colcon_pkg']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extension 'colcon_pkg'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extensions ['colcon_meta']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extension 'colcon_meta'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extensions ['ros']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_info) by extension 'ros'
+[1.816s] DEBUG:colcon.colcon_core.package_identification:Package 'src/geographic_info-master/geographic_info' with type 'ros.catkin' and name 'geographic_info'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extension 'ignore'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extension 'ignore_ament_install'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extensions ['colcon_pkg']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extension 'colcon_pkg'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extensions ['colcon_meta']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extension 'colcon_meta'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extensions ['ros']
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/geographic_info-master/geographic_msgs) by extension 'ros'
+[1.818s] DEBUG:colcon.colcon_core.package_identification:Package 'src/geographic_info-master/geographic_msgs' with type 'ros.ament_cmake' and name 'geographic_msgs'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ignore', 'ignore_ament_install']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore_ament_install'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_pkg']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_pkg'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_meta']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_meta'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ros']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ros'
+[1.819s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_window' with type 'ros.ament_python' and name 'gui_window'
+[1.819s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.819s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.819s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.819s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.820s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.019s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[2.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_args' from command line to 'None'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_target' from command line to 'None'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'geographic_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.236s] DEBUG:colcon.colcon_core.verb:Building package 'geographic_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/geographic_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/geographic_msgs', 'merge_install': False, 'path': '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_args' from command line to 'None'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_target' from command line to 'None'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_clean_cache' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_clean_first' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'cmake_force_configure' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'ament_cmake_args' from command line to 'None'
+[2.259s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'catkin_cmake_args' from command line to 'None'
+[2.259s] Level 5:colcon.colcon_core.verb:set package 'gui_window' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.259s] DEBUG:colcon.colcon_core.verb:Building package 'gui_window' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/gui_window', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/gui_window', 'merge_install': False, 'path': '/home/urc/new-GUI/src/gui_window', 'symlink_install': True, 'test_result_base': None}
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_args' from command line to 'None'
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_target' from command line to 'None'
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_clean_cache' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_clean_first' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'cmake_force_configure' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'ament_cmake_args' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'catkin_cmake_args' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'geographic_info' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.283s] DEBUG:colcon.colcon_core.verb:Building package 'geographic_info' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/geographic_info', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/geographic_info', 'merge_install': False, 'path': '/home/urc/new-GUI/src/geographic_info-master/geographic_info', 'symlink_install': True, 'test_result_base': None}
+[2.310s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.341s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.341s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs' with build type 'ament_cmake'
+[2.341s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/urc/new-GUI/src/geographic_info-master/geographic_msgs'
+[2.376s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.377s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.377s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.428s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/urc/new-GUI/src/gui_window' with build type 'ament_python'
+[2.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_window', 'ament_prefix_path')
+[2.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.ps1'
+[2.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.dsv'
+[2.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/gui_window/share/gui_window/hook/ament_prefix_path.sh'
+[2.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/geographic_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/geographic_msgs -- -j4 -l4
+[3.036s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/urc/new-GUI/src/gui_window'
+[3.064s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.064s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/geographic_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/geographic_msgs -- -j4 -l4
+[3.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/geographic_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/geographic_msgs
+[3.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(geographic_msgs)
+[3.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/geographic_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/geographic_msgs
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs' for CMake module files
+[3.482s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs' for CMake config files
+[3.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('geographic_msgs', 'cmake_prefix_path')
+[3.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.ps1'
+[3.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.dsv'
+[3.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.sh'
+[3.510s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib'
+[3.510s] Level 1:colcon.colcon_core.shell:create_environment_hook('geographic_msgs', 'ld_library_path_lib')
+[3.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.ps1'
+[3.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.dsv'
+[3.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.sh'
+[3.536s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/bin'
+[3.537s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib/pkgconfig/geographic_msgs.pc'
+[3.537s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib/python3.10/site-packages'
+[3.537s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/bin'
+[3.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.ps1'
+[3.563s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.dsv'
+[3.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.sh'
+[3.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.bash'
+[3.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.zsh'
+[3.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/geographic_msgs/share/colcon-core/packages/geographic_msgs)
+[3.662s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(geographic_msgs)
+[3.684s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs' for CMake module files
+[3.685s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs' for CMake config files
+[3.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('geographic_msgs', 'cmake_prefix_path')
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.ps1'
+[3.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.dsv'
+[3.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/cmake_prefix_path.sh'
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib'
+[3.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('geographic_msgs', 'ld_library_path_lib')
+[3.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.ps1'
+[3.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.dsv'
+[3.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/hook/ld_library_path_lib.sh'
+[3.739s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/bin'
+[3.739s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib/pkgconfig/geographic_msgs.pc'
+[3.739s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/lib/python3.10/site-packages'
+[3.740s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_msgs/bin'
+[3.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.ps1'
+[3.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.dsv'
+[3.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.sh'
+[3.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.bash'
+[3.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_msgs/share/geographic_msgs/package.zsh'
+[3.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/geographic_msgs/share/colcon-core/packages/geographic_msgs)
+[3.767s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/urc/new-GUI/src/geographic_info-master/geographic_info' with build type 'catkin'
+[3.767s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/urc/new-GUI/src/geographic_info-master/geographic_info'
+[3.790s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.790s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/urc/new-GUI/build/gui_window/build --no-deps install_data
+[3.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/geographic_info': AMENT_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs LD_LIBRARY_PATH=/home/urc/new-GUI/install/geographic_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geographic_info -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_info
+[4.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/geographic_info' returned '1': AMENT_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/urc/new-GUI/install/geographic_msgs LD_LIBRARY_PATH=/home/urc/new-GUI/install/geographic_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/urc/new-GUI/install/geographic_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geographic_info -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_info
+[4.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(geographic_info)
+[4.445s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info' for CMake module files
+[4.446s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info' for CMake config files
+[4.446s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info/bin'
+[4.447s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info/lib/pkgconfig/geographic_info.pc'
+[4.447s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info/lib/python3.10/site-packages'
+[4.447s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/geographic_info/bin'
+[4.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_info/share/geographic_info/package.ps1'
+[4.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/geographic_info/share/geographic_info/package.dsv'
+[4.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_info/share/geographic_info/package.sh'
+[4.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_info/share/geographic_info/package.bash'
+[4.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/geographic_info/share/geographic_info/package.zsh'
+[4.482s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/geographic_info/share/colcon-core/packages/geographic_info)
+[4.732s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.733s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.769s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.788s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.819s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.ps1'
+[4.821s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_ps1.py'
+[4.825s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.ps1'
+[4.850s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.sh'
+[4.851s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_sh.py'
+[4.852s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.sh'
+[4.877s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.bash'
+[4.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.bash'
+[4.902s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.zsh'
+[4.903s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.zsh'

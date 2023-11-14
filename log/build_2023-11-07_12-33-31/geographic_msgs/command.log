@@ -1,0 +1,1 @@
+Invoking command in '/home/urc/new-GUI/build/geographic_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/geographic_info-master/geographic_msgs -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/geographic_msgs

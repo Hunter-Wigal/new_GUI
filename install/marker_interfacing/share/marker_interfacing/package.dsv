@@ -1,0 +1,11 @@
+source;share/marker_interfacing/hook/cmake_prefix_path.ps1
+source;share/marker_interfacing/hook/cmake_prefix_path.dsv
+source;share/marker_interfacing/hook/cmake_prefix_path.sh
+source;share/marker_interfacing/hook/ld_library_path_lib.ps1
+source;share/marker_interfacing/hook/ld_library_path_lib.dsv
+source;share/marker_interfacing/hook/ld_library_path_lib.sh
+source;share/marker_interfacing/local_setup.bash
+source;share/marker_interfacing/local_setup.dsv
+source;share/marker_interfacing/local_setup.ps1
+source;share/marker_interfacing/local_setup.sh
+source;share/marker_interfacing/local_setup.zsh

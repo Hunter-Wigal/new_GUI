@@ -1,0 +1,2 @@
+Invoking command in '/home/urc/new-GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
+Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing

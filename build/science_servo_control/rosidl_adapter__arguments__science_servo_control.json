@@ -1,0 +1,20 @@
+{
+  "package_name": "science_servo_control",
+  "non_idl_tuples": [
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/LowerLinearActuator.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/FreeMoveDrum.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/MixSample.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/MoveCuvette.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/MoveLinearActuator.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/MovePump.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/PreMixDrum.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/PreSealDrum.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/RaiseLinearActuator.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/ReadDrumPosition.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/RebootDrum.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/ScoopSample.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/SealDrum.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/SpinCentrifuge.srv",
+    "/home/urc/new-GUI/src/science_servo_control-main:srv/WriteGPIO.srv"
+  ]
+}

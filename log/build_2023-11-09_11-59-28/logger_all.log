@@ -1,0 +1,184 @@
+[1.793s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'marker_interfacing']
+[1.793s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['marker_interfacing'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff2fb1b8a00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff2fb5deb90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff2fb5deb90>>)
+[1.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.879s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.879s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/urc/new-GUI'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ignore', 'ignore_ament_install']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore_ament_install'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_pkg']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_pkg'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_meta']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_meta'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ros']
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ros'
+[1.902s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aruco_finder' with type 'ros.ament_cmake' and name 'aruco_finder'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ignore', 'ignore_ament_install']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore_ament_install'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_pkg']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_pkg'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_meta']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_meta'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ros']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ros'
+[1.904s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_window' with type 'ros.ament_python' and name 'gui_window'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ignore'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ignore_ament_install'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['colcon_pkg']
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'colcon_pkg'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['colcon_meta']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'colcon_meta'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['ros']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ros'
+[1.907s] DEBUG:colcon.colcon_core.package_identification:Package 'src/marker_interfacing' with type 'ros.ament_cmake' and name 'marker_interfacing'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ignore', 'ignore_ament_install']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore_ament_install'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_pkg']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_pkg'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_meta']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_meta'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ros']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ros'
+[1.912s] DEBUG:colcon.colcon_core.package_identification:Package 'src/theora_webcams' with type 'ros.ament_cmake' and name 'theora_webcams'
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.017s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aruco_finder' in 'src/aruco_finder'
+[2.017s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gui_window' in 'src/gui_window'
+[2.017s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'theora_webcams' in 'src/theora_webcams'
+[2.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.118s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/urc/new-GUI/install
+[2.149s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/humble
+[2.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_args' from command line to 'None'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_target' from command line to 'None'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_clean_cache' from command line to 'False'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_clean_first' from command line to 'False'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_force_configure' from command line to 'False'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'ament_cmake_args' from command line to 'None'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'catkin_cmake_args' from command line to 'None'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.336s] DEBUG:colcon.colcon_core.verb:Building package 'marker_interfacing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new-GUI/build/marker_interfacing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new-GUI/install/marker_interfacing', 'merge_install': False, 'path': '/home/urc/new-GUI/src/marker_interfacing', 'symlink_install': False, 'test_result_base': None}
+[2.360s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.389s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/urc/new-GUI/src/marker_interfacing' with build type 'ament_cmake'
+[2.390s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/urc/new-GUI/src/marker_interfacing'
+[2.426s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
+[6.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
+[6.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/marker_interfacing -- -j4 -l4
+[35.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/marker_interfacing -- -j4 -l4
+[35.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/urc/new-GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/marker_interfacing
+[36.155s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(marker_interfacing)
+[36.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/urc/new-GUI/install/gui_window:/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/marker_interfacing
+[36.299s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing' for CMake module files
+[36.300s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing' for CMake config files
+[36.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('marker_interfacing', 'cmake_prefix_path')
+[36.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.ps1'
+[36.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.dsv'
+[36.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.sh'
+[36.341s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib'
+[36.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('marker_interfacing', 'ld_library_path_lib')
+[36.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.ps1'
+[36.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.dsv'
+[36.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.sh'
+[36.369s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/bin'
+[36.369s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib/pkgconfig/marker_interfacing.pc'
+[36.370s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib/python3.10/site-packages'
+[36.370s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/bin'
+[36.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.ps1'
+[36.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.dsv'
+[36.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.sh'
+[36.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.bash'
+[36.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.zsh'
+[36.416s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/marker_interfacing/share/colcon-core/packages/marker_interfacing)
+[37.055s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(marker_interfacing)
+[37.091s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing' for CMake module files
+[37.093s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing' for CMake config files
+[37.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('marker_interfacing', 'cmake_prefix_path')
+[37.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.ps1'
+[37.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.dsv'
+[37.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/cmake_prefix_path.sh'
+[37.136s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib'
+[37.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('marker_interfacing', 'ld_library_path_lib')
+[37.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.ps1'
+[37.172s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.dsv'
+[37.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/hook/ld_library_path_lib.sh'
+[37.178s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/bin'
+[37.178s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib/pkgconfig/marker_interfacing.pc'
+[37.178s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/lib/python3.10/site-packages'
+[37.179s] Level 1:colcon.colcon_core.environment:checking '/home/urc/new-GUI/install/marker_interfacing/bin'
+[37.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.ps1'
+[37.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.dsv'
+[37.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.sh'
+[37.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.bash'
+[37.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/urc/new-GUI/install/marker_interfacing/share/marker_interfacing/package.zsh'
+[37.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/urc/new-GUI/install/marker_interfacing/share/colcon-core/packages/marker_interfacing)
+[37.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[37.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[37.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[37.229s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[37.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[37.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[37.291s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[37.313s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[37.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.ps1'
+[37.351s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_ps1.py'
+[37.355s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.ps1'
+[37.389s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.sh'
+[37.390s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/urc/new-GUI/install/_local_setup_util_sh.py'
+[37.393s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.sh'
+[37.425s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.bash'
+[37.427s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.bash'
+[37.458s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/urc/new-GUI/install/local_setup.zsh'
+[37.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/urc/new-GUI/install/setup.zsh'

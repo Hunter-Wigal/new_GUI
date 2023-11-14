@@ -1,0 +1,2 @@
+Invoking command in '/home/urc/new-GUI/build/theora_webcams': /usr/bin/cmake /home/urc/new-GUI/src/theora_webcams -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/theora_webcams
+Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/theora_webcams -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/theora_webcams

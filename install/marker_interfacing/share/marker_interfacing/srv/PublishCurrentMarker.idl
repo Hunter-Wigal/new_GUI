@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from marker_interfacing/srv/PublishCurrentMarker.srv
+// generated code does not contain a copyright notice
+
+
+module marker_interfacing {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request - Publish the current Marker")
+    struct PublishCurrentMarker_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct PublishCurrentMarker_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,21 @@
+[1.599s] Invoking command in '/home/urc/new-GUI/src/gui_window': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed
+[2.080s] running egg_info
+[2.083s] writing ../../build/gui_window/gui_window.egg-info/PKG-INFO
+[2.084s] writing dependency_links to ../../build/gui_window/gui_window.egg-info/dependency_links.txt
+[2.085s] writing entry points to ../../build/gui_window/gui_window.egg-info/entry_points.txt
+[2.087s] writing requirements to ../../build/gui_window/gui_window.egg-info/requires.txt
+[2.088s] writing top-level names to ../../build/gui_window/gui_window.egg-info/top_level.txt
+[2.089s] reading manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[2.092s] writing manifest file '../../build/gui_window/gui_window.egg-info/SOURCES.txt'
+[2.093s] running build
+[2.096s] running build_py
+[2.096s] running install
+[2.096s] running install_lib
+[2.098s] running install_data
+[2.099s] running install_egg_info
+[2.102s] removing '/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info' (and everything under it)
+[2.103s] Copying ../../build/gui_window/gui_window.egg-info to /home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages/gui_window-0.0.0-py3.10.egg-info
+[2.103s] running install_scripts
+[2.138s] Installing gui script to /home/urc/new-GUI/install/gui_window/lib/gui_window
+[2.139s] writing list of installed files to '/home/urc/new-GUI/build/gui_window/install.log'
+[2.208s] Invoked command in '/home/urc/new-GUI/src/gui_window' returned '0': PYTHONPATH=/home/urc/new-GUI/build/gui_window/prefix_override:/home/urc/new-GUI/install/gui_window/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gui_window build --build-base /home/urc/new-GUI/build/gui_window/build install --record /home/urc/new-GUI/build/gui_window/install.log --single-version-externally-managed

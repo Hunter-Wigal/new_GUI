@@ -1,0 +1,5 @@
+# Request - new order of marker_ids, ids not included will go to the end in their current order
+uint8[] marker_ids
+---
+# Response - T/F
+bool success

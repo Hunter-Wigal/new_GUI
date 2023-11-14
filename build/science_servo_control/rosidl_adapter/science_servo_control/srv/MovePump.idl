@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from science_servo_control/srv/MovePump.srv
+// generated code does not contain a copyright notice
+
+
+module science_servo_control {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct MovePump_Request {
+      int32 pump_id;
+
+      int32 ppm_speed;
+
+      int32 duration;
+    };
+    @verbatim (language="comment", text=
+      "No response")
+    struct MovePump_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

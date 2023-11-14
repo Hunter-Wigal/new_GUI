@@ -1,0 +1,4 @@
+# Request - Remove current Marker
+---
+# Response - T/F
+bool success

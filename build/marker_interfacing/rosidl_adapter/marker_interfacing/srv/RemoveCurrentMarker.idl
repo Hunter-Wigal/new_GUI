@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from marker_interfacing/srv/RemoveCurrentMarker.srv
+// generated code does not contain a copyright notice
+
+
+module marker_interfacing {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request - Remove current Marker")
+    struct RemoveCurrentMarker_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Response - T/F")
+    struct RemoveCurrentMarker_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target theora_webcams__rosidl_generator_c[0m
+failed to create symbolic link '/home/urc/new-GUI/build/theora_webcams/ament_cmake_python/theora_webcams/theora_webcams' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_theora_webcams.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_theora_webcams] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_theora_webcams.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 11%] Built target theora_webcams__rosidl_generator_c
+[ 12%] Built target theora_webcams__cpp
+gmake: *** [Makefile:146: all] Error 2

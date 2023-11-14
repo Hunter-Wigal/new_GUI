@@ -1,0 +1,11 @@
+source;share/ocean_optics_spectrometer/hook/cmake_prefix_path.ps1
+source;share/ocean_optics_spectrometer/hook/cmake_prefix_path.dsv
+source;share/ocean_optics_spectrometer/hook/cmake_prefix_path.sh
+source;share/ocean_optics_spectrometer/hook/ld_library_path_lib.ps1
+source;share/ocean_optics_spectrometer/hook/ld_library_path_lib.dsv
+source;share/ocean_optics_spectrometer/hook/ld_library_path_lib.sh
+source;share/ocean_optics_spectrometer/local_setup.bash
+source;share/ocean_optics_spectrometer/local_setup.dsv
+source;share/ocean_optics_spectrometer/local_setup.ps1
+source;share/ocean_optics_spectrometer/local_setup.sh
+source;share/ocean_optics_spectrometer/local_setup.zsh

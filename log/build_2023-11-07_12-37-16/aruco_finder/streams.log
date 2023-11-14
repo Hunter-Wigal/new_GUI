@@ -1,0 +1,21 @@
+[0.362s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
+[0.984s] -- Configuring incomplete, errors occurred!
+[0.984s] See also "/home/urc/new-GUI/build/aruco_finder/CMakeFiles/CMakeOutput.log".
+[0.986s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.986s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.986s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.986s]   CMake did not find one.
+[0.986s] 
+[0.986s]   Could not find a package configuration file provided by "catkin" with any
+[0.986s]   of the following names:
+[0.987s] 
+[0.987s]     catkinConfig.cmake
+[0.987s]     catkin-config.cmake
+[0.987s] 
+[0.987s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.987s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.987s]   provides a separate development package or SDK, be sure it has been
+[0.987s]   installed.
+[0.987s] 
+[0.987s] [0m
+[1.017s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
