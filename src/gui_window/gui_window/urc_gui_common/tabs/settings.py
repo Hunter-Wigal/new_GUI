@@ -16,9 +16,11 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 import rclpy
-from rclpy.node import Service
-
+from rclpy.node import Node, Client
+from rclpy.exceptions import InvalidServiceNameException
 from std_msgs.msg import String
+from ros2topic import api
+
 
 from theora_webcams.srv import GetResolutions, ChangeVideo
 from theora_webcams.msg import Resolution, Framerate
@@ -28,6 +30,35 @@ from gui_window.urc_gui_common.widgets import SuperCameraWidget, HLine
 from gui_window.urc_gui_common.helpers.file_helper import file_basenames
 
 gui_presets_dir = os.path.expanduser('~/.ros/gui_presets')
+
+class ServiceClient(Node):
+	def __init__(self, name, topic, type):
+		super().__init__(name)
+		self.cli = self.create_client(type, topic)
+		self.req = type.Request()
+
+	def send_request(self):
+		self.future = self.cli.call_async(self.req)
+		rclpy.spin_until_future_complete(self, self.future)
+		return self.future.result()
+	
+class VideoClient(Node):
+	def __init__(self, name, topic, type):
+		super().__init__(name)
+		self.cli = self.create_client(type, topic)
+		self.req = type.Request()
+
+	def send_request(self, width, height, fps_num, fps_den, start, force_restart):
+		self.req.width = width
+		self.req.height = height
+		self.req.fps_num = fps_num
+		self.req.fps_den = fps_den
+		self.req.start = start
+		self.req.force_restart = force_restart
+
+		self.future = self.cli.call_async(self.req)
+		rclpy.spin_until_future_complete(self, self.future)
+		return self.future.result()
 
 @dataclass
 class CameraInfo:
@@ -42,7 +73,7 @@ class CameraInfo:
 	current_height: int
 	current_fps: str
 	resolutions: List[Resolution]
-	change_video: Service
+	change_video: Client
 
 class SettingsTab(QWidget):
 	def __init__(self, roslink: RosLink, super_camera_widgets: List[SuperCameraWidget] = None, *args, **kwargs):
@@ -207,7 +238,7 @@ class SettingsTab(QWidget):
 		# Now go through and find all the connected cameras
 		camera_topic_re = r"^/cameras/([^/]+)/image_raw$"
 		found_cameras = []
-		for topic in rospy.get_published_topics():
+		for topic in api.get_topic_names():
 			if match := re.match(camera_topic_re, topic[0]):
 				name = match.group(1)
 				found_cameras.append(name)
@@ -226,12 +257,12 @@ class SettingsTab(QWidget):
 
 			if new_camera:
 				# Get the resolutions and make the camera info
-				get_resolutions = rospy.ServiceProxy(f'/cameras/{name}/get_resolutions', GetResolutions)
-				change_video = rospy.ServiceProxy(f'/cameras/{name}/change_video', ChangeVideo)
+				get_resolutions = ServiceClient("res_srv", f'cameras/{name}/get_resolutions', GetResolutions)
+				change_video = VideoClient("vid_srv", f'cameras/{name}/change_video', ChangeVideo)
 
 				try:
-					resolutions = get_resolutions().resolutions
-				except rospy.service.ServiceException:
+					resolutions = get_resolutions.send_request()
+				except InvalidServiceNameException:
 					resolutions = []
 
 				self.camera_info.append(CameraInfo(name, name, True, False, False, False, None, '?', '?', '?', resolutions, change_video))
@@ -355,8 +386,8 @@ class SettingsTab(QWidget):
 	def set_camera_resolution(self, camera_index, width, height, fps_num, fps_den, start=True, force_restart=False):
 		cam = self.camera_info[camera_index]
 		try:
-			result: ChangeVideoResponse = cam.change_video(width, height, fps_num, fps_den, start, force_restart)
-		except rospy.service.ServiceException:
+			result: ChangeVideo.Response = cam.change_video.send_request(width, height, fps_num, fps_den, start, force_restart)
+		except InvalidServiceNameException:
 			result = None
 
 		if result and result.success:

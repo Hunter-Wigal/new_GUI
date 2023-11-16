@@ -1,0 +1,6 @@
+Invoking command in '/home/urc/new_GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/marker_interfacing
+Invoked command in '/home/urc/new_GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/marker_interfacing
+Invoking command in '/home/urc/new_GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/marker_interfacing -- -j4 -l4
+Invoked command in '/home/urc/new_GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/marker_interfacing -- -j4 -l4
+Invoking command in '/home/urc/new_GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/marker_interfacing
+Invoked command in '/home/urc/new_GUI/build/marker_interfacing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/marker_interfacing

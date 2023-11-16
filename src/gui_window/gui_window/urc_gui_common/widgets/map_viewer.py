@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 """The marker widget shows a collection of Marker objects onscreen relative to the robot's position."""
 
@@ -10,8 +10,7 @@ from pathlib import Path
 from typing import List, Dict
 
 os.environ['QT_API'] = 'pyqt5'
-import pyqtlet2
-from pyqtlet2 import MapWidget
+from pyqtlet2 import L, MapWidget
 from pyqtlet2.leaflet import *
 
 from PyQt5.QtCore import *
@@ -41,11 +40,15 @@ class MapViewer(QWidget):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
+		
+
 		self.mapWidget = MapWidget()
 		self.layout = QVBoxLayout()
 		self.layout.setContentsMargins(5, 0, 0, 0)
 		self.layout.addWidget(self.mapWidget)
 		self.setLayout(self.layout)
+
+		
 
 		# create pyqtlet2 map
 		self.map = L.map(
@@ -58,7 +61,9 @@ class MapViewer(QWidget):
 
 		# initialize view and cursor
 		self.map.setView(Locations.mdrs, 18)
+		
 		self.map.runJavaScript(
+			
 		"""
 		var styleSheet = document.createElement("style")
 		styleSheet.type = "text/css"
@@ -74,13 +79,17 @@ class MapViewer(QWidget):
 		self.add_popup_marker(Locations.mdrs, 'Welcome to Mars')
 		self.add_popup_marker(Locations.engineering, 'Welcome to WVU Engineering')
 
+		list = str(Path(__file__)).split("/")
+		path = "install/" + list[len(list) - 4] + "/share/" + list[len(list) - 4]
+
 		# initialize aruco marker icon
-		self.aruco_icon = L.icon(str(Path(__file__).parent.resolve() / "../resources/aruco.png"),
+		self.aruco_icon = L.icon((path + "/resources/aruco.png"),
 		{
 			"iconSize": [10, 10],
 			"iconAnchor": [5, 5]
 		})
-		self.old_aruco_icon = L.icon(str(Path(__file__).parent.resolve() / "../resources/old_aruco.png"),
+		
+		self.old_aruco_icon = L.icon(path +  "/resources/old_aruco.png",
 		{
 			"iconSize": [10, 10],
 			"iconAnchor": [5, 5]
@@ -96,7 +105,7 @@ class MapViewer(QWidget):
 
 		# initialize robot icon
 		robot_startup_location = Locations.engineering.value
-		self.robot_icon = L.icon(str(Path(__file__).parent.resolve() / "../resources/robot.png"),
+		self.robot_icon = L.icon(path +  "/resources/robot.png",
 		{
 			"iconSize": [26, 25],
 			"iconAnchor": [10, 12]
@@ -121,6 +130,8 @@ class MapViewer(QWidget):
 		self.selected_marker: Dict[str, Circle] = {}
 		self.show_selected_marker: Dict[str, bool] = {}
 		self.circle_color: Dict[str, str] = {}
+
+		
 
 	def set_map_server(self, tile_url: str, layer_count):
 		# remove current tile layer
@@ -218,7 +229,7 @@ class MapViewer(QWidget):
 		# angle is in degrees (0 - 360). 0 is right
 		self.robot.setRotationAngle((angle) % 360)
 
-def _bindTooltip(layer: pyqtlet2.leaflet.layer.Layer, content: str, options=None):
+def _bindTooltip(layer: layer.Layer, content: str, options=None):
 	js = '{layerName}.bindTooltip("{content}"'.format(
 			layerName=layer._layerName, content=content)
 	if options:

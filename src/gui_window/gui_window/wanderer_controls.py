@@ -13,7 +13,7 @@ import rclpy
 class WandererControlsTab(QWidget):
 	def __init__(self, roslink: WandererRosLink, *args, **kwargs):
 		super().__init__(*args, **kwargs)
-		# self.roslink = roslink
+		self.roslink = roslink
 
 		# initialize ui
 		self.ui = Ui_WandererControls()
@@ -35,9 +35,9 @@ class WandererControlsTab(QWidget):
 		self.last_speed_multiplier = .5
 
 		# compass
-		# self.roslink.current_goal.connect(self.ui.compass.goal_handler)
-		# self.roslink.gps.connect(self.ui.compass.gps_handler)
-		# self.roslink.pose.connect(self.ui.compass.pose_handler)
+		self.roslink.current_goal.connect(self.ui.compass.goal_handler)
+		self.roslink.gps.connect(self.ui.compass.gps_handler)
+		self.roslink.pose.connect(self.ui.compass.pose_handler)
 
 	### slots ################################################################
 

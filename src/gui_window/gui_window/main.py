@@ -15,11 +15,31 @@ from PyQt5.QtWidgets import *
 import rclpy
 from rclpy.node import Node
 
+# Runs the Ros link nodes
+class RunLink(QObject):
+    def setup(self, roslink):
+        self.roslink = roslink
+
+    def run(self):
+        rclpy.spin(self.roslink)
+
 class RoverWindow(Window):
 	def __init__(self, *args, **kwargs):
 		super().__init__('WVU URC Wanderer GUI', *args, **kwargs)
 
 		roslink = WandererRosLink()
+
+
+		# Run roslink node in new thread to not stop GUI execution
+		self.newthread = QThread()
+
+		self.link = RunLink()
+		self.link.setup(roslink.ROSnode)
+		self.link.moveToThread(self.newthread)
+
+		self.newthread.started.connect(self.link.run)
+
+		
 
 		single_camera_tab = CameraTab(roslink)
 		six_camera_tab = SixCameraTab(roslink)
@@ -55,7 +75,7 @@ class RoverWindow(Window):
 		self.tabs.addTab(six_camera_tab,				'Six Camera')
 		self.tabs.addTab(four_camera_tab_1,				'Four Camera 1')
 		self.tabs.addTab(four_camera_tab_2,				'Four Camera 2')
-		# self.tabs.addTab(RoverMapTab(roslink),			'Map')
+		self.tabs.addTab(RoverMapTab(roslink),			'Map')
 		self.tabs.addTab(science_tab,					'Science')
 		self.tabs.addTab(WandererControlsTab(roslink),	'Controls')
 		self.tabs.addTab(tools_tab,						'Tools')
@@ -88,6 +108,10 @@ class RoverWindow(Window):
 		self.status_bar.layout.addWidget(VLine(), 1)
 		roslink.dwa_planner_status.connect(lambda status: self.dwa_planner_status_display_label.setText(status.data))
 
+		# Start roslink
+		self.newthread.start()
+
+
 	def resize_splitter(self):
 		tabs_width, current_display_width = self.splitter.sizes()
 		total_width = tabs_width + current_display_width
@@ -95,7 +119,13 @@ class RoverWindow(Window):
 			self.splitter.setSizes((total_width - self.current_display_minimum_width, self.current_display_minimum_width))
 
 def main():
+	rclpy.init()
+	# node = Node("Main_Window")
 	app = AppRunner(RoverWindow)
+
+	# node.declare_parameter("local_position_topic", rclpy.Parameter.Type.STRING)
+	# local_position_topic = node.get_parameter("local_position_topic").value
+	# print(local_position_topic)
 	app.start()
 
 if __name__ == '__main__':

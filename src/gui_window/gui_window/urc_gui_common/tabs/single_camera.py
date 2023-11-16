@@ -13,13 +13,13 @@ class CameraTab(QWidget):
 		self.roslink = roslink
 
 		self.camera_widget = SuperCameraWidget()
-		# self.camera_widget.set_camera_funnel(self.roslink.camera_funnel)
+		self.camera_widget.set_camera_funnel(self.roslink.camera_funnel)
 
 		self.slider_compass = SliderCompassWidget(self)
 		self.slider_compass.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
-		# self.roslink.current_goal.connect(self.slider_compass.goal_handler)
-		# self.roslink.gps.connect(self.slider_compass.gps_handler)
-		# self.roslink.pose.connect(self.slider_compass.pose_handler)
+		self.roslink.current_goal.connect(self.slider_compass.goal_handler)
+		self.roslink.gps.connect(self.slider_compass.gps_handler)
+		self.roslink.pose.connect(self.slider_compass.pose_handler)
 
 		self.layout = QVBoxLayout()
 		self.layout.addWidget(self.slider_compass)

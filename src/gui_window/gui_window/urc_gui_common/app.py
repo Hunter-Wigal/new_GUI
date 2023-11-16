@@ -1,8 +1,9 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3.10
 
 import sys
 import signal
 from pathlib import Path
+import rclpy
 
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -10,12 +11,16 @@ from PyQt5.QtWidgets import *
 
 from gui_window.urc_gui_common.status_bar import StatusBar
 
+
 class Window(QMainWindow):
 	def __init__(self, title: str="WVU URC", *args, **kwargs):
 		super().__init__(*args, **kwargs)
+
+		list = str(Path(__file__)).split("/")
+		path = "install/" + list[len(list) - 3] + "/share/" + list[len(list) - 3]
 		
-		icon_path = Path(__file__).parent.resolve() / "/resources/flying_wv3.png"
-		self.setWindowIcon(QIcon(str(icon_path)))
+		icon_path = path +  "/resources/flying_wv3.png"
+		self.setWindowIcon(QIcon(icon_path))
 		self.setWindowTitle(title)
 
 		self.tabs = QTabWidget()
@@ -65,8 +70,12 @@ class AppRunner():
 	def start(self):
 		app = QApplication(sys.argv)
 
+		
+
 		window = self.WindowType()
 		window.show()
+
+		
 
 		# Add signal to catch ctrl-c
 		signal.signal(signal.SIGINT, window.sigHandler)
@@ -76,7 +85,11 @@ class AppRunner():
 		timer.start(500) # Tick every 500 ms
 		timer.timeout.connect(lambda: None)
 
-		sys.exit(app.exec_())
+		app.exec_()
+
+		rclpy.shutdown()
+
+		sys.exit()
 
 def main():
 	app = AppRunner(Window)

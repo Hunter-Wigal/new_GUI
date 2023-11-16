@@ -1,3 +1,0 @@
-
-float32[] exposure_bounds
-bool supports_manual_exposure

@@ -1,8 +1,0 @@
-setup.py
-ocean_optics_spectrometer/__init__.py
-ocean_optics_spectrometer.egg-info/PKG-INFO
-ocean_optics_spectrometer.egg-info/SOURCES.txt
-ocean_optics_spectrometer.egg-info/dependency_links.txt
-ocean_optics_spectrometer.egg-info/top_level.txt
-ocean_optics_spectrometer/srv/__init__.py
-ocean_optics_spectrometer/srv/_capture_spectrometer.py

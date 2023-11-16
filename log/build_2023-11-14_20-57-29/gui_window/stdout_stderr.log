@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing gui_window.egg-info/PKG-INFO
+writing dependency_links to gui_window.egg-info/dependency_links.txt
+writing entry points to gui_window.egg-info/entry_points.txt
+writing requirements to gui_window.egg-info/requires.txt
+writing top-level names to gui_window.egg-info/top_level.txt
+reading manifest file 'gui_window.egg-info/SOURCES.txt'
+writing manifest file 'gui_window.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/urc/new_GUI/install/gui_window/lib/python3.10/site-packages/gui-window.egg-link (link to .)
+Installing gui script to /home/urc/new_GUI/install/gui_window/lib/gui_window
+
+Installed /home/urc/new_GUI/build/gui_window
+running install_data

@@ -1,2 +1,0 @@
-string format
-Resolution[] resolutions

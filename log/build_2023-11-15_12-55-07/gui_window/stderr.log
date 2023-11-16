@@ -1,0 +1,5 @@
+  File "/home/urc/new_GUI/install/gui_window/lib/python3.10/site-packages/gui_window/urc_gui_common/widgets/map_viewer.py", line 88
+    		})
+    		 ^
+SyntaxError: unmatched ')'
+

@@ -1,0 +1,197 @@
+[29.352s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[29.353s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7bd43de290>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7bd4684700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7bd4684700>>)
+[30.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[30.696s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[30.696s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[30.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[30.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[30.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[30.697s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/urc/new_GUI'
+[30.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[30.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[30.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[30.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[30.804s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[30.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[30.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[30.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[30.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[30.811s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[30.811s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[30.812s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[30.813s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[30.813s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[30.813s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[30.815s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[30.816s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[30.816s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[30.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[30.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[30.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[30.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[30.819s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[30.819s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[30.819s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[30.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ignore', 'ignore_ament_install']
+[30.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore'
+[30.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ignore_ament_install'
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_pkg']
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_pkg'
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['colcon_meta']
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'colcon_meta'
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extensions ['ros']
+[30.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/aruco_finder) by extension 'ros'
+[30.844s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aruco_finder' with type 'ros.ament_cmake' and name 'aruco_finder'
+[30.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ignore', 'ignore_ament_install']
+[30.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore'
+[30.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ignore_ament_install'
+[30.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_pkg']
+[30.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_pkg'
+[30.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['colcon_meta']
+[30.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'colcon_meta'
+[30.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extensions ['ros']
+[30.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_window) by extension 'ros'
+[30.857s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_window' with type 'ros.ament_python' and name 'gui_window'
+[30.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extensions ['ignore', 'ignore_ament_install']
+[30.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extension 'ignore'
+[30.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extension 'ignore_ament_install'
+[30.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extensions ['colcon_pkg']
+[30.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extension 'colcon_pkg'
+[30.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extensions ['colcon_meta']
+[30.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extension 'colcon_meta'
+[30.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extensions ['ros']
+[30.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/hockey_stick_arm) by extension 'ros'
+[30.863s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hockey_stick_arm' with type 'ros.ament_cmake' and name 'hockey_stick_arm'
+[30.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[30.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ignore'
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ignore_ament_install'
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['colcon_pkg']
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'colcon_pkg'
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['colcon_meta']
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'colcon_meta'
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extensions ['ros']
+[30.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/marker_interfacing) by extension 'ros'
+[30.875s] DEBUG:colcon.colcon_core.package_identification:Package 'src/marker_interfacing' with type 'ros.ament_cmake' and name 'marker_interfacing'
+[30.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extensions ['ignore', 'ignore_ament_install']
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extension 'ignore'
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extension 'ignore_ament_install'
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extensions ['colcon_pkg']
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extension 'colcon_pkg'
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extensions ['colcon_meta']
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extension 'colcon_meta'
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extensions ['ros']
+[30.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ocean_optics_spectrometer) by extension 'ros'
+[30.880s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ocean_optics_spectrometer' with type 'ros.ament_cmake' and name 'ocean_optics_spectrometer'
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extensions ['ignore', 'ignore_ament_install']
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extension 'ignore'
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extension 'ignore_ament_install'
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extensions ['colcon_pkg']
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extension 'colcon_pkg'
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extensions ['colcon_meta']
+[30.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extension 'colcon_meta'
+[30.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extensions ['ros']
+[30.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_gui_lib) by extension 'ros'
+[30.889s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rover_gui_lib' with type 'ros.catkin' and name 'rover_gui_lib'
+[30.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extensions ['ignore', 'ignore_ament_install']
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extension 'ignore'
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extension 'ignore_ament_install'
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extensions ['colcon_pkg']
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extension 'colcon_pkg'
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extensions ['colcon_meta']
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extension 'colcon_meta'
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extensions ['ros']
+[30.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/science_servo_control) by extension 'ros'
+[30.893s] DEBUG:colcon.colcon_core.package_identification:Package 'src/science_servo_control' with type 'ros.ament_cmake' and name 'science_servo_control'
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ignore', 'ignore_ament_install']
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore'
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ignore_ament_install'
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_pkg']
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_pkg'
+[30.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['colcon_meta']
+[30.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'colcon_meta'
+[30.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extensions ['ros']
+[30.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/theora_webcams) by extension 'ros'
+[30.900s] DEBUG:colcon.colcon_core.package_identification:Package 'src/theora_webcams' with type 'ros.ament_cmake' and name 'theora_webcams'
+[30.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extensions ['ignore', 'ignore_ament_install']
+[30.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extension 'ignore'
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extension 'ignore_ament_install'
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extensions ['colcon_pkg']
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extension 'colcon_pkg'
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extensions ['colcon_meta']
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extension 'colcon_meta'
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extensions ['ros']
+[30.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/urc_gui_lib) by extension 'ros'
+[30.906s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urc_gui_lib' with type 'ros.catkin' and name 'urc_gui_lib'
+[30.906s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[30.906s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[30.906s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[30.906s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[30.906s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[34.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[34.087s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[35.856s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/urc/new_GUI/install
+[36.593s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/urc/test_ws/install
+[37.167s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[37.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_args' from command line to 'None'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_target' from command line to 'None'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_clean_cache' from command line to 'False'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_clean_first' from command line to 'False'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'cmake_force_configure' from command line to 'False'
+[39.365s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'ament_cmake_args' from command line to 'None'
+[39.366s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'catkin_cmake_args' from command line to 'None'
+[39.366s] Level 5:colcon.colcon_core.verb:set package 'aruco_finder' build argument 'catkin_skip_building_tests' from command line to 'False'
+[39.366s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_finder' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new_GUI/build/aruco_finder', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new_GUI/install/aruco_finder', 'merge_install': False, 'path': '/home/urc/new_GUI/src/aruco_finder', 'symlink_install': False, 'test_result_base': None}
+[40.155s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_args' from command line to 'None'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_target' from command line to 'None'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_clean_first' from command line to 'False'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'cmake_force_configure' from command line to 'False'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'ament_cmake_args' from command line to 'None'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[40.157s] Level 5:colcon.colcon_core.verb:set package 'hockey_stick_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[40.157s] DEBUG:colcon.colcon_core.verb:Building package 'hockey_stick_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new_GUI/build/hockey_stick_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new_GUI/install/hockey_stick_arm', 'merge_install': False, 'path': '/home/urc/new_GUI/src/hockey_stick_arm', 'symlink_install': False, 'test_result_base': None}
+[40.876s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_args' from command line to 'None'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_target' from command line to 'None'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_clean_cache' from command line to 'False'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_clean_first' from command line to 'False'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'cmake_force_configure' from command line to 'False'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'ament_cmake_args' from command line to 'None'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'catkin_cmake_args' from command line to 'None'
+[40.877s] Level 5:colcon.colcon_core.verb:set package 'marker_interfacing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[40.878s] DEBUG:colcon.colcon_core.verb:Building package 'marker_interfacing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new_GUI/build/marker_interfacing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new_GUI/install/marker_interfacing', 'merge_install': False, 'path': '/home/urc/new_GUI/src/marker_interfacing', 'symlink_install': False, 'test_result_base': None}
+[41.527s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_args' from command line to 'None'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_target' from command line to 'None'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_clean_cache' from command line to 'False'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_clean_first' from command line to 'False'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'cmake_force_configure' from command line to 'False'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'ament_cmake_args' from command line to 'None'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'catkin_cmake_args' from command line to 'None'
+[41.528s] Level 5:colcon.colcon_core.verb:set package 'ocean_optics_spectrometer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[41.528s] DEBUG:colcon.colcon_core.verb:Building package 'ocean_optics_spectrometer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new_GUI/build/ocean_optics_spectrometer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new_GUI/install/ocean_optics_spectrometer', 'merge_install': False, 'path': '/home/urc/new_GUI/src/ocean_optics_spectrometer', 'symlink_install': False, 'test_result_base': None}
+[42.249s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_args' from command line to 'None'
+[42.251s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_target' from command line to 'None'
+[42.251s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[42.251s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_clean_cache' from command line to 'False'
+[42.251s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_clean_first' from command line to 'False'
+[42.251s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'cmake_force_configure' from command line to 'False'
+[42.252s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'ament_cmake_args' from command line to 'None'
+[42.252s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'catkin_cmake_args' from command line to 'None'
+[42.252s] Level 5:colcon.colcon_core.verb:set package 'science_servo_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[42.252s] DEBUG:colcon.colcon_core.verb:Building package 'science_servo_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/urc/new_GUI/build/science_servo_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/urc/new_GUI/install/science_servo_control', 'merge_install': False, 'path': '/home/urc/new_GUI/src/science_servo_control', 'symlink_install': False, 'test_result_base': None}

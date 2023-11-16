@@ -29,6 +29,7 @@ class WandererRosLink(RoverRosLink):
 
 	def __init__(self):
 		super().__init__()
+		
 
 		### autonomy #########################################################
 
@@ -57,12 +58,12 @@ class WandererRosLink(RoverRosLink):
 
 		### arm ##############################################################
 
-		arm_currents_topic = "/arm_current"
-		arm_control_service = "/UseVeloControl"
-		arm_speed_multipler_service = "/SetSpeedMultiplier"
-		arm_safety_check_service = "/UseArmSafetyCheck"
+		arm_currents_topic = "arm_current"
+		arm_control_service = "UseVeloControl"
+		arm_speed_multipler_service = "SetSpeedMultiplier"
+		arm_safety_check_service = "UseArmSafetyCheck"
 
-		# self.arms_currents_sub = self.make_subscriber(arm_currents_topic, Float32MultiArray, self.arm_currents)
+		self.arms_currents_sub = self.ROSnode.make_subscriber(arm_currents_topic, Float32MultiArray, self.arm_currents)
 		# self.arm_control_serv = rclpy.ServiceProxy(arm_control_service, SetBool)
 		# # self.arm_speed_multiplier_serv = rclpy.ServiceProxy(arm_speed_multipler_service, SetFloat)
 		# self.arm_safety_check_serv = rclpy.ServiceProxy(arm_safety_check_service, SetBool)

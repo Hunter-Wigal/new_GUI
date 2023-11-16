@@ -1,0 +1,245 @@
+[0.155s] Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/ocean_optics_spectrometer -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/ocean_optics_spectrometer
+[0.376s] -- The C compiler identification is GNU 11.4.0
+[0.504s] -- The CXX compiler identification is GNU 11.4.0
+[0.527s] -- Detecting C compiler ABI info
+[0.785s] -- Detecting C compiler ABI info - done
+[0.814s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.814s] -- Detecting C compile features
+[0.816s] -- Detecting C compile features - done
+[0.828s] -- Detecting CXX compiler ABI info
+[1.025s] -- Detecting CXX compiler ABI info - done
+[1.053s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.054s] -- Detecting CXX compile features
+[1.055s] -- Detecting CXX compile features - done
+[1.080s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.486s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.813s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.037s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.045s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.062s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.211s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.309s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[2.626s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.638s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.988s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.039s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.212s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.243s] -- Looking for pthread.h
+[3.420s] -- Looking for pthread.h - found
+[3.420s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.770s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.772s] -- Found Threads: TRUE  
+[4.307s] -- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[4.891s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.528s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.460s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.502s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.505s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.548s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.549s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.549s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.549s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.588s] -- Found PythonExtra: .so  
+[6.806s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.807s] -- Added test 'lint_cmake' to check CMake code style
+[6.808s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.818s] -- Added test 'xmllint' to check XML markup files
+[6.836s] -- Configuring done
+[6.949s] -- Generating done
+[6.974s] -- Build files have been written to: /home/urc/new_GUI/build/ocean_optics_spectrometer
+[7.014s] Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/ocean_optics_spectrometer -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/ocean_optics_spectrometer
+[7.027s] Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/ocean_optics_spectrometer -- -j4 -l4
+[7.271s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.424s] [  3%] Built target ocean_optics_spectrometer__cpp
+[8.537s] [  3%] Built target ament_cmake_python_copy_ocean_optics_spectrometer
+[8.572s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.065s] [  9%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ocean_optics_spectrometer/srv/detail/dds_fastrtps/capture_spectrometer__type_support.cpp.o[0m
+[11.498s] [ 12%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.693s] [ 12%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp
+[11.728s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.947s] [ 19%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.cpp.o[0m
+[14.435s] [ 22%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.so[0m
+[14.733s] [ 22%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_cpp
+[15.767s] running egg_info
+[15.768s] creating ocean_optics_spectrometer.egg-info
+[15.772s] writing ocean_optics_spectrometer.egg-info/PKG-INFO
+[15.772s] writing dependency_links to ocean_optics_spectrometer.egg-info/dependency_links.txt
+[15.773s] writing top-level names to ocean_optics_spectrometer.egg-info/top_level.txt
+[15.773s] writing manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[15.784s] reading manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[15.785s] writing manifest file 'ocean_optics_spectrometer.egg-info/SOURCES.txt'
+[15.921s] [ 22%] Built target ament_cmake_python_build_ocean_optics_spectrometer_egg
+[15.929s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[16.862s] [ 29%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ocean_optics_spectrometer/srv/capture_spectrometer__type_support.cpp.o[0m
+[17.681s] [ 32%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_cpp.so[0m
+[17.784s] [ 32%] Built target ocean_optics_spectrometer__rosidl_typesupport_cpp
+[17.854s] [ 35%] [34m[1mGenerating C code for ROS interfaces[0m
+[19.270s] [ 38%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_generator_c.dir/rosidl_generator_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__functions.c.o[0m
+[19.567s] [ 41%] [32m[1mLinking C shared library libocean_optics_spectrometer__rosidl_generator_c.so[0m
+[19.693s] [ 41%] Built target ocean_optics_spectrometer__rosidl_generator_c
+[19.706s] [ 45%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.722s] [ 48%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support_c.cpp.o[0m
+[21.775s] [ 51%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.so[0m
+[22.106s] [ 51%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c
+[22.154s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[23.044s] [ 58%] [32mBuilding CXX object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_c.dir/rosidl_typesupport_c/ocean_optics_spectrometer/srv/capture_spectrometer__type_support.cpp.o[0m
+[23.129s] [ 61%] [32m[1mLinking CXX shared library libocean_optics_spectrometer__rosidl_typesupport_c.so[0m
+[23.330s] [ 61%] Built target ocean_optics_spectrometer__rosidl_typesupport_c
+[23.375s] [ 64%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[24.528s] [ 67%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.c.o[0m
+[24.730s] [ 70%] [32m[1mLinking C shared library libocean_optics_spectrometer__rosidl_typesupport_introspection_c.so[0m
+[24.854s] [ 70%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_c
+[24.936s] [ 70%] Built target ocean_optics_spectrometer
+[25.055s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.420s] [ 74%] Built target ocean_optics_spectrometer__py
+[26.480s] [ 77%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_generator_py.dir/rosidl_generator_py/ocean_optics_spectrometer/srv/_capture_spectrometer_s.c.o[0m
+[26.719s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/libocean_optics_spectrometer__rosidl_generator_py.so[0m
+[26.907s] [ 80%] Built target ocean_optics_spectrometer__rosidl_generator_py
+[27.005s] [ 83%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.413s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.577s] [ 87%] Built target ocean_optics_spectrometer__rosidl_typesupport_fastrtps_c__pyext
+[27.726s] [ 90%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_c.c.o[0m
+[28.178s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[28.403s] [ 93%] Built target ocean_optics_spectrometer__rosidl_typesupport_c__pyext
+[28.520s] [ 96%] [32mBuilding C object CMakeFiles/ocean_optics_spectrometer__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[29.071s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[29.287s] [100%] Built target ocean_optics_spectrometer__rosidl_typesupport_introspection_c__pyext
+[29.339s] Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/ocean_optics_spectrometer -- -j4 -l4
+[29.731s] Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/ocean_optics_spectrometer
+[29.755s] -- Install configuration: ""
+[29.755s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ament_index/resource_index/rosidl_interfaces/ocean_optics_spectrometer
+[29.756s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.757s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg
+[29.758s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg/rosidl_generator_c__visibility_control.h
+[29.758s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.758s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/capture_spectrometer.h
+[29.759s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.759s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__functions.c
+[29.759s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.h
+[29.760s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__functions.h
+[29.767s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__struct.h
+[29.768s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/library_path.sh
+[29.768s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/library_path.dsv
+[29.768s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_generator_c.so
+[29.768s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_generator_c.so" to ""
+[29.768s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.768s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg
+[29.769s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[29.769s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.770s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.770s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__rosidl_typesupport_fastrtps_c.h
+[29.774s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.so
+[29.776s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_fastrtps_c.so" to ""
+[29.777s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.777s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg
+[29.778s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[29.790s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.790s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.790s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.c
+[29.791s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__rosidl_typesupport_introspection_c.h
+[29.791s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_introspection_c.so
+[29.792s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_introspection_c.so" to ""
+[29.792s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_c.so
+[29.793s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_c.so" to ""
+[29.794s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.794s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.794s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.795s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__struct.hpp
+[29.795s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__traits.hpp
+[29.796s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__builder.hpp
+[29.796s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/capture_spectrometer.hpp
+[29.796s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.797s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg
+[29.797s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[29.798s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.798s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.798s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__rosidl_typesupport_fastrtps_cpp.hpp
+[29.799s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/dds_fastrtps
+[29.799s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.so
+[29.800s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_fastrtps_cpp.so" to ""
+[29.801s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer
+[29.801s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv
+[29.802s] -- Up-to-date: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail
+[29.802s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__rosidl_typesupport_introspection_cpp.hpp
+[29.803s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/include/ocean_optics_spectrometer/ocean_optics_spectrometer/srv/detail/capture_spectrometer__type_support.cpp
+[29.803s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.so
+[29.804s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_introspection_cpp.so" to ""
+[29.805s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_cpp.so
+[29.806s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_typesupport_cpp.so" to ""
+[29.806s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/pythonpath.sh
+[29.806s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/pythonpath.dsv
+[29.807s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer-0.0.0-py3.10.egg-info
+[29.807s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer-0.0.0-py3.10.egg-info/PKG-INFO
+[29.808s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer-0.0.0-py3.10.egg-info/dependency_links.txt
+[29.808s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer-0.0.0-py3.10.egg-info/top_level.txt
+[29.808s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer-0.0.0-py3.10.egg-info/SOURCES.txt
+[29.809s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer
+[29.811s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[29.812s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_introspection_c.c
+[29.813s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[29.813s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/__init__.py
+[29.814s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[29.814s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/libocean_optics_spectrometer__rosidl_generator_py.so
+[29.814s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv
+[29.815s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv/_capture_spectrometer.py
+[29.815s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv/__init__.py
+[29.815s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv/_capture_spectrometer_s.c
+[29.822s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_fastrtps_c.c
+[29.823s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/_ocean_optics_spectrometer_s.ep.rosidl_typesupport_c.c
+[29.963s] Listing '/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer'...
+[29.963s] Compiling '/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/__init__.py'...
+[29.963s] Listing '/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv'...
+[29.963s] Compiling '/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv/__init__.py'...
+[29.963s] Compiling '/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/srv/_capture_spectrometer.py'...
+[29.973s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[29.974s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.977s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[29.978s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.979s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[29.979s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/local/lib/python3.10/dist-packages/ocean_optics_spectrometer/ocean_optics_spectrometer_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.980s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_generator_py.so
+[29.981s] -- Set runtime path of "/home/urc/new_GUI/install/ocean_optics_spectrometer/lib/libocean_optics_spectrometer__rosidl_generator_py.so" to ""
+[29.981s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/srv/CaptureSpectrometer.idl
+[29.982s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/srv/CaptureSpectrometer.srv
+[29.982s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/srv/CaptureSpectrometer_Request.msg
+[29.983s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/srv/CaptureSpectrometer_Response.msg
+[29.983s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ament_index/resource_index/package_run_dependencies/ocean_optics_spectrometer
+[29.983s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ament_index/resource_index/parent_prefix_path/ocean_optics_spectrometer
+[29.984s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/ament_prefix_path.sh
+[29.984s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/ament_prefix_path.dsv
+[29.984s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/path.sh
+[29.985s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/environment/path.dsv
+[29.985s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/local_setup.bash
+[29.988s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/local_setup.sh
+[29.989s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/local_setup.zsh
+[29.991s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/local_setup.dsv
+[29.991s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/package.dsv
+[29.992s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ament_index/resource_index/packages/ocean_optics_spectrometer
+[29.993s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_generator_cExport.cmake
+[29.993s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_generator_cExport-noconfig.cmake
+[29.994s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cExport.cmake
+[29.995s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[29.995s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_introspection_cExport.cmake
+[29.996s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[29.997s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_cExport.cmake
+[29.997s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_cExport-noconfig.cmake
+[29.998s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_generator_cppExport.cmake
+[29.999s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cppExport.cmake
+[30.002s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[30.003s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_introspection_cppExport.cmake
+[30.003s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[30.004s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_cppExport.cmake
+[30.004s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometer__rosidl_typesupport_cppExport-noconfig.cmake
+[30.005s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_generator_pyExport.cmake
+[30.022s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/export_ocean_optics_spectrometer__rosidl_generator_pyExport-noconfig.cmake
+[30.022s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/rosidl_cmake-extras.cmake
+[30.023s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.023s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ament_cmake_export_include_directories-extras.cmake
+[30.024s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ament_cmake_export_libraries-extras.cmake
+[30.025s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ament_cmake_export_targets-extras.cmake
+[30.025s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[30.026s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[30.026s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometerConfig.cmake
+[30.026s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/cmake/ocean_optics_spectrometerConfig-version.cmake
+[30.027s] -- Installing: /home/urc/new_GUI/install/ocean_optics_spectrometer/share/ocean_optics_spectrometer/package.xml
+[30.035s] Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/ocean_optics_spectrometer

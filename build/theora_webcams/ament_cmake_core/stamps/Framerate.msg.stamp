@@ -1,2 +1,0 @@
-int32 numerator
-int32 denominator

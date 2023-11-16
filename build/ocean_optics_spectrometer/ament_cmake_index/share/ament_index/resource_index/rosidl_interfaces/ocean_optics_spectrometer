@@ -1,4 +1,0 @@
-srv/CaptureSpectrometer.idl
-srv/CaptureSpectrometer.srv
-srv/CaptureSpectrometer_Request.msg
-srv/CaptureSpectrometer_Response.msg

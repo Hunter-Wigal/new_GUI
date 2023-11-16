@@ -1,8 +1,0 @@
-# Request - Information of Marker to add
-float64 lat
-float64 lon
-float64 alt
-float32 waypoint_error
-string marker_type
-uint8 aruco_id
-uint8 aruco_id_2

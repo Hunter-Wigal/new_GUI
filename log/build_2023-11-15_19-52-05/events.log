@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.000491] (-) JobUnselected: {'identifier': 'aruco_finder'}
+[0.000530] (-) JobUnselected: {'identifier': 'gui_window'}
+[0.000551] (-) JobUnselected: {'identifier': 'hockey_stick_arm'}
+[0.000571] (-) JobUnselected: {'identifier': 'marker_interfacing'}
+[0.000589] (-) JobUnselected: {'identifier': 'ocean_optics_spectrometer'}
+[0.000605] (-) JobUnselected: {'identifier': 'rover_gui_lib'}
+[0.000622] (-) JobUnselected: {'identifier': 'science_servo_control'}
+[0.000638] (-) JobUnselected: {'identifier': 'theora_webcams'}
+[0.000655] (-) JobUnselected: {'identifier': 'urc_gui_lib'}
+[0.000671] (-) EventReactorShutdown: {}

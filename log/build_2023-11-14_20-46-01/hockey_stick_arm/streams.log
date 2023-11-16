@@ -1,0 +1,6 @@
+[0.126s] Invoking command in '/home/urc/new_GUI/build/hockey_stick_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/hockey_stick_arm -- -j4 -l4
+[0.180s] [0mCMake Error: The current CMakeCache.txt directory /home/urc/new_GUI/build/hockey_stick_arm/CMakeCache.txt is different than the directory /home/urc/new-GUI/build/hockey_stick_arm where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.210s] [0mCMake Error: The source directory "/home/urc/new-GUI/src/hockey_stick_arm-main" does not exist.
+[0.210s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.220s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.233s] Invoked command in '/home/urc/new_GUI/build/hockey_stick_arm' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/hockey_stick_arm -- -j4 -l4

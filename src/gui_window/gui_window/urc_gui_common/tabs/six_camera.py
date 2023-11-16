@@ -19,12 +19,12 @@ class SixCameraTab(QWidget):
 		self.bot_mid_cam = SuperCameraWidget()
 		self.bot_right_cam = SuperCameraWidget()
 
-		# self.main_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.right_top_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.right_mid_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.bot_left_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.bot_mid_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.bot_right_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.main_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.right_top_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.right_mid_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.bot_left_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.bot_mid_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.bot_right_cam.set_camera_funnel(self.roslink.camera_funnel)
 
 		camera_layout = QGridLayout()
 		camera_layout.setContentsMargins(0, 0, 0, 0)

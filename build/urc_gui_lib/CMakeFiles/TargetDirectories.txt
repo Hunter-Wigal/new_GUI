@@ -1,9 +1,0 @@
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/uninstall.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/urc_gui_lib_uninstall.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/test.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/edit_cache.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/rebuild_cache.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/list_install_components.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/install.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/install/local.dir
-/home/urc/new-GUI/build/urc_gui_lib/CMakeFiles/install/strip.dir

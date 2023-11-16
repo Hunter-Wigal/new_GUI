@@ -1,0 +1,172 @@
+[0.281s] Invoking command in '/home/urc/new_GUI/build/rover_gui_lib': CMAKE_PREFIX_PATH=/home/urc/new_GUI/install/urc_gui_lib:/home/urc/new_GUI/install/theora_webcams:/home/urc/new_GUI/install/marker_interfacing:/home/urc/new_GUI/install/aruco_finder:/home/urc/new_GUI/install/rover_gui_lib:/home/urc/new_GUI/install/science_servo_control:/home/urc/new_GUI/install/ocean_optics_spectrometer:/home/urc/new_GUI/install/hockey_stick_arm LD_LIBRARY_PATH=/home/urc/new_GUI/install/theora_webcams/lib:/home/urc/new_GUI/install/marker_interfacing/lib:/home/urc/new_GUI/install/aruco_finder/lib:/home/urc/new_GUI/install/rover_gui_lib/lib:/home/urc/new_GUI/install/science_servo_control/lib:/home/urc/new_GUI/install/ocean_optics_spectrometer/lib:/home/urc/new_GUI/install/hockey_stick_arm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PKG_CONFIG_PATH=/home/urc/new_GUI/install/urc_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/urc_gui_lib/lib/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/pkgconfig ROS_PACKAGE_PATH=/home/urc/new_GUI/install/urc_gui_lib/share:/home/urc/new_GUI/install/rover_gui_lib/share /usr/bin/cmake --build /home/urc/new_GUI/build/rover_gui_lib -- -j4 -l4
+[0.484s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_generator_c[0m
+[0.508s] [  2%] Built target rover_gui_lib__cpp
+[0.518s] [ 12%] Built target rover_gui_lib__rosidl_generator_c
+[0.539s] [ 12%] Built target ament_cmake_python_copy_rover_gui_lib
+[0.546s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_fastrtps_cpp[0m
+[0.565s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_cpp[0m
+[0.581s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_introspection_cpp[0m
+[0.596s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_fastrtps_c[0m
+[0.608s] [ 23%] Built target rover_gui_lib__rosidl_typesupport_fastrtps_cpp
+[0.624s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_introspection_c[0m
+[0.630s] [ 33%] Built target rover_gui_lib__rosidl_typesupport_cpp
+[0.657s] [ 43%] Built target rover_gui_lib__rosidl_typesupport_fastrtps_c
+[0.661s] [ 53%] Built target rover_gui_lib__rosidl_typesupport_introspection_c
+[0.664s] [ 64%] Built target rover_gui_lib__rosidl_typesupport_introspection_cpp
+[0.677s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_c[0m
+[0.760s] [ 74%] Built target rover_gui_lib__rosidl_typesupport_c
+[0.800s] [ 74%] Built target rover_gui_lib
+[0.948s] [ 76%] Built target rover_gui_lib__py
+[0.973s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_generator_py[0m
+[1.000s] [ 84%] Built target rover_gui_lib__rosidl_generator_py
+[1.027s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_introspection_c__pyext[0m
+[1.060s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.064s] [35m[1mConsolidate compiler generated dependencies of target rover_gui_lib__rosidl_typesupport_c__pyext[0m
+[1.101s] [ 94%] Built target rover_gui_lib__rosidl_typesupport_fastrtps_c__pyext
+[1.110s] [100%] Built target rover_gui_lib__rosidl_typesupport_c__pyext
+[1.110s] [100%] Built target rover_gui_lib__rosidl_typesupport_introspection_c__pyext
+[1.396s] running egg_info
+[1.397s] writing rover_gui_lib.egg-info/PKG-INFO
+[1.397s] writing dependency_links to rover_gui_lib.egg-info/dependency_links.txt
+[1.397s] writing top-level names to rover_gui_lib.egg-info/top_level.txt
+[1.404s] reading manifest file 'rover_gui_lib.egg-info/SOURCES.txt'
+[1.406s] writing manifest file 'rover_gui_lib.egg-info/SOURCES.txt'
+[1.451s] [100%] Built target ament_cmake_python_build_rover_gui_lib_egg
+[1.473s] Invoked command in '/home/urc/new_GUI/build/rover_gui_lib' returned '0': CMAKE_PREFIX_PATH=/home/urc/new_GUI/install/urc_gui_lib:/home/urc/new_GUI/install/theora_webcams:/home/urc/new_GUI/install/marker_interfacing:/home/urc/new_GUI/install/aruco_finder:/home/urc/new_GUI/install/rover_gui_lib:/home/urc/new_GUI/install/science_servo_control:/home/urc/new_GUI/install/ocean_optics_spectrometer:/home/urc/new_GUI/install/hockey_stick_arm LD_LIBRARY_PATH=/home/urc/new_GUI/install/theora_webcams/lib:/home/urc/new_GUI/install/marker_interfacing/lib:/home/urc/new_GUI/install/aruco_finder/lib:/home/urc/new_GUI/install/rover_gui_lib/lib:/home/urc/new_GUI/install/science_servo_control/lib:/home/urc/new_GUI/install/ocean_optics_spectrometer/lib:/home/urc/new_GUI/install/hockey_stick_arm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PKG_CONFIG_PATH=/home/urc/new_GUI/install/urc_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/urc_gui_lib/lib/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/pkgconfig ROS_PACKAGE_PATH=/home/urc/new_GUI/install/urc_gui_lib/share:/home/urc/new_GUI/install/rover_gui_lib/share /usr/bin/cmake --build /home/urc/new_GUI/build/rover_gui_lib -- -j4 -l4
+[1.777s] Invoking command in '/home/urc/new_GUI/build/rover_gui_lib': CMAKE_PREFIX_PATH=/home/urc/new_GUI/install/urc_gui_lib:/home/urc/new_GUI/install/theora_webcams:/home/urc/new_GUI/install/marker_interfacing:/home/urc/new_GUI/install/aruco_finder:/home/urc/new_GUI/install/rover_gui_lib:/home/urc/new_GUI/install/science_servo_control:/home/urc/new_GUI/install/ocean_optics_spectrometer:/home/urc/new_GUI/install/hockey_stick_arm LD_LIBRARY_PATH=/home/urc/new_GUI/install/theora_webcams/lib:/home/urc/new_GUI/install/marker_interfacing/lib:/home/urc/new_GUI/install/aruco_finder/lib:/home/urc/new_GUI/install/rover_gui_lib/lib:/home/urc/new_GUI/install/science_servo_control/lib:/home/urc/new_GUI/install/ocean_optics_spectrometer/lib:/home/urc/new_GUI/install/hockey_stick_arm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PKG_CONFIG_PATH=/home/urc/new_GUI/install/urc_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/urc_gui_lib/lib/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/pkgconfig ROS_PACKAGE_PATH=/home/urc/new_GUI/install/urc_gui_lib/share:/home/urc/new_GUI/install/rover_gui_lib/share /usr/bin/cmake --install /home/urc/new_GUI/build/rover_gui_lib
+[1.790s] -- Install configuration: ""
+[1.790s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/ament_index/resource_index/rosidl_interfaces/rover_gui_lib
+[1.790s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.790s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.790s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/ed_waypoint_list.h
+[1.796s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/ed_waypoint.h
+[1.796s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/rosidl_generator_c__visibility_control.h
+[1.797s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.797s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__functions.c
+[1.797s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__struct.h
+[1.797s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__struct.h
+[1.797s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__functions.c
+[1.798s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__functions.h
+[1.798s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__type_support.h
+[1.798s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__type_support.h
+[1.798s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__functions.h
+[1.798s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/library_path.sh
+[1.799s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/library_path.dsv
+[1.799s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_generator_c.so
+[1.799s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.799s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.799s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.800s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.800s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__rosidl_typesupport_fastrtps_c.h
+[1.800s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__rosidl_typesupport_fastrtps_c.h
+[1.800s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_fastrtps_c.so
+[1.800s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.801s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.801s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.804s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.804s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__type_support.c
+[1.804s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__type_support.c
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_introspection_c.so
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_c.so
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.805s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.807s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/ed_waypoint_list.hpp
+[1.807s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/ed_waypoint.hpp
+[1.807s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.807s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__builder.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__traits.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__traits.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__struct.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__builder.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__struct.hpp
+[1.808s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.809s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.809s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.809s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.809s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__rosidl_typesupport_fastrtps_cpp.hpp
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__rosidl_typesupport_fastrtps_cpp.hpp
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/dds_fastrtps
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_fastrtps_cpp.so
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail
+[1.810s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__rosidl_typesupport_introspection_cpp.hpp
+[1.811s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__rosidl_typesupport_introspection_cpp.hpp
+[1.811s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint__type_support.cpp
+[1.811s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/include/rover_gui_lib/rover_gui_lib/msg/detail/ed_waypoint_list__type_support.cpp
+[1.811s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_introspection_cpp.so
+[1.812s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_typesupport_cpp.so
+[1.813s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/pythonpath.sh
+[1.813s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/pythonpath.dsv
+[1.813s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib-0.0.0-py3.10.egg-info
+[1.813s] -- Installing: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib-0.0.0-py3.10.egg-info/PKG-INFO
+[1.814s] -- Installing: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.814s] -- Installing: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib-0.0.0-py3.10.egg-info/top_level.txt
+[1.814s] -- Installing: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/librover_gui_lib__rosidl_generator_py.so
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg/_ed_waypoint_list_s.c
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg/_ed_waypoint_s.c
+[1.815s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg/__init__.py
+[1.816s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg/_ed_waypoint_list.py
+[1.816s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg/_ed_waypoint.py
+[1.816s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/__init__.py
+[1.817s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/_rover_gui_lib_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.817s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.817s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.817s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/_rover_gui_lib_s.ep.rosidl_typesupport_introspection_c.c
+[1.818s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/_rover_gui_lib_s.ep.rosidl_typesupport_c.c
+[1.906s] Listing '/home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib'...
+[1.906s] Listing '/home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/msg'...
+[1.911s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.917s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.918s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/local/lib/python3.10/dist-packages/rover_gui_lib/rover_gui_lib_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.920s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/lib/librover_gui_lib__rosidl_generator_py.so
+[1.920s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/msg/EDWaypoint.idl
+[1.920s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/msg/EDWaypointList.idl
+[1.920s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/msg/EDWaypoint.msg
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/msg/EDWaypointList.msg
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/ament_index/resource_index/package_run_dependencies/rover_gui_lib
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/ament_index/resource_index/parent_prefix_path/rover_gui_lib
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/ament_prefix_path.sh
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/ament_prefix_path.dsv
+[1.921s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/path.sh
+[1.922s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/environment/path.dsv
+[1.922s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/local_setup.bash
+[1.922s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/local_setup.sh
+[1.922s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/local_setup.zsh
+[1.922s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/local_setup.dsv
+[1.923s] -- Installing: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/package.dsv
+[1.923s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/ament_index/resource_index/packages/rover_gui_lib
+[1.923s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_generator_cExport.cmake
+[1.923s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_generator_cExport-noconfig.cmake
+[1.923s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_typesupport_fastrtps_cExport.cmake
+[1.924s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.924s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_introspection_cExport.cmake
+[1.924s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.924s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_cExport.cmake
+[1.925s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_cExport-noconfig.cmake
+[1.925s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_generator_cppExport.cmake
+[1.926s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.926s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.927s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_introspection_cppExport.cmake
+[1.927s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.928s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_cppExport.cmake
+[1.928s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_lib__rosidl_typesupport_cppExport-noconfig.cmake
+[1.929s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_generator_pyExport.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/export_rover_gui_lib__rosidl_generator_pyExport-noconfig.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rosidl_cmake-extras.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/ament_cmake_export_libraries-extras.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/ament_cmake_export_targets-extras.cmake
+[1.930s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.931s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.931s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_libConfig.cmake
+[1.931s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/cmake/rover_gui_libConfig-version.cmake
+[1.931s] -- Up-to-date: /home/urc/new_GUI/install/rover_gui_lib/share/rover_gui_lib/package.xml
+[1.934s] Invoked command in '/home/urc/new_GUI/build/rover_gui_lib' returned '0': CMAKE_PREFIX_PATH=/home/urc/new_GUI/install/urc_gui_lib:/home/urc/new_GUI/install/theora_webcams:/home/urc/new_GUI/install/marker_interfacing:/home/urc/new_GUI/install/aruco_finder:/home/urc/new_GUI/install/rover_gui_lib:/home/urc/new_GUI/install/science_servo_control:/home/urc/new_GUI/install/ocean_optics_spectrometer:/home/urc/new_GUI/install/hockey_stick_arm LD_LIBRARY_PATH=/home/urc/new_GUI/install/theora_webcams/lib:/home/urc/new_GUI/install/marker_interfacing/lib:/home/urc/new_GUI/install/aruco_finder/lib:/home/urc/new_GUI/install/rover_gui_lib/lib:/home/urc/new_GUI/install/science_servo_control/lib:/home/urc/new_GUI/install/ocean_optics_spectrometer/lib:/home/urc/new_GUI/install/hockey_stick_arm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PKG_CONFIG_PATH=/home/urc/new_GUI/install/urc_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/urc_gui_lib/lib/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/x86_64-linux-gnu/pkgconfig:/home/urc/new_GUI/install/rover_gui_lib/lib/pkgconfig ROS_PACKAGE_PATH=/home/urc/new_GUI/install/urc_gui_lib/share:/home/urc/new_GUI/install/rover_gui_lib/share /usr/bin/cmake --install /home/urc/new_GUI/build/rover_gui_lib

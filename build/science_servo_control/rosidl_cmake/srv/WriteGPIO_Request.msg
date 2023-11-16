@@ -1,3 +1,0 @@
-# Request
-int32 pin_id
-int32 pin_value

@@ -17,10 +17,10 @@ class FourCameraTab(QWidget):
 		self.bot_left_cam = SuperCameraWidget()
 		self.bot_right_cam = SuperCameraWidget()
 
-		# self.top_left_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.top_right_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.bot_left_cam.set_camera_funnel(self.roslink.camera_funnel)
-		# self.bot_right_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.top_left_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.top_right_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.bot_left_cam.set_camera_funnel(self.roslink.camera_funnel)
+		self.bot_right_cam.set_camera_funnel(self.roslink.camera_funnel)
 
 		camera_layout = QGridLayout()
 		camera_layout.setContentsMargins(0, 0, 0, 0)

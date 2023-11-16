@@ -1,7 +1,0 @@
-{
-  "package_name": "aruco_finder",
-  "non_idl_tuples": [
-    "/home/urc/new-GUI/src/aruco_finder:msg/FoundMarker.msg",
-    "/home/urc/new-GUI/src/aruco_finder:msg/FoundMarkerList.msg"
-  ]
-}

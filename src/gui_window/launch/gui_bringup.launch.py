@@ -15,9 +15,8 @@ def generate_launch_description():
     
     node = Node(
             package='gui_window',
-            # namespace='turtle1',
             executable='gui',
-            name='gui',
+            name='Main_Window',
             parameters = [config]
         )
     

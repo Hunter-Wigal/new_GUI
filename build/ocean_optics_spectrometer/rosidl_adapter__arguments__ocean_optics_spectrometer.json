@@ -1,6 +1,0 @@
-{
-  "package_name": "ocean_optics_spectrometer",
-  "non_idl_tuples": [
-    "/home/urc/new-GUI/src/ocean_optics_spectrometer-main:srv/CaptureSpectrometer.srv"
-  ]
-}

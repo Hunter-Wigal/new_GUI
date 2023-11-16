@@ -1,4 +1,0 @@
-source;share/aruco_finder/environment/ament_prefix_path.sh
-source;share/aruco_finder/environment/library_path.sh
-source;share/aruco_finder/environment/path.sh
-source;share/aruco_finder/environment/pythonpath.sh

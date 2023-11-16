@@ -15,6 +15,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 import rclpy
+from rclpy.node import Node
 from geographic_msgs.msg import GeoPoint
 from geometry_msgs.msg import Pose
 
@@ -85,26 +86,27 @@ def clamp(value: float, lower: float, upper: float) -> float:
 class MapTab(QWidget):
 	def __init__(self, roslink: RosLink, *args, **kwargs):
 		super().__init__(*args, **kwargs)
+		self.loggernode = Node("map_error_logger")
 
 		### override functions to subclass ###
 
 		self.map_viewer: MapViewer = self.init_map_viewer()
 		self.markers_tab: QTabWidget = self.init_markers_tab()
 		self.setLayout(self.init_layout())
-		# self.init_map()
+		self.init_map()
 
 		######################################
 
 		self.last_map_click = 0
 		self.roslink = roslink
-		# self.roslink.gps.connect(self.gps_handler)
-		# self.roslink.pose.connect(self.pose_handler)
-		# self.roslink.marker_list.connect(self.aut_marker_list_handler)
-		# self.roslink.found_marker_list.connect(self.found_marker_list_handler)
+		self.roslink.gps.connect(self.gps_handler)
+		self.roslink.pose.connect(self.pose_handler)
+		self.roslink.marker_list.connect(self.aut_marker_list_handler)
+		self.roslink.found_marker_list.connect(self.found_marker_list_handler)
 
 	def init_map_viewer(self):
 		map_viewer = MapViewer()
-		# map_viewer.map.clicked.connect(lambda l: self.map_click_handler(l['latlng']))
+		map_viewer.map.clicked.connect(lambda l: self.map_click_handler(l['latlng']))
 		map_viewer.add_point_layer('Autonomy', 'blue', 'green', 'yellow')
 		return map_viewer
 
@@ -121,7 +123,7 @@ class MapTab(QWidget):
 		map_server_label = QLabel("MapServer:")
 		self.map_server_choices = QComboBox()
 		self.map_server_choices.addItems(tile_scraper.MapServers.names())
-		# self.map_server_choices.currentIndexChanged.connect(self.update_map_server)
+		self.map_server_choices.currentIndexChanged.connect(self.update_map_server)
 		map_settings.addWidget(map_server_label, 1)
 		map_settings.addWidget(self.map_server_choices, 3)
 
@@ -140,18 +142,18 @@ class MapTab(QWidget):
 		layout.addWidget(splitter)
 		return layout
 
-	# def init_map(self):
-	# 	# pre-cache map tiles if possible
-	# 	if can_access_internet():
-	# 		# cache tiles for later, since there is internet now
-	# 		t = threading.Thread(target=tile_scraper.main)
-	# 		t.start()
+	def init_map(self):
+		# pre-cache map tiles if possible
+		if can_access_internet():
+			# cache tiles for later, since there is internet now
+			t = threading.Thread(target=tile_scraper.main)
+			t.start()
 
-	# 		initial_map_server = tile_scraper.MapServers.ARCGIS_World_Imagery
-	# 	else:
-	# 		initial_map_server = tile_scraper.MapServers.ARCGIS_World_Imagery_Cache
+			initial_map_server = tile_scraper.MapServers.ARCGIS_World_Imagery
+		else:
+			initial_map_server = tile_scraper.MapServers.ARCGIS_World_Imagery_Cache
 
-	# 	self.select_map_server(initial_map_server)
+		self.select_map_server(initial_map_server)
 
 	def init_aut_marker_input(self):
 		self.autosave_enabled = False
@@ -167,24 +169,24 @@ class MapTab(QWidget):
 		self.aut_table.setHorizontalHeaderLabels(["Lat", "Lon", "Radius", "Type", "ID", "ID 2"])
 		self.aut_table.setEditTriggers(QTableWidget.NoEditTriggers)
 		self.aut_table.setSelectionBehavior(QTableWidget.SelectRows)
-		# self.aut_table.cellClicked.connect(self.aut_marker_select_handler)
-		# self.aut_table.currentCellChanged.connect(lambda cr, cc, pr, pc: self.aut_marker_select_handler(cr, cc))
-		# self.aut_table.cellDoubleClicked.connect(self.aut_marker_alter_handler)
+		self.aut_table.cellClicked.connect(self.aut_marker_select_handler)
+		self.aut_table.currentCellChanged.connect(lambda cr, cc, pr, pc: self.aut_marker_select_handler(cr, cc))
+		self.aut_table.cellDoubleClicked.connect(self.aut_marker_alter_handler)
 
 		self.aut_lat_entry = QLineEdit()
 		self.aut_lat_entry.setPlaceholderText("Latitude")
 		self.aut_lat_entry.setValidator(Validators.latitude_validator)
-		# self.aut_lat_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_lat_entry))
+		self.aut_lat_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_lat_entry))
 
 		self.aut_lon_entry = QLineEdit()
 		self.aut_lon_entry.setPlaceholderText("Longitude")
 		self.aut_lon_entry.setValidator(Validators.longitude_validator)
-		# self.aut_lon_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_lon_entry))
+		self.aut_lon_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_lon_entry))
 
 		self.aut_radius_entry = QLineEdit()
 		self.aut_radius_entry.setPlaceholderText("Radius (m)")
 		self.aut_radius_entry.setValidator(Validators.radius_validator)
-		# self.aut_radius_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_radius_entry))
+		self.aut_radius_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_radius_entry))
 
 		self.aut_marker_type = QComboBox()
 		self.aut_marker_type.addItems(Validators.marker_types)
@@ -192,12 +194,12 @@ class MapTab(QWidget):
 		self.aut_aruco_id_entry = QLineEdit()
 		self.aut_aruco_id_entry.setPlaceholderText("Aruco ID")
 		self.aut_aruco_id_entry.setValidator(Validators.aruco_validator)
-		# self.aut_aruco_id_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_aruco_id_entry))
+		self.aut_aruco_id_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_aruco_id_entry))
 
 		self.aut_aruco_id_2_entry = QLineEdit()
 		self.aut_aruco_id_2_entry.setPlaceholderText("Aruco ID 2")
 		self.aut_aruco_id_2_entry.setValidator(Validators.aruco_validator)
-		# self.aut_aruco_id_2_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_aruco_id_2_entry))
+		self.aut_aruco_id_2_entry.textEdited.connect(lambda _: red_if_unacceptable(self.aut_aruco_id_2_entry))
 
 		self.aruco_id_layout = QHBoxLayout()
 		self.aruco_id_layout.addWidget(self.aut_aruco_id_entry)
@@ -206,37 +208,37 @@ class MapTab(QWidget):
 		hline1 = HLine()
 
 		self.aut_insert_button = QPushButton("Insert Marker")
-		# self.aut_insert_button.clicked.connect(self.insert_aut_marker)
+		self.aut_insert_button.clicked.connect(self.insert_aut_marker)
 
 		self.aut_add_button = QPushButton("Add Marker")
-		# self.aut_add_button.clicked.connect(self.add_aut_marker)
+		self.aut_add_button.clicked.connect(self.add_aut_marker)
 
 		self.new_marker_layout = QHBoxLayout()
 		self.new_marker_layout.addWidget(self.aut_insert_button)
 		self.new_marker_layout.addWidget(self.aut_add_button)
 
 		self.aut_clear_button = QPushButton("Clear Markers")
-		# self.aut_clear_button.clicked.connect(self.clear_aut_markers)
+		self.aut_clear_button.clicked.connect(self.clear_aut_markers)
 
 		self.aut_optimize_button = QPushButton("Optimize Route")
-		# self.aut_optimize_button.clicked.connect(self.optimize_route_handler)
+		self.aut_optimize_button.clicked.connect(self.optimize_route_handler)
 
 		hline2 = HLine()
 
 		self.autonomy_save_line_edit = QLineEdit()
 
 		autonomy_save_but = QPushButton("Save")
-		# autonomy_save_but.pressed.connect(self.save_autonomy_markers)
+		autonomy_save_but.pressed.connect(self.save_autonomy_markers)
 
 		self.autonomy_load_combo = QComboBox()
 		self.autonomy_load_combo.clear()
 		self.autonomy_load_combo.addItems(file_basenames(autonomy_saves_dir))
 
 		autonomy_load_but = QPushButton("Load")
-		# autonomy_load_but.pressed.connect(self.load_autonomy_markers)
+		autonomy_load_but.pressed.connect(self.load_autonomy_markers)
 
 		autonomy_del_but = QPushButton("Delete")
-		# autonomy_del_but.pressed.connect(self.delete_autonomy_markers)
+		autonomy_del_but.pressed.connect(self.delete_autonomy_markers)
 
 		autonomy_saves = QGridLayout()
 		autonomy_saves.addWidget(self.autonomy_save_line_edit, 0, 0, 1, 1)
@@ -276,7 +278,7 @@ class MapTab(QWidget):
 		self.found_marker_table.setSelectionBehavior(QTableWidget.SelectRows)
 
 		self.found_marker_clear_button = QPushButton("Clear Found Markers")
-		# self.found_marker_clear_button.clicked.connect(self.clear_found_markers)
+		self.found_marker_clear_button.clicked.connect(self.clear_found_markers)
 
 		layout = QVBoxLayout()
 		layout.setContentsMargins(0, 0, 0, 0)
@@ -343,9 +345,9 @@ class MapTab(QWidget):
 				# send request to reorder marker
 				try:
 					self.roslink.reorder_marker(marker_id, new_following_marker_id)
-				except rclpy.service.ServiceException as e:
+				except Exception as e:
 					failed_to_alter_marker()
-					rclpy.logerr(e)
+					self.loggernode.get_logger().error(e)
 
 			# user requested the marker have its values edited
 			elif dialog_box.edit_btn.isChecked():
@@ -368,9 +370,9 @@ class MapTab(QWidget):
 				# send request to edit marker
 				try:
 					self.roslink.edit_marker(lat, lon, 0.0, radius, marker_type, aruco_id, aruco_id_2, marker_id)
-				except rclpy.service.ServiceException as e:
+				except Exception as e:
 					failed_to_alter_marker()
-					rclpy.logerr(e)
+					self.loggernode.get_logger().error(e)
 
 			# user request the marker be deleted
 			elif dialog_box.del_btn.isChecked():
@@ -379,9 +381,9 @@ class MapTab(QWidget):
 
 				try:
 					self.roslink.remove_marker(marker_id)
-				except rclpy.service.ServiceException as e:
+				except Exception as e:
 					failed_to_alter_marker()
-					rclpy.logerr(e)
+					self.loggernode.get_logger().error(e)
 
 	def gps_handler(self, gps: GeoPoint):
 		self.map_viewer.set_robot_position(gps.latitude, gps.longitude)
@@ -497,9 +499,9 @@ class MapTab(QWidget):
 				self.roslink.add_marker(latf, lonf, altf, radf, marker, aruco_id, aruco_id_2)
 				self.aut_add_button.setStyleSheet("")
 				self.aut_add_button.setText("Add Marker")
-			except rclpy.service.ServiceException as e:
+			except Exception as e:
 				failed_to_add_marker()
-				rclpy.logerr(e)
+				self.loggernode.get_logger().error(e)
 		except ValueError:
 			failed_to_add_marker()
 
@@ -525,9 +527,9 @@ class MapTab(QWidget):
 				self.roslink.insert_marker(latf, lonf, altf, radf, marker, aruco_id, aruco_id_2, new_following_marker_id)
 				self.aut_insert_button.setStyleSheet("")
 				self.aut_insert_button.setText("Insert Marker")
-			except rclpy.service.ServiceException as e:
+			except Exception as e:
 				failed_to_insert_marker()
-				rclpy.logerr(e)
+				self.loggernode.get_logger().error(e)
 		except ValueError:
 			failed_to_insert_marker()
 
@@ -551,9 +553,9 @@ class MapTab(QWidget):
 				self.roslink.clear_markers()
 				self.aut_clear_button.setStyleSheet("")
 				self.aut_clear_button.setText("Clear Markers")
-			except rclpy.service.ServiceException as e:
+			except Exception as e:
 				self.failed_to_clear_markers()
-				rclpy.logerr(e)
+				self.loggernode.get_logger().error(e)
 
 	def save_autonomy_markers(self):
 		# get filename to save autonomy info to
@@ -616,9 +618,9 @@ class MapTab(QWidget):
 		for marker in marker_list.markers:
 			try:
 				self.roslink.add_marker(marker.gps.latitude, marker.gps.longitude, marker.gps.altitude, marker.waypoint_error, marker.marker_type, marker.aruco_id, marker.aruco_id_2)
-			except rclpy.service.ServiceException as e:
+			except Exception as e:
 				self.failed_to_add_marker()
-				rclpy.logerr(e)
+				self.loggernode.get_logger().error(e)
 
 		# confirm to user that file has been loaded
 		QMessageBox(
@@ -707,21 +709,21 @@ class MapTab(QWidget):
 			self.found_marker_table.clear()
 			for aruco_marker in self.map_viewer.aruco_markers.values():
 				aruco_marker.setIcon(self.map_viewer.old_aruco_icon)
-		except rclpy.service.ServiceException as e:
+		except Exception as e:
 			QMessageBox(
 				QMessageBox.Critical,
 				"Failed to clear found markers.",
 				f"Could not clear found markers.",
 				QMessageBox.Ok,
 			).exec()
-			rclpy.logerr(e)
+			self.loggernode.get_logger().error(e)
 
 ### route optimizer ##########################################################
 
 	def optimize_route_handler(self):
 		def failed_to_reorder_markers():
 			# TODO: popup box
-			rclpy.logwarn('Failed to reorder markers!')
+			self.loggernode.get_logger().warn('Failed to reorder markers!')
 
 		dialog_box = OptimizationDialogBox(algorithms.keys(), cost_functions.keys())
 
@@ -759,9 +761,9 @@ class MapTab(QWidget):
 				try:
 					self.autosave_enabled = True
 					self.roslink.reorder_markers(marker_ids)
-				except rclpy.service.ServiceException as e:
+				except Exception as e:
 					failed_to_reorder_markers()
-					rclpy.logerr(e)
+					self.loggernode.get_logger().error(e)
 			else:
 				# display previous markers again
 				self.disp_aut_markers(pre_optimized_marker_list)
@@ -782,10 +784,10 @@ class OptimizationDialogBox(QDialog):
 		self.ignore_intermediary_markers_checkbox = ui.ignore_intermediary_markers_checkbox
 
 		self.marker1_radio = ui.marker1_radio
-		# self.marker1_radio.toggled.connect(self.marker1_toggled)
+		self.marker1_radio.toggled.connect(self.marker1_toggled)
 
 		self.marker2_radio = ui.marker2_radio
-		# self.marker2_radio.toggled.connect(self.marker2_toggled)
+		self.marker2_radio.toggled.connect(self.marker2_toggled)
 
 		self.optimization_start = 0
 

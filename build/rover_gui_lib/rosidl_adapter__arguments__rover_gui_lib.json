@@ -1,7 +1,0 @@
-{
-  "package_name": "rover_gui_lib",
-  "non_idl_tuples": [
-    "/home/urc/new-GUI/src/rover_gui_lib:msg/EDWaypoint.msg",
-    "/home/urc/new-GUI/src/rover_gui_lib:msg/EDWaypointList.msg"
-  ]
-}
