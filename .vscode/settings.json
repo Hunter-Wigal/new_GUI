@@ -9,5 +9,5 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
-    "cmake.sourceDirectory": "/home/urc/new-GUI/src/aruco_finder"
+    "cmake.sourceDirectory": "/home/urc/new_GUI/build/rover_gui_lib/rover_gui_lib__py"
 }
