@@ -1,2 +1,0 @@
-Invoking command in '/home/urc/new_GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/theora_webcams -- -j4 -l4
-Invoked command in '/home/urc/new_GUI/build/theora_webcams' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/theora_webcams -- -j4 -l4

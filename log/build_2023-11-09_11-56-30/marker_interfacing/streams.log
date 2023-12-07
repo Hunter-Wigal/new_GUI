@@ -1,7 +1,0 @@
-[0.132s] Invoking command in '/home/urc/new-GUI/build/marker_interfacing': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
-[0.151s] [31mCMake Error at CMakeLists.txt:124:
-[0.151s]   Parse error.  Expected a command name, got right paren with text ")".
-[0.151s] 
-[0.151s] [0m
-[0.155s] -- Configuring incomplete, errors occurred!
-[0.155s] Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing

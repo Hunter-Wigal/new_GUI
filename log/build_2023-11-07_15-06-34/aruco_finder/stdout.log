@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_generator_c[0m
-[  2%] Built target aruco_finder__cpp
-[35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_typesupport_cpp[0m
-[35m[1mConsolidate compiler generated dependencies of target aruco_finder__rosidl_typesupport_fastrtps_cpp[0m
-[ 12%] Built target aruco_finder__rosidl_generator_c
-[ 23%] Built target aruco_finder__rosidl_typesupport_cpp
-[ 33%] Built target aruco_finder__rosidl_typesupport_fastrtps_cpp

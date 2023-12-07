@@ -1,2 +1,0 @@
-Invoking command in '/home/urc/new-GUI/build/marker_interfacing': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing
-Invoked command in '/home/urc/new-GUI/build/marker_interfacing' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/marker_interfacing -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/marker_interfacing

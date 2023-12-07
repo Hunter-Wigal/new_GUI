@@ -1,8 +1,0 @@
-[31mCMake Error at CMakeLists.txt:236 (find_package):
-  find_package called with invalid argument "std_msgs"
-
-[0m
-[31mCMake Error at CMakeLists.txt:244 (rosidl_generate_interfaces):
-  Unknown CMake command "rosidl_generate_interfaces".
-
-[0m

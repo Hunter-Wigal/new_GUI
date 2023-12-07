@@ -77,7 +77,7 @@ class MarkerManager(Node):
 				request.aruco_id_2,
 			)
 		)
-		self.get_logger().info("Added marker")
+		self.get_logger().info(f"Added marker at Lat: {request.lat} Lon: {request.lon}")
 		return response
 	
 def main():

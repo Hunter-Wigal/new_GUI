@@ -1,8 +1,0 @@
-[0.356s] Invoking command in '/home/urc/new-GUI/build/aruco_finder': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder
-[0.913s] -- Configuring incomplete, errors occurred!
-[0.913s] See also "/home/urc/new-GUI/build/aruco_finder/CMakeFiles/CMakeOutput.log".
-[0.919s] [31mCMake Error at CMakeLists.txt:245:
-[0.919s]   Parse error.  Function missing ending ")".  End of file reached.
-[0.919s] 
-[0.920s] [0m
-[0.929s] Invoked command in '/home/urc/new-GUI/build/aruco_finder' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/aruco_finder -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/aruco_finder

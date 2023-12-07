@@ -83,7 +83,7 @@ class RosNode(Node):
 
     def timer_callback(self):
         for subscriber in self.subscribers:
-            rclpy.spin_once(subscriber)
+            rclpy.spin_once(subscriber, 0.5)
 
 class RosLink(QObject):
     pose = Signal(Pose)
@@ -105,6 +105,7 @@ class RosLink(QObject):
         # List of subscribers for RosLink to iterate through
         self.subscribers:List[NewSubscriber] = []
 
+        # Has to be declared or the rosnode won't recognize them
         self.ROSnode.declare_parameter("local_position_topic", rclpy.Parameter.Type.STRING)
         self.ROSnode.declare_parameter("global_position_topic", rclpy.Parameter.Type.STRING)
         self.ROSnode.declare_parameter("global_origin_topic", rclpy.Parameter.Type.STRING)
@@ -132,6 +133,7 @@ class RosLink(QObject):
 
 
 
+        # Get topic names from passed parameters
         local_position_topic = self.ROSnode.get_parameter("local_position_topic").value
         global_position_topic = self.ROSnode.get_parameter("global_position_topic").value
         global_origin_topic = self.ROSnode.get_parameter("global_origin_topic").value
@@ -199,6 +201,7 @@ class RosLink(QObject):
 
     def global_origin_callback(self, global_origin: GeoPoint):
         self.global_origin = global_origin
+        self.get_logger().info(self.global_origin)
 
     def get_logger(self):
         return self.ROSnode.get_logger()

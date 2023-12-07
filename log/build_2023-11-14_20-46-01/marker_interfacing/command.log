@@ -1,2 +1,0 @@
-Invoking command in '/home/urc/new_GUI/build/marker_interfacing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/marker_interfacing -- -j4 -l4
-Invoked command in '/home/urc/new_GUI/build/marker_interfacing' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/marker_interfacing -- -j4 -l4

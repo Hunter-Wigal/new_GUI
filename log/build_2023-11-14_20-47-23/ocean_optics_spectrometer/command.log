@@ -1,6 +1,0 @@
-Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/ocean_optics_spectrometer -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/ocean_optics_spectrometer
-Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new_GUI/src/ocean_optics_spectrometer -DCMAKE_INSTALL_PREFIX=/home/urc/new_GUI/install/ocean_optics_spectrometer
-Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/ocean_optics_spectrometer -- -j4 -l4
-Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/ocean_optics_spectrometer -- -j4 -l4
-Invoking command in '/home/urc/new_GUI/build/ocean_optics_spectrometer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/ocean_optics_spectrometer
-Invoked command in '/home/urc/new_GUI/build/ocean_optics_spectrometer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new_GUI/build/ocean_optics_spectrometer

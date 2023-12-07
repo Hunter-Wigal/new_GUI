@@ -1,4 +1,0 @@
-Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4
-Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new-GUI/build/theora_webcams -- -j4 -l4
-Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/theora_webcams
-Invoked command in '/home/urc/new-GUI/build/theora_webcams' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/urc/new-GUI/build/theora_webcams

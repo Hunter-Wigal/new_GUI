@@ -1,2 +1,0 @@
-Invoking command in '/home/urc/new-GUI/build/hockey_stick_arm': /usr/bin/cmake /home/urc/new-GUI/src/hockey_stick_arm-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/hockey_stick_arm
-Invoked command in '/home/urc/new-GUI/build/hockey_stick_arm' returned '1': /usr/bin/cmake /home/urc/new-GUI/src/hockey_stick_arm-main -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/hockey_stick_arm

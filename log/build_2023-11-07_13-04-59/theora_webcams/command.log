@@ -1,1 +1,0 @@
-Invoking command in '/home/urc/new-GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/urc/new-GUI/src/theora_webcams -DCMAKE_INSTALL_PREFIX=/home/urc/new-GUI/install/theora_webcams

@@ -1,6 +1,0 @@
-[0.205s] Invoking command in '/home/urc/new_GUI/build/theora_webcams': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/theora_webcams -- -j4 -l4
-[0.268s] [0mCMake Error: The current CMakeCache.txt directory /home/urc/new_GUI/build/theora_webcams/CMakeCache.txt is different than the directory /home/urc/new-GUI/build/theora_webcams where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.302s] [0mCMake Error: The source directory "/home/urc/new-GUI/src/theora_webcams" does not exist.
-[0.302s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.313s] gmake: *** [Makefile:2475: cmake_check_build_system] Error 1
-[0.319s] Invoked command in '/home/urc/new_GUI/build/theora_webcams' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/urc/new_GUI/build/theora_webcams -- -j4 -l4

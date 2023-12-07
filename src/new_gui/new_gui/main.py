@@ -16,18 +16,6 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
-class MinimalPublisher(Node):
-
-    def __init__(self):
-        super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'test_topic', 10)
-
-    def publish(self):
-        msg = String()
-        msg.data = 'Hello World'
-        self.publisher_.publish(msg)
-        # self.get_logger().info('Publishing: "%s"' % msg.data)
-
 # Runs the Ros link nodes
 class RunLink(QObject):		
 	def setup(self, roslink: WandererRosLink):
@@ -39,10 +27,8 @@ class RunLink(QObject):
 		
 	def run(self):
 		# self.timer.start(20) # Tick every 500 ms
-		testPub = MinimalPublisher()
 		while True:
 			self.roslink.timer_callback()
-			# testPub.publish()
 
 
 class RoverWindow(Window):

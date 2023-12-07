@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:232 (find_library):
-  Could not find v4l2_camera using the following names:
-
-[0m
-gmake: *** [Makefile:2516: cmake_check_build_system] Error 1
