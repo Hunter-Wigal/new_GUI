@@ -8,8 +8,6 @@ Requires pip packages such as:
     prctl
     pyqtlet2
     pyqtgraph
-
-
     possibly others
 
 
