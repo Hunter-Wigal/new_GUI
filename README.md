@@ -3,11 +3,11 @@ Code from wanderer_gui partially translated to ROS2
 
 
 Requires pip packages such as:
-    pyqt5
-    qtpy
-    prctl
-    pyqtlet2
-    pyqtgraph
+    pyqt5,
+    qtpy,
+    prctl,
+    pyqtlet2,
+    pyqtgraph,
     possibly others
 
 
