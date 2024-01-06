@@ -13,13 +13,21 @@ def generate_launch_description():
     )
 
     
-    node = Node(
+    gui = Node(
             package='new_gui',
             executable='gui',
             # Creates an issue where it names every subsequent node the same name
             # name='roslink_node',
             parameters = [config],
     )
+
+    add_Service = Node(
+            package='marker_manager',
+            executable='markermnger',
+            # Creates an issue where it names every subsequent node the same name
+            # name='roslink_node',
+    )
     
-    ld.add_action(node)
+    ld.add_action(gui)
+    ld.add_action(add_Service)
     return ld

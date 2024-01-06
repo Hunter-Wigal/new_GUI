@@ -8,7 +8,7 @@ from threading import Lock
 class Publisher(Node):
 	def __init__(self, name, topic, type):
 		super().__init__(name)
-		self.publisher = self.create_publisher(type, topic, 1)
+		self.publisher = self.create_publisher(type, topic, 10)
 
 	def publish(self, data):
 		self.publisher.publish(data)

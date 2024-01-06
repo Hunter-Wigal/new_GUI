@@ -23,6 +23,8 @@ from PyQt5.QtCore import QObject, pyqtSignal as Signal
 from new_gui.urc_gui_common.camera_link import CameraFunnel
 from new_gui.urc_gui_common.widgets import MapPoint
 
+from .service_clients import *
+
 from std_msgs.msg import String
 class NewSubscriber(Node):
     def __init__(self, name, topic, type, callback):
@@ -45,34 +47,7 @@ class NewService(Node):
 		self.future = self.cli.call_async(self.req)
 		rclpy.spin_until_future_complete(self, self.future)
 		return self.future.result()
-     
-class MarkerServiceClient(Node):       
-    def __init__(self, name, topic, type):
-        super().__init__(name)
-        
-        self.cli = self.create_client(type, topic)
-        self.req = type.Request()
-        
-            
-    def send_request(self, lat, lon, alt, error, marker_type, aruco_id, aruco_id_2):
 
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available')
-
-        self.req.lat = lat
-        self.req.lon = lon
-        self.req.alt = alt
-        self.req.waypoint_error = error
-        self.req.marker_type = marker_type
-        self.req.aruco_id = aruco_id
-        self.req.aruco_id_2 = aruco_id_2
-        self.future = self.cli.call_async(self.req)
-
-        
-        rclpy.spin_until_future_complete(self, self.future)
-        return self.future.result()
-
-    
 class RosNode(Node):
     def __init__(self, name):
         super().__init__(name)
@@ -160,15 +135,15 @@ class RosLink(QObject):
         self.state_sub = self.make_subscriber(state_topic, String, self.state)
         self.planner_status_sub = self.make_subscriber(planner_status_topic, String, self.planner_status)
         self.found_marker_sub = self.make_subscriber(found_marker_list_topic, FoundMarkerList, self.found_marker_list)
-
-        self.add_marker_srv = MarkerServiceClient("add_marker_client", add_marker_service, AddMarker)
-        self.clear_markers_srv = MarkerServiceClient("clear_marker_client",clear_markers_service, ClearMarkers)
-        self.reorder_marker_srv = NewService("reorder_marker_client",reorder_marker_service, ReorderMarker)
-        self.reorder_markers_srv = NewService("reorder_markers_client",reorder_markers_service, ReorderMarkers)
-        self.edit_marker_srv = MarkerServiceClient("edit_marker_client",edit_marker_service, EditMarker)
-        self.remove_marker_srv = NewService("remove_marker_client",remove_marker_service, RemoveMarker)
-        self.insert_marker_srv = MarkerServiceClient("insert_marker_client",insert_marker_service, InsertMarker)
-        self.clear_found_markers_srv = NewService("clear_found_marker_client",clear_found_markers_service, Trigger)
+        
+        self.add_marker_srv = AddMarkerServiceClient("add_marker_client", add_marker_service, AddMarker)
+        self.clear_markers_srv = ClearMarkerServiceClient("clear_marker_client",clear_markers_service, ClearMarkers)
+        self.reorder_marker_srv = ReorderMarkerServiceClient("reorder_marker_client",reorder_marker_service, ReorderMarker)
+        self.reorder_markers_srv = ReorderMarkersServiceClient("reorder_markers_client",reorder_markers_service, ReorderMarkers)
+        self.edit_marker_srv = EditMarkerServiceClient("edit_marker_client",edit_marker_service, EditMarker)
+        self.remove_marker_srv = RemoveMarkerServiceClient("remove_marker_client",remove_marker_service, RemoveMarker)
+        self.insert_marker_srv = InsertMarkerServiceClient("insert_marker_client",insert_marker_service, InsertMarker)
+        self.clear_found_markers_srv = ClearMarkerServiceClient("clear_found_marker_client",clear_found_markers_service, Trigger)
 
         # camera funnel
         self.camera_funnel = CameraFunnel(self.camera_funnel_signal)
@@ -181,23 +156,22 @@ class RosLink(QObject):
         return self.reorder_marker_srv.send_request(marker_id, new_following_marker_id).value
 	    
     def reorder_markers(self, marker_ids: List[int]) -> ReorderMarkers.Response:
-        return self.reorder_markers_srv(ReorderMarkers.Request(marker_ids))
+        return self.reorder_markers_srv.send_request(marker_ids).value
 
     def edit_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int, marker_id: int) -> EditMarker.Response:
         return self.edit_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2, marker_id).value
 
     def remove_marker(self, marker_id) -> RemoveMarker.Response:
-        return self.remove_marker_srv(RemoveMarker.Request(marker_id))
+        return self.remove_marker_srv.send_request(marker_id).value
 
     def insert_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int, new_following_marker_id: int) -> InsertMarker.Response:
-        return self.insert_marker_srv(InsertMarker.Request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2, new_following_marker_id))
+        return self.insert_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2, new_following_marker_id).value
     
-
     def clear_markers(self) -> ClearMarkers.Response:
-        return self.clear_markers_srv(ClearMarkers.Request())
+        return self.clear_markers_srv.send_request().value
     
     def clear_found_markers(self) -> Trigger.Response:
-        return self.clear_found_markers_srv(Trigger.Request())
+        return self.clear_found_markers_srv.send_request().value
 
     def global_origin_callback(self, global_origin: GeoPoint):
         self.global_origin = global_origin

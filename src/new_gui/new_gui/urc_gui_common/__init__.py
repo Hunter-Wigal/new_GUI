@@ -12,3 +12,5 @@ from .status_bar import StatusBar
 from .app import AppRunner, Window
 
 from .tile_scraper import *
+
+from .service_clients import *
