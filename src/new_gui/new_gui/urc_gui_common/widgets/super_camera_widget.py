@@ -39,11 +39,16 @@ class SuperCameraWidget(QLabel):
 		self.restart_button.setIcon(self.restart_button.style().standardIcon(QStyle.SP_BrowserReload))
 		self.restart_button.clicked.connect(self.restart_camera)
 
+		self.screenshot_button = QPushButton("Screenshot")
+		self.screenshot_button.pressed.connect(self.screenshot)
+
 		self.options_layout = QHBoxLayout()
 		self.options_layout.setContentsMargins(0, 0, 0, 0)
 		self.options_layout.addWidget(self.selector, alignment=Qt.AlignTop)
 		self.options_layout.addWidget(self.enable_checkbox, alignment=Qt.AlignTop | Qt.AlignLeft)
+		self.options_layout.addWidget(self.screenshot_button, alignment=Qt.AlignTop | Qt.AlignLeft)
 		self.options_layout.addWidget(self.restart_button, alignment=Qt.AlignTop | Qt.AlignRight)
+
 
 		self.exposure_slider = QSlider()
 		self.exposure_slider.sliderPressed.connect(lambda: self.set_adjusting_exposure_slider(True))
@@ -129,6 +134,9 @@ class SuperCameraWidget(QLabel):
 		# If our current camera is the blank or not set, we're not really subscribed to anything
 		if self.current_alias and self.current_alias in self.camera_dict:
 			self.funnel.restart(self.camera_dict[self.current_alias])
+
+	def screenshot(self):
+		pass
 
 	### exposure #############################################################
 
