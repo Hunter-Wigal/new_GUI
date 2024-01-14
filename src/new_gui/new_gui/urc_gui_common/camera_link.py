@@ -13,6 +13,7 @@ from PyQt5.QtCore import pyqtSignal as Signal
 
 import rclpy
 from rclpy import node
+from rclpy.node import Node
 import ros2service
 import ros2service.api
 from std_srvs.srv._set_bool import SetBool_Request
@@ -27,13 +28,14 @@ from theora_image_transport.msg import Packet
 class CameraSubscriber(QObject):
 	def __init__(self, cam_name: str, change_video_handler: node.Service, exposure_signal: Signal, image_signal: Signal):
 		super().__init__()
-
-		self.raw_topic = f"/cameras/{cam_name}/image_raw"
-		self.republished_topic = f"/cameras/{cam_name}/republished"
-		self.decompressed_topic = f"/cameras/{cam_name}{rclpy.Node.get_name()}/image_decompressed"
-		self.status_topic = f"/cameras/{cam_name}/status"
-		self.get_exposure_bounds_service = f"/cameras/{cam_name}/get_exposure_bounds"
-		self.set_exposure_service = f"/cameras/{cam_name}/set_exposure"
+		node_name = Node("test").get_name()
+		node_name = ""
+		self.raw_topic = f"cameras/{cam_name}/image_raw"
+		self.republished_topic = f"cameras/{cam_name}/republished"
+		self.decompressed_topic = f"cameras/{cam_name}{node_name}/image_decompressed"
+		self.status_topic = f"cameras/{cam_name}/status"
+		self.get_exposure_bounds_service = f"cameras/{cam_name}/get_exposure_bounds"
+		self.set_exposure_service = f"cameras/{cam_name}/set_exposure"
 
 		self.cam_name = cam_name
 		self.change_video_handler = change_video_handler
@@ -60,10 +62,10 @@ class CameraSubscriber(QObject):
 		#   we know it is being run by theora_webcams
 		#   we will get the status from the topic instead of calculating
 		self.theora_webcam = False
-		topics, types = zip(*rclpy.Node.get_topic_names_and_types())
+		topics, types = zip(*Node.get_topic_names_and_types())
 		if self.status_topic in topics:
 			self.theora_webcam = True
-			self.status_sub = rclpy.Node.create_subscription(self.status_topic, Status, self.status_callback)
+			self.status_sub = Node.create_subscription(self.status_topic, Status, self.status_callback)
 
 		# if get_exposure_bounds and set_exposure exist, we may be able to set the exposure manually
 		self.could_support_manual_exposure = False
@@ -153,7 +155,7 @@ class CameraSubscriber(QObject):
 
 	def start_decompressed_sub(self):
 		if not self.decompressed_sub:
-			self.decompressed_sub = rclpy.Subscriber(
+			self.decompressed_sub = rclpy.Node.create_subscription(
 				self.decompressed_topic,
 				Image,
 				self.image_callback,
@@ -284,21 +286,21 @@ class CameraFunnel(QObject):
 		# If no one is subscribed to this camera, don't do anything
 		if not self.image_slots[camera_name]:
 			return
-
+		logger = Node("logger").get_logger()
 		format = None
 		if raw_image.encoding == "mono8":
 			format = QImage.Format_Grayscale8
 		elif raw_image.encoding == "bgr8" or raw_image.encoding == "rgb8":
 			format = QImage.Format_RGB888
 		else:
-			rclpy.logerr(f"Failed to decode image, encoding {raw_image.encoding} is not recognized")
+			logger.error(f"Failed to decode image, encoding {raw_image.encoding} is not recognized")
 			return
 
 		image = QImage(raw_image.data, raw_image.width, raw_image.height, format)
 		if raw_image.encoding == "bgr8":
 			image = image.rgbSwapped()
 		if image.isNull():
-			rclpy.logerr("Failed to decode image")
+			logger.error("Failed to decode image")
 			return
 
 		if self.flip[camera_name]:
@@ -308,6 +310,7 @@ class CameraFunnel(QObject):
 		for func in self.image_slots[camera_name]:
 			func(pixmap)
 
+
 	def handle_incoming_exposures(self, camera_name: str, exposure: float):
 		# If no one is subscribed to this camera, don't do anything
 		if not self.image_slots[camera_name]:
@@ -315,3 +318,4 @@ class CameraFunnel(QObject):
 
 		for func in self.exposure_slots[camera_name]:
 			func(exposure)
+

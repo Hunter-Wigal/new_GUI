@@ -266,6 +266,8 @@ class SettingsTab(QWidget):
 					resolutions = get_resolutions.send_request()
 				except InvalidServiceNameException:
 					resolutions = []
+				framerate = Framerate()
+
 
 				self.camera_info.append(CameraInfo(name, name, True, False, False, False, None, '?', '?', '?', resolutions, change_video))
 				new_cameras.append(name)

@@ -196,4 +196,4 @@ class RosLink(QObject):
     
     def timer_callback(self):
         for subscriber in self.subscribers:
-            rclpy.spin_once(subscriber, timeout_sec=1)
+            rclpy.spin_once(subscriber)

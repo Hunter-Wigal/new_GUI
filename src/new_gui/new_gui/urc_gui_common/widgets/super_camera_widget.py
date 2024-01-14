@@ -7,11 +7,18 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import pyqtSignal as Signal
 
+from rclpy.node import Node
+import os as os
+
 from new_gui.urc_gui_common.camera_link import CameraFunnel
 
 class SuperCameraWidget(QLabel):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
+		format = QImage.Format_RGB888
+		# Default image when no cameras are connected
+		image = QImage(b'empty image',100, 100, format)
+		self.currImage = QPixmap.fromImage(image)
 
 		self.adjusting_camera_list = False
 		self.adjusting_exposure_slider = False
@@ -40,7 +47,7 @@ class SuperCameraWidget(QLabel):
 		self.restart_button.clicked.connect(self.restart_camera)
 
 		self.screenshot_button = QPushButton("Screenshot")
-		self.screenshot_button.pressed.connect(self.screenshot)
+		self.screenshot_button.pressed.connect(lambda :self.screenshot())
 
 		self.options_layout = QHBoxLayout()
 		self.options_layout.setContentsMargins(0, 0, 0, 0)
@@ -86,7 +93,9 @@ class SuperCameraWidget(QLabel):
 
 	def set_image(self, image: QPixmap):
 		"""Set the camera's current image."""
+		self.currImage = image
 		self.setPixmap(image.scaled(self.width(), self.height(), Qt.KeepAspectRatio))
+	
 
 	def update_controls(self, enable_webcam_controls: bool, supports_manual_exposure: bool, exposure_bounds: List[float]):
 		self.restart_button.setEnabled(enable_webcam_controls)
@@ -136,7 +145,15 @@ class SuperCameraWidget(QLabel):
 			self.funnel.restart(self.camera_dict[self.current_alias])
 
 	def screenshot(self):
-		pass
+		image = self.currImage
+		directory = os.getcwd() + "/Screenshots"
+		if not os.path.exists(directory):
+			os.makedirs(directory)
+		screenshots = len(os.listdir(directory)) + 1
+
+		image.save(f"{directory}/screenshot{screenshots}.png", format="png", quality=100)
+		logNode = Node("logger")
+		logNode.get_logger().info("Saved image to: " + os.getcwd())
 
 	### exposure #############################################################
 
