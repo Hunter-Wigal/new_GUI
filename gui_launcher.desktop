@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GUI Launcher
+Type=Application
+Path=/home/urc/new_GUI
+Exec=bash -c "./launch.sh;\\$SHELL"
+Terminal=true
+Icon=/home/urc/new_GUI/rover_icon.png
