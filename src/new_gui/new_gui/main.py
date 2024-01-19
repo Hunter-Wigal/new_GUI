@@ -13,23 +13,22 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 import rclpy
+from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from std_msgs.msg import String
 
+from typing import List
+
 # Runs the Ros link nodes
 class RunLink(QObject):		
-	def setup(self, roslink: WandererRosLink):
+	def setup(self, executor: MultiThreadedExecutor):
 		self.__init__()
-		self.roslink = roslink
-		# self.timer = QTimer()
-		# self.timer.moveToThread(self)
-		# self.timer.timeout.connect(lambda: self.roslink.timer_callback())
+		self.executor = executor
 		
 	def run(self):
-		# self.timer.start(20) # Tick every 500 ms
-		while True:
-			self.roslink.timer_callback()
+		self.executor.spin()
 
+		# self.executor.shutdown()
 
 class RoverWindow(Window):
 	def __init__(self, *args, **kwargs):
@@ -37,11 +36,19 @@ class RoverWindow(Window):
 
 		roslink = WandererRosLink()
 
+		self.subscribers: List[QThread] = []
+
+		# Allows for concurrent execution of ROS nodes
+		executor = MultiThreadedExecutor()
+		self.workerthread = QThread()
+		
+		
+		for subscriber in roslink.subscribers:
+			executor.add_node(subscriber)
 
 		# Run roslink node in new thread to not stop GUI execution
-		self.workerthread = QThread()
 		self.link = RunLink()
-		self.link.setup(roslink)
+		self.link.setup(executor)
 		self.link.moveToThread(self.workerthread)
 
 		self.workerthread.started.connect(self.link.run)
@@ -100,8 +107,6 @@ class RoverWindow(Window):
 		self.status_bar.connect_roslink(roslink)
 		self.status_bar.connect_timer(tools_tab.timer)
 
-		# Start roslink
-		self.workerthread.start()
 
 		self.pid_planner_status_label = QLabel("PID Planner Status:")
 		self.pid_planner_status_display_label = QLabel("-")
@@ -117,8 +122,10 @@ class RoverWindow(Window):
 		self.status_bar.layout.addWidget(VLine(), 1)
 		roslink.dwa_planner_status.connect(lambda status: self.dwa_planner_status_display_label.setText(status.data))
 
-		
+		# Start roslink thread
+		self.workerthread.start()
 
+		
 
 	def resize_splitter(self):
 		tabs_width, current_display_width = self.splitter.sizes()

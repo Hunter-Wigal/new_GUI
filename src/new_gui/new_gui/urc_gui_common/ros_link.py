@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from typing import List
+import threading
 
 import rclpy
 from rclpy.node import Service, Node
@@ -127,7 +128,7 @@ class RosLink(QObject):
         insert_marker_service = self.ROSnode.get_parameter("insert_marker_service").value
         clear_found_markers_service = self.ROSnode.get_parameter("clear_found_markers_service").value
 
-    	# create publishers and subscribers
+    	# create services and subscribers
         self.pose_sub = self.make_subscriber(local_position_topic, Pose, self.pose)
         self.gps_sub = self.make_subscriber(global_position_topic, GeoPoint, self.gps)
         self.global_origin_sub = self.make_subscriber(global_origin_topic, GeoPoint, self.global_origin_callback)
@@ -180,20 +181,15 @@ class RosLink(QObject):
     def get_logger(self):
         return self.ROSnode.get_logger()
     
-    def make_subscriber(self, topic: String, type, callback: Signal):
+    def make_subscriber(self, topic: String, type, callBack: Signal):
         name = topic + "_node"
         newSub = NewSubscriber(
             name,
             topic,
             type,
-            lambda data: callback.emit(data)
+            lambda data: callBack.emit(data)
         )
         self.subscribers.append(newSub)
 
     def get_topics(self):
         return self.ROSnode.get_topic_names_and_types()
-
-    
-    def timer_callback(self):
-        for subscriber in self.subscribers:
-            rclpy.spin_once(subscriber)
