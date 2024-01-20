@@ -19,6 +19,7 @@ class SuperCameraWidget(QLabel):
 		# Default image when no cameras are connected
 		image = QImage(b'empty image',100, 100, format)
 		self.currImage = QPixmap.fromImage(image)
+		self.logNode = None
 
 		self.adjusting_camera_list = False
 		self.adjusting_exposure_slider = False
@@ -146,14 +147,21 @@ class SuperCameraWidget(QLabel):
 
 	def screenshot(self):
 		image = self.currImage
+
+		# Get screenshot directory and number of files in it
 		directory = os.getcwd() + "/Screenshots"
 		if not os.path.exists(directory):
 			os.makedirs(directory)
 		screenshots = len(os.listdir(directory)) + 1
 
+		# Save currently displayed image
 		image.save(f"{directory}/screenshot{screenshots}.png", format="png", quality=100)
-		logNode = Node("logger")
-		logNode.get_logger().info("Saved image to: " + os.getcwd())
+
+		# Log the location the screenshot was saved to
+		if self.logNode is None:
+			self.logNode = Node("logger")
+		
+		self.logNode.get_logger().info(f"Saved image as 'screenshot{screenshots} to: {directory}")
 
 	### exposure #############################################################
 

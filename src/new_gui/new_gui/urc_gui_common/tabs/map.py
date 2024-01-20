@@ -3,6 +3,7 @@
 import os
 import time
 import threading
+from datetime import datetime
 
 import pymap3d as pm
 import yaml
@@ -31,6 +32,7 @@ from new_gui.urc_gui_common.helpers.validator import Validators, red_if_unaccept
 from new_gui.urc_gui_common.helpers.route_optimization import optimize_route, algorithms, cost_functions
 from new_gui.urc_gui_common.ui_python.autonomy_edit_dialog import AutonomyEditMarkerDialog
 from new_gui.urc_gui_common.ui_python.optimization_dialog import Ui_optimization_dialog
+
 from new_gui.urc_gui_common import tile_scraper
 
 ### prepare yaml #############################################################
@@ -87,6 +89,9 @@ class MapTab(QWidget):
 	def __init__(self, roslink: RosLink, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		self.loggernode = roslink.get_logger()
+		self.fileName = None
+		self.prevTime = datetime.now()
+		self.currTime = 0
 
 		### override functions to subclass ###
 
@@ -113,9 +118,13 @@ class MapTab(QWidget):
 	def init_markers_tab(self):
 		self.init_aut_marker_input()
 		self.init_found_marker_output()
+		self.init_load_path_output()
 		markers_tab = QTabWidget()
 		markers_tab.addTab(self.aut_marker_input, "Autonomy")
 		markers_tab.addTab(self.found_marker_output, "Found Markers")
+
+		# Tab for loading previously tracked rover path
+		markers_tab.addTab(self.load_path_output, "Load Path")
 		return markers_tab
 
 	def init_layout(self):
@@ -288,6 +297,65 @@ class MapTab(QWidget):
 		self.found_marker_output = QWidget()
 		self.found_marker_output.setLayout(layout)
 
+	def init_load_path_output(self):
+		layout = QVBoxLayout()
+
+		self.saved_paths_table = QTableWidget()
+		# self.saved_paths_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+		self.saved_paths_table.setColumnCount(2)
+		self.saved_paths_table.setHorizontalHeaderLabels(["Path File", "Load"])
+		self.saved_paths_table.setEditTriggers(QTableWidget.NoEditTriggers)
+		self.saved_paths_table.setSelectionBehavior(QTableWidget.SelectRows)
+
+		folder = os.getcwd() + "/PathRecordings"
+		list_files = os.listdir(folder)
+		num_files = len(list_files)
+
+
+		if num_files < 1:
+			no_paths = QLabel("No saved paths available")
+			layout.addWidget(no_paths)
+			
+		else:
+			for index, file in enumerate(list_files):
+				self.saved_paths_table.insertRow(index)
+				self.saved_paths_table.setItem(index, 0, QTableWidgetItem(file))
+
+				load_button = QPushButton(self.saved_paths_table)
+				load_button.setText("Load")
+				load_button.clicked.connect(lambda: self.load_path(folder + "/" + file))
+				self.saved_paths_table.setCellWidget(index, 1, load_button)
+
+		
+		layout.addWidget(self.saved_paths_table)
+		self.saved_paths_table.resizeColumnToContents(0)
+		self.saved_paths_table.setColumnWidth(1, 150)
+
+		self.load_path_output = QWidget()
+		self.load_path_output.setLayout(layout)
+
+	def load_path(self, file):
+		with open(file, "r") as f:
+			# Remove header line
+			header = f.readline()
+			lines = f.read().splitlines()
+
+			for line in lines:
+				lon, lat = line.split(",")
+				# self.loggernode.info(f"Lon:{float(lon)}, Lat:{float(lat)}")
+				# Create a new point from the saved coordinates
+				point = GeoPoint()
+				point.latitude = float(lat)
+				point.longitude = float(lon)
+				point.altitude = 0.0
+
+				# Set the rover position to be the new point, drawing a line from the previous point
+				self.map_viewer.set_robot_position(point.latitude, point.longitude)
+
+				# Save the point to a new file so the previous path can be built upon
+				self.save_point(point)
+				
+
 	def update_map_server(self, map_server_index: int):
 		map_server = tile_scraper.MapServers.values()[map_server_index]
 		self.map_viewer.set_map_server(map_server.tile_url, map_server.layer_count)
@@ -317,7 +385,7 @@ class MapTab(QWidget):
 	def aut_marker_alter_handler(self, row, column):
 		def failed_to_alter_marker():
 			# TODO: popup box
-			rclpy.logwarn('Failed to alter marker!')
+			self.loggernode.warn('Failed to alter marker!')
 
 		# prepare popup box
 		cur_lat = self.aut_table.item(row, 0).text()
@@ -387,6 +455,29 @@ class MapTab(QWidget):
 
 	def gps_handler(self, gps: GeoPoint):
 		self.map_viewer.set_robot_position(gps.latitude, gps.longitude)
+
+		# now = datetime.now()
+		# Save only every 3 seconds
+		# if((now - self.prevTime).seconds > 3):
+			# Set previous save to current time
+		# self.prevTime = now
+		self.save_point(gps)
+
+
+	def save_point(self, gps: GeoPoint):
+		pos = f"{str(gps.longitude)},{str(gps.latitude)}\n"
+		directory = os.getcwd() + "/PathRecordings"
+		if not os.path.exists(directory):
+			os.makedirs(directory)
+
+		if self.fileName is None:
+			self.fileName = f"{directory}/{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.txt"
+			with open(self.fileName, "a") as f:
+				f.write("Lon,Lat\n")
+		
+		with open(self.fileName, "a") as f:
+			f.write(pos)
+
 	
 	def pose_handler(self, pose: Pose):
 		orientation = pose.orientation

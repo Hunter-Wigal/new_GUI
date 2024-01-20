@@ -118,6 +118,8 @@ class RosLink(QObject):
         planner_status_topic = self.ROSnode.get_parameter("planner_status_topic").value
         found_marker_list_topic = self.ROSnode.get_parameter("found_marker_list_topic").value
 
+        self.global_position_topic = global_position_topic
+
 
         add_marker_service = self.ROSnode.get_parameter("add_marker_service").value
         clear_markers_service = self.ROSnode.get_parameter("clear_markers_service").value

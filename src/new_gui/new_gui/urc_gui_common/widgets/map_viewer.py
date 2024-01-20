@@ -79,8 +79,7 @@ class MapViewer(QWidget):
 		self.add_popup_marker(Locations.mdrs, 'Welcome to Mars')
 		self.add_popup_marker(Locations.engineering, 'Welcome to WVU Engineering')
 
-		list = str(Path(__file__)).split("/")
-		path = "install/" + list[len(list) - 4] + "/share/" + list[len(list) - 4]
+		path = os.getcwd() + "/src/new_gui"
 
 		# initialize aruco marker icon
 		self.aruco_icon = L.icon((path + "/resources/aruco.png"),
@@ -105,6 +104,7 @@ class MapViewer(QWidget):
 
 		# initialize robot icon
 		robot_startup_location = Locations.engineering.value
+		
 		self.robot_icon = L.icon(path +  "/resources/robot.png",
 		{
 			"iconSize": [26, 25],
