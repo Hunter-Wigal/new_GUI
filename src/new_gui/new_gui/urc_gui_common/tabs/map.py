@@ -4,6 +4,7 @@ import os
 import time
 import threading
 from datetime import datetime
+from typing import List
 
 import pymap3d as pm
 import yaml
@@ -14,6 +15,7 @@ from pyqtlet2.leaflet import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+
 
 import rclpy
 from rclpy.node import Node
@@ -96,7 +98,14 @@ class MapTab(QWidget):
 		### override functions to subclass ###
 
 		self.map_viewer: MapViewer = self.init_map_viewer()
+
+		# Has to be done before initializing the map
+		self.init_saved_layers()
+
 		self.markers_tab: QTabWidget = self.init_markers_tab()
+
+
+
 		self.setLayout(self.init_layout())
 		self.init_map()
 
@@ -113,6 +122,7 @@ class MapTab(QWidget):
 		map_viewer = MapViewer()
 		map_viewer.map.clicked.connect(lambda l: self.map_click_handler(l['latlng']))
 		map_viewer.add_point_layer('Autonomy', 'blue', 'green', 'yellow')
+
 		return map_viewer
 
 	def init_markers_tab(self):
@@ -306,24 +316,25 @@ class MapTab(QWidget):
 		self.saved_paths_table.setHorizontalHeaderLabels(["Path File", "Load"])
 		self.saved_paths_table.setEditTriggers(QTableWidget.NoEditTriggers)
 		self.saved_paths_table.setSelectionBehavior(QTableWidget.SelectRows)
+		
 
 		folder = os.getcwd() + "/PathRecordings"
 		list_files = os.listdir(folder)
 		num_files = len(list_files)
 
-
 		if num_files < 1:
 			no_paths = QLabel("No saved paths available")
 			layout.addWidget(no_paths)
-			
 		else:
 			for index, file in enumerate(list_files):
 				self.saved_paths_table.insertRow(index)
 				self.saved_paths_table.setItem(index, 0, QTableWidgetItem(file))
 
-				load_button = QPushButton(self.saved_paths_table)
+
+				load_button = (QCheckBox(self.saved_paths_table))
 				load_button.setText("Load")
-				load_button.clicked.connect(lambda: self.load_path(folder + "/" + file))
+				load_button.toggled.connect(lambda checked, file=file: self.handle_save(folder + "/" + file, checked))
+				
 				self.saved_paths_table.setCellWidget(index, 1, load_button)
 
 		
@@ -334,26 +345,37 @@ class MapTab(QWidget):
 		self.load_path_output = QWidget()
 		self.load_path_output.setLayout(layout)
 
-	def load_path(self, file):
+	def init_saved_layers(self):
+		folder = os.getcwd() + "/PathRecordings"
+		list_files = os.listdir(folder)
+		num_files = len(list_files)
+
+		if num_files < 1:
+			return
+		
+		else:
+			# Iterate through each file in the recordings directory
+			for index, file in enumerate(list_files):
+				# Initialize a layer for the points in the file
+				with open(folder + "/" + file, "r") as f:
+					# Remove header line
+					header = f.readline()
+					lines = f.read().splitlines()
+
+					self.map_viewer.init_saved_path(folder + "/" + file, lines, index)
+
+
+	def handle_save(self, file: str, checked: bool):
 		with open(file, "r") as f:
 			# Remove header line
 			header = f.readline()
 			lines = f.read().splitlines()
+	
+		if checked:
+			self.map_viewer.add_saved_path(file, lines)
 
-			for line in lines:
-				lon, lat = line.split(",")
-				# self.loggernode.info(f"Lon:{float(lon)}, Lat:{float(lat)}")
-				# Create a new point from the saved coordinates
-				point = GeoPoint()
-				point.latitude = float(lat)
-				point.longitude = float(lon)
-				point.altitude = 0.0
-
-				# Set the rover position to be the new point, drawing a line from the previous point
-				self.map_viewer.set_robot_position(point.latitude, point.longitude)
-
-				# Save the point to a new file so the previous path can be built upon
-				self.save_point(point)
+		else:
+			self.map_viewer.remove_lines(file)
 				
 
 	def update_map_server(self, map_server_index: int):
@@ -456,11 +478,13 @@ class MapTab(QWidget):
 	def gps_handler(self, gps: GeoPoint):
 		self.map_viewer.set_robot_position(gps.latitude, gps.longitude)
 
-		# now = datetime.now()
+		now = datetime.now()
+		# TODO Uncomment this
+
 		# Save only every 3 seconds
 		# if((now - self.prevTime).seconds > 3):
-			# Set previous save to current time
-		# self.prevTime = now
+		# 	# Set previous save to current time
+		# 	self.prevTime = now
 		self.save_point(gps)
 
 

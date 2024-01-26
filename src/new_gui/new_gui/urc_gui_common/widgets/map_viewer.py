@@ -17,6 +17,8 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+from rclpy.node import Node
+
 @dataclass
 class MapPoint:
 	latitude: float
@@ -40,15 +42,12 @@ class MapViewer(QWidget):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
-		
-
 		self.mapWidget = MapWidget()
 		self.layout = QVBoxLayout()
 		self.layout.setContentsMargins(5, 0, 0, 0)
 		self.layout.addWidget(self.mapWidget)
 		self.setLayout(self.layout)
 
-		
 
 		# create pyqtlet2 map
 		self.map = L.map(
@@ -120,8 +119,12 @@ class MapViewer(QWidget):
 		# initialize robot line
 		self.last_moved_robot_position = None
 		self.last_drawn_robot_position = robot_startup_location
-		self.robot_line = L.polyline([], {'color': 'red'})
+		self.robot_line = L.polyline(latLngs=[], options={'color': 'red'})
 		self.robot_line.addTo(self.map)
+
+		# Initialize dictionary for saved path layers
+		self.saved_paths_layers: Dict[str, L.polyline] = {}
+		
 
 		# initialize dictionaries for storing info
 		self.map_points: Dict[str, List[MapPoint]] = {}
@@ -229,6 +232,47 @@ class MapViewer(QWidget):
 		# angle is in degrees (0 - 360). 0 is right
 		self.robot.setRotationAngle((angle) % 360)
 
+	def remove_lines(self, layer_name: str):
+		self.saved_paths_layers[layer_name].removeFrom(self.map)
+		
+
+	def add_saved_path(self, name: str, points: List[str]):
+		self.saved_paths_layers[name].addTo(self.map)
+
+
+	def init_saved_path(self, name: str, points: List[str], index):
+		color = ""
+		match index:
+			case 0:
+				color='blue'
+			case 1:
+				color='green'
+			case 2:
+				color='yellow'
+			case 3:
+				color='purple'
+			case 4:
+				color='orange'
+
+			case _:
+				color='blue'
+				
+		# Check if already initialized
+		if not(name in self.saved_paths_layers):
+			self.saved_paths_layers[name] = L.polyline(latLngs=[], options={'color': color})
+			self.saved_paths_layers[name].addTo(self.map)
+
+			# Initialize points
+			for point in points:
+				lon, lat = point.split(",")
+				jscode = f'{self.saved_paths_layers[name].jsName}.addLatLng([{lat}, {lon}]);'
+				self.map.runJavaScript(jscode)
+
+			# Remove until manually added back
+			self.saved_paths_layers[name].removeFrom(self.map)
+		
+
+
 def _bindTooltip(layer: layer.Layer, content: str, options=None):
 	js = '{layerName}.bindTooltip("{content}"'.format(
 			layerName=layer._layerName, content=content)
@@ -243,3 +287,5 @@ def dist(latlong1, latlong2):
 		return math.inf
 
 	return math.sqrt((latlong1[0] - latlong2[0])**2 + (latlong1[1] - latlong2[1])**2)
+
+

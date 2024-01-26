@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from typing import List
-import threading
 
 import rclpy
 from rclpy.node import Service, Node
