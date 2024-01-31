@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 from typing import Dict, List
 
@@ -6,6 +6,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import pyqtSignal as Signal
+from datetime import datetime
 
 from rclpy.node import Node
 import os as os
@@ -111,15 +112,19 @@ class SuperCameraWidget(QLabel):
 
 	def subscribe(self, camera_alias):
 		theora_webcam, supports_manual_exposure, exposure_bounds = False, False, (-1, -1)
+		
 		camera_name = self.camera_dict.get(camera_alias, None)
 		if camera_name:
 			theora_webcam, supports_manual_exposure, exposure_bounds = self.funnel.subscribe(self.image_slot, self.exposure_slot, camera_name)
 		self.update_controls(theora_webcam, supports_manual_exposure, exposure_bounds)
+		
 
 	def unsubscribe(self, camera_alias):
 		camera_name = self.camera_dict.get(camera_alias, None)
+		
 		if camera_name:
 			self.funnel.unsubscribe(self.image_slot, self.exposure_slot, camera_name)
+		
 
 	def change_camera(self, new_camera_alias: str):
 		# the currentTextChanged event will fire as set_cameras is running,
@@ -142,11 +147,14 @@ class SuperCameraWidget(QLabel):
 			return
 
 		# If our current camera is the blank or not set, we're not really subscribed to anything
+		
 		if self.current_alias and self.current_alias in self.camera_dict:
 			self.funnel.restart(self.camera_dict[self.current_alias])
+		
 
 	def screenshot(self):
 		image = self.currImage
+		
 
 		# Get screenshot directory and number of files in it
 		directory = os.getcwd() + "/Screenshots"
@@ -154,14 +162,16 @@ class SuperCameraWidget(QLabel):
 			os.makedirs(directory)
 		screenshots = len(os.listdir(directory)) + 1
 
+		image_name = f"{directory}/{self.selector.currentText()}_{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.png"
+
 		# Save currently displayed image
-		image.save(f"{directory}/screenshot{screenshots}.png", format="png", quality=100)
+		image.save(image_name, format="png", quality=100)
 
 		# Log the location the screenshot was saved to
 		if self.logNode is None:
-			self.logNode = Node("logger")
+			self.logNode = Node("logger").get_logger()
 		
-		self.logNode.get_logger().info(f"Saved image as 'screenshot{screenshots} to: {directory}")
+		self.logNode.info(f"Saved image as '{image_name}' to: {directory}")
 
 	### exposure #############################################################
 
@@ -169,6 +179,7 @@ class SuperCameraWidget(QLabel):
 		camera_name = self.camera_dict.get(camera_alias, None)
 		if camera_name and self.enable_checkbox.isChecked():
 			self.funnel.set_exposure(exposure, camera_name)
+		
 
 	def change_camera_exposure(self):
 		# the currentTextChanged event will fire as set_cameras is running,

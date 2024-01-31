@@ -27,8 +27,8 @@ class WandererRosLink(RoverRosLink):
 	pid_planner_status = Signal(String)
 	dwa_planner_status = Signal(String)
 
-	def __init__(self):
-		super().__init__()
+	def __init__(self, executor):
+		super().__init__(executor)
 		
 
 		### autonomy #########################################################

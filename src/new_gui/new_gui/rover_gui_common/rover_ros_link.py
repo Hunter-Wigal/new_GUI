@@ -16,8 +16,8 @@ class RoverRosLink(RosLink):
 
 	ed_waypoint_list = Signal(EDWaypointList)
 
-	def __init__(self):
-		super().__init__()
+	def __init__(self, executor):
+		super().__init__(executor)
 
 		### ed ###############################################################
 

@@ -347,6 +347,9 @@ class MapTab(QWidget):
 
 	def init_saved_layers(self):
 		folder = os.getcwd() + "/PathRecordings"
+		if not(os.path.isdir(folder)):
+			os.mkdir(folder)
+		
 		list_files = os.listdir(folder)
 		num_files = len(list_files)
 
@@ -482,9 +485,9 @@ class MapTab(QWidget):
 		# TODO Uncomment this
 
 		# Save only every 3 seconds
-		# if((now - self.prevTime).seconds > 3):
-		# 	# Set previous save to current time
-		# 	self.prevTime = now
+		if((now - self.prevTime).seconds > 3):
+			# Set previous save to current time
+			self.prevTime = now
 		self.save_point(gps)
 
 

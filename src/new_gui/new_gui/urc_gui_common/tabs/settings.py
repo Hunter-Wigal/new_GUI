@@ -17,51 +17,54 @@ from PyQt5.QtWidgets import *
 
 import rclpy
 from rclpy.node import Node, Client
-from rclpy.exceptions import InvalidServiceNameException
 from std_msgs.msg import String
+from sensor_msgs.msg import CameraInfo
 from ros2topic import api
 
-
-from theora_webcams.srv import GetResolutions, ChangeVideo
 from theora_webcams.msg import Resolution, Framerate
 
 from new_gui.urc_gui_common.ros_link import RosLink
-from new_gui.urc_gui_common.widgets import SuperCameraWidget, HLine
+from new_gui.urc_gui_common.widgets import HLine, SuperCameraWidget
 from new_gui.urc_gui_common.helpers.file_helper import file_basenames
 
 gui_presets_dir = os.path.expanduser('~/.ros/gui_presets')
 
-class ServiceClient(Node):
-	def __init__(self, name, topic, type):
-		super().__init__(name)
-		self.cli = self.create_client(type, topic)
-		self.req = type.Request()
+# class ServiceClient(Node):
+# 	def __init__(self, name, topic, type):
+# 		super().__init__(name)
+# 		self.cli = self.create_client(type, topic)
+# 		self.req = type.Request()
 
-	def send_request(self):
-		self.future = self.cli.call_async(self.req)
-		rclpy.spin_until_future_complete(self, self.future)
-		return self.future.result()
+# 	def send_request(self):
+# 		self.future = self.cli.call_async(self.req)
+# 		rclpy.spin_until_future_complete(self, self.future)
+# 		return self.future.result()
 	
-class VideoClient(Node):
-	def __init__(self, name, topic, type):
-		super().__init__(name)
-		self.cli = self.create_client(type, topic)
-		self.req = type.Request()
+# class VideoClient(Node):
+# 	def __init__(self, name, topic, type):
+# 		super().__init__(name)
+# 		self.cli = self.create_client(type, topic)
+# 		self.req = type.Request()
 
-	def send_request(self, width, height, fps_num, fps_den, start, force_restart):
-		self.req.width = width
-		self.req.height = height
-		self.req.fps_num = fps_num
-		self.req.fps_den = fps_den
-		self.req.start = start
-		self.req.force_restart = force_restart
+# 	def send_request(self, width, height, fps_num, fps_den, start, force_restart):
+# 		self.req.width = width
+# 		self.req.height = height
+# 		self.req.fps_num = fps_num
+# 		self.req.fps_den = fps_den
+# 		self.req.start = start
+# 		self.req.force_restart = force_restart
 
-		self.future = self.cli.call_async(self.req)
-		rclpy.spin_until_future_complete(self, self.future)
-		return self.future.result()
+# 		self.future = self.cli.call_async(self.req)
+# 		rclpy.spin_until_future_complete(self, self.future)
+# 		return self.future.result()
+	
+# Placeholder class
+class ChangeVideo():
+	def __init__(self):
+		pass
 
 @dataclass
-class CameraInfo:
+class CameraData:
 	name: str
 	alias: str
 	connected: bool
@@ -73,16 +76,18 @@ class CameraInfo:
 	current_height: int
 	current_fps: str
 	resolutions: List[Resolution]
-	change_video: Client
+	change_video: ChangeVideo()
 
 class SettingsTab(QWidget):
 	def __init__(self, roslink: RosLink, super_camera_widgets: List[SuperCameraWidget] = None, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		self.roslink = roslink
-		self.super_camera_widgets = super_camera_widgets if super_camera_widgets else []
+
+		self.settings_node = Node("Settings_Handler")
+		#self.super_camera_widgets = super_camera_widgets if super_camera_widgets else []
 		self.current_camera = -1
 
-		self.camera_info: List[CameraInfo] = []
+		self.camera_info: List[CameraData] = []
 
 		# warn on autonomy if no cameras running
 		self.roslink.marker_list.connect(self.autonomy_input_check)  # markers input
@@ -236,7 +241,10 @@ class SettingsTab(QWidget):
 			camera.connected = False
 
 		# Now go through and find all the connected cameras
-		camera_topic_re = r"^/cameras/([^/]+)/image_raw$"
+		# Regex for default topic
+		camera_topic_re = r"^/(video[^/]+)$"
+		# Regex for logitech topic
+		logitech_topic = r"^/cam/([^/]+)$"
 		found_cameras = []
 		topics = self.roslink.get_topics()
 		
@@ -244,6 +252,10 @@ class SettingsTab(QWidget):
 			if match := re.match(camera_topic_re, topic[0]):
 				name = match.group(1)
 				found_cameras.append(name)
+			elif match := re.match(logitech_topic, topic[0]):
+				name = match.group(1)
+				found_cameras.append(name)
+				self.roslink.get_logger().info(f"Camera name: {name}")
 
 		# Finally go through the known connected cameras and either add them to
 		# our list or set them to connected
@@ -258,20 +270,19 @@ class SettingsTab(QWidget):
 					new_camera = False
 
 			if new_camera:
-				# Get the resolutions and make the camera info
-				get_resolutions = ServiceClient("res_srv", f'cameras/{name}/get_resolutions', GetResolutions)
-				change_video = VideoClient("vid_srv", f'cameras/{name}/change_video', ChangeVideo)
+				# Get the width and height
+				cam_info_topic = f"/{name}"
+				get_resolutions = ""
+				change_video = ""
+				temp_res = Resolution()
+				temp_res.width = 0
+				temp_res.height= 0
+				resolutions = [temp_res]
 
-				try:
-					resolutions = get_resolutions.send_request()
-				except InvalidServiceNameException:
-					resolutions = []
-				framerate = Framerate()
-
-
-				self.camera_info.append(CameraInfo(name, name, True, False, False, False, None, '?', '?', '?', resolutions, change_video))
+				self.camera_info.append(CameraData(name, name, True, False, False, False, None, '?', '?', '?', resolutions, change_video))
 				new_cameras.append(name)
 
+		
 		# update camera table with new cameras
 		if new_cameras:
 			self.camera_list.setRowCount(len(self.camera_info))
@@ -287,6 +298,7 @@ class SettingsTab(QWidget):
 		return found_cameras
 	
 	def update_camera_funnel(self):
+		
 		self.roslink.camera_funnel.set_cameras(
 			[cam.name for cam in self.camera_info],
 			[cam.alias for cam in self.camera_info],
@@ -294,6 +306,7 @@ class SettingsTab(QWidget):
 		)
 	
 	def update_camera_info(self):
+		
 		# update camera info using camera subscriber
 		for cam_info in self.camera_info:
 			cam_sub = self.roslink.camera_funnel.subscribers.get(cam_info.name, None)
@@ -324,10 +337,11 @@ class SettingsTab(QWidget):
 			self.set_camera_flip(self.current_camera, bool(val))
 
 	def set_camera_flip(self, camera_index, val: bool):
-		if self.current_camera == camera_index and val:
-			self.flip.setChecked(True)
-		self.camera_info[camera_index].flip = val
-		self.roslink.camera_funnel.flip[self.camera_info[camera_index].name] = val
+		return
+		# if self.current_camera == camera_index and val:
+		# 	self.flip.setChecked(True)
+		# self.camera_info[camera_index].flip = val
+		# self.roslink.camera_funnel.flip[self.camera_info[camera_index].name] = val
 
 	def camera_selection_changed(self, cur_row, cur_col=0, prev_row=0, prev_col=0, refresh_status=True, changed_camera=True):
 		valid_row = 0 <= cur_row < len(self.camera_info)
@@ -389,10 +403,14 @@ class SettingsTab(QWidget):
 
 	def set_camera_resolution(self, camera_index, width, height, fps_num, fps_den, start=True, force_restart=False):
 		cam = self.camera_info[camera_index]
-		try:
-			result: ChangeVideo.Response = cam.change_video.send_request(width, height, fps_num, fps_den, start, force_restart)
-		except InvalidServiceNameException:
-			result = None
+
+		# try:
+		# 	result: ChangeVideo.Response = cam.change_video.send_request(width, height, fps_num, fps_den, start, force_restart)
+		# except InvalidServiceNameException:
+		# 	result = None
+
+		# TODO Figure out how to set the resolution without services
+		return
 
 		if result and result.success:
 			self.status.setText("Successfully changed video :)")
@@ -449,10 +467,12 @@ class SettingsTab(QWidget):
 
 		# determine which SuperCameraWidget is subscribed to which camera
 		camera_to_widget = {}
+		
 		for super_camera_widget_index, super_camera_widget in enumerate(self.super_camera_widgets):
 			selected_camera_alias = super_camera_widget.selector.currentText()
 			if selected_camera_alias:
 				camera_to_widget[selected_camera_alias] = super_camera_widget_index
+		
 
 		# store the camera info in a dictionary of dictionaries
 		preset_data = defaultdict(dict)

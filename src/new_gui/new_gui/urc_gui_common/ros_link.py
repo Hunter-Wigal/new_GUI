@@ -4,6 +4,7 @@ from typing import List
 
 import rclpy
 from rclpy.node import Service, Node
+from rclpy.executors import MultiThreadedExecutor
 from rcl_interfaces.msg import Log
 from std_srvs.srv import Trigger
 from std_msgs.msg import String
@@ -48,17 +49,17 @@ class NewService(Node):
 		rclpy.spin_until_future_complete(self, self.future)
 		return self.future.result()
 
-class RosNode(Node):
-    def __init__(self, name):
-        super().__init__(name)
-        self.subscribers = []
-        timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+# class RosNode(Node):
+#     def __init__(self, name):
+#         super().__init__(name)
+#         self.subscribers = []
+#         timer_period = 0.5  # seconds
+#         self.timer = self.create_timer(timer_period, self.timer_callback)
+#         self.i = 0
 
-    def timer_callback(self):
-        for subscriber in self.subscribers:
-            rclpy.spin_once(subscriber, 0.5)
+#     def timer_callback(self):
+#         for subscriber in self.subscribers:
+#             rclpy.spin_once(subscriber, 0.5)
 
 class RosLink(QObject):
     pose = Signal(Pose)
@@ -73,12 +74,13 @@ class RosLink(QObject):
 
     camera_funnel_signal = Signal(str, Image)
 
-    def __init__(self):
+    def __init__(self, executor: MultiThreadedExecutor):
         super().__init__()
-        self.ROSnode = RosNode("roslink_node")
+        self.ROSnode = Node("roslink_node")
         
         # List of subscribers for RosLink to iterate through
         self.subscribers:List[NewSubscriber] = []
+        self.executor = executor
 
         # Has to be declared or the rosnode won't recognize them
         self.ROSnode.declare_parameter("local_position_topic", rclpy.Parameter.Type.STRING)
@@ -148,7 +150,7 @@ class RosLink(QObject):
         self.clear_found_markers_srv = ClearMarkerServiceClient("clear_found_marker_client",clear_found_markers_service, Trigger)
 
         # camera funnel
-        self.camera_funnel = CameraFunnel(self.camera_funnel_signal)
+        self.camera_funnel = CameraFunnel(self.camera_funnel_signal, self.add_subscriber)
 
     def add_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int) -> AddMarker.Response:
         value = self.add_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2)
@@ -181,6 +183,10 @@ class RosLink(QObject):
 
     def get_logger(self):
         return self.ROSnode.get_logger()
+
+    def add_subscriber(self, sub: NewSubscriber):
+         self.subscribers.append(sub)
+         self.executor.add_node(sub)
     
     def make_subscriber(self, topic: String, type, callBack: Signal):
         name = topic + "_node"
@@ -191,6 +197,7 @@ class RosLink(QObject):
             lambda data: callBack.emit(data)
         )
         self.subscribers.append(newSub)
+        self.executor.add_node(newSub)
 
     def get_topics(self):
         return self.ROSnode.get_topic_names_and_types()

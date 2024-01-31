@@ -34,17 +34,16 @@ class RoverWindow(Window):
 	def __init__(self, *args, **kwargs):
 		super().__init__('WVU URC Wanderer GUI', *args, **kwargs)
 
-		roslink = WandererRosLink()
-
-		self.subscribers: List[QThread] = []
+		executor = MultiThreadedExecutor()
+		roslink = WandererRosLink(executor)
 
 		# Allows for concurrent execution of ROS nodes
-		executor = MultiThreadedExecutor()
+		
 		self.workerthread = QThread()
 		
 		
-		for subscriber in roslink.subscribers:
-			executor.add_node(subscriber)
+		# for subscriber in roslink.subscribers:
+		# 	executor.add_node(subscriber)
 
 		# Run roslink node in new thread to not stop GUI execution
 		self.link = RunLink()
