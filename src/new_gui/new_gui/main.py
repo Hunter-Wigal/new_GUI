@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.10
 from .urc_gui_common import AppRunner, Window, CameraTab, ToolsTab , SixCameraTab, \
 FourCameraTab, SettingsTab, ToolsTab, VLine
 from new_gui.rover_gui_common import RoverMapTab

@@ -1,4 +1,4 @@
-# new_GUI
+# Heimdall GUI
 Code from wanderer_gui partially translated to ROS2
 
 
