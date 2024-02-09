@@ -12,7 +12,7 @@ COPY launch.sh ./newGUI
 WORKDIR /newGUI
 
 RUN rosdep install --from-paths src --ignore-src -r -y 
-RUN colcon build
+# RUN colcon build
 
 RUN pip install pyqtlet2==0.8.0 urllib3 pymap3d pyqtgraph
 RUN apt install python3-prctl
