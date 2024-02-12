@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(rover_gui_lib)
+project(planner_multiplexer)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -25,20 +25,15 @@ endif()
 
 find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp)
-find_package(std_msgs)
 find_package(rclpy)
-find_package(urc_gui_lib)
-# find_package(fiducial_msgs)
+find_package(std_msgs)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/EDWaypoint.msg"
-  "msg/EDWaypointList.msg"
+  "srv/SetPlanner.srv"
   DEPENDENCIES # Add packages that above messages depend on
   rclcpp
   rclpy
   std_msgs
-  urc_gui_lib
-  # fiducial_msgs
 ) 
 
 ament_package()

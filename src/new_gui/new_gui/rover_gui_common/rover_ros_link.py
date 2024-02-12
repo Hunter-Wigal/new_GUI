@@ -1,11 +1,10 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 from new_gui.urc_gui_common import RosLink
 
 from PyQt5.QtCore import pyqtSignal as Signal
 
 import rclpy
-from rclpy.node import Node, Service, get_logger
 
 from std_srvs.srv import SetBool
 
@@ -19,35 +18,38 @@ class RoverRosLink(RosLink):
 	def __init__(self, executor):
 		super().__init__(executor)
 
+		self.ROSnode.declare_parameter("ed_waypoint_list_topic", "ed_waypoint_list")
+
+
 		### ed ###############################################################
 
-		# ed_waypoint_list_topic = Node.get_parameter("~ed_waypoint_list_topic")
-		# self.ed_waypoint_list_sub = self.make_subscriber(ed_waypoint_list_topic, EDWaypointList, self.ed_waypoint_list)
-		# self.ed_waypoint_list_pub = Node.create_publisher(ed_waypoint_list_topic, EDWaypointList, queue_size=1)
+		ed_waypoint_list_topic = self.ROSnode.get_parameter("ed_waypoint_list_topic").value
+		self.ed_waypoint_list_sub = self.make_subscriber(ed_waypoint_list_topic, EDWaypointList, self.ed_waypoint_list)
+		self.ed_waypoint_list_pub = self.ROSnode.create_publisher(EDWaypointList, ed_waypoint_list_topic, 1)
 
 		### drivetrain #######################################################
 
-		# drive_forward_service = Node.get_parameter("~drive_forward_service")
-		# car_style_turning_service = Node.get_parameter("~car_style_turning_service")
+		drive_forward_service = self.ROSnode.get_parameter("drive_forward_service").value
+		car_style_turning_service = self.ROSnode.get_parameter("car_style_turning_service").value
 
-		# self.drive_forward_serv = Service(drive_forward_service, SetBool)
-		# self.car_style_turning_serv = Service(car_style_turning_service, SetBool)
+		self.drive_forward_serv = self.make_service(drive_forward_service, SetBool, "drive_forward_service_client")
+		self.car_style_turning_serv = self.make_service(car_style_turning_service, SetBool, "car_style_turning_service_client")
 
 	### ed ###################################################################
 
-	# def publish_ed_waypoints(self, ed_waypoint_list: EDWaypointList):
-	# 	self.ed_waypoint_list_pub.publish(ed_waypoint_list)
+	def publish_ed_waypoints(self, ed_waypoint_list: EDWaypointList):
+		self.ed_waypoint_list_pub.publish(ed_waypoint_list)
 
 	# ### drivetrain ###########################################################
 
-	# def change_drive_direction(self, forward: bool) -> SetBool.Response:
-	# 	return self.drive_forward_serv(SetBool.Request(data=forward))
+	def change_drive_direction(self, forward: bool) -> SetBool.Response:
+		return self.drive_forward_serv.send_request(data=forward)
 
-	# def change_car_turning_style(self, car: bool) -> SetBool.Response:
-	# 	return self.car_style_turning_serv(SetBool.Request(data=car))
+	def change_car_turning_style(self, car: bool) -> SetBool.Response:
+		return self.car_style_turning_serv.send_request(data=car)
 	
 if __name__ == "__main__":
-	logger = get_logger()
-	logger.info("Starting GUI Rover ROS link")
 	roslink = RoverRosLink()
+	logger = roslink.get_logger()
+	logger.info("Starting GUI Rover ROS link")
 	rclpy.spin()

@@ -6,6 +6,8 @@ from typing import Dict, Tuple, List, Callable
 
 import prctl
 
+import re
+
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -18,6 +20,25 @@ from theora_webcams.msg import Status
 # from theora_webcams.srv import SetExposure
 from sensor_msgs.msg import Image
 from theora_image_transport.msg import Packet
+
+from rcl_interfaces.srv import SetParameters
+from rcl_interfaces.msg import Parameter
+
+class ParamServiceClient(Node):
+    def __init__(self, name, topic, type):
+        super().__init__(name)
+        self.cli = self.create_client(type, topic)
+
+        self.req = type.Request()
+
+    def send_request(self, **kwargs):
+        for key, value in kwargs.items():
+            setattr(self.req, key, value)
+
+        self.future = self.cli.call_async(self.req)
+        rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
+
 
 # Duplicated from roslink, just for adding camera subscribers
 class NewSubscriber(Node):
@@ -32,13 +53,13 @@ class NewSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
 class CameraSubscriber(QObject):
-	def __init__(self, cam_name: str, change_video_handler: Service, exposure_signal: Signal, image_signal: Signal(str, Image), add_sub: Callable):
+	def __init__(self, cam_name: str, change_video_handler: Service, exposure_signal: Signal, image_signal: Signal(str, Image), roslink):
 		super().__init__()
 		self.topic_node = Node("topic_getter")
 
 		self.raw_topic = f"{cam_name}"
-		self.republished_topic = f"{cam_name}/republished"
-		self.decompressed_topic = f"{cam_name}/image/decompressed"
+		# self.republished_topic = f"{cam_name}/republished"
+		# self.decompressed_topic = f"{cam_name}/image/decompressed"
 		self.status_topic = f"{cam_name}/status"
 
 		self.cam_name = cam_name
@@ -46,11 +67,11 @@ class CameraSubscriber(QObject):
 		self.exposure_signal = exposure_signal
 		self.image_signal = image_signal
 
-		self.republisher_cmd = f'ros2 run image_transport republish theora --ros-args --remap in:={self.raw_topic} --ros-args --remap out:={self.republished_topic}'
+		#self.republisher_cmd = f'ros2 run image_transport republish theora --ros-args --remap in:={self.raw_topic} --ros-args --remap out:={self.republished_topic}'
 		self.republisher_process = None
 
 		self.decompressed_sub: Subscription = None
-		self.decompression_cmd = 'ros2 run image_transport republish theora --ros-args --remap in:={compressed_topic} --ros-args --remap out:={decompressed_topic}'
+		#self.decompression_cmd = 'ros2 run image_transport republish theora --ros-args --remap in:={compressed_topic} --ros-args --remap out:={decompressed_topic}'
 		self.decompression_process = None
 
 		# initialize image metrics
@@ -62,7 +83,7 @@ class CameraSubscriber(QObject):
 		self.image_source = None
 		self.last_timestamp = None
 
-		self.roslink_add = add_sub
+		self.roslink = roslink
 
 		# if status topic exists
 		#   we know it is being run by theora_webcams
@@ -73,11 +94,11 @@ class CameraSubscriber(QObject):
 			self.theora_webcam = True
 			self.status_node = Node(f"{self.status_topic}_node")
 			self.status_sub = self.status_node.create_subscription(self.status_topic, Status, self.status_callback)
-			self.roslink_add(self.status_node)
+			self.roslink.add_subscriber(self.status_node)
 
 		# if get_exposure_bounds and set_exposure exist, we may be able to set the exposure manually
 		# self.could_support_manual_exposure = False
-		self.supports_manual_exposure = False
+		self.supports_manual_exposure = True
 		# get_exposure_bounds_service_exists = False
 		# set_exposure_service_exists = False
 		# for service in ros2service.api.get_service_names(node=self.topic_node):
@@ -89,11 +110,20 @@ class CameraSubscriber(QObject):
 		# 		self.could_support_manual_exposure = True
 		# 		break
 		# if self.could_support_manual_exposure:
-		# 	self.get_exposure_bounds_srv = node.Service(self.get_exposure_bounds_service, GetExposureBounds)
-		# 	self.set_exposure_srv = node.Service(self.set_exposure_service, SetExposure)
+			# self.get_exposure_bounds_srv = node.Service(self.get_exposure_bounds_service, GetExposureBounds)
+		node_name_re = r"(camera_node_*[1-9]*)"
+		self.serv_topic = ""
+		topics = self.roslink.ROSnode.get_node_names()
+		
+		for topic in topics:
+			if match := re.match(node_name_re, topic):
+				name = match.group(1)
+				self.serv_topic = "/" + name + "/set_parameters"
+				self.set_parameters_srv= self.roslink.make_service(self.serv_topic, SetParameters, "parameters_client")
 		self.supports_manual_exposure, self.exposure_bounds = self.get_exposure_bounds()
 
 		
+		# self.roslink.get_logger().info(self.serv_topic)
 
 	### callbacks ############################################################
 
@@ -179,9 +209,9 @@ class CameraSubscriber(QObject):
 			return
 		node_name = node_name.replace("/", "_")
 		self.decomp_node = NewSubscriber(node_name, self.raw_topic, Image, self.image_callback)
+		self.roslink.add_subscriber(self.decomp_node)
 
-		self.roslink_add(self.decomp_node)
-		
+	
 
 	def stop_decompressed_sub(self):
 		if self.decompressed_sub:
@@ -233,17 +263,41 @@ class CameraSubscriber(QObject):
 		# return False, (-1, -1)
 
 	def set_exposure(self, exposure: float):
-		return
+		parameter = Parameter()
+		parameter.name = "contrast"
+		parameter.value.type = 3 # bool = 1, int = 2, float = 3, string = 4
+		parameter.value.double_value = exposure
+
+		parameter_list = [parameter]
+
 		# if self.supports_manual_exposure:
-		# 	response: SetExposure.Response = self.set_exposure_srv(SetExposure.Request(exposure=exposure))
-		# 	return response.success
-		# return False
+		response: SetParameters.Response = self.set_parameters_srv.send_request(parameters = parameter_list)
+		return response.results[0].successful
+	
+	def set_resolution(self, height, width):		
+		parameter = Parameter()
+		parameter.name = "img_height"
+		parameter.value.type = 2 # bool = 1, int = 2, float = 3, string = 4
+		parameter.value.integer_value = height
+
+		parameter2 = Parameter()
+		parameter2.name = "img_width"
+		parameter2.value.type = 2 # bool = 1, int = 2, float = 3, string = 4
+		parameter2.value.integer_value = width
+		
+
+		parameter_list = [parameter, parameter2]
+
+		# if self.supports_manual_exposure:
+		response: SetParameters.Response = self.set_parameters_srv.send_request(parameters = parameter_list)
+		return response.results[0].successful
+
 
 class CameraFunnel(QObject):
 	camera_list = Signal(dict)
 	funnel_exposure_signal = Signal(str, float)
 
-	def __init__(self, images_signal: Signal(str, Image), roslink_add: Callable):
+	def __init__(self, images_signal: Signal(str, Image), roslink):
 		super().__init__()
 
 		self.funnel_images_signal = images_signal
@@ -261,7 +315,8 @@ class CameraFunnel(QObject):
 		self.empty_image.fill()
 
 		self.logger = Node(f"camera_logger").get_logger()
-		self.roslink_add = roslink_add
+
+		self.roslink = roslink
 
 	def set_cameras(self, camera_names: List[str], aliases: List[str], change_video_handlers: List[Node]):
 		for camera_name, change_video_handler in zip(camera_names, change_video_handlers):
@@ -271,7 +326,7 @@ class CameraFunnel(QObject):
 			self.image_slots[camera_name] = []
 			self.exposure_slots[camera_name] = []
 			self.flip[camera_name] = False
-			self.subscribers[camera_name] = CameraSubscriber(camera_name, change_video_handler, self.funnel_exposure_signal, self.funnel_images_signal, self.roslink_add)
+			self.subscribers[camera_name] = CameraSubscriber(camera_name, change_video_handler, self.funnel_exposure_signal, self.funnel_images_signal, self.roslink)
 
 		self.camera_list.emit(dict(zip(aliases, camera_names)))
 
@@ -312,7 +367,12 @@ class CameraFunnel(QObject):
 		manual exposure, and it must be restarted to resume auto exposure.
 		"""
 		if self.image_slots[camera_name] and camera_name in self.subscribers:
-			self.subscribers[camera_name].set_exposure(exposure)
+			return self.subscribers[camera_name].set_exposure(exposure)
+
+	def set_resolution(self, camera_name: str, height, width):
+		if self.image_slots[camera_name] and camera_name in self.subscribers:
+			return self.subscribers[camera_name].set_resolution(height, width)
+
 
 	def handle_incoming_images(self, camera_name: str, raw_image: Image):
 		# If no one is subscribed to this camera, don't do anything
