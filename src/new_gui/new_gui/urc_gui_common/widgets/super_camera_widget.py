@@ -63,6 +63,7 @@ class SuperCameraWidget(QLabel):
 		self.exposure_slider.sliderPressed.connect(lambda: self.set_adjusting_exposure_slider(True))
 		self.exposure_slider.sliderMoved.connect(self.change_camera_exposure)
 		self.exposure_slider.sliderReleased.connect(lambda: self.set_adjusting_exposure_slider(False))
+		self.exposure_slider.setValue(100)
 
 		self.exposure_slider_wrapper_layout = QVBoxLayout()
 		self.exposure_slider_wrapper_layout.setContentsMargins(0, 0, 0, 0)
@@ -180,10 +181,10 @@ class SuperCameraWidget(QLabel):
 		if camera_name and self.enable_checkbox.isChecked():
 			self.funnel.set_exposure(exposure, camera_name)
 
-	def set_resolution(self, camera_alias, height, width):
+	def set_resolution(self, camera_alias, height, width, fps):
 		camera_name = self.camera_dict.get(camera_alias, None)
 		
-		return self.funnel.set_resolution(camera_name, height, width)
+		return self.funnel.set_resolution(camera_name, height, width, fps)
 
 	def change_camera_exposure(self):
 		# the currentTextChanged event will fire as set_cameras is running,

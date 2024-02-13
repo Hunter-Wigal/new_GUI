@@ -404,8 +404,10 @@ class SettingsTab(QWidget):
 	def set_camera_resolution(self, camera_index, width, height, fps_num, fps_den, start=True, force_restart=False):
 		cam = self.camera_info[camera_index]
 
+		fps = float(fps_num) / fps_den
+
 		widget = self.super_camera_widgets[0]
-		result = widget.set_resolution(cam.name, height, width)
+		result = widget.set_resolution(cam.name, height, width, fps)
 
 
 

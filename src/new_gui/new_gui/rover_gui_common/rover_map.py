@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 import time
 from typing import List
@@ -74,60 +74,60 @@ class RoverMapTab(MapTab):
 		self.ed_table.setHorizontalHeaderLabels(["Name", "Lat", "Lon", "Radius"])
 		self.ed_table.setEditTriggers(QTableWidget.NoEditTriggers)
 		self.ed_table.setSelectionBehavior(QTableWidget.SelectRows)
-		# self.ed_table.cellClicked.connect(self.ed_waypoint_select_handler)
-		# self.ed_table.currentCellChanged.connect(lambda cr, cc, pr, pc: self.ed_waypoint_select_handler(cr, cc))
-		# self.ed_table.cellDoubleClicked.connect(self.ed_waypoint_alter_handler)
+		self.ed_table.cellClicked.connect(self.ed_waypoint_select_handler)
+		self.ed_table.currentCellChanged.connect(lambda cr, cc, pr, pc: self.ed_waypoint_select_handler(cr, cc))
+		self.ed_table.cellDoubleClicked.connect(self.ed_waypoint_alter_handler)
 
 		self.ed_name_entry = QLineEdit()
 		self.ed_name_entry.setPlaceholderText("Name")
-		# self.ed_name_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_name_entry))
+		self.ed_name_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_name_entry))
 
 		self.ed_lat_entry = QLineEdit()
 		self.ed_lat_entry.setPlaceholderText("Latitude")
 		self.ed_lat_entry.setValidator(QDoubleValidator(-90.0, 90.0, 7))
-		# self.ed_lat_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_lat_entry))
+		self.ed_lat_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_lat_entry))
 
 		self.ed_lon_entry = QLineEdit()
 		self.ed_lon_entry.setPlaceholderText("Longitude")
 		self.ed_lon_entry.setValidator(QDoubleValidator(-180.0, 180.0, 7))
-		# self.ed_lon_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_lon_entry))
+		self.ed_lon_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_lon_entry))
 
 		self.ed_radius_entry = QLineEdit()
 		self.ed_radius_entry.setPlaceholderText("Radius (m)")
 		self.ed_radius_entry.setValidator(QDoubleValidator(0, 1000, 2))
-		# self.ed_radius_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_radius_entry))
+		self.ed_radius_entry.textEdited.connect(lambda _: red_if_unacceptable(self.ed_radius_entry))
 
 		hline1 = HLine()
 
 		self.ed_insert_button = QPushButton("Insert Waypoint")
-		# self.ed_insert_button.clicked.connect(self.insert_ed_waypoint_handler)
+		self.ed_insert_button.clicked.connect(self.insert_ed_waypoint_handler)
 
 		self.ed_add_button = QPushButton("Add Waypoint")
-		# self.ed_add_button.clicked.connect(self.add_ed_waypoint_handler)
+		self.ed_add_button.clicked.connect(self.add_ed_waypoint_handler)
 
 		self.new_waypoint_layout = QHBoxLayout()
 		self.new_waypoint_layout.addWidget(self.ed_insert_button)
 		self.new_waypoint_layout.addWidget(self.ed_add_button)
 
 		self.ed_clear_button = QPushButton("Clear Waypoints")
-		# self.ed_clear_button.clicked.connect(self.clear_ed_waypoint_handler)
+		self.ed_clear_button.clicked.connect(self.clear_ed_waypoint_handler)
 
 		hline2 = HLine()
 
 		self.ed_save_line_edit = QLineEdit()
 
 		ed_save_but = QPushButton("Save")
-		# ed_save_but.pressed.connect(self.save_ed_waypoints)
+		ed_save_but.pressed.connect(self.save_ed_waypoints)
 
 		self.ed_load_combo = QComboBox()
 		self.ed_load_combo.clear()
 		self.ed_load_combo.addItems(file_basenames(ed_saves_dir))
 
 		ed_load_but = QPushButton("Load")
-		# ed_load_but.pressed.connect(self.load_ed_waypoints)
+		ed_load_but.pressed.connect(self.load_ed_waypoints)
 
 		ed_del_but = QPushButton("Delete")
-		# ed_del_but.pressed.connect(self.delete_ed_waypoints)
+		ed_del_but.pressed.connect(self.delete_ed_waypoints)
 
 		ed_saves = QGridLayout()
 		ed_saves.addWidget(self.ed_save_line_edit, 0, 0, 1, 1)
@@ -227,7 +227,7 @@ class RoverMapTab(MapTab):
 		ed_waypoint_list = EDWaypointList()
 		ed_waypoint_list.waypoints = self.ed_waypoints
 		ed_waypoint_list.count = len(self.ed_waypoints)
-		# self.roslink.publish_ed_waypoints(ed_waypoint_list)
+		self.roslink.publish_ed_waypoints(ed_waypoint_list)
 
 	def ed_update_waypoints(self, ed_waypoint_list: EDWaypointList):
 		self.ed_waypoints = ed_waypoint_list.waypoints

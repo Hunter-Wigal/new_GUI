@@ -45,8 +45,14 @@ class VarServiceClient(Node):
         self.req = type.Request()
 
     def send_request(self, **kwargs):
-        while not(self.cli.wait_for_service(timeout_sec=1)):
+        count = 0
+        while not(self.cli.wait_for_service(timeout_sec=1)) and count < 5:
             self.get_logger().info(f"Service {self.topic} not available")
+            count +=1
+
+        if count == 5:
+            self.get_logger().info(f"Aborting call to {self.topic}")
+            return
 
         for key, value in kwargs.items():
             setattr(self.req, key, value)

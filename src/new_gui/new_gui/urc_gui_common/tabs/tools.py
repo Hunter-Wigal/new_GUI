@@ -15,4 +15,4 @@ class ToolsTab(QWidget):
 
 		self.timer = self.ui.timer
 
-		# self.roslink.rosout.connect(self.ui.ros_console.log_handler)
+		self.roslink.rosout.connect(self.ui.ros_console.log_handler)

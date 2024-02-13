@@ -274,7 +274,7 @@ class CameraSubscriber(QObject):
 		response: SetParameters.Response = self.set_parameters_srv.send_request(parameters = parameter_list)
 		return response.results[0].successful
 	
-	def set_resolution(self, height, width):		
+	def set_resolution(self, height, width, fps):		
 		parameter = Parameter()
 		parameter.name = "img_height"
 		parameter.value.type = 2 # bool = 1, int = 2, float = 3, string = 4
@@ -284,9 +284,14 @@ class CameraSubscriber(QObject):
 		parameter2.name = "img_width"
 		parameter2.value.type = 2 # bool = 1, int = 2, float = 3, string = 4
 		parameter2.value.integer_value = width
+
+		parameter3 = Parameter()
+		parameter3.name = "pub_rate_hz"
+		parameter3.value.type = 3 # bool = 1, int = 2, float = 3, string = 4
+		parameter3.value.double_value = float(fps)
 		
 
-		parameter_list = [parameter, parameter2]
+		parameter_list = [parameter, parameter2, parameter3]
 
 		# if self.supports_manual_exposure:
 		response: SetParameters.Response = self.set_parameters_srv.send_request(parameters = parameter_list)
@@ -369,9 +374,9 @@ class CameraFunnel(QObject):
 		if self.image_slots[camera_name] and camera_name in self.subscribers:
 			return self.subscribers[camera_name].set_exposure(exposure)
 
-	def set_resolution(self, camera_name: str, height, width):
+	def set_resolution(self, camera_name: str, height, width, fps):
 		if self.image_slots[camera_name] and camera_name in self.subscribers:
-			return self.subscribers[camera_name].set_resolution(height, width)
+			return self.subscribers[camera_name].set_resolution(height, width, fps)
 
 
 	def handle_incoming_images(self, camera_name: str, raw_image: Image):

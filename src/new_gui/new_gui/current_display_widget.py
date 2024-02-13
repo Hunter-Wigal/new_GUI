@@ -6,18 +6,18 @@ from std_msgs.msg import Float32MultiArray
 
 from .ui_python.current_display import Ui_CurrentDisplay
 
-# from wanderer_ros_link import WandererRosLink
+from new_gui.wanderer_ros_link import WandererRosLink
 
 class CurrentDisplayWidget(QWidget):
-	def __init__(self, roslink: any, *args, **kwargs):
+	def __init__(self, roslink: WandererRosLink, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
 		self.ui = Ui_CurrentDisplay()
 		self.ui.setupUi(self)
 
-		# self.roslink = roslink
-		# self.roslink.drivetrain_currents.connect(self.display_drivetrain_currents)
-		# self.roslink.arm_currents.connect(self.display_arm_currents)
+		self.roslink = roslink
+		self.roslink.drivetrain_currents.connect(self.display_drivetrain_currents)
+		self.roslink.arm_currents.connect(self.display_arm_currents)
 
 		### set labels #######################################################
 
