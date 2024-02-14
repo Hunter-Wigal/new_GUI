@@ -109,21 +109,19 @@ class CameraSubscriber(QObject):
 		# 	if get_exposure_bounds_service_exists and set_exposure_service_exists:
 		# 		self.could_support_manual_exposure = True
 		# 		break
-		# if self.could_support_manual_exposure:
-			# self.get_exposure_bounds_srv = node.Service(self.get_exposure_bounds_service, GetExposureBounds)
-		node_name_re = r"(camera_node_*[1-9]*)"
-		self.serv_topic = ""
-		topics = self.roslink.ROSnode.get_node_names()
+
+
+		# Get the publisher associated with the camera
+		node = self.topic_node.get_publishers_info_by_topic(self.raw_topic)[0]
+		node_name = node.node_name
+		# Make a service client that can call the set_parameters service for the publisher node
+		self.serv_topic = "/" + node_name + "/set_parameters"
+		self.set_parameters_srv= self.roslink.make_service(self.serv_topic, SetParameters, f"{node_name}_parameters_client")
 		
-		for topic in topics:
-			if match := re.match(node_name_re, topic):
-				name = match.group(1)
-				self.serv_topic = "/" + name + "/set_parameters"
-				self.set_parameters_srv= self.roslink.make_service(self.serv_topic, SetParameters, "parameters_client")
+		
 		self.supports_manual_exposure, self.exposure_bounds = self.get_exposure_bounds()
 
 		
-		# self.roslink.get_logger().info(self.serv_topic)
 
 	### callbacks ############################################################
 
