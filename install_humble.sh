@@ -29,7 +29,7 @@ curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr
 # apt install ros-humble-core -y
 
 # 1.5 Environment Setup
-# echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 # source ~/.bashrc
 
 # 1.6 Setup for colcon
