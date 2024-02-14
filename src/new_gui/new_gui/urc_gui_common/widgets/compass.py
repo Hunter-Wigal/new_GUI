@@ -61,7 +61,7 @@ class CompassWidget(QWidget):
 		while i < 360:
 			if i % 45 == 0:
 				painter.drawLine(0, -33, 0, -43)
-				painter.drawText(-metrics.width(self._pointText[i]) / 2.0, -45, self._pointText[i])
+				painter.drawText(QPointF(-metrics.width(self._pointText[i]) / 2.0, -45), self._pointText[i])
 			else:
 				painter.drawLine(0, -38, 0, -43)
 
@@ -120,7 +120,7 @@ class CompassWidget(QWidget):
 
 		painter.rotate(self.target_angle)
 
-		painter.drawText(-metrics.width("<*>") / 2.0, -54, "<*>")
+		painter.drawText(QPointF(-metrics.width("<*>") / 2.0, -54), "<*>")
 
 		painter.restore()
 

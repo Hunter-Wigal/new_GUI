@@ -63,6 +63,7 @@ class SuperCameraWidget(QLabel):
 		self.exposure_slider.sliderPressed.connect(lambda: self.set_adjusting_exposure_slider(True))
 		self.exposure_slider.sliderMoved.connect(self.change_camera_exposure)
 		self.exposure_slider.sliderReleased.connect(lambda: self.set_adjusting_exposure_slider(False))
+		self.exposure_slider.setValue(100)
 
 		self.exposure_slider_wrapper_layout = QVBoxLayout()
 		self.exposure_slider_wrapper_layout.setContentsMargins(0, 0, 0, 0)
@@ -101,9 +102,9 @@ class SuperCameraWidget(QLabel):
 
 	def update_controls(self, enable_webcam_controls: bool, supports_manual_exposure: bool, exposure_bounds: List[float]):
 		self.restart_button.setEnabled(enable_webcam_controls)
-		if supports_manual_exposure and exposure_bounds != (-1, -1):
+		if True or (supports_manual_exposure and exposure_bounds != (-1, -1)):
 			self.exposure_slider.setEnabled(True)
-			self.exposure_slider.setRange(*list(map(int, exposure_bounds)))
+			self.exposure_slider.setRange(0, 100)#*list(map(float, (0, 1))))
 		else:
 			self.exposure_slider.setEnabled(False)
 			self.exposure_slider.setSliderPosition(0)
@@ -179,7 +180,11 @@ class SuperCameraWidget(QLabel):
 		camera_name = self.camera_dict.get(camera_alias, None)
 		if camera_name and self.enable_checkbox.isChecked():
 			self.funnel.set_exposure(exposure, camera_name)
+
+	def set_resolution(self, camera_alias, height, width, fps):
+		camera_name = self.camera_dict.get(camera_alias, None)
 		
+		return self.funnel.set_resolution(camera_name, height, width, fps)
 
 	def change_camera_exposure(self):
 		# the currentTextChanged event will fire as set_cameras is running,
@@ -188,7 +193,8 @@ class SuperCameraWidget(QLabel):
 			return
 
 		exposure = self.exposure_slider.sliderPosition()
-		self.set_camera_exposure(exposure, self.current_alias)
+		exposure = exposure / 100.0
+		self.set_camera_exposure(float(exposure), self.current_alias)
 
 	def set_adjusting_exposure_slider(self, adjusting: bool):
 		self.adjusting_exposure_slider = adjusting

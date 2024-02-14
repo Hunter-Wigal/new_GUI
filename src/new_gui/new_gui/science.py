@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 from collections import namedtuple
 from datetime import datetime as dt
@@ -148,708 +148,708 @@ class ScienceTab(QWidget):
 		)
 
 		# Centrifuge
-	# 	self.ui.move_cuvette_button.clicked.connect(self.move_cuvette)
-	# 	# self.ui.centrifuge_button.clicked.connect(self.spin_centrifuge)
+		self.ui.move_cuvette_button.clicked.connect(self.move_cuvette)
+		# self.ui.centrifuge_button.clicked.connect(self.spin_centrifuge)
 
-	# 	# Linear actuator
-	# 	self.ui.left_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.LEFT_LIN_ACT))
-	# 	self.ui.middle_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.MID_LIN_ACT))
-	# 	self.ui.right_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.RIGHT_LIN_ACT))
-	# 	self.ui.site_dropdown.currentIndexChanged.connect(self.drum_changed)
-	# 	self.linear_actuator_positions = {
-	# 		Actuators.LEFT_LIN_ACT: 0,
-	# 		Actuators.MID_LIN_ACT: 0,
-	# 		Actuators.RIGHT_LIN_ACT: 0,
-	# 	}
-	# 	self.lin_act_sliders = {
-	# 		Actuators.LEFT_LIN_ACT: self.ui.left_linear_actuator_slider,
-	# 		Actuators.MID_LIN_ACT: self.ui.middle_linear_actuator_slider,
-	# 		Actuators.RIGHT_LIN_ACT: self.ui.right_linear_actuator_slider,
-	# 	}
+		# Linear actuator
+		self.ui.left_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.LEFT_LIN_ACT))
+		self.ui.middle_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.MID_LIN_ACT))
+		self.ui.right_linear_actuator_slider.sliderReleased.connect(lambda: self.move_actuator(Actuators.RIGHT_LIN_ACT))
+		self.ui.site_dropdown.currentIndexChanged.connect(self.drum_changed)
+		self.linear_actuator_positions = {
+			Actuators.LEFT_LIN_ACT: 0,
+			Actuators.MID_LIN_ACT: 0,
+			Actuators.RIGHT_LIN_ACT: 0,
+		}
+		self.lin_act_sliders = {
+			Actuators.LEFT_LIN_ACT: self.ui.left_linear_actuator_slider,
+			Actuators.MID_LIN_ACT: self.ui.middle_linear_actuator_slider,
+			Actuators.RIGHT_LIN_ACT: self.ui.right_linear_actuator_slider,
+		}
 
-	# 	# Pump
-	# 	self.ui.pump_button.clicked.connect(self.rotate_pump)
+		# Pump
+		self.ui.pump_button.clicked.connect(self.rotate_pump)
 
-	# 	# Scoop
-	# 	self.ui.scoop_button.clicked.connect(self.scoop)
-	# 	self.ui.pre_seal_button.clicked.connect(self.pre_seal)
-	# 	self.ui.raise_button.clicked.connect(self.raise_actuator)
-	# 	self.ui.seal_button.clicked.connect(self.seal)
-	# 	self.ui.middle_button.clicked.connect(self.lower_actuator)
-	# 	self.ui.pre_mix_button.clicked.connect(self.pre_mix)
-	# 	self.ui.mix_button.clicked.connect(self.mix)
-	# 	self.ui.reboot_button.clicked.connect(self.reboot_drum)
+		# Scoop
+		self.ui.scoop_button.clicked.connect(self.scoop)
+		self.ui.pre_seal_button.clicked.connect(self.pre_seal)
+		self.ui.raise_button.clicked.connect(self.raise_actuator)
+		self.ui.seal_button.clicked.connect(self.seal)
+		self.ui.middle_button.clicked.connect(self.lower_actuator)
+		self.ui.pre_mix_button.clicked.connect(self.pre_mix)
+		self.ui.mix_button.clicked.connect(self.mix)
+		self.ui.reboot_button.clicked.connect(self.reboot_drum)
 
-	# 	# Drum
-	# 	self.ui.drum_override_checkbox.toggled.connect(
-	# 		lambda: self.set_drum_override(self.ui.drum_override_checkbox.isChecked()))
-	# 	self.ui.drum_rotation_dial.valueChanged.connect(
-	# 		lambda: self.set_drum_position(self.ui.drum_rotation_dial.value()))
+		# Drum
+		self.ui.drum_override_checkbox.toggled.connect(
+			lambda: self.set_drum_override(self.ui.drum_override_checkbox.isChecked()))
+		self.ui.drum_rotation_dial.valueChanged.connect(
+			lambda: self.set_drum_position(self.ui.drum_rotation_dial.value()))
 
-	# 	# Light switch
-	# 	self.ui.light_toggle_checkbox.toggled.connect(self.light_switch)
+		# Light switch
+		self.ui.light_toggle_checkbox.toggled.connect(self.light_switch)
 
-	# 	# Spectrometer Capture
-	# 	self.ui.spectrometer_capture_button.clicked.connect(self.spectrometer_capture)
+		# Spectrometer Capture
+		self.ui.spectrometer_capture_button.clicked.connect(self.spectrometer_capture)
 
-	# 	# Link cameras to camera funnel
-	# 	self.ui.camera1.set_camera_funnel(self.roslink.camera_funnel)
-	# 	self.ui.camera2.set_camera_funnel(self.roslink.camera_funnel)
-	# 	self.ui.camera3.set_camera_funnel(self.roslink.camera_funnel)
+		# Link cameras to camera funnel
+		self.ui.camera1.set_camera_funnel(self.roslink.camera_funnel)
+		self.ui.camera2.set_camera_funnel(self.roslink.camera_funnel)
+		self.ui.camera3.set_camera_funnel(self.roslink.camera_funnel)
 
-	# 	# Connect overlays
-	# 	self.ui.chlorophyll_lt500_overlay.toggled.connect(self.display_chlorophyll_lt500)
-	# 	self.ui.chlorophyll_gt500_overlay.toggled.connect(self.display_chlorophyll_gt500)
-	# 	self.ui.egg_shell_lt500_overlay.toggled.connect(self.display_egg_shell_lt500)
-	# 	self.ui.egg_shell_gt500_overlay.toggled.connect(self.display_egg_shell_gt500)
-	# 	self.ui.ipa_lt500_overlay.toggled.connect(self.display_ipa_lt500)
-	# 	self.ui.ipa_gt500_overlay.toggled.connect(self.display_ipa_gt500)
-	# 	self.ui.egg_yolk_lt500_overlay.toggled.connect(self.display_egg_yolk_lt500)
-	# 	self.ui.egg_yolk_gt500_overlay.toggled.connect(self.display_egg_yolk_gt500)
-	# 	self.ui.tangerine_lt500_overlay.toggled.connect(self.display_tangerine_lt500)
-	# 	self.ui.tangerine_gt500_overlay.toggled.connect(self.display_tangerine_gt500)
-	# 	self.ui.carrot_lt500_overlay.toggled.connect(self.display_carrot_lt500)
-	# 	self.ui.carrot_gt500_overlay.toggled.connect(self.display_carrot_gt500)
+		# Connect overlays
+		self.ui.chlorophyll_lt500_overlay.toggled.connect(self.display_chlorophyll_lt500)
+		self.ui.chlorophyll_gt500_overlay.toggled.connect(self.display_chlorophyll_gt500)
+		self.ui.egg_shell_lt500_overlay.toggled.connect(self.display_egg_shell_lt500)
+		self.ui.egg_shell_gt500_overlay.toggled.connect(self.display_egg_shell_gt500)
+		self.ui.ipa_lt500_overlay.toggled.connect(self.display_ipa_lt500)
+		self.ui.ipa_gt500_overlay.toggled.connect(self.display_ipa_gt500)
+		self.ui.egg_yolk_lt500_overlay.toggled.connect(self.display_egg_yolk_lt500)
+		self.ui.egg_yolk_gt500_overlay.toggled.connect(self.display_egg_yolk_gt500)
+		self.ui.tangerine_lt500_overlay.toggled.connect(self.display_tangerine_lt500)
+		self.ui.tangerine_gt500_overlay.toggled.connect(self.display_tangerine_gt500)
+		self.ui.carrot_lt500_overlay.toggled.connect(self.display_carrot_lt500)
+		self.ui.carrot_gt500_overlay.toggled.connect(self.display_carrot_gt500)
 
-	# 	# Recover history
-	# 	self.refresh_history()
+		# Recover history
+		self.refresh_history()
 
-	# 	# Connect history list
-	# 	self.ui.history_list.currentRowChanged.connect(self.spectrometer_view)
-	# 	self.ui.history_list.itemChanged.connect(self.rename_spectrometer_capture)
-	# 	self.ui.delete_capture.clicked.connect(self.delete_spectrometer_capture)
-	# 	self.ui.clear_history.clicked.connect(self.clear_spectrometer_captures)
+		# Connect history list
+		self.ui.history_list.currentRowChanged.connect(self.spectrometer_view)
+		self.ui.history_list.itemChanged.connect(self.rename_spectrometer_capture)
+		self.ui.delete_capture.clicked.connect(self.delete_spectrometer_capture)
+		self.ui.clear_history.clicked.connect(self.clear_spectrometer_captures)
 
-	# ### local functions ######################################################
+	### local functions ######################################################
 
-	# def log(self, msg):
-	# 	self.ui.console_list_widget.addItem(QListWidgetItem(msg))
+	def log(self, msg):
+		self.ui.console_list_widget.addItem(QListWidgetItem(msg))
 
-	# def enable_unsafe_drum_rotations(self, enable):
-	# 	self.ui.scoop_button.setEnabled(enable)
-	# 	self.ui.pre_mix_button.setEnabled(enable)
-	# 	self.ui.mix_button.setEnabled(enable)
+	def enable_unsafe_drum_rotations(self, enable):
+		self.ui.scoop_button.setEnabled(enable)
+		self.ui.pre_mix_button.setEnabled(enable)
+		self.ui.mix_button.setEnabled(enable)
 
-	# def update_unsafe_drum_rotations(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		return
+	def update_unsafe_drum_rotations(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			return
 
-	# 	linear_act_select = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
-	# 	linear_act_pos = self.lin_act_sliders[linear_act_select].value()
-	# 	linear_actuator_raised = linear_act_pos < TOP_SAFETY_LIMIT
-	# 	self.enable_unsafe_drum_rotations(not linear_actuator_raised)
+		linear_act_select = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
+		linear_act_pos = self.lin_act_sliders[linear_act_select].value()
+		linear_actuator_raised = linear_act_pos < TOP_SAFETY_LIMIT
+		self.enable_unsafe_drum_rotations(not linear_actuator_raised)
 
-	# def drum_changed(self):
-	# 	self.set_drum_override(False)
-	# 	self.update_unsafe_drum_rotations()
+	def drum_changed(self):
+		self.set_drum_override(False)
+		self.update_unsafe_drum_rotations()
 
-	# ### actuators ############################################################
+	### actuators ############################################################
 
-	# def move_actuator(self, id):
-	# 	def fail_move():
-	# 		current_pos = self.linear_actuator_positions[id]
-	# 		self.lin_act_sliders[id].setSliderPosition(current_pos)
+	def move_actuator(self, id):
+		def fail_move():
+			current_pos = self.linear_actuator_positions[id]
+			self.lin_act_sliders[id].setSliderPosition(current_pos)
 
-	# 	pos = self.lin_act_sliders[id].value()
+		pos = self.lin_act_sliders[id].value()
 
-		# check if this actuator has drums, and if the drums are in a position that is safe to move to the top
-	# 	if id in LIN_ACT_ID_TO_DRUM_ID:
-	# 		drum1_id, drum2_id = LIN_ACT_ID_TO_DRUM_ID[id]
+		#check if this actuator has drums, and if the drums are in a position that is safe to move to the top
+		if id in LIN_ACT_ID_TO_DRUM_ID:
+			drum1_id, drum2_id = LIN_ACT_ID_TO_DRUM_ID[id]
 
-	# 		try:
-	# 			drum1_position = self.roslink.read_drum_position(drum1_id).drum_pos
-	# 		except rospy.service.ServiceException as e:
-	# 			QMessageBox(
-	# 				QMessageBox.Critical,
-	# 				"Failed to read drum1 position",
-	# 				"Could not read drum1 position to verify a safe orientation. Not moving linear actuator.",
-	# 				QMessageBox.Ok,
-	# 			).exec()
-	# 			fail_move()
-	# 			return
+			try:
+				drum1_position = self.roslink.read_drum_position(drum1_id).drum_pos
+			except Exception as e:
+				QMessageBox(
+					QMessageBox.Critical,
+					"Failed to read drum1 position",
+					"Could not read drum1 position to verify a safe orientation. Not moving linear actuator.",
+					QMessageBox.Ok,
+				).exec()
+				fail_move()
+				return
 
-	# 		try:
-	# 			drum2_position = self.roslink.read_drum_position(drum2_id).drum_pos
-	# 		except rospy.service.ServiceException as e:
-	# 			QMessageBox(
-	# 				QMessageBox.Critical,
-	# 				"Failed to read drum2 position",
-	# 				"Could not read drum2 position to verify a safe orientation. Not moving linear actuator.",
-	# 				QMessageBox.Ok,
-	# 			).exec()
-	# 			fail_move()
-	# 			return
+			try:
+				drum2_position = self.roslink.read_drum_position(drum2_id).drum_pos
+			except Exception as e:
+				QMessageBox(
+					QMessageBox.Critical,
+					"Failed to read drum2 position",
+					"Could not read drum2 position to verify a safe orientation. Not moving linear actuator.",
+					QMessageBox.Ok,
+				).exec()
+				fail_move()
+				return
 
-	# 		moving_to_top = pos < TOP_SAFETY_LIMIT
-	# 		drum1_safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum1_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
-	# 		drum2_safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum2_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
-	# 		drums_safe_rotation = drum1_safe_rotation and drum2_safe_rotation
-	# 	else:
-	# 		moving_to_top = False
-	# 		drums_safe_rotation = True
+			moving_to_top = pos < TOP_SAFETY_LIMIT
+			drum1_safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum1_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
+			drum2_safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum2_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
+			drums_safe_rotation = drum1_safe_rotation and drum2_safe_rotation
+		else:
+			moving_to_top = False
+			drums_safe_rotation = True
 
-	# 	if moving_to_top and not drums_safe_rotation:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Drum Rotation Unsafe For Linear Actuator Move",
-	# 			f"Cannot raise linear actuator until both drums are in presealed position",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		fail_move()
-	# 		return
+		if moving_to_top and not drums_safe_rotation:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Drum Rotation Unsafe For Linear Actuator Move",
+				f"Cannot raise linear actuator until both drums are in presealed position",
+				QMessageBox.Ok,
+			).exec()
+			fail_move()
+			return
 
-	# 	try:
-	# 		self.roslink.linear_act(id, pos)
-	# 		self.linear_actuator_positions[id] = pos
-	# 		self.log(f"Successfully moved linear actuator to position {pos}")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Linear Actuator Move Failed",
-	# 			f"Failed to move linear actuator to position {pos}",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
-	# 		fail_move()
-	# 		return
+		try:
+			self.roslink.linear_act(id, pos)
+			self.linear_actuator_positions[id] = pos
+			self.log(f"Successfully moved linear actuator to position {pos}")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Linear Actuator Move Failed",
+				f"Failed to move linear actuator to position {pos}",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
+			fail_move()
+			return
 		
-	# 	self.update_unsafe_drum_rotations()
+		self.update_unsafe_drum_rotations()
 
-	# def raise_actuator(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def raise_actuator(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	drum_position = self.roslink.read_drum_position(scoop_select).drum_pos
-	# 	safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
+		drum_position = self.roslink.read_drum_position(scoop_select).drum_pos
+		safe_rotation = PRESEALED_ROTATION - PRESEALED_ROTATION_TOLERANCE < drum_position < PRESEALED_ROTATION + PRESEALED_ROTATION_TOLERANCE
 
-	# 	if (not safe_rotation):
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Drum Rotation Unsafe For Linear Actuator Move",
-	# 			f"Cannot raise linear actuator until both drums are in presealed position",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+		if (not safe_rotation):
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Drum Rotation Unsafe For Linear Actuator Move",
+				f"Cannot raise linear actuator until both drums are in presealed position",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	lin_act_id = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
+		lin_act_id = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
 
-	# 	try:
-	# 		self.roslink.raise_linear_actuator(lin_act_id)
-	# 		self.linear_actuator_positions[lin_act_id] = LinearActuatorPos.TOP
-	# 		self.lin_act_sliders[lin_act_id].setSliderPosition(LinearActuatorPos.TOP)
-	# 		self.log(f"Successfully raised linear actuator")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Linear Actuator Raise Failed",
-	# 			f"Failed to raise linear actuator",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
-	# 		return
+		try:
+			self.roslink.raise_linear_actuator(lin_act_id)
+			self.linear_actuator_positions[lin_act_id] = LinearActuatorPos.TOP
+			self.lin_act_sliders[lin_act_id].setSliderPosition(LinearActuatorPos.TOP)
+			self.log(f"Successfully raised linear actuator")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Linear Actuator Raise Failed",
+				f"Failed to raise linear actuator",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
+			return
 
-	# 	self.update_unsafe_drum_rotations()
+		self.update_unsafe_drum_rotations()
 
-	# def lower_actuator(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def lower_actuator(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	lin_act_id = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
+		lin_act_id = DRUM_ID_TO_LIN_ACT_ID[scoop_select]
 
-	# 	try:
-	# 		self.roslink.lower_linear_actuator(lin_act_id)
-	# 		self.linear_actuator_positions[lin_act_id] = LinearActuatorPos.MIDDLE
-	# 		self.lin_act_sliders[lin_act_id].setSliderPosition(LinearActuatorPos.MIDDLE)
-	# 		self.log(f"Successfully lowered linear actuator to middle position")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Linear Actuator Lower Failed",
-	# 			f"Failed to lower linear actuator to middle position",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
-	# 		return
+		try:
+			self.roslink.lower_linear_actuator(lin_act_id)
+			self.linear_actuator_positions[lin_act_id] = LinearActuatorPos.MIDDLE
+			self.lin_act_sliders[lin_act_id].setSliderPosition(LinearActuatorPos.MIDDLE)
+			self.log(f"Successfully lowered linear actuator to middle position")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Linear Actuator Lower Failed",
+				f"Failed to lower linear actuator to middle position",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
+			return
 		
-	# 	self.update_unsafe_drum_rotations()
+		self.update_unsafe_drum_rotations()
 
-	# def pump(self, id, pos, duration):
-	# 	try:
-	# 		self.roslink.pump(id, pos, duration)
-	# 		self.log(f"Successfully rotated pump to position {pos}")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Linear Actuator Moved Failed",
-	# 			f"Failed to rotate pump to position {pos}",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+	def pump(self, id, pos, duration):
+		try:
+			self.roslink.pump(id, pos, duration)
+			self.log(f"Successfully rotated pump to position {pos}")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Linear Actuator Moved Failed",
+				f"Failed to rotate pump to position {pos}",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def rotate_pump(self):
-	# 	self.pump_select = self.ui.pump_choice.currentText()
-	# 	self.pump_direction = self.ui.pump_destination_choice.currentText()
-	# 	pos = -1
-	# 	id = -1
+	def rotate_pump(self):
+		self.pump_select = self.ui.pump_choice.currentText()
+		self.pump_direction = self.ui.pump_destination_choice.currentText()
+		pos = -1
+		id = -1
 		
-	# 	if self.pump_select == "Site 1":
-	# 		if self.pump_direction == "To Lab":
-	# 			id = Actuators.SITE1_PUMP_TOLAB
-	# 			pos = Pumps.ON
-	# 		elif self.pump_direction == "To Scoop":
-	# 			id = Actuators.SITE1_PUMP_TOSCOOP
-	# 			pos = Pumps.ON
-	# 		elif self.pump_direction == "Stop":
-	# 			id = Actuators.SITE1_PUMP_TOSCOOP
-	# 			pos = Pumps.OFF
+		if self.pump_select == "Site 1":
+			if self.pump_direction == "To Lab":
+				id = Actuators.SITE1_PUMP_TOLAB
+				pos = Pumps.ON
+			elif self.pump_direction == "To Scoop":
+				id = Actuators.SITE1_PUMP_TOSCOOP
+				pos = Pumps.ON
+			elif self.pump_direction == "Stop":
+				id = Actuators.SITE1_PUMP_TOSCOOP
+				pos = Pumps.OFF
 
-	# 	elif self.pump_select == "Site 2":
-	# 		if self.pump_direction == "To Lab":
-	# 			id = Actuators.SITE2_PUMP_TOLAB
-	# 			pos = Pumps.ON
-	# 		elif self.pump_direction == "To Scoop":
-	# 			id = Actuators.SITE2_PUMP_TOSCOOP
-	# 			pos = Pumps.ON
-	# 		elif self.pump_direction == "Stop":
-	# 			id = Actuators.SITE2_PUMP_TOSCOOP
-	# 			pos = Pumps.OFF
+		elif self.pump_select == "Site 2":
+			if self.pump_direction == "To Lab":
+				id = Actuators.SITE2_PUMP_TOLAB
+				pos = Pumps.ON
+			elif self.pump_direction == "To Scoop":
+				id = Actuators.SITE2_PUMP_TOSCOOP
+				pos = Pumps.ON
+			elif self.pump_direction == "Stop":
+				id = Actuators.SITE2_PUMP_TOSCOOP
+				pos = Pumps.OFF
 		
-	# 	elif self.pump_select == "Site 3":
-	# 		if self.pump_direction == "To Lab":
-	# 			id = Actuators.SITE3_PUMP_TOLAB_GPIO
-	# 			pos = 1 # turning on; doesn't use PWM
-	# 		elif self.pump_direction == "To Scoop":
-	# 			id = Actuators.SITE3_PUMP_TOSCOOP
-	# 			pos = Pumps.ON
-	# 		elif self.pump_direction == "Stop":
-	# 			id = Actuators.SITE3_PUMP_TOSCOOP
-	# 			pos = Pumps.OFF
+		elif self.pump_select == "Site 3":
+			if self.pump_direction == "To Lab":
+				id = Actuators.SITE3_PUMP_TOLAB_GPIO
+				pos = 1 # turning on; doesn't use PWM
+			elif self.pump_direction == "To Scoop":
+				id = Actuators.SITE3_PUMP_TOSCOOP
+				pos = Pumps.ON
+			elif self.pump_direction == "Stop":
+				id = Actuators.SITE3_PUMP_TOSCOOP
+				pos = Pumps.OFF
 		
-	# 	try:
-	# 		duration_str = self.ui.pump_duration_line_edit.text()
-	# 		duration = int(duration_str)
-	# 	except ValueError:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Invalid pump duration",
-	# 			f"Please set a valid pump duration (integer)",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+		try:
+			duration_str = self.ui.pump_duration_line_edit.text()
+			duration = int(duration_str)
+		except ValueError:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Invalid pump duration",
+				f"Please set a valid pump duration (integer)",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	if id == -1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Pump not selected",
-	# 			f"Please select a pump",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+		if id == -1:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Pump not selected",
+				f"Please select a pump",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	if pos == -1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Pump destination not selected",
-	# 			f"Please select a pump destination",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+		if pos == -1:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Pump destination not selected",
+				f"Please select a pump destination",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	if pos == Pumps.OFF:
-	# 		if id == Actuators.SITE1_PUMP_TOSCOOP or id == Actuators.SITE1_PUMP_TOLAB:
-	# 			self.pump(Actuators.SITE1_PUMP_TOLAB, pos, duration)
-	# 			self.pump(Actuators.SITE1_PUMP_TOSCOOP, pos, duration)
-	# 		elif id == Actuators.SITE2_PUMP_TOSCOOP or id == Actuators.SITE2_PUMP_TOLAB:
-	# 			self.pump(Actuators.SITE2_PUMP_TOSCOOP, pos, duration)
-	# 			self.pump(Actuators.SITE2_PUMP_TOLAB, pos, duration)
-	# 		elif id == Actuators.SITE3_PUMP_TOSCOOP or id == Actuators.SITE3_PUMP_TOLAB_GPIO:
-	# 			self.pump(Actuators.SITE3_PUMP_TOLAB_GPIO, 0, duration) # turning off; doesn't use PWM
-	# 			self.pump(Actuators.SITE3_PUMP_TOSCOOP, pos, duration)
-	# 	else:
-	# 		self.pump(id, pos, duration)
+		if pos == Pumps.OFF:
+			if id == Actuators.SITE1_PUMP_TOSCOOP or id == Actuators.SITE1_PUMP_TOLAB:
+				self.pump(Actuators.SITE1_PUMP_TOLAB, pos, duration)
+				self.pump(Actuators.SITE1_PUMP_TOSCOOP, pos, duration)
+			elif id == Actuators.SITE2_PUMP_TOSCOOP or id == Actuators.SITE2_PUMP_TOLAB:
+				self.pump(Actuators.SITE2_PUMP_TOSCOOP, pos, duration)
+				self.pump(Actuators.SITE2_PUMP_TOLAB, pos, duration)
+			elif id == Actuators.SITE3_PUMP_TOSCOOP or id == Actuators.SITE3_PUMP_TOLAB_GPIO:
+				self.pump(Actuators.SITE3_PUMP_TOLAB_GPIO, 0, duration) # turning off; doesn't use PWM
+				self.pump(Actuators.SITE3_PUMP_TOSCOOP, pos, duration)
+		else:
+			self.pump(id, pos, duration)
 
-	# def scoop(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def scoop(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	try:
-	# 		self.roslink.scoop_sample(scoop_select)
-	# 		self.log("Successfully scooped")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Scoop Failed",
-	# 			f"Failed to scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.scoop_sample(scoop_select)
+			self.log("Successfully scooped")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Scoop Failed",
+				f"Failed to scoop",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def pre_mix(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def pre_mix(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	try:
-	# 		self.roslink.pre_mix_drum(scoop_select)
-	# 		self.log("Successfully moved to pre-mix position")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"PreMix Move Failed",
-	# 			"Failed to move to pre-mix position",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.pre_mix_drum(scoop_select)
+			self.log("Successfully moved to pre-mix position")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				"PreMix Move Failed",
+				"Failed to move to pre-mix position",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def mix(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def mix(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	try:
-	# 		self.roslink.mix_sample(scoop_select)
-	# 		self.log("Successfully mixed")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"Mix Failed",
-	# 			"Failed to mix",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.mix_sample(scoop_select)
+			self.log("Successfully mixed")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				"Mix Failed",
+				"Failed to mix",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def pre_seal(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def pre_seal(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	try:
-	# 		self.roslink.pre_seal_drum(scoop_select)
-	# 		self.log("Successfully moved to preseal position")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"PreSeal Move Failed",
-	# 			"Failed to move to preseal position",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.pre_seal_drum(scoop_select)
+			self.log("Successfully moved to preseal position")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				"PreSeal Move Failed",
+				"Failed to move to preseal position",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def seal(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def seal(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	try:
-	# 		self.roslink.seal_drum(scoop_select)
-	# 		self.log("Successfully sealed")
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"Seal Failed",
-	# 			"Failed to seal",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.seal_drum(scoop_select)
+			self.log("Successfully sealed")
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				"Seal Failed",
+				"Failed to seal",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def move_cuvette(self):
-	# 	location = self.ui.cuvette_number_choice.currentText()
-	# 	if location == "Pump Position 1":
-	# 		cuvette_number = 13
-	# 	elif location == "Pump Position 2":
-	# 		cuvette_number = 14
-	# 	elif location == "Pump Position 3":
-	# 		cuvette_number = 1
-	# 	elif location == "Pump Position 4":
-	# 		cuvette_number = 2
-	# 	elif location == "Site 1 Test 1":
-	# 		cuvette_number = 1
-	# 	elif location == "Site 1 Test 2":
-	# 		cuvette_number = 2
-	# 	elif location == "Site 1 Test 3":
-	# 		cuvette_number = 3
-	# 	elif location == "Site 1 Test 4":
-	# 		cuvette_number = 4
-	# 	elif location == "Site 2 Test 1":
-	# 		cuvette_number = 5
-	# 	elif location == "Site 2 Test 2":
-	# 		cuvette_number = 6
-	# 	elif location == "Site 2 Test 3":
-	# 		cuvette_number = 7
-	# 	elif location == "Site 2 Test 4":
-	# 		cuvette_number = 8
-	# 	elif location == "Site 3 Test 1":
-	# 		cuvette_number = 9
-	# 	elif location == "Site 3 Test 2":
-	# 		cuvette_number = 10
-	# 	elif location == "Site 3 Test 3":
-	# 		cuvette_number = 11
-	# 	elif location == "Site 3 Test 4":
-	# 		cuvette_number = 12
-	# 	elif location == "Control 1":
-	# 		cuvette_number = 13
-	# 	elif location == "Control 2":
-	# 		cuvette_number = 14
-	# 	else:
-	# 		cuvette_number = 0
+	def move_cuvette(self):
+		location = self.ui.cuvette_number_choice.currentText()
+		if location == "Pump Position 1":
+			cuvette_number = 13
+		elif location == "Pump Position 2":
+			cuvette_number = 14
+		elif location == "Pump Position 3":
+			cuvette_number = 1
+		elif location == "Pump Position 4":
+			cuvette_number = 2
+		elif location == "Site 1 Test 1":
+			cuvette_number = 1
+		elif location == "Site 1 Test 2":
+			cuvette_number = 2
+		elif location == "Site 1 Test 3":
+			cuvette_number = 3
+		elif location == "Site 1 Test 4":
+			cuvette_number = 4
+		elif location == "Site 2 Test 1":
+			cuvette_number = 5
+		elif location == "Site 2 Test 2":
+			cuvette_number = 6
+		elif location == "Site 2 Test 3":
+			cuvette_number = 7
+		elif location == "Site 2 Test 4":
+			cuvette_number = 8
+		elif location == "Site 3 Test 1":
+			cuvette_number = 9
+		elif location == "Site 3 Test 2":
+			cuvette_number = 10
+		elif location == "Site 3 Test 3":
+			cuvette_number = 11
+		elif location == "Site 3 Test 4":
+			cuvette_number = 12
+		elif location == "Control 1":
+			cuvette_number = 13
+		elif location == "Control 2":
+			cuvette_number = 14
+		else:
+			cuvette_number = 0
 
-	# 	if cuvette_number > 0:
-	# 		try:
-	# 			self.roslink.move_cuvette(cuvette_number)
-	# 			self.log(f"Successfully moved centrifuge to cuvette {cuvette_number}")
-	# 		except rospy.service.ServiceException as e:
-	# 			QMessageBox(
-	# 				QMessageBox.Critical,
-	# 				f"Centrifuge Moved Failed",
-	# 				f"Failed to move centrifuge to cuvette {cuvette_number}",
-	# 				QMessageBox.Ok,
-	# 			).exec()
-	# 			rospy.logerr(e)
+		if cuvette_number > 0:
+			try:
+				self.roslink.move_cuvette(cuvette_number)
+				self.log(f"Successfully moved centrifuge to cuvette {cuvette_number}")
+			except Exception as e:
+				QMessageBox(
+					QMessageBox.Critical,
+					f"Centrifuge Moved Failed",
+					f"Failed to move centrifuge to cuvette {cuvette_number}",
+					QMessageBox.Ok,
+				).exec()
+				self.roslink.get_logger().error(e)
 
-	# def spin_centrifuge(self):
-	# 	# Centrigure doesn't work, so the button has been removed and this code
-	# 	# has been commented out
-	# 	return
+	def spin_centrifuge(self):
+		# Centrigure doesn't work, so the button has been removed and this code
+		# has been commented out
+		return
 
-	# 	# try:
-	# 	# 	self.roslink.spin_centrifuge()
-	# 	# 	self.log("Successfully spun centrifuge")
-	# 	# except rospy.service.ServiceException as e:
-	# 	# 	QMessageBox(
-	# 	# 		QMessageBox.Critical,
-	# 	# 		"Spin Centrifuge Failed",
-	# 	# 		"Failed to spin centrifuge",
-	# 	# 		QMessageBox.Ok,
-	# 	# 	).exec()
-	# 	# 	rospy.logerr(e)
+		# try:
+		# 	self.roslink.spin_centrifuge()
+		# 	self.log("Successfully spun centrifuge")
+		# except Exception as e:
+		# 	QMessageBox(
+		# 		QMessageBox.Critical,
+		# 		"Spin Centrifuge Failed",
+		# 		"Failed to spin centrifuge",
+		# 		QMessageBox.Ok,
+		# 	).exec()
+		# 	self.roslink.get_logger().error(e)
 
-	# ### drum control #########################################################
+	### drum control #########################################################
 
-	# def set_drum_override(self, override):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		self.ui.drum_override_checkbox.blockSignals(True)
-	# 		self.ui.drum_override_checkbox.setChecked(False)
-	# 		self.ui.drum_override_checkbox.blockSignals(False)
-	# 		return
+	def set_drum_override(self, override):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			self.ui.drum_override_checkbox.blockSignals(True)
+			self.ui.drum_override_checkbox.setChecked(False)
+			self.ui.drum_override_checkbox.blockSignals(False)
+			return
 
-	# 	drum_position = self.roslink.read_drum_position(scoop_select).drum_pos
+		drum_position = self.roslink.read_drum_position(scoop_select).drum_pos
 
-	# 	self.ui.drum_rotation_dial.blockSignals(True)
-	# 	self.ui.drum_rotation_dial.setSliderPosition(drum_position)
-	# 	self.ui.drum_rotation_dial.blockSignals(False)
+		self.ui.drum_rotation_dial.blockSignals(True)
+		self.ui.drum_rotation_dial.setSliderPosition(drum_position)
+		self.ui.drum_rotation_dial.blockSignals(False)
 
-	# 	self.ui.drum_rotation_dial.setEnabled(override)
+		self.ui.drum_rotation_dial.setEnabled(override)
 
-	# def set_drum_position(self, position):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		self.ui.drum_override_checkbox.blockSignals(True)
-	# 		self.ui.drum_override_checkbox.setChecked(False)
-	# 		self.ui.drum_override_checkbox.blockSignals(False)
-	# 		return
+	def set_drum_position(self, position):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			self.ui.drum_override_checkbox.blockSignals(True)
+			self.ui.drum_override_checkbox.setChecked(False)
+			self.ui.drum_override_checkbox.blockSignals(False)
+			return
 
-	# 	try:
-	# 		self.roslink.free_move_drum(scoop_select, position)
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Drum Rotation Failed",
-	# 			f"Failed to rotate drum",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			self.roslink.free_move_drum(scoop_select, position)
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Drum Rotation Failed",
+				f"Failed to rotate drum",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
-	# def reboot_drum(self):
-	# 	scoop_select = self.ui.site_dropdown.currentIndex()
-	# 	if scoop_select < 1:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			"No scoop selected",
-	# 			"Please select a scoop",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		return
+	def reboot_drum(self):
+		scoop_select = self.ui.site_dropdown.currentIndex()
+		if scoop_select < 1:
+			QMessageBox(
+				QMessageBox.Critical,
+				"No scoop selected",
+				"Please select a scoop",
+				QMessageBox.Ok,
+			).exec()
+			return
 
-	# 	confirmation_box = QMessageBox(
-	# 		QMessageBox.Question,
-	# 		f"Reboot drum {scoop_select}?",
-	# 		f"Are you sure you want to reboot drum {scoop_select}?",
-	# 		QMessageBox.Yes | QMessageBox.No,
-	# 	)
+		confirmation_box = QMessageBox(
+			QMessageBox.Question,
+			f"Reboot drum {scoop_select}?",
+			f"Are you sure you want to reboot drum {scoop_select}?",
+			QMessageBox.Yes | QMessageBox.No,
+		)
 
-	# 	if confirmation_box.exec() == QMessageBox.Yes:
-	# 		self.roslink.reboot_drum(scoop_select)
+		if confirmation_box.exec() == QMessageBox.Yes:
+			self.roslink.reboot_drum(scoop_select)
 
-	# ### light switch #########################################################
+	### light switch #########################################################
 
-	# def light_switch(self):
-	# 	if self.ui.light_toggle_checkbox.isChecked():
-	# 		try:
-	# 			self.roslink.gpio(0, 1)
-	# 		except rospy.service.ServiceException as e:
-	# 			self.ui.light_toggle_checkbox.blockSignals(True)
-	# 			self.ui.light_toggle_checkbox.setChecked(False)
-	# 			self.ui.light_toggle_checkbox.blockSignals(False)
-	# 			QMessageBox(
-	# 				QMessageBox.Critical,
-	# 				f"Light Switch Failed",
-	# 				f"Failed to turn on light",
-	# 				QMessageBox.Ok,
-	# 			).exec()
-	# 			rospy.logerr(e)
-	# 	else:
-	# 		try:
-	# 			self.roslink.gpio(0, 0)
-	# 		except rospy.service.ServiceException as e:
-	# 			self.ui.light_toggle_checkbox.blockSignals(True)
-	# 			self.ui.light_toggle_checkbox.setChecked(True)
-	# 			self.ui.light_toggle_checkbox.blockSignals(False)
-	# 			QMessageBox(
-	# 				QMessageBox.Critical,
-	# 				f"Light Switch Failed",
-	# 				f"Failed to turn off light",
-	# 				QMessageBox.Ok,
-	# 			).exec()
-	# 			rospy.logerr(e)
+	def light_switch(self):
+		if self.ui.light_toggle_checkbox.isChecked():
+			try:
+				self.roslink.gpio(0, 1)
+			except Exception as e:
+				self.ui.light_toggle_checkbox.blockSignals(True)
+				self.ui.light_toggle_checkbox.setChecked(False)
+				self.ui.light_toggle_checkbox.blockSignals(False)
+				QMessageBox(
+					QMessageBox.Critical,
+					f"Light Switch Failed",
+					f"Failed to turn on light",
+					QMessageBox.Ok,
+				).exec()
+				self.roslink.get_logger().error(e)
+		else:
+			try:
+				self.roslink.gpio(0, 0)
+			except Exception as e:
+				self.ui.light_toggle_checkbox.blockSignals(True)
+				self.ui.light_toggle_checkbox.setChecked(True)
+				self.ui.light_toggle_checkbox.blockSignals(False)
+				QMessageBox(
+					QMessageBox.Critical,
+					f"Light Switch Failed",
+					f"Failed to turn off light",
+					QMessageBox.Ok,
+				).exec()
+				self.roslink.get_logger().error(e)
 
-	# ### overlays #############################################################
+	### overlays #############################################################
 
-	# ### porphyrins ###
+	### porphyrins ###
 
-	# def display_chlorophyll_lt500(self):
-	# 	self.update_overlay(self.ui.chlorophyll_lt500_overlay, 'Chlorophyll <500')
+	def display_chlorophyll_lt500(self):
+		self.update_overlay(self.ui.chlorophyll_lt500_overlay, 'Chlorophyll <500')
 
-	# def display_chlorophyll_gt500(self):
-	# 	self.update_overlay(self.ui.chlorophyll_gt500_overlay, 'Chlorophyll >500')
+	def display_chlorophyll_gt500(self):
+		self.update_overlay(self.ui.chlorophyll_gt500_overlay, 'Chlorophyll >500')
 
-	# def display_egg_shell_lt500(self):
-	# 	self.update_overlay(self.ui.egg_shell_lt500_overlay, 'Egg Shell <500')
+	def display_egg_shell_lt500(self):
+		self.update_overlay(self.ui.egg_shell_lt500_overlay, 'Egg Shell <500')
 
-	# def display_egg_shell_gt500(self):
-	# 	self.update_overlay(self.ui.egg_shell_gt500_overlay, 'Egg Shell >500')
+	def display_egg_shell_gt500(self):
+		self.update_overlay(self.ui.egg_shell_gt500_overlay, 'Egg Shell >500')
 
-	# ### controls ###
+	### controls ###
 
-	# def display_ipa_lt500(self):
-	# 	self.update_overlay(self.ui.ipa_lt500_overlay, 'Isopropyl Alc <500')
+	def display_ipa_lt500(self):
+		self.update_overlay(self.ui.ipa_lt500_overlay, 'Isopropyl Alc <500')
 
-	# def display_ipa_gt500(self):
-	# 	self.update_overlay(self.ui.ipa_gt500_overlay, 'Isopropyl Alc >500')
+	def display_ipa_gt500(self):
+		self.update_overlay(self.ui.ipa_gt500_overlay, 'Isopropyl Alc >500')
 
-	# ### terpenoids ###
+	### terpenoids ###
 
-	# def display_egg_yolk_lt500(self):
-	# 	self.update_overlay(self.ui.egg_yolk_lt500_overlay, 'Egg Yolk <500')
+	def display_egg_yolk_lt500(self):
+		self.update_overlay(self.ui.egg_yolk_lt500_overlay, 'Egg Yolk <500')
 
-	# def display_egg_yolk_gt500(self):
-	# 	self.update_overlay(self.ui.egg_yolk_gt500_overlay, 'Egg Yolk >500')
+	def display_egg_yolk_gt500(self):
+		self.update_overlay(self.ui.egg_yolk_gt500_overlay, 'Egg Yolk >500')
 
-	# def display_tangerine_lt500(self):
-	# 	self.update_overlay(self.ui.tangerine_lt500_overlay, 'Tangerine <500')
+	def display_tangerine_lt500(self):
+		self.update_overlay(self.ui.tangerine_lt500_overlay, 'Tangerine <500')
 
-	# def display_tangerine_gt500(self):
-	# 	self.update_overlay(self.ui.tangerine_gt500_overlay, 'Tangerine >500')
+	def display_tangerine_gt500(self):
+		self.update_overlay(self.ui.tangerine_gt500_overlay, 'Tangerine >500')
 
-	# def display_carrot_lt500(self):
-	# 	self.update_overlay(self.ui.carrot_lt500_overlay, 'Carrot <500')
+	def display_carrot_lt500(self):
+		self.update_overlay(self.ui.carrot_lt500_overlay, 'Carrot <500')
 
-	# def display_carrot_gt500(self):
-	# 	self.update_overlay(self.ui.carrot_gt500_overlay, 'Carrot >500')
+	def display_carrot_gt500(self):
+		self.update_overlay(self.ui.carrot_gt500_overlay, 'Carrot >500')
 
-	# ### base display ###
+	### base display ###
 
-	# def update_overlay(self, overlay_checkbox: QCheckBox, name: str):
-	# 	if overlay_checkbox.isChecked():
-	# 		reading = overlays[name]
-	# 		self.ui.graph.plot(
-	# 			reading.wavelengths,
-	# 			reading.intensities,
-	# 			name,
-	# 			reading.line_color
-	# 		)
-	# 	else:
-	# 		self.ui.graph.clear(name)
+	def update_overlay(self, overlay_checkbox: QCheckBox, name: str):
+		if overlay_checkbox.isChecked():
+			reading = overlays[name]
+			self.ui.graph.plot(
+				reading.wavelengths,
+				reading.intensities,
+				name,
+				reading.line_color
+			)
+		else:
+			self.ui.graph.clear(name)
 
-	# ### spectrometer #########################################################
+	### spectrometer #########################################################
 
-	# def spectrometer_capture(self):
-	# 	try:
-	# 		integration_time = int(self.ui.integration_time_edit.text())
-	# 	except ValueError:
-	# 		self.ui.integration_time_edit.setText("100000")
-	# 		integration_time = 100_000
+	def spectrometer_capture(self):
+		try:
+			integration_time = int(self.ui.integration_time_edit.text())
+		except ValueError:
+			self.ui.integration_time_edit.setText("100000")
+			integration_time = 100_000
 
-	# 	try:
-	# 		spectrometer_response = self.roslink.capture_spectrometer(integration_time)
-	# 		capture = SpectrometerReading(spectrometer_response.wavelengths, spectrometer_response.intensities, Colors.BLACK)
-	# 		self.save_spectrometer_capture(capture)
-	# 	except rospy.service.ServiceException as e:
-	# 		QMessageBox(
-	# 			QMessageBox.Critical,
-	# 			f"Spectrometer Capture Failed",
-	# 			f"Failed to capture with spectrometer",
-	# 			QMessageBox.Ok,
-	# 		).exec()
-	# 		rospy.logerr(e)
+		try:
+			spectrometer_response = self.roslink.capture_spectrometer(integration_time)
+			capture = SpectrometerReading(spectrometer_response.wavelengths, spectrometer_response.intensities, Colors.BLACK)
+			self.save_spectrometer_capture(capture)
+		except Exception as e:
+			QMessageBox(
+				QMessageBox.Critical,
+				f"Spectrometer Capture Failed",
+				f"Failed to capture with spectrometer",
+				QMessageBox.Ok,
+			).exec()
+			self.roslink.get_logger().error(e)
 
 	def spectrometer_view(self, row):
 		wavelengths, intensities, has_data = self.read_spectrometer_capture(row)

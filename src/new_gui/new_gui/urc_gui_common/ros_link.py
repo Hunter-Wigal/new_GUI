@@ -24,8 +24,6 @@ from PyQt5.QtCore import QObject, pyqtSignal as Signal
 from new_gui.urc_gui_common.camera_link import CameraFunnel
 from new_gui.urc_gui_common.widgets import MapPoint
 
-from .service_clients import *
-
 from std_msgs.msg import String
 class NewSubscriber(Node):
     def __init__(self, name, topic, type, callback):
@@ -38,16 +36,30 @@ class NewSubscriber(Node):
             20)
         self.subscription  # prevent unused variable warning
 
-class NewService(Node):
-	def __init__(self, name, topic, type):
-		super().__init__(name)
-		self.cli = self.create_client(type, topic)
-		self.req = type.Request()
+# Variable service client, can be adapted for any service
+class VarServiceClient(Node):
+    def __init__(self, name, topic, type):
+        super().__init__(name)
+        self.cli = self.create_client(type, topic)
+        self.topic = topic
+        self.req = type.Request()
 
-	def send_request(self):
-		self.future = self.cli.call_async(self.req)
-		rclpy.spin_until_future_complete(self, self.future)
-		return self.future.result()
+    def send_request(self, **kwargs):
+        count = 0
+        while not(self.cli.wait_for_service(timeout_sec=1)) and count < 5:
+            self.get_logger().info(f"Service {self.topic} not available")
+            count +=1
+
+        if count == 5:
+            self.get_logger().info(f"Aborting call to {self.topic}")
+            return
+
+        for key, value in kwargs.items():
+            setattr(self.req, key, value)
+
+        self.future = self.cli.call_async(self.req)
+        rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
 
 # class RosNode(Node):
 #     def __init__(self, name):
@@ -140,36 +152,37 @@ class RosLink(QObject):
         self.planner_status_sub = self.make_subscriber(planner_status_topic, String, self.planner_status)
         self.found_marker_sub = self.make_subscriber(found_marker_list_topic, FoundMarkerList, self.found_marker_list)
         
-        self.add_marker_srv = AddMarkerServiceClient("add_marker_client", add_marker_service, AddMarker)
-        self.clear_markers_srv = ClearMarkerServiceClient("clear_marker_client",clear_markers_service, ClearMarkers)
-        self.reorder_marker_srv = ReorderMarkerServiceClient("reorder_marker_client",reorder_marker_service, ReorderMarker)
-        self.reorder_markers_srv = ReorderMarkersServiceClient("reorder_markers_client",reorder_markers_service, ReorderMarkers)
-        self.edit_marker_srv = EditMarkerServiceClient("edit_marker_client",edit_marker_service, EditMarker)
-        self.remove_marker_srv = RemoveMarkerServiceClient("remove_marker_client",remove_marker_service, RemoveMarker)
-        self.insert_marker_srv = InsertMarkerServiceClient("insert_marker_client",insert_marker_service, InsertMarker)
-        self.clear_found_markers_srv = ClearMarkerServiceClient("clear_found_marker_client",clear_found_markers_service, Trigger)
+        self.add_marker_srv = VarServiceClient("add_marker_client", add_marker_service, AddMarker)
+        self.clear_markers_srv = VarServiceClient("clear_marker_client",clear_markers_service, ClearMarkers)
+        self.reorder_marker_srv = VarServiceClient("reorder_marker_client",reorder_marker_service, ReorderMarker)
+        self.reorder_markers_srv = VarServiceClient("reorder_markers_client",reorder_markers_service, ReorderMarkers)
+        self.edit_marker_srv = VarServiceClient("edit_marker_client",edit_marker_service, EditMarker)
+        self.remove_marker_srv = VarServiceClient("remove_marker_client",remove_marker_service, RemoveMarker)
+        self.insert_marker_srv = VarServiceClient("insert_marker_client",insert_marker_service, InsertMarker)
+        self.clear_found_markers_srv = VarServiceClient("clear_found_marker_client",clear_found_markers_service, Trigger)
 
         # camera funnel
-        self.camera_funnel = CameraFunnel(self.camera_funnel_signal, self.add_subscriber)
+        self.camera_funnel = CameraFunnel(self.camera_funnel_signal, self)
+
 
     def add_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int) -> AddMarker.Response:
-        value = self.add_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2)
+        value = self.add_marker_srv.send_request(lat = lat, lon = lon, alt = alt, waypoint_error = error, marker_type = marker_type, aruco_id = aruco_id, aruco_id_2 = aruco_id_2)
         return value
         
     def reorder_marker(self, marker_id: int, new_following_marker_id: int) -> ReorderMarker.Response:
-        return self.reorder_marker_srv.send_request(marker_id, new_following_marker_id).value
+        return self.reorder_marker_srv.send_request(marker_id = marker_id, new_following_marker_id = new_following_marker_id).value
 	    
     def reorder_markers(self, marker_ids: List[int]) -> ReorderMarkers.Response:
-        return self.reorder_markers_srv.send_request(marker_ids).value
+        return self.reorder_markers_srv.send_request(marker_ids = marker_ids).value
 
     def edit_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int, marker_id: int) -> EditMarker.Response:
-        return self.edit_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2, marker_id).value
+        return self.edit_marker_srv.send_request(lat = lat, lon = lon, alt = alt, waypoint_error = error, marker_type = marker_type, aruco_id = aruco_id, aruco_id_2 = aruco_id_2, marker_id = marker_id).value
 
     def remove_marker(self, marker_id) -> RemoveMarker.Response:
-        return self.remove_marker_srv.send_request(marker_id).value
+        return self.remove_marker_srv.send_request(marker_id = marker_id).value
 
     def insert_marker(self, lat: float, lon: float, alt: float, error: float, marker_type: str, aruco_id: int, aruco_id_2: int, new_following_marker_id: int) -> InsertMarker.Response:
-        return self.insert_marker_srv.send_request(lat, lon, alt, error, marker_type, aruco_id, aruco_id_2, new_following_marker_id).value
+        return self.insert_marker_srv.send_request(lat = lat, lon = lon, alt = alt, waypoint_error = error, marker_type = marker_type, aruco_id = aruco_id, aruco_id_2 = aruco_id_2, new_following_marker_id = new_following_marker_id).value
     
     def clear_markers(self) -> ClearMarkers.Response:
         return self.clear_markers_srv.send_request().value
@@ -198,6 +211,11 @@ class RosLink(QObject):
         )
         self.subscribers.append(newSub)
         self.executor.add_node(newSub)
+
+    def make_service(self, serv_topic: String, serv_type: any, serv_name: String = None):
+        if serv_name is None:
+            serv_name = serv_topic + "_client"
+        return VarServiceClient(serv_name, serv_topic, serv_type)
 
     def get_topics(self):
         return self.ROSnode.get_topic_names_and_types()

@@ -6,8 +6,9 @@ Requires pip packages such as:
     pyqt5,
     qtpy,
     prctl,
-    pyqtlet2,
+    pyqtlet2 (version 0.8.0),
     pyqtgraph,
+    pymap3d,
     possibly others
 
 

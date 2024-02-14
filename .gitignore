@@ -3,3 +3,5 @@ install/
 log/
 Screenshots/
 PathRecordings/
+.vscode/
+.vscode/c_cpp_properties.json

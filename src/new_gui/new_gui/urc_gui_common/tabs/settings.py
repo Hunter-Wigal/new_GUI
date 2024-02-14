@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 import re
 import os
@@ -16,10 +16,9 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 import rclpy
-from rclpy.node import Node, Client
+from rclpy.node import Node
 from std_msgs.msg import String
 from sensor_msgs.msg import CameraInfo
-from ros2topic import api
 
 from theora_webcams.msg import Resolution, Framerate
 
@@ -76,7 +75,7 @@ class CameraData:
 	current_height: int
 	current_fps: str
 	resolutions: List[Resolution]
-	change_video: ChangeVideo()
+	change_video: ChangeVideo
 
 class SettingsTab(QWidget):
 	def __init__(self, roslink: RosLink, super_camera_widgets: List[SuperCameraWidget] = None, *args, **kwargs):
@@ -84,7 +83,8 @@ class SettingsTab(QWidget):
 		self.roslink = roslink
 
 		self.settings_node = Node("Settings_Handler")
-		#self.super_camera_widgets = super_camera_widgets if super_camera_widgets else []
+		self.super_camera_widgets = super_camera_widgets if super_camera_widgets else []
+
 		self.current_camera = -1
 
 		self.camera_info: List[CameraData] = []
@@ -404,15 +404,20 @@ class SettingsTab(QWidget):
 	def set_camera_resolution(self, camera_index, width, height, fps_num, fps_den, start=True, force_restart=False):
 		cam = self.camera_info[camera_index]
 
+		fps = float(fps_num) / fps_den
+
+		widget = self.super_camera_widgets[0]
+		result = widget.set_resolution(cam.name, height, width, fps)
+
+
+
 		# try:
 		# 	result: ChangeVideo.Response = cam.change_video.send_request(width, height, fps_num, fps_den, start, force_restart)
 		# except InvalidServiceNameException:
 		# 	result = None
 
-		# TODO Figure out how to set the resolution without services
-		return
 
-		if result and result.success:
+		if result:
 			self.status.setText("Successfully changed video :)")
 
 		else:

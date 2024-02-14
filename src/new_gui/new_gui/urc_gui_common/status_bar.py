@@ -7,7 +7,7 @@ from math import sqrt
 from std_msgs.msg import String
 from geometry_msgs.msg import Pose
 
-# from urc_gui_common.ros_link import RosLink
+from new_gui.urc_gui_common.ros_link import RosLink
 from new_gui.urc_gui_common.widgets import VLine, TimerWidget
 
 class StatusBar(QWidget):
@@ -63,12 +63,10 @@ class StatusBar(QWidget):
 
 			### end init #####################################################
 
-		# Fix Later
-		def connect_roslink(self, roslink: any):
-			pass
-			# roslink.pose.connect(self.update_distance)
-			# roslink.state.connect(self.update_state)
-			# roslink.planner_status.connect(self.update_planner_status)
+		def connect_roslink(self, roslink: RosLink):
+			roslink.pose.connect(self.update_distance)
+			roslink.state.connect(self.update_state)
+			roslink.planner_status.connect(self.update_planner_status)
 
 		def connect_timer(self, timer: TimerWidget):
 			timer.timer_signal.connect(self.update_timer)
