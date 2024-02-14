@@ -24,5 +24,3 @@ RUN useradd -m hunter && echo "hunter:hunter" | chpasswd && adduser hunter sudo
 RUN chown hunter /newGUI/
 
 USER hunter
-
-CMD ["colcon", "build"]

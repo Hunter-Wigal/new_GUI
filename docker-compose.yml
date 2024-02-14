@@ -1,0 +1,18 @@
+version: '3'
+services:
+  new-gui:
+    stdin_open: true
+    tty: true
+    image: gui-docker
+    container_name: gui_compose
+    working_dir: /newGUI
+    volumes:
+      - newGUI:/newGUI
+    environment:
+      - DISPLAY=host.docker.internal:0.0
+
+    user:
+      -hunter:hunter
+
+volumes:
+  newGUI:
